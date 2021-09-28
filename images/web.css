@@ -6,7 +6,7 @@ body {
 	}
 
 .black12a {
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: 22px;
@@ -15,7 +15,7 @@ body {
 	color: #000000;
 }
 .black14a {
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 14px;
 	font-style: normal;
 	font-weight:bold;
@@ -24,7 +24,7 @@ body {
 }
 
 .black14b {
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 14px;
 	font-style: normal;
 	font-weight:bold;
@@ -33,7 +33,7 @@ body {
 }
 
 .hui14a {
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 14px;
 	TEXT-DECORATION: none;
 	font-style: normal;
@@ -47,7 +47,7 @@ body {
 A.link1:link {
 	COLOR: #ffffff;
 	TEXT-DECORATION: none;
-	font-family:"ºÚÌå";
+	font-family:"é»‘ä½“";
 	font-size:16px;
 	font-style: normal;
 	line-height: normal;
@@ -55,7 +55,7 @@ A.link1:link {
 A.link1:active {
 	COLOR: #ffffff;
 	TEXT-DECORATION: none;
-	font-family: "ºÚÌå";
+	font-family: "é»‘ä½“";
 	font-size:16px;
 	font-style: normal;
 	line-height: normal;
@@ -63,14 +63,14 @@ A.link1:active {
 A.link1:visited {
 	COLOR: #ffffff;
 	TEXT-DECORATION: none;
-	font-family: "ºÚÌå";
+	font-family: "é»‘ä½“";
 	font-size:16px;
 	font-style: normal;
 	line-height: normal;
 }
 A.link1:hover {
 	COLOR: #ffffff;
-	font-family: "ºÚÌå";
+	font-family: "é»‘ä½“";
 	font-size:16px;
 	font-style: normal;
 	text-decoration: underline;
@@ -78,7 +78,7 @@ A.link1:hover {
 A.link2:link {
 	COLOR: #000000;
 	TEXT-DECORATION: none;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height:normal;
@@ -87,7 +87,7 @@ A.link2:link {
 A.link2:active {
 	COLOR: #000000;
 	TEXT-DECORATION: none;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
     font-size: 12px;
 	font-style: normal;
 	line-height:normal;
@@ -95,14 +95,14 @@ A.link2:active {
 A.link2:visited {
 	COLOR: #000000;
 	TEXT-DECORATION: blink;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height:normal;
 }
 A.link2:hover {
 	COLOR: #000000;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height:normal;
@@ -110,7 +110,7 @@ A.link2:hover {
 A.link3:link {
 	COLOR: #e2e2e2;
 	BACKGROUND-COLOR: #286382;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: normal;
@@ -119,7 +119,7 @@ A.link3:link {
 A.link3:active {
 	COLOR: #e2e2e2;
 	BACKGROUND-COLOR: #286382;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: normal;
@@ -128,7 +128,7 @@ A.link3:active {
 A.link3:visited {
 	COLOR: #e2e2e2;
 	BACKGROUND-COLOR: #286382;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: normal;
@@ -138,7 +138,7 @@ A.link3:visited {
 A.link3:hover {
 	COLOR: #ffff00;
 	BACKGROUND-COLOR: #286382;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: normal;
@@ -147,7 +147,7 @@ A.link3:hover {
 A.link4:link {
 	COLOR: #1C4262;
 	TEXT-DECORATION: none;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: normal;
@@ -155,7 +155,7 @@ A.link4:link {
 A.link4:active {
 	COLOR: #1C4262;
 	TEXT-DECORATION: none;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: normal;
@@ -163,7 +163,7 @@ A.link4:active {
 A.link4:visited {
 	COLOR: #1C4262;
 	TEXT-DECORATION: blink;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: normal;
@@ -172,7 +172,7 @@ A.link4:visited {
 A.link4:hover {
 	COLOR: #FF9900;
 	BACKGROUND-COLOR: #e2e2e2;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: normal;
@@ -192,7 +192,7 @@ A.link4:hover {
 A.link5:link {
 	COLOR: #ffffff;
 	TEXT-DECORATION: none;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: 22px;
@@ -200,7 +200,7 @@ A.link5:link {
 A.link5:active {
 	COLOR: #ffffff;
 	TEXT-DECORATION: none;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: 22px;
@@ -208,7 +208,7 @@ A.link5:active {
 A.link5:visited {
 	COLOR: #ffffff;
 	TEXT-DECORATION: none;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: 22px;
@@ -216,24 +216,24 @@ A.link5:visited {
 A.link5:hover {
 	COLOR: #ffffff;
 		TEXT-DECORATION: none;
-	font-family: "ËÎÌå";
+	font-family: "å®‹ä½“";
 	font-size: 12px;
 	font-style: normal;
 	line-height: 22px;
 }
 
 
-/*ÉèÖÃ±í¸ñÏÂ±ß±ß¿ò*/
+/*è®¾ç½®è¡¨æ ¼ä¸‹è¾¹è¾¹æ¡†*/
 .table_td_bottom td{
 border-bottom:1px #ccc dashed;
 padding:5px 5px;
 }
-/*ÉèÖÃ±í¸ñ×ó±ß±ß¿ò*/
-.table_td_left td{
+/*è®¾ç½®è¡¨æ ¼å·¦è¾¹è¾¹æ¡†*/
+.table_td_lseft td{
 border-left:1px #333333 dashed;
 padding:0 20px;
 }
-/*ÉèÖÃ±í¸ñÖÐÍ¼Æ¬±ß¿ò*/
+/*è®¾ç½®è¡¨æ ¼ä¸­å›¾ç‰‡è¾¹æ¡†*/
 .table_img_border img{
 padding:2px;
 border:1px #FD6E06 solid;
@@ -241,3 +241,23 @@ border:1px #FD6E06 solid;
 .tab{
 border-collapse:collapse;
 	}
+	
+/*è®¾ç½®å›½æ——å›¾ç‰‡*/
+.countryImage{
+	width: 25px;
+	height: 12.5px;
+	border-radius: 0px;	
+	float: right;
+	padding-top: 10px;
+	padding-right: 1px;
+	opacity: 1;
+}
+
+/* è®¾ç½®å›½å®¶æ–‡å­— */
+.countryLanguage{	
+	float: right;
+	padding-top: 10px;
+	opacity: 0.7;
+	padding-right: 10px;
+	font-size: 10px;
+}
