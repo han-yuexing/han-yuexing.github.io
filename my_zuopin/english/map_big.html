@@ -1,7 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 
-
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <title>韩越兴--联系地图</title>
 <link href="../../images/web.css" rel="stylesheet" type="text/css">
@@ -11,12 +10,21 @@ body {
 	background-image: url(../../images/bj.gif);
 }
 -->
-</style></head>
+</style>
+<!--
+<script>
+	function fun1(x) {
+		x.style.width = "371px";
+		x.style.height = "851px";
+	}
+-->
+</script>
+</head>
 <body>
 <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tbody>
   <tr>
-    <td width="960" height="150" valign="top" background="../../images/top.jpg" > </td>
+    <td width="960" height="150" valign="top" background="../../images/top2.jpg" style="background-position:5% 35%;"> </td>
   </tr>
   
   
@@ -54,7 +62,7 @@ body {
     <td style="font-size: 14px;" align="center" bgcolor="#eeeded" height="70"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 
       <tr>
-          <td style="padding-left: 20px; font-size: 16px; font-family: '黑体';" background="../../images/1645_18.gif" height="30">联系地图</td>
+          <td style="padding-left: 20px; font-size: 16px; font-family: '黑体';" background="../images/1645_18.gif" height="30">联系地图</td>
       </tr>
     </table>
       <table style="font-size: 14px; line-height: 35px;" align="center" border="0" cellpadding="0" cellspacing="0" width="743">
@@ -65,7 +73,19 @@ body {
               <p>&nbsp;<strong> 交通方式：</strong></p>
               <p>&nbsp;&nbsp;&nbsp;地铁7号线南陈路站，公共汽车767号南陈路上大路站或者南陈路四号桥站.</p>
               <p>&nbsp;<strong> 地图：</strong></p>
-              <p><span class="RichText ztext CopyrightRichText-richText" itemprop="text"><font size="4">&nbsp;<img src="../../images/map/2020/map3.jpg" width="50%" height="50%" /></font></span></p>
+              <p>
+				  <span class="RichText ztext CopyrightRichText-richText" itemprop="text">
+					<font size="4">&nbsp;
+						<div style="margin-top: -9%;"><!--外面加一个盒子，让“关闭符号图片”和“地图图片”能在不同浏览器中对齐，达到显示一致的效果-->
+							<!--<img src="../images/map/2020/map3.jpg" style="height: 80px; width: 100px;" onclick="fun1(this)"/>-->
+								<a href="map.html">
+									<img src="../../images/map/2020/close1.jpg" style="height: 12px; width: 12px; border-radius:100%; display:inline; float: right;"/>
+								</a>
+								<img src="../../images/map/2020/map4.jpg" style="height: 100%; width: 97%; margin-left: 1%;"/>
+						</div>
+					</font>
+				  </span>
+			  </p>
               <p>&nbsp;</p></td>
           </tr>
         </tbody>
