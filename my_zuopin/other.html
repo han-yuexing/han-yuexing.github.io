@@ -45,14 +45,18 @@ a:active {
 </style></head>
 <body>
 	
-<table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-  <tbody>
-	 <div>
+<!-- Display StatCounter visitor count -->
+<div>
   Total visitors: <span id="visitor-count">Loading...</span>
 </div>
 <script type="text/javascript">
+  // Get the visitor count from StatCounter
+  var sc_project=12853808;
+  var sc_security="c78a7cb4";
+  var sc_invisible=1;
+  var visitor_count = 0;
   function sc_callback(data) {
-    var visitor_count = data.total;
+    visitor_count = data.total;
     document.getElementById('visitor-count').innerText = visitor_count;
   }
   (function() {
@@ -67,11 +71,8 @@ a:active {
     s.parentNode.insertBefore(sc, s);
   })();
 </script>
-<script>
-  window.onload = function() {
-    StatCounter.refresh();
-  }
-</script>
+<!-- End display visitor count -->
+
  
   <tr>
     <td width="960" height="150" valign="top" background="../images/top.jpg" style="background-position:79% 30%;"> 
