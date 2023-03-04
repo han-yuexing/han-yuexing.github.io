@@ -38,11 +38,10 @@
 				var sc = document.createElement('script');
 				sc.type = 'text/javascript';
 				sc.async = true;
-				sc.src = 'https://www.statcounter.com/counter/counter.js';
+				sc.src = 'https://www.statcounter.com/counter/counter.js?project=' + sc_project + '&security=' + sc_security + '&invisible=' + sc_invisible;
 				sc.onload = function() {
 					StatCounter.push(sc_callback);
 				};
-				sc.src = 'https://www.statcounter.com/counter/counter.js?project=' + sc_project + '&security=' + sc_security + '&invisible=' + sc_invisible;
 				var s = document.getElementsByTagName('script')[0];
 				s.parentNode.insertBefore(sc, s);
 			})();
