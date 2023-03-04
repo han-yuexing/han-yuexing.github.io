@@ -146,12 +146,18 @@ setInterval("changeColor()",200); 
   <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
     <tbody> 
 	    <!--显示访问量子开始-->
-	   <div>
-  Total visitors: <span id="visitor-count">Loading...</span>
+<!-- Display StatCounter visitor count -->
+<div>
+  Total visitors: <span id="visitor-count"></span>
 </div>
 <script type="text/javascript">
+  // Get the visitor count from StatCounter
+  var sc_project=PROJECT_ID;
+  var sc_security="SECURITY_CODE";
+  var sc_invisible=1;
+  var visitor_count = 0;
   function sc_callback(data) {
-    var visitor_count = data.total;
+    visitor_count = data.total;
     document.getElementById('visitor-count').innerText = visitor_count;
   }
   (function() {
@@ -166,11 +172,7 @@ setInterval("changeColor()",200); 
     s.parentNode.insertBefore(sc, s);
   })();
 </script>
-<script>
-  window.onload = function() {
-    StatCounter.refresh();
-  }
-</script>
+<!-- End display visitor count -->
 
 
 	    <!--显示访问量子结束-->
