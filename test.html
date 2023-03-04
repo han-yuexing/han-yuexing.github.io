@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>GitHub Counter</title>
-	<meta charset="UTF-8">
-</head>
-<body>
-	<h1>Welcome to my website!</h1>
-	<p>This page has been visited <span id="counter">0</span> times.</p>
-	<script>
-		// Get the current value of the counter from GitHub
-		fetch('https://api.github.com/repos/han-yuexing/han-yuexing.github.io/contents/counter.txt', {
-			headers: {
-				'Authorization': 'Bearer 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'
-			}
-		})
-			.then(response => response.json())
-			.then(data => {
-				// Parse the counter value from the file contents
-				console.log(data.content)
-				let counter = parseInt(atob(data.content));
-				// Update the counter on the page
-				document.getElementById('counter').textContent = counter;
-				// Increment the counter and save the new value to GitHub
-				counter++;
-				fetch('https://api.github.com/repos/han-yuexing/han-yuexing.github.io/contents/counter.txt', {
-					method: 'PUT',
-					headers: {
-						'Authorization': 'Bearer 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',
-						'Content-Type': 'application/json'
-					},
-					body: JSON.stringify({
-						message: 'Update counter.txt',
-						content: btoa(counter.toString()),
-						sha: data.sha
-					})
+	<head>
+		<title>GitHub Counter</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Welcome to my website!</h1>
+		<p>This page has been visited <span id="counter">0</span> times.</p>
+		<script>
+			// Get the current value of the counter from GitHub
+			fetch('https://api.github.com/repos/han-yuexing/han-yuexing.github.io/contents/counter.txt')
+				.then(response => response.json())
+				.then(data => {
+					// Parse the counter value from the file contents
+					console.log(data.content)
+					let counter = parseInt(atob(data.content));
+					// Update the counter on the page
+					document.getElementById('counter').textContent = counter;
+					// Increment the counter and save the new value to GitHub
+					counter++;
+					fetch('https://api.github.com/repos/han-yuexing/han-yuexing.github.io/contents/counter.txt', {
+							method: 'PUT',
+							headers: {
+								'Authorization': 'token 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',
+								'Content-Type': 'application/json'
+							},
+							body: JSON.stringify({
+								message: 'Update counter.txt',
+								content: btoa(counter.toString()),
+								sha: data.sha
+							})
+						})
+						.then(response => response.json())
+						.then(data => console.log(data))
+						.catch(error => console.error(error));
 				})
-					.then(response => response.json())
-					.then(data => console.log(data))
-					.catch(error => console.error(error));
-			})
-			.catch(error => console.error(error));
-	</script>
-</body>
+				.catch(error => console.error(error));
+		</script>
+	</body>
 </html>
