@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Count Visitors</title>
-	<script type="text/javascript">
-		// Read and update visitor count from file
-		var xhr = new XMLHttpRequest();
-		var count = 0;
-		xhr.onreadystatechange = function() {
-			if (xhr.readyState == 4 && xhr.status == 200) {
-				count = parseInt(xhr.responseText);
-				count++;
-				var data = new FormData();
-				data.append('count', count);
-				var xhr2 = new XMLHttpRequest();
-				xhr2.open('POST', 'count.txt', true);
-				xhr2.send(data);
-				document.getElementById('visitor-count').innerHTML = count;
-			}
-		};
-		xhr.open('GET', 'count.txt', true);
-		xhr.send();
+  <head>
+    <meta charset="UTF-8">
+    <title>Visitor Counter</title>
+    <script type="text/javascript">
+      var ajaxRequest = new XMLHttpRequest();
+      var a;
 
-		// Display visitor count
-		window.onload = function() {
-			document.getElementById('visitor-count').innerHTML = count;
-		};
-	</script>
-</head>
-<body>
-	<div>
-		Total visitors: <span id="visitor-count"></span>
-	</div>
-</body>
+      ajaxRequest.onreadystatechange = function() {
+        if (ajaxRequest.readyState == 4 && ajaxRequest.status == 200) {
+          a = parseInt(ajaxRequest.responseText);
+          if (isNaN(a)) {
+            a = 0;
+          }
+          document.getElementById('visitor-count').innerHTML = a + 1;
+          ajaxRequest.open("GET", "count.txt", true);
+          ajaxRequest.send();
+        }
+      }
+
+      ajaxRequest.open("GET", "count.txt", true);
+      ajaxRequest.send();
+    </script>
+  </head>
+  <body>
+    Total visitors: <span id="visitor-count"></span>
+  </body>
 </html>
