@@ -23,28 +23,41 @@
 		
 		
 
-		<!-- Default Statcounter code for hanyuexin https://han-yuexing.github.io/ -->
-<script>
-	// Get the visitor count from Google Analytics
-	gtag('event', 'page_view', {
-		'send_to': 'GA_MEASUREMENT_ID',
-		'event_callback': function() {
-			var count = gtag.data[GA_MEASUREMENT_ID].visitor.length;
-			document.getElementById('visitor-count').innerText = count;
-		}
-	});
-</script>
-<!-- End display visitor count -->
+		
+		
+		
+		
+<script type="text/javascript">
+	// Get the visitor count from StatCounter
+	var sc_project = 12853808;
+	var sc_security = "c78a7cb4";
+	var visitor_count = 0;
 
+	function sc_callback(data) {
+		visitor_count = data.total;
+		document.getElementById('visitor-count').innerText = visitor_count;
+	}
+	(function() {
+		var sc = document.createElement('script');
+		sc.type = 'text/javascript';
+		sc.async = true;
+		sc.src = 'https://www.statcounter.com/counter/counter.js';
+		sc.onload = function() {
+			StatCounter.push(sc_callback);
+		};
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(sc, s);
+	})();
+</script>
 <!-- End display visitor count -->
 	</head>
 	<body>
-		<!--显示访问量子开始-->
+		<!--显示访问数量开始-->
 		<!-- Display StatCounter visitor count -->
 		<div>
 			Total visitors: <span id="visitor-count"></span>
 		</div>
 
-		<!--显示访问量子结束-->
+		<!--显示访问数量结束-->
 	</body>
 </html>
