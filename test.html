@@ -9,7 +9,11 @@
 	<p>This page has been visited <span id="counter">0</span> times.</p>
 	<script>
 		// Get the current value of the counter from GitHub
-		fetch('https://api.github.com/repos/han-yuexing/han-yuexing.github.io/contents/counter.txt')
+		fetch('https://api.github.com/repos/han-yuexing/han-yuexing.github.io/contents/counter.txt', {
+			headers: {
+				'Authorization': 'Bearer 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'
+			}
+		})
 			.then(response => response.json())
 			.then(data => {
 				// Parse the counter value from the file contents
