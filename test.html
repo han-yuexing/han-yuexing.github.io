@@ -20,7 +20,7 @@
 				// Increment the counter and save the new value to GitHub
 				counter++;
 				fetch('https://api.github.com/repos/han-yuexing/han-yuexing.github.io/contents/counter.txt', {
-					method: 'PUT',
+					method: 'GET',
 					headers: {
 						'Authorization': 'Bearer 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',
 						'Content-Type': 'application/json'
