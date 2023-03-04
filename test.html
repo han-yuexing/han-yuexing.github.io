@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cookie-based Visitor Counter</title>
-	<script>
-		function setCookie(name, value, days) {
-			var expires = "";
-			if (days) {
-				var date = new Date();
-				date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-				expires = "; expires=" + date.toUTCString();
-			}
-			document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-		}
-
-		function getCookie(name) {
-			var nameEQ = name + "=";
-			var ca = document.cookie.split(';');
-			for(var i=0;i < ca.length;i++) {
-				var c = ca[i];
-				while (c.charAt(0)==' ') c = c.substring(1,c.length);
-				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-			}
-			return null;
-		}
-
-		function incrementVisits() {
-			var visits = getCookie("visits");
-			if (visits) {
-				visits = parseInt(visits) + 1;
-			} else {
-				visits = 1;
-			}
-			setCookie("visits", visits, 365);
-			document.getElementById("visit-count").textContent = visits;
-		}
-
-		window.onload = incrementVisits;
-	</script>
+	<title>GitHub Counter</title>
+	<meta charset="UTF-8">
 </head>
 <body>
-	<h1>Welcome to My Website</h1>
-	<p>You are visitor number <span id="visit-count">1</span>.</p>
+	<h1>Welcome to my website!</h1>
+	<p>This page has been visited <span id="counter">0</span> times.</p>
+	<script>
+		// Get the current value of the counter from GitHub
+		fetch('https://api.github.com/repos/<username>/<repository>/contents/counter.txt')
+			.then(response => response.json())
+			.then(data => {
+				// Parse the counter value from the file contents
+				let counter = parseInt(atob(data.content));
+				// Update the counter on the page
+				document.getElementById('counter').textContent = counter;
+				// Increment the counter and save the new value to GitHub
+				counter++;
+				fetch('https://api.github.com/repos/<username>/<repository>/contents/counter.txt', {
+					method: 'PUT',
+					headers: {
+						'Authorization': 'Bearer <access_token>',
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						message: 'Update counter.txt',
+						content: btoa(counter.toString()),
+						sha: data.sha
+					})
+				})
+					.then(response => response.json())
+					.then(data => console.log(data))
+					.catch(error => console.error(error));
+			})
+			.catch(error => console.error(error));
+	</script>
 </body>
 </html>
