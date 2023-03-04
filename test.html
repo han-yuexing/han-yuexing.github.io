@@ -23,6 +23,36 @@
 <!-- End of Statcounter Code -->
 	</head>
 	<body>
-		<span>hello</span>
+			    <!--显示访问量子开始-->
+<!-- Display StatCounter visitor count -->
+<div>
+  Total visitors: <span id="visitor-count"></span>
+</div>
+<script type="text/javascript">
+  // Get the visitor count from StatCounter
+  var sc_project=12853808;
+  var sc_security="c78a7cb4";
+  var sc_invisible=1;
+  var visitor_count = 0;
+  function sc_callback(data) {
+    visitor_count = data.total;
+    document.getElementById('visitor-count').innerText = visitor_count;
+  }
+  (function() {
+    var sc = document.createElement('script');
+    sc.type = 'text/javascript';
+    sc.async = true;
+    sc.src = 'https://www.statcounter.com/counter/counter.js';
+    sc.onload = function() {
+      StatCounter.push(sc_callback);
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(sc, s);
+  })();
+</script>
+<!-- End display visitor count -->
+
+
+	    <!--显示访问量子结束-->
 	</body>
 </html>
