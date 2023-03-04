@@ -26,6 +26,7 @@
 			var visitor_count = 0;
 
 			function sc_callback(data) {
+				console.log(data)
 				visitor_count = data.total;
 				document.getElementById('visitor-count').innerText = visitor_count;
 			}
