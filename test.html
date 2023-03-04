@@ -13,6 +13,7 @@
 			.then(response => response.json())
 			.then(data => {
 				// Parse the counter value from the file contents
+				console.log(data.content)
 				let counter = parseInt(atob(data.content));
 				// Update the counter on the page
 				document.getElementById('counter').textContent = counter;
