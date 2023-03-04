@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Visitor Counter</title>
-    <script type="text/javascript">
-      var ajaxRequest = new XMLHttpRequest();
-      var a;
+<head>
+	<title>Cookie-based Visitor Counter</title>
+	<script>
+		function setCookie(name, value, days) {
+			var expires = "";
+			if (days) {
+				var date = new Date();
+				date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+				expires = "; expires=" + date.toUTCString();
+			}
+			document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+		}
 
-      ajaxRequest.onreadystatechange = function() {
-        if (ajaxRequest.readyState == 4 && ajaxRequest.status == 200) {
-          a = parseInt(ajaxRequest.responseText);
-          if (isNaN(a)) {
-            a = 0;
-          }
-          document.getElementById('visitor-count').innerHTML = a + 1;
-          ajaxRequest.open("GET", "count.txt", true);
-          ajaxRequest.send();
-        }
-      }
+		function getCookie(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0;i < ca.length;i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1,c.length);
+				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+		}
 
-      ajaxRequest.open("GET", "count.txt", true);
-      ajaxRequest.send();
-    </script>
-  </head>
-  <body>
-    Total visitors: <span id="visitor-count"></span>
-  </body>
+		function incrementVisits() {
+			var visits = getCookie("visits");
+			if (visits) {
+				visits = parseInt(visits) + 1;
+			} else {
+				visits = 1;
+			}
+			setCookie("visits", visits, 365);
+			document.getElementById("visit-count").textContent = visits;
+		}
+
+		window.onload = incrementVisits;
+	</script>
+</head>
+<body>
+	<h1>Welcome to My Website</h1>
+	<p>You are visitor number <span id="visit-count">1</span>.</p>
+</body>
 </html>
