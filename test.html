@@ -8,7 +8,6 @@
 	<body>
 		<h1>Counter:</h1>
 		<div id="counter"></div>
-		<button id="increment">Increment</button>
 
 		<script>
 			// Set the GitHub API URLs for getting and updating the counter.txt file
@@ -19,22 +18,17 @@
 			$.get(api_url, function(data) {
 				// Decode the Base64-encoded data and display the current counter value
 				let content = atob(data.content);
-				$("#counter").text(content);
-			});
+				let counter = parseInt(content);
+				$("#counter").text(counter);
 
-			// Update the counter.txt file with a new value
-			function updateCounter(newValue) {
-				// Encode the new value as Base64
-				let encodedContent = btoa(newValue);
-
-				// Construct the API request body
+				// Increment the counter and update the file
+				counter += 1;
+				let encodedContent = btoa(counter.toString());
 				let requestBody = {
 					"message": "Update counter.txt",
 					"content": encodedContent,
 					"sha": ""
 				};
-
-				// Get the current SHA hash of the counter.txt file
 				$.ajax({
 					url: api_url,
 					headers: {
@@ -42,8 +36,6 @@
 					},
 					success: function(data) {
 						requestBody.sha = data.sha;
-
-						// Update the counter.txt file
 						$.ajax({
 							url: update_url,
 							type: "PUT",
@@ -58,19 +50,6 @@
 						});
 					}
 				});
-			}
-
-			// Handle the increment button click event
-			$("#increment").click(function() {
-				// Get the current counter value and increment it
-				let currentValue = parseInt($("#counter").text());
-				let newValue = currentValue + 1;
-
-				// Update the counter.txt file with the new value
-				updateCounter(newValue);
-
-				// Update the counter display
-				$("#counter").text(newValue);
 			});
 		</script>
 	</body>
