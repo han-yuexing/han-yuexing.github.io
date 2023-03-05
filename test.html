@@ -1,67 +1,62 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Read/Write to Counter.txt</title>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	</head>
-	<body>
-		<h1>Counter:</h1>
-		<div id="counter"></div>
-
-		<script>
-			// Set the GitHub API URLs for getting and updating the counter.txt file
-			const api_url = "https://api.github.com/repos/han-yuexing/count/contents/counter.txt";
-			const update_url = "https://api.github.com/repos/han-yuexing/count/contents/counter.txt";
-
-			// Get the current value of the counter.txt file
-			$.get(api_url, function(data) {
-				// Decode the Base64-encoded data and display the current counter value
-				let content = atob(data.content);
-				$("#counter").text(content);
-
-				// Increment the counter value and update the counter.txt file
-				let newValue = parseInt(content) + 1;
-				updateCounter(newValue);
-			});
-
-			// Update the counter.txt file with a new value
-			function updateCounter(newValue) {
-				// Encode the new value as Base64
-				let encodedContent = btoa(newValue);
-
-				// Construct the API request body
-				let requestBody = {
-					"message": "Update counter.txt",
-					"content": encodedContent,
-					"sha": ""
-				};
-
-				// Get the current SHA hash of the counter.txt file
-				$.ajax({
-					url: api_url,
-					headers: {
-						"Accept": "application/vnd.github.v3+json"
-					},
-					success: function(data) {
-						requestBody.sha = data.sha;
-
-						// Update the counter.txt file
-						$.ajax({
-							url: update_url,
-							type: "PUT",
-							headers: {
-								"Content-Type": "application/json",
-								"Accept": "application/vnd.github.v3+json"
-							},
-							data: JSON.stringify(requestBody),
-							success: function(data) {
-								console.log("Counter updated successfully.");
-							}
-						});
-					}
-				});
-			}
-		</script>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <title>Read/Write to Counter.txt</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Counter:</h1>
+  <div id="counter"></div>
+  
+  <script>
+    // Set the GitHub API URLs for getting and updating the counter.txt file
+    const api_url = "https://api.github.com/repos/han-yuexing/count/contents/counter.txt";
+    const update_url = "https://api.github.com/repos/han-yuexing/count/contents/counter.txt";
+    
+    // Get the current value of the counter.txt file
+    $.get(api_url, function(data) {
+      // Decode the Base64-encoded data and display the current counter value
+      let content = atob(data.content);
+      $("#counter").text(content);
+      
+      // Increment the counter value and update the counter.txt file
+      let newValue = parseInt(content) + 1;
+      updateCounter(newValue);
+    });
+    
+    // Update the counter.txt file with a new value
+    function updateCounter(newValue) {
+      // Encode the new value as Base64
+      let encodedContent = btoa(newValue);
+      
+      // Construct the API request body
+      let requestBody = {
+        "message": "Update counter.txt",
+        "content": encodedContent,
+        "sha": ""
+      };
+      
+      // Get the current SHA hash of the counter.txt file
+      $.ajax({
+        url: api_url,
+        headers: { "Accept": "application/vnd.github.v3+json" },
+        success: function(data) {
+          requestBody.sha = data.sha;
+          
+          // Update the counter.txt file
+          $.ajax({
+            url: update_url,
+            type: "PUT",
+            headers: { "Content-Type": "application/json", "Accept": "application/vnd.github.v3+json" },
+            data: JSON.stringify(requestBody),
+            success: function(data) {
+              console.log("Counter updated successfully.");
+            }
+          });
+        }
+      });
+    }
+  </script>
+</body>
 </html>
