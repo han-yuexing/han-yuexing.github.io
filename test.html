@@ -18,17 +18,26 @@
 			$.get(api_url, function(data) {
 				// Decode the Base64-encoded data and display the current counter value
 				let content = atob(data.content);
-				let counter = parseInt(content);
-				$("#counter").text(counter);
+				$("#counter").text(content);
 
-				// Increment the counter and update the file
-				counter += 1;
-				let encodedContent = btoa(counter.toString());
+				// Increment the counter value and update the counter.txt file
+				let newValue = parseInt(content) + 1;
+				updateCounter(newValue);
+			});
+
+			// Update the counter.txt file with a new value
+			function updateCounter(newValue) {
+				// Encode the new value as Base64
+				let encodedContent = btoa(newValue);
+
+				// Construct the API request body
 				let requestBody = {
 					"message": "Update counter.txt",
 					"content": encodedContent,
 					"sha": ""
 				};
+
+				// Get the current SHA hash of the counter.txt file
 				$.ajax({
 					url: api_url,
 					headers: {
@@ -36,6 +45,8 @@
 					},
 					success: function(data) {
 						requestBody.sha = data.sha;
+
+						// Update the counter.txt file
 						$.ajax({
 							url: update_url,
 							type: "PUT",
@@ -50,7 +61,7 @@
 						});
 					}
 				});
-			});
+			}
 		</script>
 	</body>
 </html>
