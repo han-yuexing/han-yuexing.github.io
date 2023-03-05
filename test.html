@@ -2,14 +2,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Read/Write to Counter.txt</title>
+		<title>Visitor Counter</title>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</head>
 	<body>
-		<h1>Counter:</h1>
+		<h1>Visitor Counter:</h1>
 		<div id="counter"></div>
-		<button id="increment">Increment</button>
-		<button id="decrement">Decrement</button>
 
 		<script>
 			// Set the GitHub API URLs for getting and updating the counter.txt file
@@ -61,24 +59,11 @@
 				});
 			}
 
-			// Handle the increment button click event
-			$("#increment").click(function() {
+			// Increment the counter value and update the counter.txt file when the page is loaded
+			$(document).ready(function() {
 				// Get the current counter value and increment it
 				let currentValue = parseInt($("#counter").text());
 				let newValue = currentValue + 1;
-
-				// Update the counter.txt file with the new value
-				updateCounter(newValue);
-
-				// Update the counter display
-				$("#counter").text(newValue);
-			});
-
-			// Handle the decrement button click event
-			$("#decrement").click(function() {
-				// Get the current counter value and decrement it
-				let currentValue = parseInt($("#counter").text());
-				let newValue = currentValue - 1;
 
 				// Update the counter.txt file with the new value
 				updateCounter(newValue);
