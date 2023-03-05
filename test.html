@@ -8,23 +8,24 @@
 		<h1>Welcome to my website!</h1>
 		<p>This page has been visited <span id="counter">0</span> times.</p>
 		<script>
-			// Get the current value of the counter from GitHub
-			fetch('https://api.github.com/repos/han-yuexing/han-yuexing.github.io/contents/counter.txt')
+			const token = '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'; // 请将YOUR_GITHUB_TOKEN替换为您的GitHub Personal Access Token
+			const url = 'https://api.github.com/repos/han-yuexing/han-yuexing.github.io/contents/counter.txt';
+			const headers = new Headers();
+			headers.append('Authorization', `token ${token}`);
+			headers.append('Content-Type', 'application/vnd.github.v3+json');
+
+			fetch(url, {
+					headers
+				})
 				.then(response => response.json())
 				.then(data => {
-					// Parse the counter value from the file contents
-					console.log(data.content)
 					let counter = parseInt(atob(data.content));
-					// Update the counter on the page
 					document.getElementById('counter').textContent = counter;
-					// Increment the counter and save the new value to GitHub
 					counter++;
-					fetch('https://api.github.com/repos/han-yuexing/han-yuexing.github.io/contents/counter.txt', {
+
+					fetch(url, {
 							method: 'PUT',
-							headers: {
-								'Authorization': 'token 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',
-								'Content-Type': 'application/json'
-							},
+							headers,
 							body: JSON.stringify({
 								message: 'Update counter.txt',
 								content: btoa(counter.toString()),
