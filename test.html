@@ -11,8 +11,8 @@
   
   <script>
     // Set the GitHub API URLs for getting and updating the counter.txt file
-    const api_url = "https://api.github.com/repos/han-yuexing/count/contents/counter.txt";
-    const update_url = "https://api.github.com/repos/han-yuexing/count/contents/counter.txt";
+    const api_url = "https://api.github.com/repos/10Helloworld24/count/contents/counter.txt";
+    const update_url = "https://api.github.com/repos/10Helloworld24/count/contents/counter.txt";
     
     // Get the current value of the counter.txt file
     $.get(api_url, function(data) {
@@ -49,7 +49,7 @@
           $.ajax({
             url: update_url,
             type: "PUT",
-            headers: { "Content-Type": "application/json", "Accept": "application/vnd.github.v3+json", "Authorization": "token curl -H "Authorization: token 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"},
+            headers: { "Content-Type": "application/json", "Accept": "application/vnd.github.v3+json", "Authorization": "token curl -H "Authorization: token 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"},
             data: JSON.stringify(requestBody),
             success: function(data) {
               console.log("Counter updated successfully.");
