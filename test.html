@@ -4,7 +4,7 @@
 
 <script>
   // 从B仓库的counter.txt文件中获取当前访客量
-  fetch('https://raw.githubusercontent.com/count/counter.txt')
+  fetch('https://raw.githubusercontent.com/han-yuexing/count/main/counter.txt')
     .then(response => response.text())
     .then(data => {
       const count = parseInt(data) || 0; // 将文件内容转换为数值
