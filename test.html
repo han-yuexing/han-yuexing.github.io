@@ -49,7 +49,7 @@
           $.ajax({
             url: update_url,
             type: "PUT",
-            headers: { "Content-Type": "application/json", "Accept": "application/vnd.github.v3+json", "Authorization": "token curl -H "Authorization: token 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"},
+            headers: { "Content-Type": "application/json", "Accept": "application/vnd.github.v3+json", "Authorization": "token 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"},
             data: JSON.stringify(requestBody),
             success: function(data) {
               console.log("Counter updated successfully.");
