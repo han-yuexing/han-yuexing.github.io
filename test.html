@@ -8,6 +8,7 @@
 <body>
   <h1>Counter:</h1>
   <div id="counter"></div>
+  
   <script>
     // Set the GitHub API URLs for getting and updating the counter.txt file
     const api_url = "https://api.github.com/repos/han-yuexing/count/contents/counter.txt";
@@ -27,7 +28,7 @@
     // Update the counter.txt file with a new value
     function updateCounter(newValue) {
       // Encode the new value as Base64
-      let encodedContent = btoa(newValue.toString());
+      let encodedContent = btoa(newValue);
       
       // Construct the API request body
       let requestBody = {
@@ -48,12 +49,7 @@
           $.ajax({
             url: update_url,
             type: "PUT",
-            headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/vnd.github.v3+json",
-                    "Authorization": "token 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"
-                  },
-
+            headers: { "Content-Type": "application/json", "Accept": "application/vnd.github.v3+json", "Authorization": "token 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"},
             data: JSON.stringify(requestBody),
             success: function(data) {
               console.log("Counter updated successfully.");
@@ -64,4 +60,4 @@
     }
   </script>
 </body>
-</html> 
+</html>
