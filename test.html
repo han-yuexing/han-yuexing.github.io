@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test</title>
+    <title>Test</title>
 </head>
 <body>
-	<div id="counter"></div>
+    <div id="counter"></div>
 
-	<script>
-		var xhr = new XMLHttpRequest();
-		xhr.open('GET', 'https://raw.githubusercontent.com/han-yuexing/count/main/counter.txt', true);
-		xhr.onreadystatechange = function() {
-			if (xhr.readyState == 4 && xhr.status == 200) {
-				var counter = document.getElementById('counter');
-				counter.innerHTML = 'Counter: ' + xhr.responseText;
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://raw.githubusercontent.com/han-yuexing/count/main/counter.txt', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var counter = document.getElementById('counter');
+                counter.innerHTML = 'Counter: ' + xhr.responseText;
 
-				// 对 counter.txt 中的数值进行 +1 操作，并将其写回到 A 仓库中的 counter.txt 文件中
-				var newValue = parseInt(xhr.responseText) + 1;
-				var fs = require('fs');
-				fs.writeFile('https://raw.githubusercontent.com/han-yuexing/count/main/counter.txt', newValue.toString(), function(err) {
-					if (err) throw err;
-					console.log('Counter updated.');
-				});
-			}
-		};
-		xhr.send();
-	</script>
+                // 对 counter.txt 中的数值进行 +1 操作，并将其写回到 A 仓库中的 counter.txt 文件中
+                var newValue = parseInt(xhr.responseText) + 1;
+                fetch('https://han-yuexing.github.io:3000/update-counter', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ value: newValue })
+                })
+                .then(response => {
+                    console.log('Counter updated.');
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+            }
+        };
+        xhr.send();
+    </script>
 </body>
 </html>
