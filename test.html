@@ -42,6 +42,7 @@
         url: api_url,
         headers: { "Accept": "application/vnd.github.v3+json" },
         success: function(data) {
+          console.log(data);
           requestBody.sha = data.sha;
           
           // Update the counter.txt file
@@ -50,6 +51,7 @@
             type: "PUT",
             headers: { "Content-Type": "application/json", "Accept": "application/vnd.github.v3+json", "Authorization": "token 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"},
             data: JSON.stringify(requestBody),
+            console.log(data);
             success: function(data) {
               console.log("Counter updated successfully.");
             }
