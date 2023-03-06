@@ -1,63 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Read/Write to Counter.txt</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-  <h1>Counter:</h1>
-  <div id="counter"></div>
-  
-  <script>
-    // Set the GitHub API URLs for getting and updating the counter.txt file
-    const api_url = "https://api.github.com/repos/10Helloworld24/count/contents/counter.txt";
-    const update_url = "https://api.github.com/repos/10Helloworld24/count/contents/counter.txt";
-    
-    // Get the current value of the counter.txt file
-    $.get(api_url, function(data) {
-      // Decode the Base64-encoded data and display the current counter value
-      let content = atob(data.content);
-      $("#counter").text(content);
-      
-      // Increment the counter value and update the counter.txt file
-      let newValue = parseInt(content) + 1;
-      updateCounter(newValue);
+<div class="counter">
+  <span class="count">正在加载...</span> 人次访问
+</div>
+
+<script>
+  // 从B仓库的counter.txt文件中获取当前访客量
+  fetch('https://raw.githubusercontent.com/count/counter.txt')
+    .then(response => response.text())
+    .then(data => {
+      const count = parseInt(data) || 0; // 将文件内容转换为数值
+      const countElem = document.querySelector('.count');
+      countElem.innerText = count.toLocaleString(); // 将数值显示到网页中
+    })
+    .catch(error => {
+      console.error('获取文件内容失败:', error);
     });
-    
-    // Update the counter.txt file with a new value
-    function updateCounter(newValue) {
-      // Encode the new value as Base64
-      let encodedContent = btoa(newValue);
-      
-      // Construct the API request body
-      let requestBody = {
-        "message": "Update counter.txt",
-        "content": encodedContent,
-        "sha": ""
-      };
-      
-      // Get the current SHA hash of the counter.txt file
-      $.ajax({
-        url: api_url,
-        headers: { "Accept": "application/vnd.github.v3+json" },
-        success: function(data) {
-          console.log(data);
-          requestBody.sha = data.sha;
-          
-          // Update the counter.txt file
-          $.ajax({
-            url: update_url,
-            type: "PUT",
-            headers: { "Content-Type": "application/json", "Accept": "application/vnd.github.v3+json", "Authorization": "token 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"},
-            data: JSON.stringify(requestBody),
-            success: function(data) {
-              console.log("Counter updated successfully.");
-            }
-          });
-        } 
-      });
-    }
-  </script>
-</body>
-</html>
+</script>
