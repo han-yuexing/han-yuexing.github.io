@@ -6,7 +6,7 @@
     <script>
         $(document).ready(function() {
             // 发送AJAX请求，获取计数器的值
-            $.get("/count/counter.php", function(count) {
+            $.get("count/counter.php", function(count) {
                 // 将计数器的值显示在页面上
                 $("#counter").text(count);
             });
