@@ -1,17 +1,20 @@
-<div class="counter">
-  <span class="count">正在加载...</span> 人次访问
-</div>
-
-<script>
-  // 从B仓库的counter.txt文件中获取当前访客量
-  fetch('https://raw.githubusercontent.com/han-yuexing/count/main/counter.txt')
-    .then(response => response.text())
-    .then(data => {
-      const count = parseInt(data) || 0; // 将文件内容转换为数值
-      const countElem = document.querySelector('.count');
-      countElem.innerText = count.toLocaleString(); // 将数值显示到网页中
-    })
-    .catch(error => {
-      console.error('获取文件内容失败:', error);
-    });
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试页面</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // 发送AJAX请求，获取计数器的值
+            $.get("/count/counter.php", function(count) {
+                // 将计数器的值显示在页面上
+                $("#counter").text(count);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>欢迎访问测试页面！</h1>
+    <p>访客量：<span id="counter"></span></p>
+</body>
+</html>
