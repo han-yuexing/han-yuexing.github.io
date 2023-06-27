@@ -138,15 +138,20 @@ setInterval("changeColor()",200); 
         if (visitorCountElement) {
           var visitorCountValue = visitorCountElement.nextSibling;
           if (visitorCountValue && visitorCountValue.nodeType === Node.TEXT_NODE) {
-            visitorCountValue.style.backgroundColor = 'blue';
-            visitorCountValue.style.color = 'white';
-            visitorCountValue.style.fontFamily = 'Arial, sans-serif';
+            var span = document.createElement('span');
+            span.textContent = visitorCountValue.nodeValue;
+            span.style.backgroundColor = 'blue';
+            span.style.color = 'white';
+            span.style.fontFamily = 'Arial, sans-serif';
+            visitorCountElement.parentNode.insertBefore(span, visitorCountElement.nextSibling);
+            visitorCountElement.parentNode.removeChild(visitorCountValue);
           }
         }
       });
     </script>
   </td>
 </tr>
+
 
 
 
