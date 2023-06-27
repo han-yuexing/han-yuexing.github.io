@@ -136,21 +136,27 @@ setInterval("changeColor()",200); 
       window.addEventListener("load", function() {
         var visitorCountElement = document.getElementById('visitorCount');
         if (visitorCountElement) {
-          var visitorCountValue = visitorCountElement.nextSibling;
-          if (visitorCountValue && visitorCountValue.nodeType === Node.TEXT_NODE) {
-            var span = document.createElement('span');
-            span.textContent = visitorCountValue.nodeValue;
-            span.style.backgroundColor = 'blue';
-            span.style.color = 'white';
-            span.style.fontFamily = 'Arial, sans-serif';
-            visitorCountElement.parentNode.insertBefore(span, visitorCountElement.nextSibling);
-            visitorCountElement.parentNode.removeChild(visitorCountValue);
-          }
+          var visitorCountValue = document.createTextNode('');
+          visitorCountElement.parentNode.insertBefore(visitorCountValue, visitorCountElement.nextSibling);
+
+          var xhr = new XMLHttpRequest();
+          xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              var response = xhr.responseText;
+              visitorCountValue.textContent = response;
+              visitorCountValue.style.backgroundColor = 'blue';
+              visitorCountValue.style.color = 'white';
+              visitorCountValue.style.fontFamily = 'Arial, sans-serif';
+            }
+          };
+          xhr.open("GET", "https://www.freevisitorcounters.com/en/home/counter/1007804/t/1", true);
+          xhr.send();
         }
       });
     </script>
   </td>
 </tr>
+
 
 
 
