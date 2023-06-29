@@ -7,7 +7,16 @@
 <script src="css/5grid/init.js?use=mobile,desktop"></script>
 <!--<script src="js/jquery.formerize-1.1.js"></script>-->
 <script src="js/init.js"></script>
+	
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    var busuanziValue = document.getElementById('busuanzi_value_site_pv').textContent;
+    var displaySpan = document.getElementById('display-value');
+    displaySpan.textContent = busuanziValue;
+});
+</script>
 
+	
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>韩越兴--网站首页</title>
 <link href="./images/web.css" rel="stylesheet" type="text/css">
@@ -132,6 +141,7 @@ setInterval("changeColor()",200); 
 		<span id="busuanzi_container_site_pv">
 		    本站总访问量<span id="busuanzi_value_site_pv"></span>次
 		</span>
+		<span id="display-value"></span>
       		</td>
       </tr>
 
