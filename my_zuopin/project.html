@@ -41,22 +41,26 @@
 	               font-size: 12px;
 	           }
 			   .gallery {
-			               display: flex;
-			               flex-wrap: wrap;
-			               gap: 10px; /* 设置图片之间的间隔 */
-			           }
-			           .gallery .image-container {
-			               width: calc(50% - 10px); /* 计算宽度，减去gap的一半 */
-			               margin-bottom: 20px; /* 图像底部的间隔 */
-			           }
-			           .gallery img {
-			               width: 80%; /* 图片宽度充满容器 */
-			               display: block; /* 防止图片下方出现空隙 */
-			           }
-			           .gallery .caption {
-			               text-align: center; /* 图片标题居中 */
-			               font-size: 14px; /* 图片标题文字大小 */
-			           }
+    display: flex;
+    flex-wrap: nowrap; /* 不换行，让图片在一行显示 */
+    gap: 5px; /* 减小图片之间的间隔 */
+}
+
+.gallery .image-container {
+    width: calc(50% - 5px); /* 减小gap后相应调整容器宽度 */
+    margin-bottom: 20px; /* 图像底部的间隔 */
+}
+
+.gallery img {
+    width: 100%; /* 图片宽度充满容器，可以根据需要调整 */
+    display: block; /* 防止图片下方出现空隙 */
+}
+
+.gallery .caption {
+    text-align: center; /* 图片标题居中 */
+    font-size: 14px; /* 图片标题文字大小 */
+}
+
 			   .centered-image-container {
 				            text-align: center; /* 使图片在容器中居中 */
 				            margin-bottom: 20px; /* 图片下方的间隔 */
