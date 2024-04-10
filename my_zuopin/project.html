@@ -43,18 +43,22 @@
 .gallery {
     display: flex;
     flex-wrap: nowrap; /* 不换行，让图片在一行显示 */
-    gap: 5px; /* 减小图片之间的间隔 */
+    align-items: flex-start; /* 防止由于不同图片高度导致的对齐问题 */
+    gap: 5px; /* 图片之间的间隔 */
 }
 
 .gallery .image-container {
-    width: calc(50% - 5px); /* 减小gap后相应调整容器宽度 */
+    flex: 0 0 calc(50% - 5px); /* flex-basis 设为计算后的宽度 */
+    max-width: calc(50% - 5px); /* 限制最大宽度以适应gap */
     margin-bottom: 20px; /* 图像底部的间隔 */
 }
 
 .gallery img {
-    width: 80%; /* 图片宽度充满容器，可以根据需要调整 */
-    display: block; /* 防止图片下方出现空隙 */
+    width: 80%; /* 图片占用容器的80%宽度 */
+    margin: 0 auto; /* 上下不添加空间，水平居中图片 */
+    display: block;
 }
+
 
 .gallery .caption {
     text-align: center; /* 图片标题居中 */
