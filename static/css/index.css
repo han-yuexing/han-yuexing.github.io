@@ -1,0 +1,207 @@
+@font-face {
+	font-family: MiSans;
+	src: url("../fonts/MiSans-Normal.ttf");
+}
+
+body {
+    background-image: url(../../images/bj.gif);
+    font-family: MiSans, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.text-section {
+    margin-left: 16px;
+    font-family: MiSans, sans-serif; /* 备用字体 */
+    font-size: 16px;
+}
+
+.image-section img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.content {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content h1 {
+    font-size: 22px;
+    color: #333;
+}
+
+.content h2 {
+    font-size: 15px;
+    color: #555;
+}
+
+.content p, .content a {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.reference {
+    background-color: #f9f9f9;
+    border-left: 4px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.reference p {
+    font-size: 12px;
+}
+
+div {
+    margin: 20px auto;
+}
+
+td img{
+    border-radius: 10px;
+}
+        
+.word {
+    display: block;
+    font-family: MiSans, sans-serif;
+    font-size: 15px;
+    text-indent: 2em;
+}
+
+.STYLE3 {
+	font-family: MiSans, sans-serif;
+	font-size: 16px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: nowrap; /* 不换行，让图片在一行显示 */
+    align-items: flex-start; /* 防止由于不同图片高度导致的对齐问题 */
+    gap: 5px; /* 图片之间的间隔 */
+}
+
+.gallery .image-container {
+    flex: 0 0 calc(50% - 5px); /* flex-basis 设为计算后的宽度 */
+    max-width: calc(50% - 5px); /* 限制最大宽度以适应gap */
+    margin-bottom: 20px; /* 图像底部的间隔 */
+}
+
+.gallery img {
+    width: 80%; /* 图片占用容器的80%宽度 */
+    margin: 0 auto; /* 上下不添加空间，水平居中图片 */
+    display: block;
+}
+
+.gallery .caption {
+    text-align: center; /* 图片标题居中 */
+    font-size: 14px; /* 图片标题文字大小 */
+}
+
+.centered-image-container {
+    text-align: center; /* 使图片在容器中居中 */
+    margin-bottom: 20px; /* 图片下方的间隔 */
+}
+.centered-image-container img {
+    max-width: 70%; /* 最大宽度为容器宽度，以适应屏幕大小 */
+    height: auto; /* 高度自动调整以保持图片比例 */
+}
+.caption {
+    text-align: center; /* 图片说明文字居中 */
+    font-size: 14px; /* 图片说明文字大小 */
+}
+
+.main-table {
+    width: 960px;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+
+.main-table, .main-table th, .main-table td {
+    border-collapse: collapse;
+}
+
+.main-table th, .main-table td {
+    border: 0; /* 如果需要边框，可以设置边框样式 */
+    padding: 0; /* 如果需要单元格内边距，可以设置padding */
+    margin: 10px;
+}
+
+.inside-table {
+    width: 100%; /* 表格宽度为100% */
+    border: 0; /* 没有边框 */
+    border-spacing: 0; /* 单元格之间的间距为0 */
+    border-collapse: collapse; /* 边框合并为一个单一的边框 */
+}
+
+.inside-table th, .inside-table td {
+    padding: 0; /* 单元格内边距为0 */
+}
+
+.table-block {
+    width: 88%; /* 表格宽度为容器宽度的88% */
+    height: 88%; /* 表格高度为容器高度的88% */
+    border-spacing: 0; /* 单元格之间的间距为0 */
+    border-collapse: separate; /* 单元格边框分开显示 */
+    margin-left: auto; /* 左外边距自动 */
+    margin-right: auto; /* 右外边距自动 */
+}
+
+.table-block td, .table-block th {
+    padding: 10px; /* 单元格内边距为10px */
+}
+
+
+.page-switcher {
+    opacity: 0.65;
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 960px;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+
+.page-switcher, .page-switcher th, .main-table td {
+    border-collapse: collapse;
+}
+
+.page-switcher th, .page-switcher td {
+    border: 0; /* 如果需要边框，可以设置边框样式 */
+    padding: 0; /* 如果需要单元格内边距，可以设置padding */
+    margin: 10px;
+}
+
+.hover-effect {
+    transition: background-color 0.3s, box-shadow 0.3s; /* 可选，用于平滑过渡颜色变化和阴影变化 */
+    border-radius: 10px; /* 设置圆角大小，可以根据需要调整 */
+    padding: 10px; /* 根据需要设置内边距 */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* 初始阴影设置为透明 */
+}
+
+.hover-effect:hover {
+    background-color: gray; /* 鼠标悬停时的背景颜色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 鼠标悬停时的阴影效果 */
+}
+
+.backToTop {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    position: fixed;
+    _position: absolute;
+    z-index: 9999;
+    bottom: 0px;
+    right: 50px;
+    display: none;
+    height: 80px;
+    width: 65px;
+    cursor: pointer;
+    color: #272727;
+}
