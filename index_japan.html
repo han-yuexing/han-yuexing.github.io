@@ -1,2275 +1,570 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-	
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="css/5grid/init.js?use=mobile,desktop"></script>
-<!--<script src="js/jquery.formerize-1.1.js"></script>-->
-<script src="js/init.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>韓越興 - ウェブサイトのホームページ</title>
-<link href="./images/web.css" rel="stylesheet" type="text/css">
-
-<style type="text/css">
-
-div{
-       margin: 20px auto;
-        }
-        td img{
-            border-radius: 10px;
-           
-        }
-        
-	.word {
-	font-family: '黑体';
-	font-size: 16px;
-}
-	
-<!--
-.STYLE1 {
-	color: #990000;
-	font-weight: bold;
-}
-.STYLE2 {color: #990000}
--->
-</style>
-
-<link href="./images/bw.css" type="text/css" rel="stylesheet"><style type="text/css">
-<!--
-body {
-	background-image: url(./images/bj.gif);
-}
-.STYLE3 {
-	font-family: '黑体';
-	font-size: 16px;
-}
--->
-</style>
-<script type="text/JavaScript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-
-function MM_CheckFlashVersion(reqVerStr,msg){
-  with(navigator){
-    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
-    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
-    if (!isIE || !isWin){  
-      var flashVer = -1;
-      if (plugins && plugins.length > 0){
-        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
-        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
-        if (desc == "") flashVer = -1;
-        else{
-          var descArr = desc.split(" ");
-          var tempArrMajor = descArr[2].split(".");
-          var verMajor = tempArrMajor[0];
-          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
-          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
-          flashVer =  parseFloat(verMajor + "." + verMinor);
-        }
-      }
-      // WebTV has Flash Player 4 or lower -- too low for video
-      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
-
-      var verArr = reqVerStr.split(",");
-      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
-  
-      if (flashVer < reqVer){
-        if (confirm(msg))
-          window.location = "http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
-      }
-    }
-  } 
-}
-//-->
-<!--文字闪烁 使用id blink -->
-function changeColor()
-{ 
-  var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|gray"; 
-  color=color.split("|"); 
-  document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)]; 
-} 
-setInterval("changeColor()",200); 
-</script>
-
+<link href="./static/css/web.css" rel="stylesheet" type="text/css">
+<link href="./static/css/bw.css" rel="stylesheet" type="text/css">
+<link href="./static/css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./static/js/utils.js"></script>
 </head>
+
 <body>	
-  <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-    <tbody> 
-
-
-
-	    
-<tr>
-	<td width="960" height="150" valign="top" background="./images/top.jpg" style="background-position:79% 30%;"> 
-	      		 <a href="index_japan.html" class="link1" target="_self"><span class="countryLanguage">日本語</span></a>
-	      		 <a href="index_japan.html" class="link1" target="_self"><img src="./images/language/Japan.jpg" alt="" class="countryImage"></a>
-	      		 <a href="index_english.html" class="link1" target="_self"><span class="countryLanguage">English&nbsp;|</span></a>
-	      		 <a href="index_english.html" class="link1" target="_self"><img src="./images/language/Usa.jpg" alt="" class="countryImage"></a>
-	      		 <a href="index.html" class="link1" target="_self"><span class="countryLanguage">中文&nbsp;|</span></a>
-	      		 <a href="index.html" class="link1" target="_self"><img src="./images/language/China.jpg" alt="" class="countryImage"></a>
-			 <span id="busuanzi_container_site_pv" style="background-color: #AAAAFF;">本サイトの総アクセス数</span><span id="busuanzi_value_site_pv" style="background-color: #AAAAFF;">回目</span>
-	      		</td>
-		 </tr>
-
-
+  <table class="main-table">
+    <tbody>    
+      <tr>
+        <td width="960" height="150" valign="top" background="./images/top.jpg" style="background-size: 133.3%; background-position:79% 30%;"> 
+          <a href="index_japan.html" class="link1" target="_self"><span class="countryLanguage">日本語</span></a>
+          <a href="index_japan.html" class="link1" target="_self"><img src="./images/language/Japan.jpg" alt="" class="countryImage"></a>
+          <a href="index_english.html" class="link1" target="_self"><span class="countryLanguage">English&nbsp;|</span></a>
+          <a href="index_english.html" class="link1" target="_self"><img src="./images/language/Usa.jpg" alt="" class="countryImage"></a>
+          <a href="index.html" class="link1" target="_self"><span class="countryLanguage">中文&nbsp;|</span></a>
+          <a href="index.html" class="link1" target="_self"><img src="./images/language/China.jpg" alt="" class="countryImage"></a>
+        </td>
+      </tr>
 
       <tr>
         <td background="images/menu.png" height="35" width="960">
-          <table border="0" cellpadding="0" cellspacing="0" height="35" width="100%">
+          <table style="border: 0; padding: 0; border-spacing: 0; height: 35px; width: 100%;">
             <tr>
-             <td align="center"><a href="index.html" class="link1" target="_self">ウェブサイトのホームページ</a></td>
-              <td align="center"><a href="my_zuopin/cv.html" class="link1" target="_self">初めまして</a></td>
-              <td align="center"><a href="my_zuopin/research.html" class="link1" target="_self">本研究の目的は</a></td>
-              <td align="center"><a href="my_zuopin/project.html" class="link1" target="_self">プロジェクトへの参加</a></td>
-              <td align="center"><a href="my_zuopin/teach.html" class="link1" target="_self">教育の目的は</a></td>
-              <td align="center"><a href="my_zuopin/other.html" class="link1" target="_self">もちろんです</a></td>
-              <td align="center"><a href="my_zuopin/map.html" class="link1" target="_self">申し訳ありませんが</a></td>
+              <td style="text-align: center"><a href="index_japan.html" class="link1" target="_self">ホームページ</a></td>
+              <td style="text-align: center"><a href="my_zuopin/japanese/cv.html" class="link1" target="_self">自己紹介</a></td>
+              <td style="text-align: center"><a href="my_zuopin/japanese/research.html" class="link1" target="_self">研究紹介</a></td>
+              <td style="text-align: center"><a href="my_zuopin/japanese/project.html" class="link1" target="_self">プロジェクト参加</a></td>
+              <td style="text-align: center"><a href="my_zuopin/japanese/teach.html" class="link1" target="_self">指導紹介</a></td>
+              <td style="text-align: center"><a href="my_zuopin/japanese/other.html" class="link1" target="_self">その他のコンテンツ</a></td>
+              <td style="text-align: center"><a href="my_zuopin/japanese/map.html" class="link1" target="_self">コンタクトマップ</a></td>
             </tr>
-              <tbody>
-              </tbody>
+            <tbody></tbody>
           </table>
         </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <!------------------------------李睿琪 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-      
-      
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023年</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">チームの最近の成果：スクリブル注釈に基づく弱監督擬似ラベルテクスチャセマンティックセグメンテーション（PTS）ネットワーク</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-    	    <td >
-    		     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp私たちのチームは、国際ジャーナル「Expert Systems With Applications」（IF: 8.5、コンピュータサイエンス1区TOP）にて「A pseudo-labeling based weakly supervised segmentation method for few-shot texture images」という論文を発表しました。この論文では、上海大学コンピュータ工学科学学院が第一機関であり、Han Yuexingが第一著者、Li Ruiqiが第二著者、Han YuexingとChen Qiaochuanが共同通信著者であることをご報告いたします。</span><br>                 
-    	    </td>
-            </tr>
-            </tbody>
-          </table> 
-      
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-    			<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/liruiqi_PTS1.png" width="60%" height="60%"/></p></td>
-    	
-    		 </tr>
-          </table>
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-    	    <td >
-    		<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;基于深度学习的材料微结构图像分割面临着样本稀缺、注释难度和模型通用化等问题。在具有复杂纹理的材料图像中，不同物相之间的边界往往难以精确地划分。这些问题导致了现有的深度学习网络在材料微观结构图像分割上的性能不佳。为了解决这些问题，本文提出了一种基于划线标注的弱监督伪标记纹理语义分割（PTS）网络。相较于完全标注，划线标注只需要对少数具有明确类别的像素进行标注，这显著减少了标注工作所需要的领域知识。然而，划线标注所覆盖的像素数量极少，不易对复杂的神经网络进行充分的监督学习。因此，PTS 网络通过在训练阶段生成伪标签，获取更多可用的监督信息。
-  如上图所示，PTS网络采用双分支结构，包含主分支和辅助分支两个部分。主分支用于提取图像特征和分割预测，辅助分支用于生成伪标签，帮助主分支进行训练，从而实现对主分支分割预测结果的双重监督（划线标注与伪标签）。在测试阶段，只有主分支被用于预测图像的分割结果。PTS网络实现了基于一到两张划线标注的复杂纹理材料图像，训练得到具有泛化能力的图像分割模型，且模型具有普适性。下图是不同模型在钛合金数据集上基于划线标注的分割结果。</span>
-      </table>
-  
-        <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-    			<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/liruiqi_PTS2.png" width="60%" height="60%"/></p></td>
-    	
-    		 </tr>
-          </table>
-  		
-  		<table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-  		          <tbody>
-  		          <tr>   
-  		  	    <td >
-  		  		<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;深層学習に基づく材料の微視的構造画像のセグメンテーションは、サンプルの希少性、注釈の難しさ、およびモデルの汎用性などの問題に直面しています。複雑なテクスチャを持つ材料画像では、異なる相の境界を正確に区別することが困難です。これらの問題により、既存の深層学習ネットワークは材料の微視的構造画像のセグメンテーションにおいて性能が低下します。これらの問題を解決するために、本論文では、スクリブル注釈に基づく弱監督擬似ラベルテクスチャセマンティックセグメンテーション（PTS）ネットワークを提案しています。スクリブル注釈は完全な注釈よりも少数の明確なカテゴリのピクセルにのみ注釈を付けるため、ドメイン知識に必要な注釈作業を著しく減らすことができます。しかし、スクリブル注釈はカバーするピクセル数が非常に少なく、複雑なニューラルネットワークに対して十分な教師あり学習を提供することは困難です。そのため、PTSネットワークはトレーニング段階で擬似ラベルを生成し、より多くの利用可能な教師情報を取得します。上図に示すように、PTSネットワークは主分岐と補助分岐の2つの部分からなるデュアルブランチ構造を採用しています。主分岐は画像特徴の抽出とセグメンテーションの予測に使用され、補助分岐は擬似ラベルの生成に使用され、主分岐のトレーニングを支援します。これにより、主分岐のセグメンテーション予測結果に対する二重監督（スクリブル注釈と擬似ラベル）が実現されます。テスト段階では、画像のセグメンテーション結果を予測するために主分岐のみが使用されます。PTSネットワークは、スクリブル注釈に基づく複雑なテクスチャ材料画像に対して1〜2つのスクリブル注釈を使用し、汎化能力を持つ画像セグメンテーションモデルをトレーニングし、モデルは汎用性を持っています。下図は異なるモデルによるチタン合金データセット上でのスクリブル注釈を使用したセグメンテーション結果を示しています。
-				</span>
-  		    </table>
-  			
-  		<table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-  		     <tr>
-  		  			<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/liruiqi_PTS3.png" width="60%" height="60%"/></p></td>
-  		  	
-  		  		 </tr>
-  		  </table>
-  		
-  		
-    	  
-    	
-    	<!--人物照片-->
-    		<table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-    		  <tr>
-    		  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2020/newPostgraduate/02.jpg" width="60%" height="60%"/></p></td>
-    				
-    					 </tr>
-    	
-    	   	</div>		   
-    	</table> 	
-    			
-    		
-           <br>
-    		  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私たちのコードと論文は、以下の場所で公開されています：<a href="https://github.com/han-yuexing/Scribble_Segmentation" target="_blank">https://github.com/han-yuexing/Scribble_Segmentation</a>
-    		  </span>
-    	        <br>
-    	    </td>
-        </tr>
-        </tbody>
-        </table> 
-        <p> </p>   
-      
-  
-  
-  
-  <!------------------------------表格文本性能预测 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-      
-      
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023年</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">最近のチームの成果：材料科学の出版物のテキストと表データの統合に基づく文献マイニング手法の開発</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-    	    <td >
-    		     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp私たちのチームは、国際ジャーナル『Computational Materials Science』（IF: 3.3000）にて「材料科学の出版物におけるテキストと表データの統合に基づく文献マイニング手法」と題する論文をオンラインで発表しました。この論文では、上海大学コンピュータ工学と科学学院が第一機関となり、第一著者は張瑞副教授、第二著者は張家旺氏であり、通信著者は韓越兴副教授です。</span><br>                 
-    	    </td>
-            </tr>
-            </tbody>
-          </table> 
-      
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-    			<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/zhangjiawang_paper_pic.png" width="60%" height="60%"/></p></td>
-    	
-    		 </tr>
-          </table>
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-    	    <td >
-    		<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;科学文献は研究成果を示す重要な手段であり、本研究では大規模な材料科学文献情報処理手法を提案し、文献からテキストと表データをそれぞれ抽出し分析しました。まず、汎用的な動的ワードベクトルとドメイン固有の静的ワードベクトルを組み合わせた材料テキストの固有表現認識モデルを提案しました。次に、効率的かつ正確な画像型表データの認識と成分抽出手法を提案し、成分表から材料名、単位、および成分を抽出しました。最後に、テキストと表データから抽出した成分、プロセス、性能、および性能変化を使用して、機械学習を用いて耐食性、延性、強度、および硬度を予測しました。本研究ではステンレス鋼をデモ素材とし、11058件のステンレス鋼材料文献から236万のエンティティと7970の成分を抽出し、4つの性能変化を予測しました。提案された手法は、材料科学文献からの知識の大規模な抽出を実現し、関連する研究者に利用可能な抽出結果を提供し、材料性能改善の促進に役立ちます。
-			</span>
-    	  
-    	
-    	<!--人物照片-->
-    		<table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-    		  <tr>
-    		  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/zhangjiawang2021.jpg" width="60%" height="60%"/></p></td>
-    				
-    					 </tr>
-    	
-    	   	</div>		   
-    	</table> 	
-    			
-    		
-           <br>
-    		  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="paper/2023/zhangjiawang_publish.pdf" target="_blank">A literature-mining method of integrating text and table extraction for materials science publications</a>
-    		  </span>
-    	        <br>
-    	    </td>
-        </tr>
-        </tbody>
-        </table> 
-        <p> </p>   
-      
-      
-      
-      
-   <!-----------------------------------------------------------------欢迎2023届新生黄志怡、李睿杰、葛嘉浩、徐天洋、李子铭--------------->
-    
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2021.09.18</span></td>
-              <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">2023年度の新入生、黄志怡さん、李睿杰さん、葛嘉浩さん、徐天洋さん、李子銘さん、チームへようこそ！</span></td>      
-            </tr>
-          </table>
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            
-           <div>
-              
-              <table   cellpadding=10 cellspacing=0 width=88% height=88% align="center" >
-                  <tbody>
-                      <tr>
-                      <td align="center" ><img src="./images/indexPic/2023/huangzhiyi2023.jpg" width="280" height="290"></td>
-                      <td ><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黄志怡さんは、首都師範大学でコンピュータ科学と技術の専攻を学び、現在は上海大学でコンピュータ科学と技術の修士課程に在籍しています。彼女は明るく楽観的な性格で、感情の安定しており、人々との関わりが良いです。映画やアニメを見たり、音楽を聴いたりすることが好きで、新しいものを受け入れることに喜びを感じています。彼女は積極的で向上心があり、計画的に物事に取り組む傾向があります。上海大学で新たな旅を始め、しっかりと学び、体を鍛え、前進し続けることを期待しています！</span></td>
-                      </tr>
-    
-                  <tr>
-                   <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;葛嘉浩さんは男性で、上海大学のコンピュータ学院コンピュータ科学と技術系で学士号を取得し、現在は上海大学のコンピュータ学院で研究生として学んでいます。彼は内向的な性格でありながらも人に対して友好的であり、物事に対して好奇心を持ち、生活を愛しています。彼の趣味は幅広く、音楽を聴くことや写真を撮ること、そして水泳が好きです。彼は研究生活で専門能力を向上させ、知識を得て成長し続けることを望んでいます。</span></td>
-                     <td align="center" ><img src="./images/indexPic/2023/gejiahao2023.jpg" width="280" height="290"> </td>
-                      </tr>
-    
-                      <tr>
-                          <td  align="center"><img src="./images/indexPic/2023/lizimin2023.jpg" width="280" height="290"></td>
-                          <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;李子銘さんは男性で、山東建築大学でソフトウェアエンジニアリング（ソフトウェア開発方向）を専攻して学士号を取得しました。現在は上海大学でコンピュータ科学と技術の修士課程に在籍しています。彼は明るく、思考が活発で楽観的な性格を持っており、日常的には音楽を聴いたり映画を観たりすることが好きです。彼は研究生期間の学習と実践を通じて、自身の視野をさらに広げ、優れた友人と出会い、学術能力を向上させることを望んでいます。</span></td>
-                      </tr>
-                      <tr>
-                          <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徐天洋さんは男性で、常州大学で学士号を取得し、現在は上海大学のコンピュータ科学と技術の修士課程に在籍しています。彼は楽観的で勇敢で、生活を愛するINFJタイプの人です。音楽、映画、フィットネスが彼の趣味であり、ギターも少し弾くことができます。彼は仕事に集中し、真剣に取り組み、時折奇想天外なアイデアを思いつくことがあります。研究の道は挑戦に満ちており、学ぶ道のりが意義深くなるのです。</span></td>
-                          <td  align="center"><img src="./images/indexPic/2023/xutianyang2023.jpg" width="280" height="290"></td>
-                      </tr>
-  					
-  		    <tr>
-  		        <td  align="center"><img src="./images/indexPic/2023/liruijie2023.jpg" width="280" height="290"></td>
-  		        <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;李睿杰さんは、上海大学のコンピュータ工学と科学学院で学士号を取得し、現在は上海大学のコンピュータ工学と科学学院の電子情報専攻の修士課程に在籍しています。彼は人懐っこく明るい性格で、責任感があります。ゲームをしたり、音楽を聴いたり、自転車に乗ったりなど、現実から離れる活動を楽しむことが好きです。あらゆるコンピュータの学術的な問題や実践的な問題に強い興味を持っており、修士課程で学術水準と専門能力を高め、同僚や先輩と共に成長することを望んでいます。</span></td>
-  		    </tr>
-  					
-                  
-                  </tbody>
-              </table> 
-    
-          </div>
-    
-          <p>　</p>
-    	
-  
-  
-  
-  
-  <!-------------------------------在 850℃下老化的 2205 双相不锈钢中析出物的微观结构演变和粗化行为 -------------------------------------------------->
-      
-      <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-        <tr>
-          <td>
-    	  
-    
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+  <!-----------------------------------------------------------------欢迎2024届新生曹臻、陈易铭、李杨、桑晨、张昊轩、张文俊、赵寅康--------------->
+  <table class="main-table">
+    <tr>
+      <td>
+        <table class="inside-table">
+          <tr>
+            <td style="height: 30px; width: 13%; background-color: #CCCCCC; text-align: center;">
+              <span class="STYLE3">2024.10.22</span>
+            </td>
+            <td style="height: 30px; background-color: #CCCCCC;">
+              <span class="STYLE3">2024期新入生の曹臻、陳易銘、李楊、桑晨、張昊軒、張文俊、趙寅康のグループ入りを歓迎します！</span>
+            </td>      
+          </tr>
+        </table>
+        <table class="inside-table"> 
+          <div>
+            <table class="table-block">
+              <tbody>
                 <tr>
-                  <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023年</span></td>
-                  <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">私たちのチームは--850℃で老化させた2205二相ステンレス鋼中の析出物の微視的構造進化と粗化挙動に関する成果を上げました</span></td>
+                  <td style="text-align: center">
+                    <img data-lazy-src="./images/indexPic/2024/caozhen2024.jpg" width="280" height="290">
+                  </td>
+                  <td>
+                    <span class="word">曹臻、男、本科と修士は上海大学コンピュータ工学と科学学院に進学し、現在は電子情報専攻である。言葉は面白く、態度は積極的で楽観的で、無厘頭と抽象的なものが好きで、日常の趣味はバドミントン、ランニング、店探しです。大学院生の学業期間中に自分の能力を全面的に鍛えることができて、共に進歩した学友を丈夫にして、体を丈夫にすると同時に専門の学術能力を育成することができることを望んでいます。</span>
+                  </td>
                 </tr>
-            </table>
-           				
-              <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-              <tbody>
-              <tr>   
-    		    <td >
-    			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp私たちのチームは、国際学術誌『Journal of Materials Research and Technology』（IF：6.4、中科院1区トップ）にて、「Microstructural evolution and coarsening behavior of the precipitates in 2205 duplex stainless steel aged at 850℃」という論文をオンラインで発表しました。この論文では、上海大学コンピュータ工学と科学学院が第一所属機関であり、韓越兴さんが第一著者、池洳婷さんが第二著者となっています。また、材料ゲノム工学研究院の劉微先生は多くのサポートと助けを提供してくださいました。共同通信著者として、韓越兴准教授と材料科学と工程学院の何燕霖教授が名を連ねています。</span><br>                 
-  		    </td>
-              </tr>
-              </tbody>
-            </table> 
-    
-             <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-               <tr>
-    				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/chi_DSS.png" width="60%" height="60%"/></p></td>
-  		
-  			 </tr>
-            </table>
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-              <tbody>
-              <tr>   
-    		    <td >
-    			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2205二相不锈钢（DSS）において、第二相の形成はその機械的性能に大きな影響を与えます。2205 DSS中の析出相の微視的な構造の進化と粗化挙動の研究は、科学的および技術的な意味を持ちます。現在の研究では、SEM/EDS（走査電子顕微鏡/エネルギー分散X線分析装置）およびTEM（透過電子顕微鏡）を用いて、850℃で200時間にわたり粗化が進行した2205 DSS中の析出物の成分と形態の変化を系統的に研究しました。さらに、深層学習とデジタル画像処理技術を利用し、SEM画像に基づいて金属間化合物の析出物、特にσ相のサイズ統計を行いました。これに基づいて、オストワルト粗化機構に基づいてσ相とγ相の平均的な相間エネルギーを合理的に推定しました。この研究は、2205 DSS中の析出物の微視的構造の進化と粗化挙動について包括的な理解を提供します。</span>
-    		  
-  		
-  		<!--人物照片-->
-  			<table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-  			  <tr>
-  			  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/chirutin.jpg" width="60%" height="60%"/></p></td>
-  					
-  						 </tr>
-  		
-  		   	</div>		   
-  		</table> 	
-  				
-  			
-    	       <br>
-  			  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://www.sciencedirect.com/science/article/pii/S223878542301846X" target="_blank">Material structure segmentation method based on graph attention</a>
-  			  </span>
-  		        <br>
-  		    </td>
-    	    </tr>
-          </tbody>
-          </table> 
-          <p> </p>   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-------------------------------四位同学回校 -------------------------------------------------->
-        
-        <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-          <tr>
-            <td>
-      	  
-      
-              <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023.3.18</span></td>
-                    <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">四名卒業生が学校に戻ってきた</span></td>
-                  </tr>
-              </table>
-             				
-                <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-                <tbody>
-                <tr>   
-      		    <td >
-      			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;上海大学を卒業した2020年の修士課程生、王迎港さん、刘宇虹さん、夏锦桦さん、李睿祺さんは、母校を訪れ、かつてのキャンパス生活を振り返り、かつての指導教員である韩越兴先生と多くの交流をしました。この帰校の旅では、彼らは仕事や生活での経験や感想を共有し、母校への深い感情と愛情を表現しました。卒業して間もない彼らが学校に戻ってきたことにより、数々の感慨に胸を打たれました。このキャンパスは彼らの成長と変化を見守ってきた場所であり、ここでのすべてが彼らに感謝と大切さを与えてくれます。
-
-かつての指導教員である韩先生との交流の中で、3人の修士課程生は仕事や生活の経験や感想を共有しました。彼らは修士課程時代の学びと生活が彼らをより自信を持ち、独立した存在にし、職業生活の堅固な基盤を築いたと感じています。同時に、彼らは指導教員に対する感謝と敬意を表し、指導と助けが彼らの成長と発展に重要な役割を果たしたと認識しています。
-
-この帰校の旅は、3人の修士課程生に母校の魅力と使命を再び感じさせ、母校の発展と進歩に対する彼らの尊重と関心を高めました。彼らは、どこにいても常に母校の発展と進歩を注視し、支援する意思を持っており、学校と社会への貢献を果たすことを表明しています。
-    </span><br>                 
-                </td>
-                </tr>
-                </tbody>
-              </table> 
-      
-               <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-                 <tr>
-    				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/2020_huixiao.jpg" width="80%" height="80%" style="border-radius:0%"/></p></td>
-    			 </tr>
-              </table>
-    
-    
-    
-    
-    
-   <!-------------------------------本科毕业 -------------------------------------------------->
-    
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-    		
-    <tr>
-      <td>
-    		
-    		      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023.06.18</span></td>
-            <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">祝贺2023届本科生顺利毕业！</span></td>      
-          </tr>
-        </table>
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    	
-    		<div>
-    							
-            <table   cellpadding=10 cellspacing=0 width=88% height=88% align="center" >
-                <tbody>
-                    <tr>
-                    <td ><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黄子昂さん、姚知远さん、吴泽铭さん、葛家浩さん、贺维琪さん、吴文杰さん、徐甜语さん、王英尧さんの卒業を心よりお祝い申し上げます！皆さんは上海大学のコンピュータ科学と技術専攻で学士号を取得し、卒業設計も韩先生の指導のもとで完了しました。 <br>		  
-  				  &emsp;&emsp;黄子昂さんの卒業設計は、材料画像データベースシステムプラットフォームの研究と開発に関するもので、データのアップロード、データの検索、アルゴリズムの利用が可能なシステムプラットフォームを構築することを目指しています。フロントエンドのページへのアクセスと操作を提供し、バックエンドシステムではデータの保存、検索、アルゴリズムの呼び出しが行えるようにします。最終的には、単一または複数の材料画像の重要なデータを検索、処理するなどの作業が可能になります。<br>
-  				  &emsp;&emsp;姚知远さんの卒業設計は、材料文献データベースシステムプラットフォームの研究と開発に関するもので、単一または複数の材料文献の重要なデータを検索、処理するなどの作業が可能なシステムを実現することを目指しています。 <br>
-  				  &emsp;&emsp;吴泽铭さんの卒業設計は、ビデオ処理に基づく街路環境の評価システムの研究と開発に関するものです。この研究では、ビデオ処理に基づく深層学習アルゴリズムと画像処理の研究を基に、街路環境の評価システムを構築し、評価スコアを提供します。<br>
-  				  &emsp;&emsp;葛家浩さんの卒業設計は、異なるビデオのキーフレーム内容の融合方法に関する研究です。この研究では、ビデオ処理を基に、あるビデオからキーフレームを分割し、そのキーフレームの映像を別のビデオに投影することで、異なるビデオのコンテンツを融合することを目指しています。<br>
-  				  &emsp;&emsp;贺维琪さんの卒業設計は、炭素繊維樹脂複合材料データベースの構築と開発に関するもので、炭素繊維樹脂複合材料のさまざまなデータの複雑さに対応するため、効率的な管理が必要です。データのテンプレートが与えられた状況下で、炭素繊維樹脂複合材料データベースの構築と開発を実現します。<br>
-  				  &emsp;&emsp;吴文杰さんの卒業設計は、銅合金の微視的組織画像から結晶粒の形状を抽出し統計する方法に関する研究です。この研究では、電子工業で広く使用されている銅合金を例に、材料画像のセグメンテーションと認識に基づいたアルゴリズムを開発し、合金の微視的組織画像から定量的な特徴を抽出し、力学的および電気的性能と関連付けます。これにより、合金材料の組織に基づいた性能予測と設計の基礎を築きます。<br>
-  				  &emsp;&emsp;徐甜语さんの卒業設計は、学術文献の知識グラフの構築に関する研究と開発です。この研究では、自然言語処理技術と機械学習アルゴリズムを応用し、学術文献から知識を自動的に抽出し、知識グラフを生成し、可視化表示するツールを設計します。<br>
-  				  &emsp;&emsp;王英尧さんの卒業設計は、C++における高並行性メモリプールの開発に関するものです。このプロジェクトは、Googleのオープンソースプロジェクトであるtcmallocをベースにし、コアフレームワークを簡素化して、簡易版の高並行性メモリプールを実装しました。<br>
-  				  </span></td>
-                    </tr>
-                </tbody>
-            </table> 
-    	
-    		</div>
-    		
-    		      <p>　</p>
-           
-  			
-  	
-  			
-  			
-  			
-  			
-  			
-  			 
-    
-    <!-------------------------------恭喜王迎港利毕业 -------------------------------------------------->	
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023.07.05</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">王迎港さんの卒業を心よりお祝い申し上げます！</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-    	    <td >
-    		     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;王迎港さんは、華僑大学で電気工学及び自動化専攻の学士号を取得し、2020年秋に上海大学のコンピュータ学院でソフトウェア工学専攻の修士号を取得するための研究を開始しました。王迎港さんは、陳侨川先生、韓越兴先生、そして張瑞先生の指導のもと、科学文献中の曲線情報処理方法に関する研究に取り組みました。先生方のご指導のもと、以下の研究を完成させました：</span><br>                 
-            </td>
-            </tr>
-            </tbody>
-          </table> 
-    		
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-    	    <td >
-    		<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;1. まず、本研究では、現在の科学文献で広く存在する曲線座標グラフのデータ抽出の難しさと時間のかかる作業に取り組みます。曲線画像は多様な描画方法、高い密度、強い連続性を持っているため、異なる手法による曲線情報の抽出が不正確になることがあります。本研究では、曲線検出手法によって生じる曲線の乱れやぼやけなどの問題を解決し、曲線情報の抽出精度を向上させるために、密なネットワークモデルを基にしたエンドツーエンドの曲線抽出モデルを提案します。受容野を広げるために自己適応的な空洞畳み込みモジュールを追加し、逐次的な細分化パスモジュールを導入し、各層の中間出力を後続の細分化モジュールに導入し、損失関数のパラメータを適切に設定することで、ネットワークの性能を最適化します。さらに、曲線検出のためのデータセットを独自に構築し、改良されたモデルをトレーニングすることで、曲線画像中の曲線エッジ情報の抽出能力をさらに向上させます。定性評価の結果は、本研究手法が他の手法と比べて優れていることをさらに示しています。
-  		 </span>
-    		<br/>
-    		<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2. 次に、前述の方法において、過剰な密な畳み込みモジュールの積み重ねによってチャネル特徴情報が失われ、モデルの訓練可能なパラメータが大きくなり、トレーニングと推論に時間がかかるという問題に対して、本研究では、双方向の効率的なチャネル注意機構に基づく曲線抽出ネットワーク構造を提案しています。この方法では、Vggを主要な特徴抽出ネットワークとし、双方向の効率的なチャネル注意機構を使用して異なるチャネルの特徴の重みを表現し、画像内のチャネル間の関係をより良く学習し、特徴表現能力を向上させます。そして、ステージ特徴統合モジュールを組み込み、特徴の損失を減らし、特徴表現能力を向上させます。異なるステージの低解像度と高解像度の特徴を統合することにより、モデルは画像の意味情報をよりよく理解し、同等の状況下でモデルのパラメータを大幅に削減することができます。曲線データセットでのトレーニングとテストを行った結果、この方法によって抽出された曲線の構造ははっきりとし、階層的に明確になり、正確な位置情報を提供し、曲線周辺のぼやけなどの問題をより少ないパラメータで解決し、曲線の抽出精度を向上させることが示されました。
-  </span>
-    		<br/>
-    		<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;3. 最後に、曲線データの抽出アルゴリズムの複雑さと実装の難しさは、その応用範囲を制限することが多いです。そのため、使いやすいデータ抽出ソフトウェアの開発により、曲線データの抽出が普及し、より簡単に使用できるようになり、実践的な応用を促進することができます。本研究では、曲線データ抽出の実用的な価値に焦点を当て、デスクトップ向けのデータ抽出ソフトウェアを開発し、アルゴリズムの実装を推進します。これにより、より多くの人々が曲線データ抽出の実用的な価値を享受し、さまざまな領域での広範な応用を促進することができます。
-  </span>
-    		<br/>
-    		<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;王迎港さんは、上海大学の大学院生の間に、熱心に学習し、専門知識と研究能力を高めることに努力し、優れた指導者や友人たちから多くの恩恵を受けました。彼は初心を忘れず、使命を心に刻み、勇敢に前進し、京東零售集団の発展に知恵と力を貢献するでしょう。彼が業界の優れた人材の一人になり、進んで努力することを信じています。</span>
-    		 <!--插入论文连接-->
-    		<br>
-    		  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="paper/2023/wangyingang.pdf.zip" target="_blank">科学文献中の曲線情報処理方法の研究</a>
-    		  </span>
-    	        <br>
-    	    </td>
-        </tr>
-            </tbody>
-            </table> 
-    		<!--人物照片-->
-    		<table  cellpadding=8 cellspacing=0 width=88% height=88% align="center"  style="margin-top: -30px;">
-    		   <tr>
-    		  		<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/wangyingang.jpg" width="70%" height="55%"/></p></td>
-    				
-    		  </tr>
-    		</table>
-          <p> </p>   
-    
-    
-  
-  
-  <!-------------------------------恭喜张家旺利毕业 -------------------------------------------------->
-  
-  <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-    <tr>
-      <td>
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023.07.05</span></td>
-              <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">おめでとうございます、張家旺さんが無事に卒業されたことを祝福します！</span></td>
-            </tr>
-        </table>
-       				
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-          <tbody>
-          <tr>   
-  	    <td >
-  		     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;張家旺さんは南京情報工程大学で学士号を取得し、2020年に上海大学のコンピュータ工学と科学学院で専門職の修士課程に入学しました。課題グループに参加後、指導教員である張瑞先生、韓越兴先生、陳侨川先生に師事し、材料文献情報の探索方法に関する研究を行いました。先生方のご指導のもと、以下の研究を完了しました：</span><br>                 
-          </td>
-          </tr>
-          </tbody>
-        </table> 
-  		
-        <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-          <tbody>
-          <tr>   
-  	    <td >
-  		<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;1. 材料文献のテキスト表現特性および成分表の構造特徴に対し、文脈を考慮した文献情報抽出手法を提案しました。テキスト情報と表情報をそれぞれ探索するための手法です。材料テキストの抽出には固有表現認識技術を使用し、動的な単語ベクトルと材料領域の静的な単語ベクトルを統合することで、各単語ベクトルにコンテキスト情報と材料領域の知識を含めることができました。これにより、材料テキストの固有表現認識の効果が著しく向上し、ステンレス鋼材料や無機材料の固有表現認識データセットで実験を行いました。材料文献中の成分表の構造特徴に着目し、形態学、目標輪郭検出、テキストの類似度などの手法を組み合わせ、従来の画像処理技術に基づく表の認識手法を提案しました。成分表の構造を見出し、ヘッダー、およびボディに分解し、異なる領域から材料名、元素、元素含有量、および単位情報を抽出することができます。実験により、成分表の認識手法は良好な結果を達成することが確認されました。
-</span>
-  		<br/>
-  		<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2. 材料文献から抽出した引張強度と材料成分データに基づいて、材料の性能予測方法を提案しました。この方法では、XenonPy材料情報学ライブラリを使用して成分データを特徴的に拡張し、拡張された計算原理に基づいて、クロス特徴圧縮と特徴選択の手法を設計しました。これにより、元素レベルの統計的特徴と引張強度データを選択し、これらのデータを使用して機械学習モデルをトレーニングしました。実験には、日本の国立材料科学研究所が公開したデータが使用され、結果は提案された成分特徴処理方法がモデルの予測性能を大幅に向上させることを示しています。
-</span>
-  		<br/>
-  		<span class="word">&nbsp;&nbsp;&nbsp;&nbsp; 3. ステンレス鋼をサンプル材料として、提案された文献探索および性能予測手法を11,058件のステンレス鋼の科学文献に適用しました。文献テキストからは2,360,000個の材料エンティティを抽出し、文献の表からは7,970組の材料成分情報を抽出しました。これらから関連するデータを選択し、引張強度の数値予測、腐食性、延性、強度、硬度の変化傾向の予測を行いました。
-</span>
-  		<br/>
-  		<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;張家旺さんは卒業後、ソフトウェア開発に関連する仕事で華為上海研究所に入社しました。上海大学での3年間の大学院生活で、彼は一生懸命勉強し、専門知識と研究能力を向上させました。また、多くの優れた指導教員や友人と出会うことができました。将来の道において、張家旺さんが初心を忘れず、使命を念頭に置き、困難に立ち向かい、前進することを願っています。</span>
-  		 <!--插入论文连接-->
-  		<br>
-  		  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="paper/2023/zhangjiawang.pdf" target="_blank">基于上下文感知的材料文献文本与表格信息挖掘及应用方法研究</a>
-  		  </span>
-  	        <br>
-  	    </td>
-      </tr>
-          </tbody>
-          </table> 
-		<!--人物照片-->
-		<table  cellpadding=8 cellspacing=0 width=88% height=88% align="center"  style="margin-top: -30px;">
-		   <tr>
-		  		<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/zhangjiawang.jpg" width="70%" height="55%"/></p></td>
-				
-		  </tr>
-		</table>
-        <p> </p> 
-  
-  
-	<!-------------------------------恭喜刘宇虹利毕业 -------------------------------------------------->
-	
-	<table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-	  <tr>
-	    <td>
-	      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-	          <tr>
-	            <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023.07.05</span></td>
-	            <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">おめでとうございます。劉宇虹さんの卒業が無事に終了しました！</span></td>
-	          </tr>
-	      </table>
-	     				
-	        <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-	        <tbody>
-	        <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;刘宇虹さんは安徽中医薬大学で学士号を取得し、2020年9月から上海大学のコンピュータ工学と科学学院で修士号を取得するための研究を始めました。彼女は研究グループに参加し、韓越兴教授の指導のもと、材料画像処理や材料画像強化などの関連技術と応用について学びました。韓教授の丁寧な指導のもと、以下の研究を完成しました。</span><br>                 
-	        </td>
-	        </tr>
-	        </tbody>
-	      </table> 
-			
-	      <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-	        <tbody>
-	        <tr>   
-		    <td >
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;1. 熱障壁コーティングの表面形態特徴認識に基づく画像強化手法を提案しました。この手法は、次の3つのステップからなります：ポーラス輪郭の強化と画像のノイズ除去、ポーラスの削除とクラック修復、そしてクラックの検出と長さの計算です。これにより、熱障壁コーティング中のクラックを正確に識別することができます。また、画像フィルタリングや数理形態学などの強化手法を適切に使用することで、熱障壁コーティング中のクラックの識別の完全性が高まり、偏差が少なくなります。提案された手法は、熱障壁コーティング中のクラックを自動的に識別し、クラックの長さを計算することができます。人手による検出と比較して、この手法はクラックの識別がより正確であり、クラックの長さの計算速度も速くなります。これにより、材料科学の研究者が熱障壁コーティングの微細構造を効果的に分析するのを支援することができます。</span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2. 熱障壁コーティングの表面形態特徴を認識するための2つのソフトウェアを設計しました。1つのソフトウェアは、熱障壁コーティングの画像強化とクラックのスケルトン抽出を実現し、もう1つのソフトウェアはクラックの識別と長さの計算を実現します。これら2つのソフトウェアを組み合わせて使用することで、熱障壁コーティングの微細構造分析の速度がさらに向上し、時間と人的コストが削減されます。また、このソフトウェアは熱障壁コーティングの画像と類似した他の材料の画像も処理することができ、材料科学の研究と開発を促進します。</span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp; 3. 材料画像データ拡張のための改良されたHP-VAE-GANの提案を行いました。改良されたHP-VAE-GANは、CBAM（Convolutional Block Attention Module）メカニズムを使用して特徴マッピングを細化し、ネットワークの特徴表現能力を向上させます。同時に、エンコーダーネットワークに1つの畳み込みブロックを追加して、ネットワークの特徴抽出能力をさらに向上させ、CBAMの挿入位置がモデルの性能に与える影響を排除しました。生成結果は、CBAM注意メカニズムを組み合わせた提案されたHP-VAE-GANが生成画像の品質を効果的に向上させることを示しています。分類実験の結果からも、この手法はHP-VAE-GANを使用したデータ拡張手法よりも優れた結果を示し、少数の材料画像データセットに対して新たなデータ拡張の手法を提供します。 </span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;卒業後、劉宇虹さんは上海振華職業学校で人工知能専門の教師として働いています。劉宇虹さんは上海大学での3年間の修士課程で努力し、専門知識と研究能力を向上させるために努めました。多くの優れた教師や友人に出会うことができました。劉宇虹さんには、将来の道のりで初心を忘れず、使命を心に刻み、困難を乗り越えて前進することを願っています。</span>
-			 <!--插入论文连接-->
-			<br>
-			  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="paper/2023/liuyuhong.pdf" target="_blank">面向小样本材料图像的增强方法研究</a>
-			  </span>
-		        <br>
-		    </td>
-	    </tr>
-	        </tbody>
-	        </table> 
-			<!--人物照片-->
-			<table  cellpadding=8 cellspacing=0 width=88% height=88% align="center"  style="margin-top: -30px;">
-			   <tr>
-			  		<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/liuyuhong.jpg" width="70%" height="55%"/></p></td>
-					
-			  </tr>
-			</table>
-	  
-	      <p> </p> 
-	<!-------------------------------恭喜夏锦桦利毕业 -------------------------------------------------->
-	
-	<table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-	  <tr>
-	    <td>
-	      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-	          <tr>
-	            <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023.07.05</span></td>
-	            <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">おめでとうございます。夏錦桦さんの卒業が無事に終了しました！</span></td>
-	          </tr>
-	      </table>
-	     				
-	        <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-	        <tbody>
-	        <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;夏錦桦さんは、江蘇科技大学で学士課程を修了し、2020年に上海大学のコンピュータ工学科学学院で専門の修士研究生コースに進学しました。夏錦桦さんは韓越興先生に師事し、材料文献情報のマイニング方法について研究しました。韓先生の熱心な指導のもと、以下の研究を遂行しました：</span><br>                 
-	        </td>
-	        </tr>
-	        </tbody>
-	      </table> 
-			
-	      <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-	        <tbody>
-	        <tr>   
-		    <td >
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;1. 数値グラフ情報の抽出。数値グラフと対応するキャプションを組み合わせて、文献マイニングのための画像とテキストの統合手法を提案しました。この手法ではまず、Yolov5sを使用して科学文献から単一の数値グラフ画像を切り出し、改良された科学文献画像検出手法を適用して精度を向上させます。次に、PDFminerツールを使用して科学文献のテキストコンテンツを解析します。そして、文の間のコサイン類似度とJaccard類似度を計算し、数値グラフに対応するキャプションテキストをマッチングします。さらに、Sci-BertモデルとCRFアルゴリズムを使用して、タイトルから軸の名前を識別します。さらに、形態学的操作や文字認識などの技術を使用して、数値グラフから具体的なデータ情報を抽出します。最後に、抽出された軸の名前とデータを統合して完全な数値グラフ情報を取得します。 </span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2. 上記の数値グラフの軸名識別タスクにおけるモデルの認識精度の低さに対処するため、本論文では科学文献の数値グラフ画像とテキストの関係に着目し、識別効果を向上させる手法を提案しました。この手法では、まず数値グラフ上のラベルテキストを識別し、サンプルテンプレートに埋め込んでアノテーション不要のテキストデータを生成し、データ拡張の効果を得ます。同時に、テキストの類似度マッチング技術を使用して科学文献の本文部分から数値グラフの説明文を探し、それをタイトルテキストと結合してテキストの拡張を行います。これにより、文脈の関連性に基づいて入力文のベクトル表現を改善し、モデルの予測性能を最適化します。</span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp; 夏錦桦さんは卒業後、杭州広立マイクロエレクトロニクス社でソフトウェア開発関連の仕事に携わります。夏錦桦さんは上海大学での3年間の修士課程で努力し、専門知識と研究発表能力を向上させるために努めました。多くの優れた教師や友人に出会うことができました。夏錦桦さんには、将来の道のりで初心を忘れず、使命を心に刻み、困難を乗り越えて前進することを願っています。。</span>
-
-			 <!--插入论文连接-->
-			<br>
-			  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="paper/2023/xiajinghua.pdf" target="_blank">基于上下文感知的材料科学文献中图文信息挖掘方法研究</a>
-			  </span>
-		        <br>
-		    </td>
-	    </tr>
-	        </tbody>
-	        </table> 
-
-			<!--人物照片-->
-			<table  cellpadding=8 cellspacing=0 width=88% height=88% align="center"  style="margin-top: -30px;">
-			   <tr>
-			  		<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/xiajinhua.jpg" width="70%" height="55%"/></p></td>
-					
-			  </tr>
-			</table>
-	  
-	      <p> </p> 
-	<!-------------------------------恭喜李睿祺顺利毕业 -------------------------------------------------->
-	
-	<table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-	  <tr>
-	    <td>
-	      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-	          <tr>
-	            <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023.04.29</span></td>
-	            <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">おめでとうございます。李睿祺さんの卒業が無事に終了しました！</span></td>
-	          </tr>
-	      </table>
-	     				
-	        <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-	        <tbody>
-	        <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;李睿祺さんは、上海大学で学士課程を修了し、2020年に上海大学のコンピュータ工学科学学院で学術型の修士研究生コースに進学しました。李睿祺さんは学部の最終学年から韓越興研究グループに参加し、材料画像処理技術とその応用に関する研究を学びました。韓先生の熱心な指導のもと、以下の研究を継続・推進しました：</span><br>                 
-	        </td>
-	        </tr>
-	        </tbody>
-	      </table> 
-			
-	      <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-	        <tbody>
-	        <tr>   
-		    <td >
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;1. 菊池帯パターンの自動検出。結晶の構造と取向情報は、EBSD（電子背面散乱回折）パターンの分析によって得ることができます。これらのパターンはEBSD装置によって取得されます。得られた情報の信頼性と正確性は、EBSDパターンのストライプと交点の位置に依存します。この研究では、Radon変換と累積確率ハフ変換を組み合わせた手法を提案し、EBSDパターン（菊池帯）および交点の位置を自動的に取得することを実現しました。実験結果は、この手法が頑健であり、より正確な菊池帯と交点を検出できることを示しています。 </span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2. 材料画像のセグメンテーションタスクにおける注釈コストとセグメンテーション精度のバランスの問題を解決するために、リアルタイムでセグメンテーションモデルを取得するための、対話型の手続き的注釈と機械学習に基づく材料画像のセグメンテーションアルゴリズムを設計しました。この手法では、セグメンテーションモデルのリアルタイム取得を最優先目標とし、材料画像の中心点近傍の特徴を抽出し、複数のラウンドの対話型の手続き的注釈を行い、インクリメンタル学習の手法を使用して最終的な画像セグメンテーションモデルを訓練します。</span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;3. 有限かつ容易に入手可能な注釈データに基づいて高精度なセグメンテーションモデルを実現するために、擬似ラベルを用いた弱監督深層学習に基づく材料画像セグメンテーション手法を設計しました。この手法では、有限な注釈データに基づいて最適なセグメンテーション結果を得ることを目標とし、新しいデュアルブランチネットワーク構造を提案し、新しいコンテキスト特徴差監督損失を導入して擬似ラベルを生成します。これにより、モデルは描かれたアノテーションのみを使用して、高いセグメンテーション精度を達成することができます。この手法は、材料画像セグメンテーションタスクにおいて、ディープラーニングニューラルネットワークが直面する少量のデータ、難しいアノテーション、およびテストプロセスでのリソースの浪費という問題を解決します。</span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;相変わらず変態の速い性質と複雑な形態のラスマテンサイトのため、マルテンサイト画像解析に基づく従来の研究は、相変態プロセス中の十分な情報を提供することができません。本研究では、ラスマテンサイトの変換を捉えた動画から情報データを抽出・分析する新しいビデオ処理方法を提案しています。画像データの分析により、ラスマテンサイト変換の数、最大長、最大幅、平均長、平均幅、面積、カテゴリ方向など、ラスマテンサイト変換に関するダイナミックな情報を提供します。この研究は、静止画像に基づいたマルテンサイトの研究の限界を打破し、マルテンサイトのダイナミックな変換に関する様々なデータと情報を包括的に説明します。</span>
-			<br/>
-			    <span class="word">&nbsp;&nbsp;&nbsp;&nbsp; 卒業後、李睿祺さんはリエンイメージインテリジェントにおいてソフトウェア開発関連の業務に従事することになりました。上海大学での3年間の大学院生活で、李睿祺さんは一生懸命勉強し、専門知識と研究発表の能力を向上させてきました。また、多くの優れた師匠や友人との出会いも得ることができました。李睿祺さんには、将来の道において初心を忘れず、使命を心に刻み、困難を乗り越えて前進することを願っています。</span>
-			
-		        <br>
-		    </td>
-	    </tr>
-	        </tbody>
-	        </table> 
-			<!--人物照片-->
-			<table  cellpadding=8 cellspacing=0 width=88% height=88% align="center"  style="margin-top: -30px;">
-			   <tr>
-			  		<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2020/newPostgraduate/02.jpg" width="60%" height="55%"/></p></td>
-					
-			  </tr>
-			</table>
-	      <p> </p> 
-	
-	
-	
-	<!-------------------------------基于图注意力的材料图像分割 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-  	  
-  
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023年5月8日</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">最近の成果として-基于グラフ注意機構を用いた材料画像セグメンテーションが挙げられます</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;私たちのチームは国際誌「Materials Today Communications」（IF：3.662）にて「Graph Attentionに基づく材料構造セグメンテーション手法」という論文をオンラインで発表しました。この論文では、上海大学のコンピュータ工学・科学学院が第一機関となり、陳侨川氏が第一著者、魏惠姗氏が第二著者、韓越兴准教授が通信著者となっています。</span><br>                 
-		    </td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2022/weihuishantask.jpg" width="60%" height="60%"/></p></td>
-		
-			 </tr>
-          </table>
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;多学科の発展と融合により、コンピュータビジョンと材料科学の融合は、従来の材料研究方法に大きな変革をもたらしました。既存の手法は特定のシーンの画像を効果的にセグメンテーションできますが、材料の画像を正確にセグメンテーションおよび分析するための汎用的な手法は存在しませんでした。材料画像の複雑なテクスチャ、ぼやけた境界、低いコントラストといった問題に対処するため、我々は多次元特徴の統合に依存した手法を提案しました。この手法は、有限で利用可能な注釈サンプルをより効果的にネットワークを訓練するための構築されています。
-このアーキテクチャは、エンコーダ、グラフ注意モジュール、多スケール特徴統合モジュール、およびデコーダから構成されています。我々は、このようなネットワークを画像に対してエンドツーエンドでトレーニングできることを示しました。電子顕微鏡画像では、我々のセグメンテーション結果が以前の多くの先進的な手法よりも優れていることを示しました。この手法を用いることで、材料画像中の複数の構造を正確に識別することができ、材料科学における構造変換の新たなメカニズムの多段階セグメンテーションや探索に重要な示唆を与えることができます。</span>
-  		    
-			    <!--人物照片-->
-	    	<table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-	    	  <tr>
-	    	  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2022/weihuishan.jpg" width="60%" height="60%"/></p></td>
-	    			
-	    				 </tr>
-		
-		   	</div>
-	       
-  			   
-        </table> 
-  	      
-			  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://doi.org/10.1016/j.mtcomm.2023.105941" target="_blank">Material structure segmentation method based on graph attention</a>
-			  </span>
-		        <br>
-		    </td>
-  	    </tr>
-        </tbody>
-        </table> 
-        <p> </p> 
-	<!-------------------------------三位同学3.18号回校 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-  	  
-  
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2023.3.18</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">3月18日に三人の同級生が帰校する予定です。</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;上海大学を卒業した研究生の魏惠姗さん、張宏坤さん、楊珅さんは3月18日に母校に戻り、かつてのキャンパスライフを振り返り、かつての指導教員である韓越兴先生と多くの交流をしました。彼らの帰校旅行では、彼らの仕事や生活での経験と感想を共有し、母校への深い感情と愛情を表現しました。数人の同窓生が学校に戻ると、感慨深い思いに駆られます。ここに戻ってくると、彼らは自宅に帰ってきたような感覚を抱きます。このキャンパスは彼らの成長と変化を見守り、すべてが彼らに感謝と尊重の気持ちを抱かせます。
-
-かつての指導教員である韓先生との交流の中で、3人の研究生は仕事や生活での経験と感想を共有しました。彼らは大学時代の学びと生活が彼らをより自信を持ち、独立心を養い、職業生活の堅固な基盤を築いたと考えています。同時に、彼らは指導教員への感謝と尊敬の意を表し、指導と助けが彼らの成長と発展において不可欠な役割を果たしたと認識しています。
-
-この帰校旅行により、3人の研究生は母校の魅力と使命を再び感じ、母校の発展と進歩をより一層大切にし、注目しています。彼らはどこに身を置いていても、常に母校の発展と進歩に注目し、サポートし続け、学校と社会への貢献を果たすことを約束しています。
-</span><br>                 
-            </td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2023/home.jpg" width="80%" height="80%" style="border-radius:0%"/></p></td>
-			 </tr>
-          </table>
-  		
-			<div style="margin-top: -10px;float: left;margin-left: 135px;">
-				<img src="./images/indexPic/2023/hanandwei.jpg" style="width: 210px; height: 210px;border-radius:0%">
-				<img src="./images/indexPic/2023/hanandyang.jpg" style="width: 210px; height: 210px; padding-left: 25px;border-radius:0%">
-				<img src="./images/indexPic/2023/hanandzhang.jpg" style="width: 210px; height: 210px; padding-left: 25px;border-radius:0%">
-				<br>
-				<span style="margin-left: 75px;">魏惠姗</span>
-				<span style="margin-left: 215px;">杨珅</span>
-				<span style="margin-left: 200px;">张宏坤</span>
-			</div>
-          
-	 <!-------------------------------2022课题组聚餐 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="18%" bgcolor="#CCCCCC" align="center"><span class="STYLE3" style="margin-left: -50px;">2022.11.25</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3" style="margin-left: -50px;">课题组聚餐</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2022年11月25日、国家および学校の感染予防政策に応えるため、韓越兴准教授の研究グループは2022年度の懇親会兼新入生歓迎会を計算機学院の402室で開催しました。参加者には韓越兴先生、張瑞先生、陳侨川先生などが含まれています。会の間、韓先生は張先生にグループの新旧メンバーを紹介し、学術研究の合間に積極的にスポーツ活動を組織するよう呼びかけました。それによって、健康促進とグループの雰囲気向上の両方を実現することができます。陳先生は学生時代の楽しいエピソードを皆さんと共有しました。張先生は幸せな家庭生活について皆さんと共有しました。会食の途中、学年ごとに好きな曲を選んで共有し、歌唱しました。古い名曲から現在人気のある曲まで、多様な音楽が披露されました。最後に、和やかな笑い声とともに懇親会は幕を閉じました。 </span><br>                 
-			</td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" style="margin-top: -30px;">
-             <tr>
-  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2022/photo.jpg" width="80%" height="80%"/></p></td>
-  			 </tr>
-          </table>
-	<!-----------------------------------------------------------------欢迎2022届新生胡干、王慧、张一琳、赵宸、阮礼恒、包胜奇入组---------------->
-
-      <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-		
-	  <tr>
-	    <td>
-		
-		      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-	        <tr>
-	          <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022.09.18</span></td>
-	          <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">2022年の新入生である胡干さん、王慧さん、張一琳さん、趙宸さん、阮礼恒さん、包勝奇さん、凌晨帆さん、チームへようこそ！</span></td>      
-	        </tr>
-	      </table>
-	      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-	        
-	        
-	        
-	
-		<div>
-							
-	          <table   cellpadding=10 cellspacing=0 width=88% height=88% align="center" >
-	              <tbody>
-	                  <tr>
-	                  <td align="center" ><img src="./images/indexPic/2022/newPostgraduate_/hugan.jpg"></td>
-	                  <td ><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;胡干さんは男性で、安徽理工大学のコンピュータ関連専攻で学士と修士の学位を取得しました。現在は上海大学のコンピュータ学院の2022年入学の博士課程に在籍しています。性格は内向的で、あまり話しませんが、打ち解けるととてもユーモアのある一面もあります。趣味は卓球とランニングで、普段は友達と一緒にLeague of Legendsを楽しんだりもします（ただし、スキンを買うお金がないため、スキンチェンジャーを使用しているとアカウントが封じられることがよくあります）。上大という新しい環境で新たな成果を得たり、興味深い人々と出会ったりすることを望んでいます。自己を向上させるために努力し、最後には順調に卒業することを願っています！</span></td>
-	                  </tr>
-	
-	              <tr>
-	               <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王慧さんは、延辺大学の工学院でコンピュータ科学と技術の専攻を学び、現在は上海大学のコンピュータ科学と技術の修士課程に在籍しています。性格は明るく開放的で、生活を楽しむことや反省し、まとめることを楽しんでいます。自由な時間を持つと、自分自身をリラックスさせることを好み、自由に時間を過ごすことがあります。上海大学に進学してからは、研究生活を通じて専門能力を向上させ、成長を続けることを望んでいます。一歩ずつ着実に進んで、自身の道を歩んでいきたいと思っています。</span></td>
-	                 <td align="center" ><img src="./images/indexPic/2022/newPostgraduate_/wanghui.jpg"></td>
-	                  </tr>
-	
-	                  <tr>
-	                      <td  align="center"><img src="./images/indexPic/2022/newPostgraduate_/zhangyiling.jpg"></td>
-						  <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张一琳さんは、女性で、本科を黑龙江科技大学のコンピュータと情報工学学院のソフトウェア工学専攻で修め、現在は上海大学の電子情報の修士課程に在籍しています。性格は明るく、積極的で楽観的であり、人に対して真摯で責任感があります。余暇の時間には本を読んだり、音楽を聴いたり、映画を観たりすることを好みます。この新たな旅の中で、自分自身をより良くするために努力することを願っています。</span></td>
-	                  </tr>
-	                  <tr>
-	                      <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赵宸さんは男性で、南京林業大学のソフトウェア工学（組み込みシステム育成）専攻で学士号を取得し、現在は上海大学の電子情報専攻の修士課程に在籍しています。性格は外向的で、コミュニケーション能力に優れ、一定の組織能力も持っています。困難に対しては負けず嫌いの精神を持ち、時間とエネルギーを費やせばどんな困難も克服できると信じています。普段の生活でも退屈な人ではなく、アウトドアでリフレッシュしたり、異なる経験をすることで生活を豊かにすることが好きです。趣味としては映画を観たり、音楽を聴いたり、旅行することが好きです。研究生活は新たな旅程であり、私は未来に希望を抱いており、皆さんと共に歩んでいけることを願っています。</span></td>
-	                      <td  align="center"><img src="./images/indexPic/2022/newPostgraduate_/zhaocheng.jpg"></td>
-	                  </tr>
-					  <tr>
-					      <td  align="center"><img src="./images/indexPic/2022/newPostgraduate_/ruanliheng.jpg"></td>
-					      <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;阮礼恒さんは、上海大学のコンピュータ学院のコンピュータ科学と技術系で学士号を取得し、卒業後も同じ学院のコンピュータ科学と技術専攻で修士課程に進学しました。指導教員は韓越兴先生です。本を読んだり映画を観たりすることが好きで、囲碁も打つことができます。朝と午後には美味しいコーヒーを飲むことが好きです。人生はわずか2万日程度しかありませんが、毎日を楽しく過ごし、自己挑戦を続けながら成長していきたいと思っています。</span></td>
-					  </tr>
-	              <tr>
-	                  <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;包勝奇さんは上海大学のコンピュータ科学と技術専攻で学士号を取得し、現在は上海大学のコンピュータ学院で修士課程を進んでいます。彼は人当たりが良く、明るい性格であり、人とのコミュニケーションに長けており、さまざまな挑戦に立ち向かう勇気を持ち、自己管理能力も高いです。新しい人生の段階で、彼は学び続け、知識を得て、着実に前進することを望んでいます。</span></td>
-	                  <td  align="center"><img src="./images/indexPic/2022/newPostgraduate_/baoshengqi.jpg"></td>
-	              </tr>
-			      <tr>
-					      <td  align="center"><img src="./images/indexPic/2022/newPostgraduate_/lingchengfan.jpg"></td>
-					      <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;凌晨帆さんは男性で、武漢生物工程学院のコンピュータ科学と技術専攻で学士号を取得し、現在は上海大学のコンピュータ科学と技術専攻の修士課程に在籍しています。彼は性格が明るく活気があり、生活を愛しています。趣味の時間にはゲームをしたり、ランニングをしたりすることが好きです。問題に直面した際には考える勇気を持ち、簡単には諦めません。上海大学での研究生活では、優れた学術的素養を養い、専門能力を高めることを目指し、皆さんとの良好な人間関係を築きながら共に成長できることを願っています！</span></td>
-					  </tr>
-	              </tbody>
-	          </table> 
-	
-		</div>
-		
-		      <p>　</p>
-	             
-	
-	
-	<!-------------------------------恭喜魏惠姗顺利毕业 -------------------------------------------------->
-	
-	<table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-	  <tr>
-	    <td>
-	      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-	          <tr>
-	            <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022.08.31</span></td>
-	            <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">魏惠姗さん、卒業おめでとうございます！</span></td>
-	          </tr>
-	      </table>
-	     				
-	        <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-	        <tbody>
-	        <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;魏惠姗さんは、安徽理工大学で学士号を取得し、2019年に上海大学のコンピュータ工学と科学学院で学術的な修士課程に進学しました。指導教員は韓越兴先生で、主な研究分野は材料画像のセグメンテーションです。韓先生の指導のもと、以下の研究を完成しました：</span><br>                 
-	        </td>
-	        </tr>
-	        </tbody>
-	      </table> 
-			
-	      <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-	        <tbody>
-	        <tr>   
-		    <td >
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;1. 材料画像の小規模データと複雑なテクスチャの問題に対して、グラフ畳み込みと深層学習を組み合わせた材料画像セグメンテーション手法を提案しました。この手法では、残差接続とマルチスケール融合モジュールを使用して特徴マップの情報を豊かにし、グラフ畳み込みに基づく二重注意機構を使用して重要な特徴に焦点を当て、逆畳み込み部分に畳み込み層を追加することでネットワークの非線形表現能力を向上させました。 </span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2. 小規模データセットでの畳み込み層の過剰な使用による特徴の損失の問題に対し、UNetをバックボーンネットワークとして使用し、スキップ接続に基づいたグラフ注意力モジュールを設計しました。この手法では、畳み込みニューラルネットワークの考え方を取り入れ、グラフ畳み込みとグラフ注意力層を結合させ、グラフ構造の視点から複数の次元のノード特徴を統合することに取り組んでいます。ネットワークの深度を増加させる一方で、ピクセルレベルの情報と空間情報の損失を減らし、ネットワークのセグメンテーション性能を向上させることを目指しています。</span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;3. グラフ畳み込み技術を異なる領域のセマンティックセグメンテーションタスクに応用しました。グラフエンコーダーとグラフデコーダーを提案し、特徴マップをグラフ構造に変換することで、畳み込みプロセス中の特徴マップをその次元に基づいて対応するノード数のグラフ構造に変換できるようにしました。これにより、グラフ畳み込みニューラルネットワークがセマンティックセグメンテーションタスクに適用されることを促進することができます。 </span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;魏惠姗さんは卒業後、上汽グループの零束ソフトウェア分社で働くことになりました。3年間の修士課程の生活は彼女の視野を広げ、魅力的なコンピュータビジョンの分野に触れる機会を与え、特に画像処理の領域での深層学習の応用について知ることができました。また、多くの優れた指導教員や友人とも出会いました。彼女は将来も成長し続け、この経験に恥じないように頑張りたいと思っています。</span>
-			<!--等照片-->
-			<div style="margin-left: 30%;">
-				<img src="./images/indexPic/2022/graduated/weihuishan.jpg" style="width:300px; height:230px;">
-			</div>	
-			 <!--插入论文连接-->
-			<br>
-			  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="paper/2022/weihuishan_paper.pdf" target="_blank">基于图卷积神经网络的材料图像分割研究</a>
-			  </span>
-		        <br>
-		    </td>
-	    </tr>
-	        </tbody>
-	        </table> 
-	  
-	      <p> </p>  
-	<!-------------------------------基于机器学习的材料图像分割中心环境特征模型 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-  	  
-  
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022年7月30日</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">チームの最近の成果は、機械学習を用いた材料画像セグメンテーションにおける中心環境特徴モデルです。</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;私たちのチームは、国際ジャーナル「Scientific Report」（IF: 4.996）において、「Center-environment feature models for materials image segmentation based on machine learning」という論文をオンラインで発表しました。この論文では、上海大学の計算機工学と科学学院が第一所属機関であり、韓越兴准教授が第一著者および通信著者として参加しています。この研究は、陳侨川先生、王冰先生、刘轶先生の大きなサポートを受けて行われました。また、李睿祺さんと杨珅さんも多くの貢献をしました。</span><br>                 
-		    </td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2022/yangshenandliruiqi.jpg" width="60%" height="60%"/></p></td>
-		
-			 </tr>
-          </table>
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;材料の性能は、成分だけでなく、さまざまな加工条件下での微細構造にも依存しています。これまで、複雑な微細構造の画像の解析は主に人間の経験に依存しており、自動的かつ定量的な特性評価方法が不足していました。機械学習は、さまざまな複雑な材料相を知識を活用して知覚するための新たな重要なツールを提供しています。この研究では、「中心環境分割」（CES）特徴モデルを提案し、画像セグメンテーションに使用されます。このモデルは、機械学習アルゴリズムを用いて環境特徴とドメイン知識に基づいて画像をセグメンテーションします。CESモデルでは、与えられたピクセルの特徴として近傍情報を導入し、研究対象のピクセルと周囲の環境との関係を反映します。そして、反復的な統合機械学習アプローチを使用して、画像セグメンテーションモデルをトレーニングおよび補正します。CESモデルは、鋼鉄や木材などの複雑なテクスチャを持つ7種類の異なる材料画像に適用され、成功を収めました。鋼鉄画像のセグメンテーション研究では、CES手法は境界輪郭の特定において、多くの伝統的手法よりも優れたパフォーマンスを示しました。この研究は、ドメイン知識と環境特徴の反復的な導入が、さまざまな複雑な材料の微細構造画像のセグメンテーションの精度向上に寄与することを示しています。</span>
-  		    	<br>
-			    <!--人物照片-->
-	    	<div style="margin-top: 0px;float: left;margin-left: 220px;">
-				<img src="./images/indexPic/2022/liruiqibusiness_card.jpg" style="width: 120px; height: 120px;">
-				<img src="./images/indexPic/2022/yangshenbusiness _card_re.jpg" style="width: 120px; height: 120px; padding-left: 0px;margin-left:15px">
-				<br/>
-				<span style="margin-left:55px;">李睿琪</span>
-				<span style="margin-left:80px;">杨珅</span>
-		   	</div>
-	       
-  			   
-        </table> 
-  	      
-			  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://doi.org/10.1038/s41598-022-16824-w" target="_blank">Center-environment feature models for materials image segmentation based on machine learning</a>
-			  </span>
-		        <br>
-		    </td>
-  	    </tr>
-        </tbody>
-        </table> 
-        <p> </p>  
-	
-	
-	 <!-------------------------------恭喜张宏坤顺利毕业 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022.07.12</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">張宏坤さんの卒業をお祝いします！</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;張宏坤さんは、内蒙古農業大学を卒業し、2019年に上海大学の計算機工学と科学学院で学術的な修士研究生として入学しました。入学後、韓越兴研究グループに所属し、材料画像処理の研究を行いました。韓先生の指導のもと、次の研究を完成させました：</span><br>                 
-            </td>
-            </tr>
-            </tbody>
-          </table> 
-  			
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;1. 異なる組織の不均一な分布や重なり合いを持つ複雑な材料画像に対して、複雑ネットワーク理論に基づいた特徴情報処理手法を設計しました。この手法では、複雑ネットワーク内のコミュニティ構造を使用して、材料内の異なる組織を表現しました。また、ネットワーク構築プロセスでのRおよびTの閾値を使用してネットワークのトポロジーのダイナミックな進化プロセスを加速しました。さらに、RT-モジュラリティ指標を提案し、ネットワークのトポロジーを評価し、画像処理を完了しました。セラミックや鋼鉄などの画像を用いたセグメンテーション実験により、この手法の有効性が確認されました。</span>
-  			<br/>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2. 複雑なテクスチャ画像の多様な特徴に対処するため、伝統的な画像処理技術に基づく特徴情報処理手法を提案しました。この手法では、材料画像の特性を利用し、対応する特徴情報処理アルゴリズムを設計しました。抽出した形状特徴を活用してテクスチャ特徴の処理を加速し、処理時間を大幅に削減しました。不規則な形状と複雑なテクスチャを持つ膜パターンの実験により、この手法の有効性が検証されました。</span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp; 3. 処理速度をさらに向上させ、計算リソースの消費を減らすために、深層学習に基づく特徴情報処理手法を設計し提案しました。この手法では、軽量なネットワークモデルをテクスチャ防偽の研究に適用し、注意機構の導入と損失関数の設計を調整することで、アルゴリズムの識別精度を確保しました。他の深層学習を使用したテクスチャ防偽の研究と比較して、この手法はリソース消費を削減するだけでなく、複雑なテクスチャを持つ大規模な材料画像データベースでの検証も行い、手法の有効性を証明しました。</span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp; 毕业后、張宏坤さんはAMD社でソフトウェア開発関連の仕事に従事しました。上海大学での3年間の研究生生活で、張宏坤さんは一生懸命学び、専門知識と研究報告能力を向上させるために努力しました。彼は熱心に人と交流し、多くの素晴らしい師匠や友人を得ました。私たちは、張宏坤さんが将来の道のりで初心を忘れず、使命を心に留め、困難を乗り越え、努力を続けることを願っています。</span>
-  			<!--等照片-->
-			<div style="margin-left: 30%;">
-				<img src="./images/indexPic/2022/graduated/zhanghongkun.jpg" style="width:300px; height:300px;">
-			</div>
-			<!--插入论文连接-->
-			<br>
-			  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="paper/2022/zhanghongkun_paper.pdf" target="_blank">面向复杂材料图像的特征信息处理方法研究</a>
-			  </span>
-		        <br>
-		    </td>
-  	    </tr>
-            </tbody>
-            </table> 
-  
-  	      <p> </p>  
-	 <!-------------------------------恭喜杨珅顺利毕业 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022.07.09</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">杨珅さんの卒業をお祝いします！</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;杨珅さんは、安徽中医药大学で学士号を取得し、2019年入学のコンピューターアプリケーション技術の修士号を取得しました。韓越兴先生の指導のもと、主に材料画像のセグメンテーションについて研究しました。3年間の努力の結果、杨珅さんは複雑なテクスチャに特化した材料の微細構造のセグメンテーションと識別の手法を提案し、材料画像の小さなサンプル、データの分布の不均衡、複雑なテクスチャの問題に対して一定の貢献をしました。また、材料ジェノムデータベースの構築にも貢献しました。卒業後、杨珅さんは中興通信株式会社でワイヤレス製品の開発に従事する予定です。また、杨珅さんは読書や執筆を好み、積極的にサークル活動に参加し、興味深い優れた教師や学友と知り合いました。研究生活は山登りのようなもので、泣いたり笑ったり、疲れたりもしましたが、最終的には頂上に立ち、自分だけの特別な景色を見ることができました。将来の人生で常に情熱を持ち、勇敢に前に進んでいくことを願っています！</span><br>                 
-            </td>
-            </tr>
-            </tbody>
-          </table> 
-  			
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-			<span class="word" style="font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;研究生期间工作</span>
-			<br/>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;材料画像の中に存在する小さなサンプル、データ分布の不均衡、複雑なテクスチャの問題を解決するために、様々なディープラーニング技術を組み合わせ、材料画像の微細構造を自動的にセグメンテーションすることで、材料ジェノムデータベースの構築にデータの基盤を提供します。</span>
-  			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;1. 材料画像セグメンテーションにおける小さなサンプルの問題に対処するため、深層学習とスーパーピクセルに基づく材料画像セグメンテーション手法を提案しました。材料画像の類似したピクセルの特性を捉え、スーパーピクセルアルゴリズムを使用して矩形ブロックを取得することで、小さなサンプルの問題を解決しました。改良されたDenseNetでは、特徴強化モジュールを適用することでテクスチャ特徴を保持し、冗長な特徴の干渉を除去しました。また、設計されたトランジション層のアップサンプリング手法により、特徴マップ情報をより正確に復元することができました。</span>
-  			<br/>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2. 材料画像中のデータ分布の不均衡に対処するため、2つの損失関数を使用して改善しました。分類タスクにおけるデータ分布の不均衡問題に対処するため、Focal損失に基づいてPrecison Focal損失を提案し、信頼度を精度に置き換えて、サンプルの分類の難しさをより正確に反映し、ネットワークにフィードバックしてトレーニングプロセスを最適化しました。セグメンテーションタスクにおけるデータ分布の不均衡問題に対処するため、Dice損失に基づいてCE-Dice損失を提案し、交差エントロピー損失とDice損失を組み合わせて、トレーニングプロセスをよりスムーズにし、セグメンテーション結果を最適化しました。</span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp; 3. 複雑なテクスチャを持つ材料画像の正確なセグメンテーションを実現しました。第3章で提案された改良されたDenseNetは、重要なテクスチャ特徴を保持し、冗長な特徴が矩形ブロックの認識に干渉しないようにしました。第4章で提案された改良されたFCNは、テクスチャが類似した材料画像の正確なセグメンテーションを実現しました。カスケード特徴融合モジュールは、高層と低層の意味的特徴を統合し、多尺度学習モジュールは、微細な情報とグローバルなコンテキスト情報を深く掘り下げます。アテンション機構モジュールを使用して重要な特徴マップに注目し、資源配置を最適化し、3つのモジュールが相互補完的に機能します。</span>
-			
-			<!--等照片-->
-			<div style="margin-left: 30%;">
-				<img src="./images/indexPic/2022/graduated/yangshen_re.png" style="width:300px; height:300px;">
-			</div>
-			<!--插入论文连接-->
-			<br>
-			  <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="paper/2022/yangshen_paper.pdf" target="_blank">面向复杂纹理的材料微观结构分割与识别方法研究</a>
-			  </span>
-		        <br>
-  			</td>
-  		    </tr>
-            </tbody>
-            </table> 
-  
-  	      <p> </p>  
-  <!--本科生介绍-->
-		<table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-		
-	  <tr>
-	    <td>
-		
-		      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-	        <tr>
-	          <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022.06.18</span></td>
-	          <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">2022年卒の学生の皆さん、おめでとうございます！</span></td>      
-	        </tr>
-	      </table>
-	      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-	        
-	        
-	        
-	
-		<div>
-							
-	          <table   cellpadding=10 cellspacing=0 width=88% height=88% align="center" >
-	              <tbody>
-	                  <tr>
-	                  <td align="center" ><img src="./images/indexPic/2022/newPostgraduate_/wangyutao.jpg"></td>
-	                  <td ><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王驭涛さんは性格が活発で明るく、思考力が高く、素晴らしい親和力を持ち、人とコミュニケーションを取ることが得意です。また、困難に直面しても、自己改善を続け、勇気を持って直面することができます。趣味は書道と旅行です。上海大学での4年間の学習により、王驭涛さんは知識の幅と深さを広げるだけでなく、多くの素晴らしい思い出も残しました。今後も王驭涛さんが輝かしい未来を切り開いていくことを願っています。</span></td>
-	                  </tr>
-	
-	              <tr>
-	               <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;孫家瑞さんは好奇心旺盛で、新しい知識を積極的に学び、実践することができます。学部の説明会活動を通じて韓先生の研究分野を知り、自ら先生の学部生チームに加わり、多くのことを学び、将来の学習や仕事に長い助けとなりました。</span></td>
-	                 <td align="center" ><img src="./images/indexPic/2022/newPostgraduate_/sunjiarui.jpg"></td>
-	                  </tr>
-	
-	                  <tr>
-	                      <td  align="center"><img src="./images/indexPic/2022/newPostgraduate_/ruanliheng.jpg"></td>
-						  <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;阮礼恒さんは人当たりが良く、冷静で、困難に直面しても克服する勇気を持っています。趣味は水泳やコーヒーを飲むことで、読書も好きです。彼は上海大学でコンピューターサイエンスとテクノロジーの修士号を取得し、韓越兴先生の指導の下、研究生活を続けることになります。今後も阮礼恒さんがますます成長し、研究生活を充実させることを期待しています。</span></td>
-	                  </tr>
-	                  <tr>
-	                      <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陳思文さんは女性で、上海大学のコンピューターサイエンスとテクノロジーの学部で学士号を取得しました。卒業設計の期間中、韓越兴先生から多くの援助を受け、材料学院と共同でソフトウェア開発を行いました。チームメンバーと積極的に協力し、効果的なコミュニケーションを行うチームプレイヤーであり、思考が明晰で耐圧性が高く、新しいことを学ぶことに熱心で、理論と実践を結びつけることを重視しています。また、責任感と自己管理意識があり、人としても真摯な態度を持っています。趣味は映画鑑賞、ゲーム、模型作りなどです。大学の4年間、突然のパンデミックで、半分近くのキャンパスライフを家で過ごすことになりましたが、大学時代を大切にしています。大学生活で知識を得るだけでなく、同級生と深い友情を結ぶこともできました。最後の卒業設計期間には、韓先生のチームに参加し、韓先生と材料学院の協力を得て、自己学習と向上を行うことができ、非常に光栄に思っています。</span></td>
-	                      <td  align="center"><img src="./images/indexPic/2022/newPostgraduate_/chenwensi.jpg"></td>
-	                  </tr>
-					  <tr>
-					      <td  align="center"><img src="./images/indexPic/2022/newPostgraduate_/sunyiqi.png"></td>
-					      <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;孫懿祺さんは仕事に真剣に取り組み、幅広い趣味を持っており、読書やミュージカルなどが好きです。上海大学での4年間の学習生活で、専門知識をはじめ、学生団体の活動に積極的に参加し、多くの友情を築きました。今後も孫懿祺さんが継続的に努力し、専門的なスキルや素養を向上させ、自己超越を目指すことを期待しています！</span></td>
-					  </tr>
-	              
-	              </tbody>
-	          </table> 
-	
-		</div>
-		
-		      <p>　</p>
-	             
-	
-	
-	
-	<!-------------------------------应用于材料图像分割的UNet -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-  	  
-  
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022年6月7日</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">最近、私たちのチームはUNetを材料画像分割に応用し、重要な成果を上げました。</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;私たちのチームは、上海大学コンピュータ工学科学学院を第一単位とし、魏惠姗を第一著者、韓越興准教授を通信著者とする論文「材料画像分割に応用されるUNet」を中国のコアジャーナルである「計算機応用研究」に掲載しました。また、この研究には、私たちのチーム内の陳侨川先生をはじめとする指導教員のご指導もいただきました。</span><br>                 
-		    </td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2022/weihuishan.jpg" width="60%" height="60%"/></p></td>
-		
-			 </tr>
-          </table>
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;材料画像の微細構造は通常、形状が異なり、テクスチャが複雑で、境界がぼやけるという特徴があり、材料画像処理分野における深層学習手法の発展を制限しています。本研究では、Graph-UNetと呼ばれる手法を提案し、UNetとグラフ畳み込みニューラルネットワークを融合することで、小規模サンプルの材料画像自動分割の課題を解決しました。本手法では、畳み込みニューラルネットワークの多次元特徴の融合とスキップ接続のアイデアをグラフ畳み込みニューラルネットワークに移植し、グラフ畳み込みとグラフ注意の効果的な組み合わせを実現し、特徴マップとグラフ構造の相互変換を実現する汎用モジュールを構築しました。材料画像データセットでの比較実験と消融実験を行い、Graph-UNetの分割結果が多くの先進的な手法よりも優れていることを証明し、多様な材料構造を正確に認識することができ、材料構造と性能の関係を探求することに貢献しました。</span>
-  		    	<br>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CAPJ&dbname=CAPJLAST&filename=JSYJ20220606005&uniplatform=NZKPT&v=Sb4W-lpMfao2C_TzkgUkkG2ytE4q7Kty_Dleam9ZREAObxc5gY-2HYGPn72Yxisn" target="_blank">https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CAPJ&dbname=CAPJLAST&filename=JSYJ20220606005&uniplatform=NZKPT&v=Sb4W-lpMfao2C_TzkgUkkG2ytE4q7Kty_Dleam9ZREAObxc5gY-2HYGPn72Yxisn</a></span><br> 
-		    
-		    </td>
-  		    </tr>
-            </tbody>
-            </table> 
-  
-  	      <p> </p>  
-	
-	<!-------------------------------基于轻量级网络的防伪标签检测算法 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-  	  
-  
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022年6月</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">私たちのチームの最近の成果は、軽量ネットワークを使用した防偽ラベル検出アルゴリズムです</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;私たちのチームは、上海大学学報（自然科学版）に「軽量ネットワークを使用した防偽ラベル検出アルゴリズム」を発表しました。
-この論文は、上海大学コンピュータ工学科学学院を第一単位とし、修士課程の張宏坤を第一著者、韓越興教授を通信著者としています。また、この研究には、陳侨川先生、巫金波先生の大きなサポートも受けました。</span><br>                 
-		    </td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2022/zhanghongkun.jpg" width="60%" height="60%"/></p></td>
-		
-			 </tr>
-          </table>
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;近年、偽造盗品による経済的損失は年々増加し、偽造技術はますます向上しています。防偽検査の問題は、研究者の広範な関心を集めています。現在の防偽検査方法は、計算量が多く、リソースを多く占有し、検査に時間がかかるという問題を解決するために、本研究では、軽量ネットワークを使用した防偽ラベル認識検出モデルを提案しました。 
-
-このモデルは、形状とテクスチャの認識により、より軽量な畳み込みニューラルネットワーク（CNN）を使用しています。形状認識のタスクでは、プーリング層のサイズを減らしてモデルの学習能力を強化し、テクスチャ分類のタスクでは、協調注意（coordinate attention, CA）モジュールを使用して単一の特徴マップの情報取得を強化しています。また、損失関数を設計して、真偽のサンプル識別能力を強化し、最後に、特徴ベクトルの最大値を使用して予測結果を得ることができます。 
-
-実験結果から、提案手法は全体的な識別検出精度が95.67％に達し、従来の方法に比べて検出時間が大幅に短縮されていることが示されました。</span>
-  		    </td>
-  		    </tr>
-            </tbody>
-            </table> 
-  
-  	      <p> </p>  
-		
-		<!-------------------------------人脸遮挡场景中的表情识别：一种路径选择多网络 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-  	  
-  
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022年5月29日</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">最近の成果として-人脸遮挡場面での表情認識に関するものが挙げられます</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;我们团队在国际期刊《Displays》（IF：2.167）上在线发表论文“Facial Expression Recognition in Facial Occlusion Scenarios: A Path Selection Multinetwork”。この論文は、上海大学コンピュータ工学科学学院を第一単位とし、阮礼恒を第一著者、韓越興准教授を第二著者および通信著者としています。</span><br>                 
-		    </td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2022/ruanliheng.jpg" width="60%" height="60%"/></p></td>
-		
-			 </tr>
-          </table>
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;今日、まだ続くパンデミック下では、外出時にマスクを着用することが当たり前の状態になりました。マスクは、鼻や口を覆うため、顔の特徴が隠れてしまいます。また、サングラスをかけたり、帽子をかぶったり、物体の陰影がある場合もあります。これらの顔の遮蔽は、表情認識に一定の困難をもたらします。本論文では、上半分、下半分、および目を覆う3つの一般的な顔の遮蔽シーンを基に、パス選択型のマルチネットワーク構造を提案しています。 
-
-この方法には2つの部分があります。第1部分は、マルチネットワーク構造であり、元のデータセットをラベル単位で3つのサブデータセットに分割し、各サブデータセットには元のデータセットの一部のラベルが引き継がれ、3つのサブネットワークがそれぞれ訓練されます。第2部分は、パス選択式のマルチネットワーク統合方法であり、各サブデータセットに含まれる画像を同じラベルとして扱い、新しいデータセットに入れ、初期ネットワークを訓練します。初期ネットワークが出力した予測結果に基づいて、子ネットワークの1つを選択して最終的な予測結果を出力します。 
-
-本論文では、Fer2013、Jaffe、KDEF、RAF-DBの4つの一般的な公開表情データセットを合わせて、より大きなデータセットにまとめ、トレーニングサンプル数を増やしました。そして、遮蔽処理を模擬し、実験結果では、本手法が遮蔽された顔の表情を効果的に認識でき、さまざまな顔の遮蔽シーンに適用できることが示されました。これにより、表情認識がより正確かつ信頼性の高いものになり、より多くのシーンで使用できるようになります。</span>
-  		    	<!--插入论文连接-->
-  			<br>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://doi.org/10.1016/j.displa.2022.102245" target="_blank">https://doi.org/10.1016/j.displa.2022.102245</a></span><br> 
-		    <br>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;项目链接：<a href="https://github.com/han-yuexing/A-Path-Selection-Multinetwork">https://github.com/han-yuexing/A-Path-Selection-Multinetwork</a></span><br> 
-		    </td>
-		    </td>
-  		    </tr>
-            </tbody>
-            </table> 
-  
-  	      <p> </p>  
-		
-		
-		
-<!-------------------------------基于数字图像处理技术的热障涂层形貌特征识别方法 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-  	  
-  
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022年5月</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">私たちのチームは、最近、デジタル画像処理分野で重要な成果を収め、熱防護コーティング表面の形状特徴認識方法に関する論文を発表しました</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;私たちのチームは、コアジャーナル「上海大学学報（自然科学版）」で、「基于数字图像处理技术的熱防護コーティング表面形状特徴認識方法」と題する論文を発表しました。本論文は、上海大学コンピュータ工学科学学院を第一単位とし、修士課程の劉宇虹を第一著者とし、韓越興教授を通信著者としています。また、この仕事は、曾毅教授、汪語嫣教授の大きな支援を受けました。</span><br>                 
-		    </td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-		<div style="margin-top: 0px;float: left;margin-left: 220px;">
-				<img src="./images/indexPic/2022/liuyuhong1.jpg" style="width: 180px; height: 180px;">
-				<img src="./images/indexPic/2022/liuyuhong2.jpg" style="width: 180px; height: 180px; padding-left: 0px;margin-left:15px">
-		   </div>
-          </table>
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;熱防護コーティング表面の形状特徴の人工的な検出には複雑さや大きな誤差などの欠点があるため、機械ビジョンを利用して熱防護コーティング表面の形状特徴を自動認識し、形状特徴パラメータを計算する方法を提案します。本研究では、数学形態学に基づく層状輪郭の自動抽出と形状パラメータの計算を行い、最大クラス間分散法を使用して2値分割閾値を求め、平滑化フィルタと形態学操作を使用してノイズを除去し、単一の層の連結性を確保します。輪郭抽出により、層の端部情報を取得し、最後に抽出された輪郭に基づいて層の実測パラメータを計算します。同時に、熱防護コーティング中のクラックの自動認識と長さの計算を遍歴探索に基づいて行います。まず、画像の層を認識して除去し、閉じた演算によるクラックの修復を行い、画像細線化によりクラックのスケルトンを取得します。そして、各クラックを探索し、長さを計算します。結果は、提案された方法による層の輪郭検出とクラックの認識の効果が良好で、ノイズ耐性が高く、形状特徴パラメータを正確に計算できることを示しています。これにより、熱プラズマスプレーによる溶融した粒子の基板表面への沈着過程の研究に重要な貢献が期待されます。</span>
-  		   	<!--插入论文连接-->
-  			<br>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://www.journal.shu.edu.cn/CN/10.12066/j.issn.1007-2861.2371" target="_blank">https://www.journal.shu.edu.cn/CN/10.12066/j.issn.1007-2861.2371</a></span><br> 
-		    </td>
-  		    </tr>
-            </tbody>
-            </table> 
-  
-  	      <p> </p>  
-	
-	
-	
-	
-	
-	
-	
-	
-	<!-------------------------------团队近期成果--基于超像素算法和深度学习的复杂纹理图像识别与分割 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-  	  
-  
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022.3.28</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">私たちのチームは、超像素アルゴリズムと深層学習を基にした複雑なテクスチャ画像の認識とセグメンテーションに関する最近の成果を発表しました</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;私たちのチームは、超像素アルゴリズムと深層学習を基にした複雑なテクスチャ画像の認識とセグメンテーションに関する論文を、国際誌「Computational Materials Science」（IF：3.3000）にオンラインで発表しました。本論文は、上海大学コンピュータ工学科学学院を第一単位とし、韓越興准教授を第一著者とし、チームメンバーの陳侨川教師が通信著者として、また、多大な貢献をした杨珅さんも同じく著者として、論文を執筆しました。</span><br>                 
-		    </td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2022/yangsheng.jpg" width="60%" height="60%"/></p></td>
-		
-			 </tr>
-          </table>
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;材料の画像は通常、十分な数のトレーニングサンプルが不足しているため、機械学習技術や深層学習技術の材料画像への適用を妨げています。そこで、この研究では、材料画像の重要な特性である同相性の高いピクセルを捉え、超像素と深層学習を組み合わせた材料画像の微視的構造の認識とセグメンテーション手法を提案しました。この手法は、3つのステップに分かれています。まず、矩形ブロックを取得します。つまり、古典的な超像素アルゴリズムであるSLICアルゴリズムを使用して、異なる数の超像素を取得し、その後、各超像素から最大の内接矩形ブロックを抽出します。次に、矩形ブロックを認識します。具体的には、これらの矩形ブロックを畳み込みニューラルネットワーク（CNN）に入れ、本研究ではDenseNetを主幹ネットワークとして選び、改良して認識します。また、材料画像における分布の不均一性やいくつかの相を区別するのが困難な問題があるため、本研究では、Focal lossを選択して改良し、材料画像に適応させました。最後に、各ピクセルのクラスを予測することで、画像全体のクラスを出力します。トレーニングが終了した後、ステップサイズ1、サイズl*l（lは奇数）のスライドウィンドウを使用して、n*nサイズの画像全体にスライドして、n*n個の矩形ブロックを取得し、モデルはこれらの矩形ブロックのクラスを予測し、同じクラスのピクセルを接続することで、材料画像の微視的構造の認識とセグメンテーションのタスクを実現することができます。</span>
-  			<!--插入论文连接-->
-  			<br>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://doi.org/10.1016/j.commatsci.2022.111398" target="_blank">https://doi.org/10.1016/j.commatsci.2022.111398</a></span><br> 
-			
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://www.sciencedirect.com/science/article/pii/S0927025622001690?dgcid=coauthor" target="_blank">https://www.sciencedirect.com/science/article/pii/S0927025622001690?dgcid=coauthor</a></span><br> 
-  		    </td>
-  		    </tr>
-  			<!--
-  		    <tr>
-  			<td height="60" width="60%"><p align="center"><img border="0" src="./images/indexPic/2020/newPostgraduate/20211210.JPG" width="50%" height="50%" /></p></td>
-  		    </tr>
-  			-->
-            </tbody>
-            </table> 
-  
-  	      <p> </p>  
-	
-	
-	<!-------------------------------团队近期成果--基于Radon变换和累计概率霍夫变换的菊池带自动检测方法 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-  	  
-  
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2022.2.07</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">最近の成果として-Radon変換と累積確率ハフ変換を組み合わせた菊池帯自動検出方法が挙げられます</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;私たちのチームは、ラドン変換とPPHTを基にしたキクチ帯の自動検出に関する論文を、国際誌「Journal of Microscopy」（IF：1.758、中科院4区）にオンラインで発表しました。本論文は、上海大学コンピュータ工学科学学院を第一単位とし、韓越興准教授を第一著者および通信著者とし、李睿祺氏、曾毅氏、刘梦炀氏が多大な貢献をしました。</span><br>                 
-            </td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2022/liruiqi1.jpg" width="60%" height="60%"/></p></td>
-				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2022/liruiqi2.jpg" width="60%" height="60%"/></p></td>
-			 </tr>
-          </table>
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;晶体構造と配向情報は、EBSD（電子バック散乱衝撃）パターンの分析によって取得することができ、これらのパターンはEBSD装置によって取得されます。得られた情報の信頼性と正確性は、EBSDパターンのストライプと交点の位置に依存します。この研究では、EBSDパターン（キクチバンド）と交点の位置を自動的に取得する方法を提案しています。この方法では、Radon変換と累積確率ハフ変換を使用して、キクチバンドのエッジの直線と線分をそれぞれ検出します。次に、線分の端点を使用して、キクチバンドを双曲線でフィットさせることができます。これらの結果は、キクチバンドの情報を定量化することができます。実験結果は、この方法が堅牢であり、より正確なキクチバンドと交点を検出できることを示しています。</span>
-  			<!--插入论文连接-->
-  			<br>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="http://dx.doi.org/10.1111/jmi.13079" target="_blank">http://dx.doi.org/10.1111/jmi.13079</a></span><br> 
-  		    </td>
-  		    </tr>
-  			<!--
-  		    <tr>
-  			<td height="60" width="60%"><p align="center"><img border="0" src="./images/indexPic/2020/newPostgraduate/20211210.JPG" width="50%" height="50%" /></p></td>
-  		    </tr>
-  			-->
-            </tbody>
-            </table> 
-  
-  	      <p> </p>  
-	
- <!-------------------------------2021课题组年终聚餐 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="18%" bgcolor="#CCCCCC" align="center"><span class="STYLE3" style="margin-left: -50px;">2021.12.24</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3" style="margin-left: -50px;">课题组年终聚餐</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2021年12月24日、韓越興准教授のチームは、上海の錦觀楼で2021年の年末の集まりを開催しました。その間、先生は自分の学生時代の経験を語り、今後の発展についてアドバイスをしました。また、卒業して帰ってきた李小龍先輩は、仕事の経験を共有しました。最後に、互いに祝福しあいながら、食事会を終えました。</span><br>                 
-			</td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" style="margin-top: -30px;">
-             <tr>
-  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2021/20211224.jpg" width="80%" height="80%"/></p></td>
-  			 </tr>
-          </table>
-	
-<!-------------------------------2021年12月14-16日，在河南郑州举办了“第五届材料基因工程高层论坛” -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="18%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2021年12月14-16日</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">第五届材料基因工程高层论坛についてですね</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2021年12月14-16日，「第五届材料基因工程高层论坛」が河南省の郑州で開催されました。韓越興先生は16日の午後、「コンピュータビジョンに基づく材料画像処理方法」について報告し、材料画像データの抽出方法について説明しました。材料データは材料ゲノムプログラムの物質的基盤であり、様々な材料研究に関連するデータベースの構築を支援することができます。また、人工知能が「微視的構造」「製造工程」「マクロ性能」との関係を理解するのに重要な役割を果たします。材料データには、計算データ、実験データ、生産データ、文献データが含まれますが、これらのデータにはしばしば大量の画像が含まれており、これらの画像から重要な情報を抽出することが、材料画像処理の主な目的です。</span><br>                 
-				 <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;報告の内容は、機械学習や深層学習などのコンピュータビジョン手法を用いて、複雑な材料画像中の各要素を抽出・掘り起こす方法について説明しました。報告で挙げられた3つの例は、分子マシンのDNA高分子材料画像の認識、キクチ柄の分割と認識、およびスーパーピクセルと改良されたDenseNet手法に基づく材料画像のセグメンテーションです。</span><br> 
-				 <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;さらに、韓越興先生は16日の午後に、分科会の学術会議を主宰しました。</span><br> 
-			</td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" style="margin-top: -30px;">
-             <tr>
-  				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2021/20211214.jpg" width="40%" height="40%"/></p></td>
-  			 </tr>
-          </table>
-	
-	 <!-------------------------------恭喜李小龙顺利毕业 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2021.12.24</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">おめでとうございます。李小龍さんの卒業が無事に終了しました！</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;李小龙さんは福建工程学院を卒業し、2018年に上海大学のコンピュータ学院に入学しました。入学後、韓越興先生の画像研究グループに参加し、コンピュータビジョンに関連する研究を行いました。その後、韓先生の指導のもと、医療画像セグメンテーションのテーマを選択しました。3年間の努力の結果、李さんは深層学習などのさまざまな技術を活用して、肝臓と腫瘍のCT画像の自動セグメンテーションを実現し、スマート医療の発展に貢献しました。卒業後、李さんは連影医療有限公司で医療関連の仕事を続けています。また、李さんは課外活動で広く経史文学を読み、スポーツを愛好し、多くの良師益友と出会いました。上海大学での3年間の研究生活で、李さんは大きく成長し、将来の道のりで継続的に前進し、どんどん突破していくことを望んでいます。</span><br>                 
-            </td>
-            </tr>
-            </tbody>
-          </table> 
-  			
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-			<span class="word" style="font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;研究生期间工作</span>
-			<br/>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;肝臓と腫瘍のCT画像の自動セグメンテーションにより、医師が患者の状態をより包括的に評価し、治療計画を立てるのに役立ちます。多くの深層学習技術を組み合わせて、定量的かつ定性的な診断データを提供し、临床治療に貢献します。</span>
-  			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;1. 報告では、FCN、U-Netなどの深層学習手法がネットワーク次元の制限により、三次元のCT画像の空間特徴情報を探索することが困難であるという問題に対処するために、境界損失関数を基にした2.5D全畳み込みネットワークを提案しました。この手法により、ネットワークのパラメータ数と計算リソースの消費を削減しながら、CT画像の空間特徴情報を効果的に探索し、肝臓と肝腫瘍のセグメンテーションの精度を向上させることができます。</span>
-  			<br/>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;2. 報告では、医療画像の特徴と、一般的な損失関数がネットワーク探索における境界特徴の能力を最適化することに欠けているという問題に対処するため、新しい境界損失関数を設計しました。この関数は、画像の輪郭の距離、面積、および境界情報を統合し、深層学習ネットワークを効果的に最適化し、より多くの画像境界と輪郭特徴を探索することができます。</span>
-			<br/>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp; 3. 報告では、エンコーダ・デコーダネットワークが局所的な特徴の相関性と依存関係を無視する問題に対処するために、2D、2.5D、3Dネットワークとアテンションメカニズムを統合し、双方向アテンションを基にしたエンコーダ・デコーダネットワーク分割フレームワークを提案しました。このフレームワークには、双方向自己アテンションメカニズム、DenseNetブロック、ResNetブロック、および双方向ネットワークブロックを統合し、9つの異なるネットワーク構造を含み、肝臓と肝腫瘍のCT画像の自動セグメンテーションタスクを効果的に実行することができます。</span>
-			
-			<!--等照片-->
-			<div style="margin-left: 20%;">
-				<img src="./images/indexPic/2021/lixiaolong/lixiaolong.jpg" style="width:450px; height:350px;">
-			</div>
-			<!--插入论文连接-->
-  			<br>
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="paper/2021/lixiaolong_paper.pdf" target="_blank">多次元エンコーダ・デコーダネットワークに基づく肝臓と腫瘍のセグメンテーション手法の研究</a></span><br> 
-  			
-  			</td>
-  		    </tr>
-  			<!--
-  		    <tr>
-  			<td height="60" width="60%"><p align="center"><img border="0" src="./images/indexPic/2020/newPostgraduate/20211210.JPG" width="50%" height="50%" /></p></td>
-  		    </tr>
-  			-->
-            </tbody>
-            </table> 
-  
-  	      <p> </p>  
-  
-	
-  
-  <!-------------------------------团队近期成果—基于迁移学习的重叠纳米物体识别方法 -------------------------------------------------->
-    
-    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-  	  
-  
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2021.12.03</span></td>
-                <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">チームの最近の成果- 転移学習を利用した重なり合うナノオブジェクトの認識方法</span></td>
-              </tr>
-          </table>
-         				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;弊チームは国際学術誌「Neural Computing and Application」(IF:5.606, 中科院2区)に論文「重なり合うナノオブジェクトの認識のための新しい転移学習」をオンラインで発表しました。この論文では、上海大学コンピュータ工学科学学院が第一の機関であり、韓越興准教授が第一著者および通信著者を務め、修士課程の学生である劉宇虹、宋磊磊、童麟が多大な貢献をしました。</span><br>                 
-            </td>
-            </tr>
-            </tbody>
-          </table> 
-  
-           <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-             <tr>
-				<td height="30" width="13%" style="display: inline;"><p align="center"><img border="0" src="./images/indexPic/2021/20211203.png" width="60%" height="60%"/></p></td>
-			 </tr>
-          </table>
-  		
-			<div style="margin-top: -10px;float: left;margin-left: 185px;">
-				<img src="./images/indexPic/2021/1.png" style="width: 130px; height: 130px;">
-				<img src="./images/indexPic/2021/2.png" style="width: 130px; height: 130px;padding-left: 5px">
-				<img src="./images/indexPic/2021/3.png" style="width: 130px; height: 130px;padding-left: 5px">
-				<img src="./images/indexPic/2021/4.png" style="width: 130px; height: 130px;padding-left: 5px">
-			</div>
-			
-			<div style="margin-top: -10px;float: left;margin-left: 220px;">
-				<img src="./images/indexPic/2021/liuyuhong.PNG" style="width: 140px; height: 140px;">
-				<img src="./images/indexPic/2021/songleilei.jpg" style="width: 140px; height: 140px; padding-left: 25px;">
-				<img src="./images/indexPic/2021/tonglin.png" style="width: 140px; height: 140px; padding-left: 25px;">
-				<br>
-				<span style="margin-left: 60px;">刘宇虹</span>
-				<span style="margin-left: 115px;">宋磊磊</span>
-				<span style="margin-left: 145px;">童麟</span>
-			</div>
-          <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-  		    <td >
-  			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;多くの分野で急速に発展しているナノ構造科学と技術ですが、高いコストのために、十分なナノオブジェクトサンプルを得ることはまだ困難であり、そのため材料分野における深層学習方法の発展を妨げています。この問題を解決するため、私たちは原子間力顕微鏡（AFM）の画像からナノオブジェクトを識別するための新しい方法を設計しました。まず、LOGに基づく画像ノイズ除去法を使用して画像を前処理します。次に、分水嶺アルゴリズムに基づいて、重なり合うオブジェクトを分割するための2つの改良された方法を提案しました。最後に、転移学習に基づくCNN認識モデルを構築し、大規模手書き数字と文字形状の事前学習を通じて優れたパフォーマンスを発揮するモデルを取得し、AFM画像中のナノオブジェクトを識別しました。本研究で提案された手法は、AFM画像中の小規模なサンプルのナノオブジェクト識別問題を効果的に解決することができます。</span>
-			<!--插入论文连接-->
-			<br>
-			<span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://doi.org/10.1007/s00521-021-06731-y" target="_blank">https://doi.org/10.1007/s00521-021-06731-y</a></span><br> 
-		    </td>
-		    </tr>
-			<!--
-		    <tr>
-			<td height="60" width="60%"><p align="center"><img border="0" src="./images/indexPic/2020/newPostgraduate/20211210.JPG" width="50%" height="50%" /></p></td>
-		    </tr>
-			-->
-            </tbody>
-            </table> 
-  
-  	      <p> </p>  
-  
-  
-  
-    <!-------------------------------团队近期成果——在高水平期刊发表论文 -------------------------------------------------->
-  
-  <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-    <tr>
-      <td>
-	  
-
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2021.10.01</span></td>
-              <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">チームの最近の成果-パラレル畳み込みニューラルネットワークに基づくEEG運動イメージ信号処理</span></td>
-            </tr>
-        </table>
-       				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;私たちのチームと上海大学機械自学院の李竜副教授のチームにより、国際学術雑誌『Biomedical Signal Processing and Control』(IF:2.954,中国科学院2区)にオンラインで発表された論文「A classification method for EEG motor imagery signals based on parallel convolutional neural network.」 この学術誌のJCRおよび中国科学院のSCI区分は2区に分類されています。この論文において上海大学計算機学院が第一著者単位となっており、韓越興副教授が第一著者および連絡著者となっています。</span><br>                 
-            </td>
-            </tr>
-            </tbody>
-            </table> 
-
-         <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-           <tr>
-            <td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2021/20211016-2.png" width="90%" height="90%" /></p></td>
-           </tr>
-       
-        </table>
-
-        <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-            <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;深層学習は現在の研究において様々な種類の画像分類に広く成功裏に応用されてきました。しかしながら、EEG(脳電波)モーター・イメージング分類に深層学習手法が極めて限られてきました。本研究では、EEGシグナルの事前処理アルゴリズムとしてパラレルコンボリューショナルニューラルネットワーク(PCNN)構造を提案しEEGシグナルの分類に使います。原始EEGシグナルの表現の為に、空間フィルタリングと周波数帯域情報を組み合わせて新しい形式の画像を作成しました。PCNNに作成した画像を入力すると、分類能力を最適化する3つの異なるサブモデルをスタックで統合します。本方法はBCI competition IVデータセット2b上で平均83.0±3.4%の正確度を達成し、比較手法より少なくとも5.2%優秀です。同データセット2b上で本方法の平均Kappa値は0.659±0.067でしたが、比較アルゴリズムより少なくとも20.5%改善しました。結果から本方法はEEGモーターイメージングシグナル分類において優れていることが示唆されました。
-	  	         </span><br> 
-                 <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://doi.org/10.1016/j.bspc.2021.103190" target="_blank">https://doi.org/10.1016/j.bspc.2021.103190</a></span><br> 
-		 <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;项目链接：<a href="https://github.com/han-yuexing/eegmotor" target="_blank">https://github.com/han-yuexing/eegmotor</a></span><br>	    
-            </td>
-            </tr>
-           
-        </tbody>
-        </table> 
-
-	      <p> </p>  
-  
-  
-  
-  
-  
-  <!-------------------------------团队近期成果—-高通量下的材料图像分割—高水平期刊发表论文 -------------------------------------------------->
-  
-  <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-    <tr>
-      <td>
-	  
-
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2021.10.01</span></td>
-              <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">最近の成果 - 高速搬送下の材料画像セグメンテーション</span></td>
-            </tr>
-        </table>
-       				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-            <tbody>
-                    <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;私たちのチームと上海大学材料基因工学研究院の楊炯教授の研究グループは、国際学術誌『Chemistry of Materials』(IF:9.872、中国科学院1区トップ)にオンラインで論文「Accelerating the Discovery of Cu−Sn−S Thermoelectric Compounds via High-Throughput Synthesis, Characterization, and Machine Learning-Assisted Image Analysis.」を発表しました。この学術誌は工学技術・材料科学を含む総合的な研究分野のトップレベルの学術誌の1つであり、JCRおよび中国科学院のSCI区分は1区トップに分類されています。この論文では上海大学が第一単位となっており、材料基因工学研究院の博士研究生の盛耀が第一著者、材料基因工学研究院の楊炯教授、奚晋揚教授、および計算機工学科の韓越興副教授が共同連絡著者となっています。</span><br>                 
-            </td>
-            </tr>
-            </tbody>
-        </table> 
-
-        <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-           <tr>
-            <td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2021/20211016.png" width="90%" height="90%" /></p></td>
-           </tr>
-       
-        </table>
-
-        <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-                <tbody>
-                    <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;HTP(ハイスループット)手法は材料研究開発を促進する強力な手法となってきています。この研究では、HTP 合成と評価を組み合わせることにより、ML(機械学習)画像セグメンテーション手法の新たな熱電材料発見能力を示しています。まず、改善された拡散合成HTP手法により9種類の異なる原料比のシリンダー試料を調製しました。それぞれの原料比固定片に対してスキャニング電子顕微鏡で計測を行い、背散乱電子像を合計99枚撮影しました。99枚の背散乱電子像から異なる相を高速にセグメンテーションするために、2つのML画像セグメンテーション戦略を提案しました。分類精度0.9となり、大量の画像の自動分類に使用しました。第一の戦略より分離された2つの主要相のEDS評価結果から新しい化合物Cu7Sn3S10を発見し、zT値は0.6を超えました。監督戦略に対し、監督されていない戦略によりさらに未発見化合物Cu1.6Sを同定しました。この結果から、我々の研究はHTP合成から自動分析までを網羅した一例を示し、HTP評価と新規化合物同定の自動化分析を実現しました。
-		        </span><br> 
-           <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://doi.org/10.1021/acs.chemmater.1c01856" target="_blank">https://doi.org/10.1021/acs.chemmater.1c01856</a></span><br>            
-           </td>
-           </tr>
-           
-          </tbody>
-          </table> 
-
-	      <p> </p>
-
-
-
-<!-----------------------------------------------------------------欢迎2021届新生韩思凡、陈尊龙、池洳婷、万冠新---------------->
-
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2021.09.18</span></td>
-          <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">2021年卒業生の韓思凡さん、陳尊竜さん、池洳婷さん、万冠新さん、チームへようこそ!</span></td>      
-        </tr>
-      </table>
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        
-       <div>
-          
-          <table   cellpadding=10 cellspacing=0 width=88% height=88% align="center" >
-              <tbody>
-                  <tr>
-                  <td align="center" ><img src="./images/indexPic/2021/newPostgraduate/01.jpg"></td>
-                  <td ><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;韓 思凡さん、ようこそ!
-
-韓さんは西北民族大学のソフトウェア工学部で学部課程を修了し、現在上海大学の硕士課程の修学生です。
-韓さんは笑顔が多く、楽しく、シンプルに、音楽を愛し、自由にいられてもよし、静かにいられてもよしであることを好みます。韓さんの歴史は華やかではなく、一歩一歩自分を証明してきました。韓さんは学習委員を経験しており、チームで数学モデリングコンテストに参加し受賞しています。研究生として推薦枠を得ていることから、成功は簡単ではないということを理解しているとのことです。
-性格としては、韓さんは明るく、前向きで、チームワークができ、やる気があって手際がよく、調整とコミュニケーションスキルに優れ、柔軟性があり、発想が豊かだということです。韓さんは真面目で熱心で責任感があり、柔和で時間概念があるといいます。社会体験に積極的に参加して、自分の才能を発揮し潜在能力を掘り起こそうとしています。集団思考が強く、チームワークに励んでいます。
-新しい学習環境では、韓さんは引き続き努力を重ね、能力を高め、新しいチャレンジを迎えて皆様と一緒に成長していきたいと考えています。</span></td>
-                  </tr>
-
-              <tr>
-               <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陳 尊竜さん、ようこそ!
-
-陳さんは中国海洋大学情報科学工学部電子情報科学技術専攻で学部課程を修了し、現在上海大学計算機科学技術専攻の修士課程に在籍しています。
-性格は明るく、研究を愛し、コミュニケーションがうまいということです。学習と研究ではとても厳格で細かい点に注意し、知識体系を見直すことがよくあります。余暇時間は動画を見たり、フォーラムにしごいたりします。
-上海大学の修士課程生活において、陳さん自身を向上させ、教員や学生と一緒に研究と計算機技術を進歩させたいと考えています。陳尊竜さん、上海大学での修士課程生活を心よりお祝いします。頑張って下さい。</span></td>
-                 <td align="center" ><img src="./images/indexPic/2021/newPostgraduate/02.jpg"></td>
-                  </tr>
-
-                  <tr>
-                      <td  align="center"><img src="./images/indexPic/2021/newPostgraduate/03.jpg"></td>
-                      <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;池洳婷さん、ようこそ!洳婷さんは上海大学計算機学院知能科学技術専攻で学部課程を修了し、現在同じ計算機学院の計算機科学技術専攻の修士課程に在籍しています。韓越興先生のもとで研究しています。
-推理映画や様々な種類の本が好きで、ジョギング、料理も楽しんでいます。性格は明るく、積極的に Optimistic で、考えるのを好み、チャレンジフルです。新しい道の中で、洳婷さんはいっそうの自己実現を期待しています。
-洳婷さん、修士課程で頑張ってください。新天地でいろいろな出会いがあるといいと思います。</span></td>
-                  </tr>
-                  <tr>
-                      <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万 冠新さん、ようこそ!万さんは桂林理工大学計算機科学技術専攻を卒業し、現在上海大学の計算機科学技術の修士課程に在学しています。性格は明るく、人とうまくやっていけて、コミュニケーションが取れて、頑強で内省的で責任感があります。万さんは困難に正確に向き合い、環境適応力に優れてます。冷静に対処できて、仕事を successfully 完遂できる自信があるといいます。趣味は本を読んだり音楽を聴いたり、サスペンス映画を見たりしてリラックスしたいと思っています。また、バドミントンや卓球、ジョギングで体を鍛えてます。
-生活では真面目に責任を持ちたいと思い、小さな目標を設定して自己動機づけをしようとしています。万さんのモットーは「成功=努力+正しい方法+話を少なくする」ということです。上海大学の時間の中で自分の成功を収穫できますよう願っています。万さん、修士課程で頑張ってください。</span></td>
-                      <td  align="center"><img src="./images/indexPic/2021/newPostgraduate/04.jpg"></td>
-                  </tr>
-              
-              </tbody>
-          </table> 
-
-      </div>
-
-      <p>　</p>
-	  
-<!-----------------------------------------------------------------张宏坤同学在高水平期刊发表论文----------------->	  
-
-  <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-    <tr>
-      <td>
-	  
-
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2020.07.06</span></td>
-              <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">チームの最近の成果 - 張宏坤さんが高レベルの学術誌に論文を発表</span></td>
-            </tr>
-        </table>
-       				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-                <tbody>
-                    <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;我々のチームと上海大学材料基因工学研究院の巫金波教授の研究グループは、国際学術誌『Small』(IF:11.459,中国科学院1区トップ)にオンラインで論文「Unclonable Micro-Texture with Clonable Micro-Shape towards Rapid, Convenient, and Low-Cost Fluorescent Anti-Counterfeiting Labels」を投稿しました。この学術誌は工学技術・材料科学を含む総合的な研究分野のトップレベルの学術誌の1つであり、JCRおよび中国科学院のSCI区分は1区トップに分類されています。この論文では上海大学が第一単位となっており、上海大学コンピュータ工学科の張宏坤修士課程生と材料基因工学研究院の林宇宏・馮静芸修士課程生が共同第一著者となっており、巫金波教授と韓越興副教授が共同連絡著者となっています。この研究は張統一院士、温維佳教授、および沖縄科学技術研究所(OIST)の戚亜冰教授から強力なサポートを得ています。</span><br>                 
-</td>
-</tr>
-</tbody>
- </table> 
-
-         <table  cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-           <tr>
-            <td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2021/20210706.png" width="90%" height="90%" /></p></td>
-           </tr>
-       
-        </table>
-
-        <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-                <tbody>
-                    <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;高級ブランドから医療製品に至るまで、模造偽造品は巨大な経済損失と人々の健康リスクをもたらしています。現在広く使用されている防偽ラベルは決定論的生産プロセスに根ざしており、簡単に製造できる一方で容易にコピーできてしまいます。物理的な非複製性機能(PUF)を持つ防偽ラベルを生産することは実現可能な解決策ですが、従来のPUF認識技術ではデータベースにある全ての画像と一様にマッチングする必要があって、製造コストが高く認識速度も遅いという課題がありました。
-我々の研究では、マイクロテクスチャが非複製的でありながらマイクロシェイプが複製可能な新しい概念を提案し、速く簡単に低コストな蛍光防偪ラベルの開発を可能にしました。</span><br>  
-           <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;上述の問題を解決するため、この研究チームはパラレルディスコンテニュアスウェッティング技術を用いて4層の防偽機能を持つ高精度にラベルを製造しました。カルサイト鉱線ムーン光は第一の防偽機能であり、 マクロ構成単位からなるマクロパターンはバーコードなどの情報を携え第二の防偽機能である、形態の異なるマイクロ単位は第三の防偽機能である。自己組織化したランダムプロセスから生じた複製不可能なテクスチャーは第四の防偽機能です。
-このラベルはコストが低く、製造が簡単かつ速く、高い防偽性能を実現しました。我々のモデルはマイクロテクスチャが非複製的でありながらマイクロシェイプが複製可能であるため、学習の必要なく高速に検知可能です。</span><br>  
-           <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;我々の主な研究は実際の薄膜パターンを含むデータベースの設計と構築を行いました。形状データベースとテクスチャデータベースが含まれています。CNL(ランドマークの数をコントロール)方法、改善されたホフ変換方法、形状空間理論を用いて形状の識別を行い、続けてGMS(グリッドベースのモーション統計)方法を用いてラベルのテクスチャーの同定を行いました。
-形状データベースから微細単位の形状特徴量を抽出し、テクスチャデータベースからテクスチャ特徴量を抽出しました。学習段階なしで微細単位の形状の一致率は99.5%、テクスチャの一致率は100%に達しました。
-このように、私たちの提案したラベルはマイクロテクスチャが非複製的でありながらマイクロシェイプが複製可能なため、高速かつ正確に検知できるという利点があります。</span><br>  
-           <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;実際の応用例では、スマートフォンや携帯型顕微鏡を用いて防偽マイクロパターンを取得し認識ソフトウェアで照合して同定を行いました。ナノ結晶薄膜の様々な輪郭形状を細分して「分類記号」として画像データの同定に用いました。この「分けて治す」戦略に基づく認証技術では、時間を20倍以上削減できることが示されました。高速合成技術とデータ主導型マテリアル応用が組み合わされて、Agent costが2.1 × 10^-4USD、認証が速く簡単(総時間12.17s)、エンコード容量が2.1 × 10^623に達しました。
-結論として、我々の提案したラベルはマイクロテクスチャが非複製的でありながらマイクロシェイプが複製可能性という利点を活用し、高速かつ正確に認証することができました。</span><br>      
-           <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;この関連研究は国家重点研究開発プログラム((2020YFB0704503, 2018YFB0704400,2018YFB0704402)、国家自然科学財団(21775101)、111プロジェクト(D16002)、上海科学技術委員会プロジェクト(20ZR1419000)から資金提供を受けています。
-研究を後押しするための多額の財政支援があることは、この重要な研究の価値を示しています。開発された技術は偽造防止分野に大きな影響を与える可能性があります。
-
-</span><br> 
-           <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;论文链接：<a href="https://onlinelibrary.wiley.com/doi/10.1002/smll.202100244" target="_blank">https://onlinelibrary.wiley.com/doi/10.1002/smll.202100244</a></span><br>            
-           </td>
-           </tr>
-           <tr>
-            <td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2021/20210707.jpg" width="90%" height="90%" /></p></td>
-          </tr>
-          </tbody>
-          </table> 
-
-	      <p> </p>
-
-<!-----------------------------------------------------------------祝贺2021届本科生顺利毕业----------------->
-    
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2020.06.18</span></td>
-              <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">祝贺2021届本科生顺利毕业！</span></td>
-            </tr>
-        </table>
-       				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-                <tbody>
-                    <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;何 济元、包 胜旗、宋絡雅、池 洳婷、施恬安、徐 莹さんたち、卒業おめでとうございます!何さんたちは皆上海大学計算機科学技術専攻を専攻しており、2年次から韓越興先生の指導の下計算機ビジョンの研究を行ってきました。卒業研究も韓先生の指導の下行われました。
-4年の学部課程はすぐさま過ぎ去りましたが、皆様それぞれの理想を持ちながら前向きに新天地へと羽ばたいていきます。卒業おめでとうございます。新天地での challenge にチャレンジしてください。</span><br>
-           <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;包 胜旗さんはOptimisticで自分にチャレンジし、困難に勇敢に向き合って克服してきました。上海大学での4年間、包さんは多くの知識を得るとともに多くの良き友人や先生と出会ってきました。未来に向かって包さんが積極的にチャレンジして成長していくことを願っています。</span><br>
-          <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;宋 絡雅さんは明るい性格で、幅広い興味を持っています。学習に努力する一方で、しばしば図書館で本を読んだり音楽を聴いたりしています。余暇時間には泳いだりバドミントンをしたりしてリラックスしています。上海大学での4年間は宋さんに多くの思い出を残しました。宋さんがいつも前向きに成長していくことを願っています。</span><br>
-          <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;池 洳婷さんは積極的でOptimisticで考える事が好きでチャレンジ精神に満ちています。余暇には本を読んだりジョギングをしたり料理をしたりします。卒業後、洳婷さんは上海大学コンピュータ学部の修士課程で韓越興先生の下で研究を続けていきます。新しい人生でいっそうの自己実現を願っています。洳婷さん、頑張ってください。</span><br>
-          <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;徐 莹さんは真面目に取組み事に対処し冷静に対応できます。友達を作るのが好きで、旅行が趣味で健康管理に勤め生き生きとしています。修士課程では浙江大学のソフトウェア工学専攻でデータベース研究を行います。コンピューターの世界で徐さんが未来の研究と仕事のキャリアで自分に必要不可欠な事柄を見つけて成長していくことを願っています。徐さん頑張ってください!</span><br>
-          <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;何 济元さんは人と真剣に接し、コミュニケーションをとる事が上手で、率直で熱心に人に接しています。責任感もあります。未来の学習の中で何さんが自分自身を完全にしていき自分を超えていくことを願っています!何さんの学業及びキャリアに順調を祈っています。</span><br>
-          <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;施 恬安さんは明るい性格で真面目に取り組みます。音楽と読書が趣味です。卒業後、復旦大学の計算機学部で人工知能方向の修士課程を専攻します。上海大学での4年間、施さんは多くの良き先生や友人に出会いました。未来、彼は人生の道のりでがむしゃらにがんばり、自己実現できますよう願っています。施さん、頑張ってください。</span><br>
-          <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;再度、卒業おめでとうございます。皆さんが将来の人生を前進していく中で、波の中を泳いでいくことができますよう願っています。皆さんが自分自身の迫大な人生目標を実現するためにがんばってください。現在を大切にし人生を大切にして、その努力の中から自分自身と祖国に美しい未来を生み出してください。決心、自信、粘り強さ、忍耐力。この4つの「心」が常に皆さんとともにあることを願っています。 皆さんの智恵の中から輝く人生を創り出してください。</span><br>         
-        </td>
-                    </tr>
-                </tbody>
-            </table> 
-	      
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2021/20210618.jpg" width="90%" height="90%" /></p></td>
-			
-          </tr>
-        </table>
-	      <p> </p>
-  
-<!-----------------------------------------------------------------获得优秀班导师----------------->
-  <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-    <tr>
-      <td>
-	  
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2021.05.14</span></td>
-              <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">優れたクラスアドバイザーを得ることができました</span></td>
-            </tr>
-        </table>
-       				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-                <tbody>
-                    <tr>   
-		    <td >
-			     <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;学生の評価により、 2019年に第1回の学部優秀クラスアドバイザーを、 2020年に第2回の学部優秀クラスアドバイザーを受賞しました。2021年5月14日の授賞式に参加しました。今後もさらに精進していかなければなりません。先生の責任は教育と研究の2つがあると思います。それ以外の仕事はそれらを補助するためのものだということを覚えておきます。
-</span></td>
-                    </tr>
-                </tbody>
-            </table> 
-	      
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2021/20210514.jpg" width="90%" height="90%" /></p></td>
-			<td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2021/202105142.jpg" width="90%" height="90%" /></p></td>
-			<td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2021/2019年度优秀班导师.jpg" width="90%" height="90%" /></p></td>
-			<td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2021/2020年度优秀班导师.jpg" width="90%" height="90%" /></p></td>
-          </tr>
-        </table>
-	      <p> </p>
-	 
-  
-	  
-	  
-	  
-	  
-	  
-	  
-
-	 <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-    <tr>
-      <td>
-	  
-	      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2020.12.31</span></td>
-            <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">道は遠く、唯一の方法は奮闘すること!皆さんに新年のおめでとう!2021年は前向きに進み、再び良い業績を残しましょう!</span></td>      
-          </tr>
-          </table>
-        
-	  <div>
-						
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-                <tbody>
-                    <tr>                   
-                    <td ><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;一年を振り返りますと、韓越興研究グループの科学研究は再び優れた成果を上げており、研究費や高品質な論文の数はともに新記録を更新しました。このグループは常に国家に貢献することを志向しており、最新のトレンドに追従し、学術的高峰に踏み出そうとしています。これはグループメンバー一人一人の努力と、学校や学部からの全面的な支援なしには成し得ません。今後、このグループは困難にも恐れをなくしながら、学術的新領域を開拓し、各メンバーも手を取り合いながら科学研究の頂点を目指します。困難な時期にこそ我慢強さが出てきて、磨きが効きます。</span></td>
-                    </tr>
-                </tbody>
-            </table> 
-	</div>
-	      
-	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2020.12.26</span></td>
-              <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">マ カ参加上海マテリアルゲノミックス研究所2020年度学術集会</span></td>
-            </tr>
-        </table>
-       				
-            <table   cellpadding=8 cellspacing=0 width=88% height=88% align="center" >
-                <tbody>
-                    <tr>   
-		    <td >
-			    <span class="word" style="font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;機械学習に基づいてマグネシウム合金の結晶粒幾何特性と耐力の関係を構築する</span><br>
-			    <span class="word">&nbsp;&nbsp;&nbsp;&nbsp;ホール・ペッチ関係では多結晶材料の結晶粒サイズと屈曲強度の定量的な関係が示されています。しかし、結晶粒サイズの統計方法はいくつかあり、インターセプト法、マッチング法、グリッド法などが挙げられ、結晶粒の等価直径や周囲長も結晶粒サイズを表すことができます。多結晶材料の屈曲強度と最も関連する結晶粒の幾何特性を探求するためには、画像処理と大規模データ処理が必要です。この研究では、画像処理と機械学習を活用し、合金の結晶粒の幾何特性と屈曲強度の関係を構築します。
-</span></td>
-                    </tr>
-                </tbody>
-            </table> 
-	      
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2020/make/nianhui.jpg" width="87%" height="87%" /></p></td>
-          </tr>
-        </table>
-	      <p> </p>
-	 
-  <table width="960" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-	
-    <tr>
-      <td>
-	
-	      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2020.9.23</span></td>
-            <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">新入組2020年入学生の王璐、李睿祺、劉宇虹、夏錦樺さんらの加入を歓迎します!</span></td>      
-          </tr>
-        </table>
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          
-          
-          
-
-	<div>
-						
-            <table   cellpadding=10 cellspacing=0 width=88% height=88% align="center" >
-                <tbody>
-                    <tr>
-                    <td align="center" ><img src="./images/indexPic/2020/newPostgraduate/01.jpg"></td>
-                    <td ><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王璐さんの紹介いわく、山西大同大学数学応用数学専攻卒業。 雲南昆明理工大学動力システム・演算専攻修士課程修了。研究分野はデジタル画像処理・画像ノイズ低減。現在上海大学計算機科学技術博士課程に在学中で、研究分野はマテリアル画像認識。
-性格は外向的で活発で根性がある。趣味は写真撮影、読書、グルメ。「一歩ずつ歩み続ければ、遠くを目指せる」。上海大学では4年間を掛けて、自分自身をよりいい人になりたいと思っています。</span></td>
-                    </tr>
 
                 <tr>
-                 <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;李睿祺さんは上海大学計数工学科計算機科学技術専攻卒業で、現在上海大学の同専攻の修士課程に在学中です。考える能力があり、協調精神に満ちています。韓越興先生の指導の下学んでいて、主にマテリアル画像や小サンプル学習に焦点を当てています。 先生や学生の皆様と情報や技術を共有しながら交流し、互いに成長していけることを願っています。李睿祺さん、修士課程順調に過ごせますよう願っています。</span></td>
-                   <td align="center" ><img src="./images/indexPic/2020/newPostgraduate/02.jpg"></td>
-                    </tr>
-
-                    <tr>
-                        <td  align="center"><img src="./images/indexPic/2020/newPostgraduate/03.jpg"></td>
-                        <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刘宇虹さんの自己紹介いわく、安徽中医薬大学計算機科学技術専攻卒業。現在は上海大学の同専攻の修士課程に在学中です。
-明るく陽気で、生き生きとしています。音楽を聴きながら本を読み、朗読を好みます。ミステリー、ラップミュージック、歴史に興味があります。グルメや考古学、歴史ドキュメンタリーも好きです。困難なときに音楽と文字列が力を与えてくれます。詩と歴史から未来を予見できます。モットーは「コーダーではなくシンカーであること」。生活から養分を得て成長したいと思っています。上海大学での日々を思い出深いものにしたいと考えています。</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夏錦桦さんの自己紹介江蘇科技大学ソフトウェア工学専攻卒業。現在電子情報専攻の修士課程に在学。明るく行動力のある性格で、チャレンジすることが好きで、積極的に創造的です。実践的で働きかけがある一方で、コミュニケーションが取れてチームワークが得意です。趣味はスポーツでバスケットボールが好き。アニメも見ます。学部時代は同級生と連帯感を持ち、グループ活動に積極的に参加しました。スポーツなどを通じてチームワークを学びました。強靭な精神性があり目標Orientatedです。自分の強みと不足点を正しく認識しています。挫折から学び成長し続けていきます。状況把握ができ対策を考え解決に導きます。実務能力と経験に乏しい部分があることを自覚しており、向上に努めていきます。</span></td>
-                        <td  align="center"><img src="./images/indexPic/2020/newPostgraduate/04.jpg"></td>
-                    </tr>
+                  <td>
+                    <span class="word">陳易銘、男、本科は江蘇大学コンピュータ科学・通信工学院IoT工学科を卒業し、現在は上海大学コンピュータ学院修士課程に在籍し、楽観的で向上心があり、明るくフレンドリーで、スポーツやゲームなどが好きです。大学院の段階で自分の科学研究のレベルを高め、チームの協力力を高め、みんなと一緒に入ってほしい。</span>
+                  </td>
+                  <td style="text-align: center">
+                    <img data-lazy-src="./images/indexPic/2024/chenyiming2024.jpg" width="280" height="290" />
+                  </td>
+                </tr>
+        
+                <tr>
+                  <td style="text-align: center">
+                    <img data-lazy-src="./images/indexPic/2024/liyang2024.jpg" width="280" height="290" />
+                  </td>
+                  <td>
+                    <span class="word">李楊、男、本科は武漢理工大学に在学し、現在は上海大学コンピュータ科学と技術専門修士課程の大学院生である。普段はバドミントンが好きで、一人で走っています。優秀な同級生と付き合うのが好きだ。潔癖で完璧主義で、物事を最高にしたい。新しい出発点で、科学研究をしっかりと行いながら、良い体を持って、みんなと楽しく大学院生生活を送ることができることを望んでいます。</span>
+                  </td>
+                </tr>
                 
-                </tbody>
+                <tr>
+                  <td>
+                    <span class="word">桑晨、男、本科は上海大学コンピュータ学院人工知能学科に学び、現在はコンピュータ科学と技術学科で修士を学んでいる。性格は明るくて、積極的で楽観的で、人に対して誠実で、責任感があります。大学院生活の中で自分の専門能力と実践能力を高め、学習探索の中で成長していきたい。</span>
+                  </td>
+                  <td style="text-align: center">
+                    <img data-lazy-src="./images/indexPic/2024/sangchen2024.jpg" width="280" height="290" />
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td style="text-align: center">
+                    <img data-lazy-src="./images/indexPic/2024/zhanghaoxuan2024.jpg" width="280" height="290" />
+                  </td>
+                  <td>
+                    <span class="word">張昊軒、本科は江蘇大学コンピュータ学部を卒業し、今は上海大学コンピュータ科学と技術学科で修士課程を専攻している。性格的には、私は内外の特質を結合した人です。人と交流するのも好きだし、自分の世界に浸るのも楽しみだ。趣味は幅広く、主に球技や棋スポーツが好きだ。次の日には、みんなと一緒に学術の最前線を探り、共に進歩していきたい。私も一生懸命勉強して、積極的に自分の力を貢献します。</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span class="word">張文駿、男、本科は武漢理工大学コンピュータ学院ソフトウェア工学科に学び、現在は上海大学コンピュータ科学技術学科で修士課程に学んでいる。誠実で責任感があり、銃器、刃物、弓矢、パチンコ、FPV、無制限格闘などの趣味があり、ソフトウェア開発に深い興味を持っている。大学院生の間に別の生活を体験し、人生の意義を探求したい。</span>
+                  </td>
+                  <td style="text-align: center">
+                    <img data-lazy-src="./images/indexPic/2024/zhangwenjun2024.jpg" width="280" height="290" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="text-align: center">
+                    <img data-lazy-src="./images/indexPic/2024/zhaoyankang2024.jpg" width="280" height="290" />
+                  </td>
+                  <td>
+                    <span class="word">趙寅康、男、本科は常熟理工学院データ科学とビッグデータ技術学科を卒業し、現在上海大学コンピュータ科学と技術学科で修士課程に通っている。私は積極的で楽観的で、考えるのが好きです。バドミントンやバスケットボールなどの球技は好きだが苦手で、夜の散歩が好きだ。大学院生の間に自分の専門能力を高め、より多くの友人と一緒に進歩することを望んでいる。</span>
+                  </td>
+                </tr>
+              </tbody>
             </table> 
+          </div>
+        </table>
+      </td>
+    </tr>
+  </table>
 
-	</div>
-	
-	      <p>　</p>
-   
-
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  
+  <!-------------------------------恭喜池洳婷利毕业 -------------------------------------------------->
+  
+  <table class="main-table">
+    <tr>
+      <td>
+        <table class="inside-table">
             <tr>
-              <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2020.9.12</span></td>
-              <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">授業開始の会と宋磊磊先生の送別の宴会</span></td>
+              <td style="height: 30px; width: 13%; background-color: #CCCCCC; text-align: center;">
+                <span class="STYLE3">2024.07</span>
+              </td>
+              <td style="height: 30px; background-color: #CCCCCC;">
+                <span class="STYLE3">池洳婷の無事卒業おめでとう！</span>
+              </td>
             </tr>
         </table>
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr >
-            <td width="13%"></td>
-            <td height="30">
-              <span class="STYLE3">彼の離別は再会をよりよくするためであり、去った先から自分のいちばんいいところを持ち帰るためである。</span>
+       				
+        <table class="table-block">
+          <tbody>
+            <tr>   
+              <td>
+                <span class="word">池洳婷，本科は上海大学を卒業し、2021年から上海大学コンピュータ工学と科学学院で学術型修士大学院生を専攻している。池λ婷さんは本科大学4年生から韓越興研究グループに入り、画像処理に関する技術と応用を学び、韓先生の指導の下で、以下の研究を続け、推進した。</span>                
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+  		
+        <table class="table-block">
+          <tbody>
+            <tr>   
+              <td >
+                <span class="word">1. 材料画像の意味分割に存在する小サンプルとミクロ構造特徴が複雑である問題に対して、特徴ピラミッドと十字交差注意力に基づく二分岐意味分割ネットワークを提案する。このネットワークは、プライマリブランチとセカンダリブランチに分かれています。主ブランチは、特徴ピラミッドモデルを使用して多層的な画像特徴を集約して詳細情報を強化する、セカンダリブランチは、バックボーンネットワークの低層フィーチャを使用して画像を分割し、セカンダリネットワークはテクスチャと境界情報を学習する。マルチタスク監視とマルチスケール特徴の協力の下で、この方法は比較モデルに比べて、複数の小サンプル材料画像データセット上で最適な性能を得る。 </span>
+                <br />
+                <span class="word">2. 材料画像インスタンス分割における顕著な小サンプル問題に対して、既存データの利用率を高めることから、多モード融合と偽ラベル技術に基づくインスタンス分割方法を提案する。この方法は画像とテキストの多モードデータを融合することによって、ネットワークの物体分類、位置決め、分割の精度を高める。本論文では訓練を2段階に分けた：全監督訓練と半監督訓練。半監督訓練の段階では、偽ラベル技術を用いて、表示されていないデータを監督モデルの最適化に参加させる。多モード情報と2段階訓練の協力の下で、この方法は比較モデルに比べて、多種の小サンプルインスタンス分割シーンにおいて優れた性能を得る。</span>
+                <br />
+                <span class="word">3. 2205二相ステンレス鋼顕微鏡画像に対して、統計分析方法を設計して材料画像分割結果と材料性能の内的関係掘削を完成する。本論文はそれぞれ意味分割結果及び実例分割結果に基づいて、材料経験式を用いて、人工分析結果に近いミクロ構造の成長速度と材料性能変化情況を効率的かつ正確に獲得する。</span>
+                <br />
+                <span class="word">卒業後、池洳婷さんは小米に入ってカメラアルゴリズムの仕事に従事した。池洳婷さんは上海大学の3年間の大学院生生活の中で努力して勉強し、真剣に科学研究し、絶えず自分の専門知識を強化して、幸運にも多くの良師良友と知り合いました。池洳婷さんが未来の道で初心を忘れず、使命を銘記し、棘を切り、研磨して前進してほしい。</span>
+                <!--插入论文连接-->
+                <br />
+                <span class="word">論文へのリンク：<a href="https://github.com/han-yuexing/han-yuexing.github.io/blob/master/paper/2024/21721559%2B%E6%B1%A0%E6%B4%B3%E5%A9%B7.pdf" target="_blank">小样本图像分割方法研究及其在材料性能挖掘的的应用</a></span>
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+  		  <!--人物照片-->
+  		  <table class="table-block">
+          <tr>
+            <td height="30" width="13%" style="display: inline;">
+              <p style="text-align: center">
+                <img data-lazy-src="./images/indexPic/2024/chi.png" style="width: 50%; height: 48%; border: 0;" />
+              </p>
+            </td>
+          </tr>   
+  	    </table> 	
+      </td>
+    </tr>
+  </table>
+
+  
+  <!-------------------------------恭喜万冠新利毕业 -------------------------------------------------->
+  
+  <table class="main-table">
+    <tr>
+      <td>
+        <table class="inside-table">
+            <tr>
+              <td style="height: 30px; width: 13%; background-color: #CCCCCC; text-align: center;">
+                <span class="STYLE3">2024.07</span>
+              </td>
+              <td style="height: 30px; background-color: #CCCCCC;">
+                <span class="STYLE3">万冠新の無事卒業おめでとうございます！</span>
+              </td>
+            </tr>
+        </table>	
+        <table class="table-block">
+          <tbody>
+            <tr>   
+              <td>
+                <span class="word">万冠新、本科は桂林理工大学を卒業し、2021年9月から上海大学コンピュータ工学と科学学院で修士課程大学院生を専攻し、課題グループに加入した後、韓越興先生に従って形状空間理論と画像特徴の増強などの関連技術と応用を学習した。韓先生のご指導のもと、以下の研究が完成しました。</span>             
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+  		
+        <table class="table-block">
+          <tbody>
+            <tr>   
+              <td >
+                <span class="word">1. 小サンプル画像シーンにおける利用可能なデータの少なさと多様性の不足の特徴に対して、事前形状空間測地曲線に基づく画像特徴の増強方法を提案し、FAGC-PSS（Feature Augmentation on Geodesic Curves in Pre-Shape Space）と略称する。まず深さ学習モデルを用いて小サンプル画像の特徴を抽出する、形状空間理論に基づいて画像特徴の次元を向上させ、それを前形状空間に投影する、それぞれのカテゴリの特徴データに対応する測地曲線を構築する、最後に最適な測地曲線に沿って特徴データを生成し、画像処理モデルの訓練に用いた。この方法の革新は以下の3点を含む：第一に、小サンプル画像の特徴強化を実現し、モデルが訓練サンプルの分布と規則を全面的に理解し、モデルのロバスト性と信頼性を高めるのに役立つ、第二に、提案したFAGC-PSS特徴増強方法は、機械学習の分類モデルと結合することでより良い結果を得ることができるなど、複数の下流タスクに応用することができる。第三に、小サンプル画像分類タスクの交差エントロピー損失関数にランダム確率関数と影響因子を設計し、生成特徴と画像特徴がモデルに与える影響をバランスさせることができる。</span>
+                <br />
+                <span class="word">2. 材料画像に小サンプルと材料性能予測精度がよくない特徴があることに対して、本論文はFAGC-PSSに基づく材料性能予測方法を提案する。この方法はFAGC-PSSの下流タスクフレーム構造を設計し、偽ラベル機構を結合することにより、小サンプル材料画像上の材料性能予測タスクを実現する。具体的なプロセスは4つのステップを含む：材料画像特徴の抽出、FAGC-PSSを通じて特徴を生成し、偽ラベル機構を利用して特徴のために性能値ラベルを表示し、最後に強化特徴を利用して材料性能予測モデルを訓練する。この方法の革新は以下を含む：予測材料性能モデルにFAGC-PSSモジュールを導入して、特徴データの多様性と複雑性を強化する、生成された特徴データに対して擬似ラベル機構を設計して寸法を付ける。実験の結果、異なる種類の材料性能予測任務に対して、この方法は良好な有効性と普遍性を示すことができることが明らかになった。 </span>
+                <br />
+                <span class="word">卒業後、万冠新学友はファーウェイ会社に入社した。万冠新学友は上海大学の3年間の大学院生生活の中で努力して学習し、科学研究プロジェクトに参加し、優れたプログラミング技能とアルゴリズム開発能力を示した。複雑な技術問題に対して、迅速に分析し、有効な解決策を提案することができ、強い独立研究能力と革新意識を示した。万冠新入生が未来の道で初心を忘れず、使命をしっかり覚え、勇敢に前進し、より輝かしい前途を切り開くことを望んでいる。</span>
+                <!--插入论文连接-->
+                <br />
+                <span class="word">論文へのリンク：<a href="https://github.com/han-yuexing/han-yuexing.github.io/blob/master/paper/2024/21721561%E4%B8%87%E5%86%A0%E6%96%B0.pdf" target="_blank">基于形状空间理论的图像特征增强及其在材料性能预测中的应用</a></span>
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+  		  <!--人物照片-->
+  		  <table style="border-spacing: 0; padding: 8px; width: 88%; height: 88%; margin-left: auto; margin-right: auto; margin-top: -30px;">
+  		    <tr>
+  		  		<td height="30" width="13%" style="display: inline;">
+              <p style="text-align: center">
+                <img data-lazy-src="./images/indexPic/2024/wan.png" style="width: 40%; height: 35%; border: 0;" />
+              </p>
+            </td>
+  		    </tr>
+  		  </table>
+      </td>
+    </tr>
+  </table>
+
+  
+  <!-------------------------------恭喜韩思凡利毕业 -------------------------------------------------->
+  
+  <table class="main-table">
+    <tr>
+      <td>
+        <table class="inside-table">
+          <tr>
+            <td style="height: 30px; width: 13%; background-color: #CCCCCC; text-align: center;">
+              <span class="STYLE3">2024.07</span>
+            </td>
+            <td style="height: 30px; background-color: #CCCCCC;">
+              <span class="STYLE3">韓思凡の無事卒業おめでとう！</span>
             </td>
           </tr>
         </table>
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       				
+        <table class="table-block">
+          <tbody>
+            <tr>   
+              <td>
+                <span class="word">韓思凡氏は、2021年9月に上海大学コンピュータ工学・科学学院に入学し、修士課程の大学院生段階の学習生涯を開き、課題グループに参加した後、陳僑川氏と韓越興氏の2人の先生に従って、材料の性能を予測するために深学習に基づいて材料画像を処理する研究に専念した。2人の先生の指導のもと、以下の研究内容を完成した。</span>               
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+  		
+        <table class="table-block">
+          <tbody>
+            <tr>   
+              <td>
+                <span class="word">1.グローバル・ローカル特徴抽出、多特徴融合に基づく深学習予測材料性能ネットワークを構築した。このネットワークは2分岐マルチスケールの構造設計を採用し、グローバル分岐ネットワークとグローバル部分分岐ネットワークを用いて、それぞれの材料微細構造画像に対してグローバルとローカル特徴の抽出を行い、それぞれの特徴のモデリング過程を破壊することはない。グローバルブランチネットワークに多頭自発力メカニズムを組み込み、特徴図を複数の異なるサブ空間に分割し、特徴間の内在的な関連関係を発掘する。現在の既存の方法に比べて、ネットワークはより完全で正確なStructure-Performanceマッピング関係を構築することに成功しました。</span>
+                <br />
+                <span class="word">2.現在のアルゴリズムが複雑な場面で材料微細構造画像に対する理解が不足し、予測精度に影響を与える問題に対して、高効率多モード特徴融合ネットワークを提案した。このモデルには、エネルギースペクトル特徴抽出モジュール、局所要素特徴抽出モジュール、および材料のミクロ構造特徴を抽出するGLFS−Netモジュールが含まれる。多情報融合を通じて、材料要素支援強化ネットワークの詳細と材料画像のミクロ構造の戦略を採用し、最終的にはネットワークが複雑なシーンで材料性能の正確な予測を実現できるようにした。</span>
+                <br />
+                <span class="word">3.「材料性能予測方法」の特許を出願した。この特許は軽量級ネットワークアーキテクチャに基づいており、材料の画像とテキストを結合した多モード情報を総合的に利用することにより、材料微細構造の分析及び性能予測の正確性をさらに向上させた。</span>
+                <br />
+                <span class="word">卒業後、韓思凡さんは中車株洲電力機関車有限会社株機研究院で自動運転に関する研究に従事した。上海大学の3年間の大学院生の間で、一生懸命勉強すると同時に、多くの良師益友と知り合い、上海の多くの隅を歩いて、忘れられない、これからも皆さんと再会する機会があることを願っています。</span>
+                <!--插入论文连接-->
+                <br />
+                <span class="word">論文へのリンク：<a href="https://github.com/han-yuexing/han-yuexing.github.io/tree/master/paper/2024/han_p" target="_blank">基于于多特征融合的材料性能预测研究</a></span>
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+        <!--人物照片-->
+        <table style="border-spacing: 0; padding: 8px; width: 88%; height: 88%; margin-left: auto; margin-right: auto; margin-top: -30px;">
           <tr>
-            <td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2020/gathering/912.jpg" width="87%" height="87%" /></p></td>
+            <td height="30" width="13%" style="display: inline;">
+              <p style="text-align: center">
+                <img data-lazy-src="./images/indexPic/2024/han.png" style="width: 60%; height: 50%; border: 0;" />
+              </p>
+            </td>
           </tr>
         </table>
-        <p>　</p>
+      </td>
+    </tr>
+  </table>
 
-
-	      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2020.7.7</span></td>
-              <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">曽 人備、范郭祥、傅宇豪、李睿祺、劉夢炎、衛愛嘉さん卒業おめでとうございます!困難に恐れず、道なりにまっすぐ前向きに生きて行き、自分の輝く人生を両手で創り出して下さい。卒業おめでとうございます。自分の可能性を信じてチャレンジしてください。</span></td>   
+  
+  
+  
+	<!------------------------------韩思凡 -------------------------------------------------->
+	  
+	<table class="main-table">
+	  <tr>
+	    <td>
+	      <table class="inside-table">
+	        <tr>
+	          <td style="height: 30px; width: 13%; background-color: #CCCCCC; text-align: center;">
+              <span class="STYLE3">2024.04</span>
+            </td>
+	          <td style="height: 30px; background-color: #CCCCCC;">
+              <span class="STYLE3">チームの最近の成果：深さ学習を用いてAl 2 O 3をドープした正方晶YSZコーティングの熱伝導率を予測</span>
+            </td>
+	        </tr>
+	      </table>
+	       				
+	      <table class="table-block">
+	        <tbody>
+	          <tr>   
+	  	        <td>
+	  		        <span class="word">我々のチームは、国際定期刊行物『Journal of the European Ceramic Society』（IF：5.7、中央科学院1区）に論文「Thermal Conductivity Prediction of Al 2 O 3-Doped Tetragonal YSZ Coatings Using Deep Learning」を発表した。同論文は上海大学コンピュータ工学・科学学院が第1単位、陳僑川が第1著者、韓思凡が第2著者、宋雪梅が第3著者、韓越興と曽毅が共同通信著者である。</span>
+                <br />                 
+	  	        </td>
+	          </tr>
+	        </tbody>
+	      </table> 
+	    
+	      <table class="table-block">
+	        <tr>
+	  			  <td height="30" width="13%" style="display: inline;">
+              <p style="text-align: center">
+                <img data-lazy-src="./images/indexPic/2023/hsf_Paper.png" style="width: 60%; height: 60%; border: 0;" />
+              </p>
+            </td>
+	  		  </tr>
+	      </table>
+	      <table class="table-block">
+	        <tbody>
+	          <tr>   
+	  	        <td>
+	  		        <span class="word">深さ学習に基づいて材料画像の性能を予測することは、データの希薄化と材料画像を同時に抽出できない局所的な特徴と大域的な特徴及び発見的な特徴との関連性などの問題に直面している。材料分野では、製造コスト、商業保護などの要因により自然シーン画像を取得するようにデータを一括取得することができず、データ量不足により深さ学習モデルを材料分野に直接適用することが困難になっている。一方、自然なシーン画像と異なり、材料画像は自身の特性のため、非常に細かく複雑なテクスチャ構造を持つことが多い。また、マクロ性能は局所的なミクロ構造の影響を受けるだけでなく、特徴と特徴の間の関連、構造間の相互作用、すなわちグローバルな特徴と同様に非常に重要である。既存のほとんどの深さ学習方法は、自然シーン画像に優れた表現を持つCNNモデルを直接材料分野に応用し、的確な最適化をしていないが、CNNは固定的な畳み込み核サイズのため、感受野が制限され、画像の局所的な特徴しか抽出できず、大域的な特徴を無視することが多い。そのため、アルゴリズムはデータ量が不足しているため、訓練が不足しているため、局所的な特徴と大域的な特徴を同時に抽出することができず、予測精度が不足し、ロバスト性が悪いという問題を引き起こしている。これらの問題を解決するために、本文は二重構造特徴抽出とマルチスケール注意力融合ネットワーク（RCFNet）を提案した。このモデルはグローバル特徴抽出モジュールとローカル特徴抽出モジュールの二分岐構造を採用し、材料画像のグローバル特徴とローカル特徴を独立に抽出し、それぞれの特徴のオリジナルモデリングを破壊しない。提案したマルチスケール注意力融合モジュール（Merge）により、各スケールで抽出されたグローバル特徴と局所特徴を融合し、融合モジュールは前の融合結果の情報を蓄積する。最終的な融合特徴はFCNNに送られて処理され、予測結果が得られる。下図はマルチスケール集中力融合モジュールの構造概略図である。</span>
+              </td>
             </tr>
+          </tbody>
         </table>
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td></td>
-                  </tr>
-		              <tr>
-                 
-                    <td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2020/undergraduate/biye.png" width="87%" height="87%" /></p></td>
-                  </tr>
-                </table>
-	      <p>　</p>
-        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-          <tbody>
-            <tr>
-              <td height="10">
-                <table width="100%">
-                  <!--
-                 <tr>
-                   <marquee bgcolor="#CCCFFF"><span class="STYLE3"><div id="blink">宋磊磊さん卒業おめでとうございます!今後一気通貫、龍騰ひろばし、陽開泰、四季平安、五福臨門、六六大順、七星高照、八方来財、九九同心、十全十美となりますよう願っています。</div></span></marquee>
-                  </tr>
-                -->
-                </table>
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2020.7.1</span></td>
-                    <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">宋磊磊さん卒業おめでとうございます!天道はつとめをこたえる。実際に天才になるのは努力しない者はいません。日夜努力を重ね成長していきますよう願っています。</span></td>
-                    
-                  </tr>
-                </table>
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td height="30" width="13%"  align="center"><span class="STYLE3"> </span></td>
-                    <td height="30">
-                      <span class="STYLE3" style="font-weight:bold">研究生期间工作：</span><br>
-                      <span class="STYLE3">&nbsp;&nbsp;&nbsp;&nbsp;解決するために、3種類の材料の小サンプルデータに対して処理と分析を行いました。機械学習、ディープラーニング、コンプレックスネットワーク理論などを活用して材料の小サンプル問題を解決しました。</span><br>
-                      <span class="STYLE3">&nbsp;&nbsp;&nbsp;&nbsp;1. 結晶構造データに対して、次のことを行いました。機械学習に基づく結晶構造識別方法を提案しました。サンプルデータを増強し、空間上での原子の分布特徴から特徴表現と特徴選択を行いました。最後に機械学習を用いて結晶構造の識別を実現しました。
-                      </span><br>
-                      <span class="STYLE3">&nbsp;&nbsp;&nbsp;&nbsp;2.転移学習に基づく識別手法を提案しました。preprocで画像ノイズ低減を行い、改良分水嶺分割により重ね合わせ目標を分割しました。最後に転移学習を利用して目標物質を識別しました。</span><br>
-                      <span class="STYLE3">&nbsp;&nbsp;&nbsp;&nbsp;3.陶磁器の微細構造画像データに対して、次のことを行いました。複雑ネットワーク理論に基づく画像分割方法を提案しました。画像のピクセル値分布からネットワーク空間のノードセットを生成し、ノード間の類似性を定義してネットワークトポロジー構造を生成しました。最後にネットワークトポロジー構造の最適化と画像分割を実現しました。</span></td>
-                    <td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2020/songleilei/songleileilife.jpg" width="104" height="141" /></p></td>
-                  </tr>
-                </table>
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <td height="30" width="13%"  align="center"><span class="STYLE3"> </span></td>
-                  <td height="30"><span class="STYLE3" style="font-weight:bold">卒業論文:</span></td>
-                  <td height="30"><span class="STYLE3"><a href="paper/2020/sllgraduationthesis.pdf" target="_blank">基于材料小样本数据的分割与识别方法研究</a></span></td>
-                </table>
-                <!--
-                <table style="font-size: 14px; line-height: 35px;" align="center" border="0" cellpadding="0" cellspacing="0" width="743">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <span class="RichText ztext CopyrightRichText-richText" itemprop="text">
-                          &nbsp;
-                          <font size="4">&nbsp;</font>
-                        </span>
-                        <font size="4">
-                          <span itemprop="text">&nbsp;</span>
-                        </font>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p>　</p>
-                -->
-                <p>　</p>
-                <table width="883" border="0" cellspacing="0" cellpadding="0">
-                </table>
+	
+	      <table class="table-block">
+	        <tr>
+	  			  <td height="30" width="13%" style="display: inline;">
+              <p style="text-align: center">
+                <img data-lazy-src="./images/indexPic/2023/hsf_Paper1.png" style="width: 60%; height: 60%; border: 0;" />
+              </p>
+            </td>
+	  		  </tr>
+	      </table>
+
+			  <table class="table-block">
+			    <tbody>
+			      <tr>   
+			  	    <td>
+			  		    <span class="word">各スケールにおける大域的特徴と局所的特徴については、まずSCSE注意メカニズムを採用し、チャネルと空間の2次元における重要な情報を同時に励起して、最も重要な特徴を際立たせ、顕著な重みを割り当てる。次に、グローバル意味を持つグローバル特徴はチャネル注意メカニズムによってさらに処理され、ローカル意味情報を持つローカル特徴は空間注意メカニズムによってさらに処理される。その後、高次元空間マッピングと非線形変換を行い、現在の段階の融合結果を得た。提案した方法は材料画像の局所と大域特徴抽出を両立し、その中でMergeモジュールは特徴に対して多段融合を行い、多注意力は持続的に重要な特徴に焦点を当て、ノイズ情報を抑制し、情報損失を減少し、そしてモデルの大量の訓練データへの依存を低減する。サンプルが希少な材料画像の分野でも、非常に顕著な予測結果が得られた。</span>
+                <br />
+                <span class="word">論文へのリンク：<a href="https://doi.org/10.1016/j.jeurceramsoc.2024.04.057" target="_blank">Thermal Conductivity Prediction of Al2O3-Doped Tetragonal YSZ Coatings Using Deep Learning</a></span>
+                <br />
+                <span class="word">私たちのコードと論文は、以下の場所で公開されています：<a href="https://github.com/han-yuexing/RCFNet_Conv_Resnet50_MHSA/tree/main" target="_blank">https://github.com/han-yuexing/RCFNet_Conv_Resnet50_MHSA/tree/main</a></span>
               </td>
             </tr>
-            <tr>
-              <td height="10">
-                <table width="100%">
-                 <tr>
-                   <td></td>
-                  </tr>
-                </table>
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td height="30" width="13%" bgcolor="#CCCCCC" align="center"><span class="STYLE3">2019.12.14</span></td>
-                    <td height="30" bgcolor="#CCCCCC"><span class="STYLE3">年末の集い</span></td>
-                    
-                  </tr>
-                </table>
+			  </table>
+	  	  <!--人物照片-->
+	  		<table class="table-block">
+	  		  <tr>
+	  		  	<td height="30" width="13%" style="display: inline;">
+              <p style="text-align: center">
+                <img data-lazy-src="./images/indexPic/2023/hsf.png" style="width: 60%; height: 60%; border: 0;" />
+              </p>
+            </td>
+	  			</tr>   
+	  	  </table> 	
+	    </td>
+	  </tr>
+	</table> 
+	   
+	
+  <!---------------------------------李睿祺论文获奖---------------------------------------->
+  <table class="main-table">
+    <tr>
+      <td>  
+        <table class="inside-table">
+          <tr>
+            <td style="height: 30px; width: 13%; background-color: #CCCCCC; text-align: center;">
+              <span class="STYLE3">2023年</span>
+            </td>
+            <td style="height: 30px; background-color: #CCCCCC;">
+              <span class="STYLE3">李睿祺が2023年度上海市コンピュータ学会優秀修士学位論文ノミネート賞を受賞したことを祝う</span>
+            </td>
+          </tr>
+        </table>
 		
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td height="30" width="13%"><p align="center"><img border="0" src="./images/indexPic/2019/dineTogether/2019jc.jpg" width="87%" height="87%" /></p></td>
-                  </tr>
-		</table>
-			
-                <table style="font-size: 14px; line-height: 35px;" align="center" border="0" cellpadding="0" cellspacing="0" width="743">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <span class="RichText ztext CopyrightRichText-richText" itemprop="text">
-                          &nbsp;
-                          <font size="4">&nbsp;</font>
-                        </span>
-                        <font size="4">
-                          <span itemprop="text">&nbsp;</span>
-                        </font>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-		
-                <p>　</p>
-                <p>　</p>
-                <table width="883" border="0" cellspacing="0" cellpadding="0">
-                </table>
-              </td>
+        <table class="table-block">
+          <tbody>
+            <tr>   
+			        <div class="container">
+			          <div class="image-section">
+			            <img data-lazy-src="./images/indexPic/2020/newPostgraduate/02.jpg" alt="描述性文本">
+			          </div>
+                <div class="text-section">
+                  <p>氏名：李睿祺</p>
+                  <p>単位：上海大学</p>
+                  <p>論文テーマ：非完全寸法に基づく複雑なテクスチャ画像分割方法の研究</p>
+                  <p>指導者の名前：韓越興</p>
+                </div>
+			        </div>
             </tr>
           </tbody>
         </table>
       </td>
     </tr>
   </table>
-
-  <tbody>
+  
+  
+  <!------------------------------朱龙飞 -------------------------------------------------->
+  <table class="main-table">
     <tr>
-      <tbody>
-        <td class="black12a" style="padding: 10px;" height="380" valign="top">
+      <td>
+        <table class="inside-table">
           <tr>
-            <td bgcolor="#cccccc" height="1" valign="top"></td>
-            <td bgcolor="#cccccc" height="1"></td>
-            <td bgcolor="#cccccc" height="1" valign="top"></td>
+            <td style="height: 30px; width: 13%; background-color: #CCCCCC; text-align: center;">
+              <span class="STYLE3">2024</span>
+            </td>
+            <td style="height: 30px; background-color: #CCCCCC;">
+              <span class="STYLE3">	チームの最近の成果：多モード融合学習に基づくAl-Si合金の引張強度予測</span>
+            </td>
           </tr>
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="960">
-            <tbody>
-              <tr>
-                <td align="center" height="10"></td>
-              </tr>
-              <tr>
-                <td style="font-size: 14px;" align="center" bgcolor="#eeeded" height="70">　</td>
-              </tr>
-            </tbody>
-          </table>
-	
-		
-<!-- StatCounter Code -->
-  <script type=”text/javascript”>
-   [...]
-  </script>		
-</body>
+        </table>
+         				
+        <table class="table-block">
+          <tbody>
+            <tr>   
+    	        <td >
+    		        <span class="word">我々のチームは、国際材料遺伝子工学分野の新刊『Materials Genome Engineering Advances』に「Prediction of ultimate tensile strength of Al-Si alloys based on multimodal fusion learning」という論文をオンラインで発表した。同論文は上海大学材料科学・工学院が第1単位、コンピュータ工学・科学学院が第2単位、朱龍飛が第1著者、陳僑川が第3著者、韓越興助教授と材料科学・工学院李謙教授が共同通信著者である。</span>
+                <br />                 
+    	        </td>
+            </tr>
+          </tbody>
+        </table> 
+      
+        <table class="table-block">
+          <tr>
+    			  <td height="30" width="13%" style="display: inline;">
+              <p style="text-align: center">
+                <img data-lazy-src="./paper/2023/zhulongfei_paper.png" style="width: 60%; height: 60%; border: 0;" />
+              </p>
+            </td>
+    		  </tr>
+        </table>
+        <table class="table-block">
+          <tbody>
+            <tr>   
+    	        <td >
+    		        <span class="word">
+                  現在、Al-Si合金の引張強度は主に引張試験によって得られ、サンプルの製造、加工、試験に関連し、専門的な技能と試験設備が必要で、試験周期が長く、コストが高く、材料の浪費の問題がある。また、複雑な形状の部材に対して、標準化された引張試料を製造して性能試験を行うことは課題である。そのため、材料の引張強度をいかに効率的かつ正確に取得するかは現在の課題である。
+                  この問題に対して、Al−Si合金の引張強度を予測するために、成分とミクロ組織を総合的に考慮した多モード融合学習フレームワークを革新的に提案した。本作業は広く応用されているサブ共晶Al-Si合金に焦点を当て、まず、文献と実験データから合金成分、添加合金元素、α-Al画像、共晶Si画像、引張サンプルサイズ、引張速度を含む異なるモードのデータを収集した。次に、画像処理技術を用いて微細構造特徴パラメータを抽出し、画像を分割し定量分析する。次に、異なるモダリティからの33個の特徴を3段階の特徴選別を行い、12個の重要な特徴を得た。最後に、12個の重要な特徴を入力として、4種類の機械学習モデル（決定木（DT）、ランダム森林（RF）、適応強化（AdaBoost）と極端勾配向上（XGBoost）を用いて引張強度回帰予測モデルを構築する。その結果、XGBoostモデルはすべてのモデルの中で最もよく表現され、データが限られ、主に異なる文献から来た場合、高い引張強度予測精度が得られた（R 2=0.94、相対誤差は8.1%未満、絶対誤差は14.2 MPa未満）。また、UTSに顕著な影響を与える5つの混合特徴（Grain size、Ti、Si、ECD、Number density）及びその臨界値を特徴重要性解析及びSHAP解析により決定した。本作業は亜共晶Al-Si合金成分、組織と性能の間のマッピング関係の構築にヒントを提供することが期待され、他の合金に応用することができる。
+                </span>
+                <br />
+                <span class="word">
+                  論文へのリンク：<a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/mgea.26" target="_blank">Prediction of ultimate tensile strength of Al-Si alloys based on multimodal fusion learning</a>
+                </span>
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
+    	  <!--人物照片-->
+    		<table class="table-block">
+    		  <tr>
+    		  	<td height="30" width="13%" style="display: inline;">
+              <p style="text-align: center">
+                <img data-lazy-src="./paper/2023/zhulongfei_PIC.png" style="width: 40%; height: 50%; border: 0;" />
+              </p>
+            </td>	
+    			</tr>		   
+    	  </table>
+      </td>
+    </tr>
+  </table>
+
+  <!-- 分页器部分 -->
+  <table class="page-switcher">
+    <tr>
+      <td>
+        <div style="display: flex; flex-direction: row; justify-content:space-around; align-items: center;">
+          <div style="display: flex; flex-direction: row; align-items: center;" onclick="switchPage(2023,true,'jp')" class="hover-effect"> 
+            <svg t="1729776024818" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4578" width="20" height="20"><path d="M630.4 41.6l-416 428.8c-6.4 9.6-9.6 19.2-9.6 28.8 0 9.6 3.2 22.4 9.6 28.8l416 428.8c12.8 16 35.2 16 48 0 12.8-16 12.8-41.6 0-54.4L288 499.2 678.4 96c12.8-16 12.8-41.6 0-54.4-12.8-16-35.2-16-48 0z" p-id="4579"></path></svg>
+            <span style="font-size: 20px;">2023</span> 
+          </div>
+          <svg t="1729776703313" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2586" width="20" height="60"><path d="M512 85.333c23.573 0 42.667 20.118 42.667 44.907v763.52c0 24.79-19.094 44.907-42.667 44.907s-42.667-20.118-42.667-44.907V130.24c0-24.79 19.094-44.907 42.667-44.907z" p-id="2587" fill="#2c2c2c"></path></svg>
+          <div style="display: flex; flex-direction: row; align-items: center;"> 
+            <span style="font-size: 20px; color: grey;">2025</span>
+            <svg t="1729776633400" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1270" width="20" height="20"><path d="M329.6 969.6l416-428.8c6.4-9.6 9.6-19.2 9.6-28.8 0-9.6-3.2-22.4-9.6-28.8l-416-428.8c-12.8-16-35.2-16-48 0s-16 41.6 0 54.4L668.8 512 281.6 915.2c-12.8 16-12.8 41.6 0 54.4 12.8 16 35.2 16 48 0z" fill="#808080" p-id="1271"></path></svg>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- 侧边栏部分 -->
+  <div title=" " class="backToTop" style="user-select: none; display: block;">
+    <svg t="1730428023908" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4261" width="80" height="80"><path d="M535.12 442.432v210.016a16 16 0 0 1-16 16h-16.16a16 16 0 0 1-16-16V440.208l-32.88 32.864a16 16 0 0 1-11.312 4.688h-28.304a14.464 14.464 0 0 1-10.24-24.688l97.824-97.808a11.136 11.136 0 0 1 15.744 0l97.808 97.808a14.464 14.464 0 0 1-10.24 24.688h-28.288a16 16 0 0 1-11.312-4.688l-30.64-30.64zM512 800c159.056 0 288-128.944 288-288s-128.944-288-288-288-288 128.944-288 288 128.944 288 288 288z m0 48c-185.568 0-336-150.432-336-336s150.432-336 336-336 336 150.432 336 336-150.432 336-336 336z" fill="#000000" p-id="4262"></path></svg>
+  </div>
+
+  <p>　</p>
+  <p>　</p>
+  <table style="width: 883px; border: 0; border-spacing: 0; padding: 0;"></table>
+</body>
 </html>
+
+<script>
+// 获取回顶元素
+var backToTopButton = document.querySelector('.backToTop');
+
+// 为回顶元素添加点击事件监听器
+backToTopButton.addEventListener('click', function() {
+    // 使用scrollTo方法平滑滚动到页面顶部
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// 实例化IntersectionObserver
+const intersectionObserver = new IntersectionObserver(observerCallback, {
+  rootMargin: "100px 0px 100px" // 当不超出屏幕可见范围上下100px内时
+});
+// 给所有带有data-lazy-src属性的图片加入intersectionObserver的观察范围
+const imgs = document.querySelectorAll("img");
+for (let i = 0; i < imgs.length; i += 1) {
+  const { dataset } = imgs[i];
+  // dataset带有lazySrc属性时才加入观察返回
+  if (dataset.lazySrc) {
+    intersectionObserver.observe(imgs[i]);
+  }
+}
+// 监听回调
+function observerCallback(entries, observer) {
+  // 遍历
+  Array.from(entries).forEach((item) => {
+    // 在定义的视图范围内时（rootMargin范围内）才进行加载新图片
+    if (item.isIntersecting && item.target.dataset.lazySrc) {
+      item.target.src = item.target.dataset.lazySrc;
+      // 对已经加载的图片取消观察
+      intersectionObserver.unobserve(item.target);
+    }
+  });
+}
+</script>
