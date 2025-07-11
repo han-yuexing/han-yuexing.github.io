@@ -1,0 +1,116 @@
+---
+import { profile } from '../../settings'
+import { getCollection } from 'astro:content'
+import { template } from '@/settings'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+import LanguageSwitcher from './LanguageSwitcher.astro'
+
+const isBlogPopulated = await getCollection('blog').then(collection => collection.length > 0)
+
+const { fullName, title } = profile
+const currentLang = getLangFromUrl(Astro.url)
+const t = useTranslations(currentLang)
+const currentPath = Astro.url.pathname
+
+// Function to check if a link is active
+const isActive = (path: string) => {
+  if (path === `/${currentLang}/` && currentPath === `/${currentLang}/`) {
+    return true
+  }
+  if (path !== `/${currentLang}/` && currentPath.startsWith(path)) {
+    return true
+  }
+  return false
+}
+---
+
+<div class="navbar bg-base-100 shadow-md px-4">
+  <div class="navbar-start">
+    <div class="dropdown lg:hidden">
+      <label tabindex="0" class="btn btn-ghost">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        {isBlogPopulated && 
+          <li><a href={`/${currentLang}/blog/1`}>{t('nav.blog')}</a></li>
+        }
+        <li><a href={`/${currentLang}/about`}>{t('nav.home')}</a></li>
+        <li><a href={`/${currentLang}/research`}>{t('nav.research')}</a></li>
+        <li><a href={`/${currentLang}/projects`}>{t('nav.projects')}</a></li>
+        <li><a href={`/${currentLang}/teaching`}>{t('nav.teaching')}</a></li>
+        <li><a href={`/${currentLang}/other`}>{t('nav.other')}</a></li>
+        <li><a href={`/${currentLang}/contact`}>{t('nav.contact')}</a></li>
+      </ul>
+    </div>
+    <a class="text-lg">韩越兴课题组</a>
+  </div>
+  
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      {isBlogPopulated && 
+        <li>
+          <a 
+            href={`/${currentLang}/blog/1`} 
+            class={`mx-2 px-3 py-2 rounded-md ${isActive(`/${currentLang}/blog`) ? 'border-b-2 border-primary font-bold' : ''}`}
+          >
+            {t('nav.blog')}
+          </a>
+        </li>
+      }
+      <li>
+        <a 
+          href={`/${currentLang}/about`} 
+          class={`mx-2 px-3 py-2 rounded-md ${isActive(`/${currentLang}/about`) ? 'border-b-2 border-primary font-bold' : ''}`}
+        >
+          {t('nav.home')}
+        </a>
+      </li>
+      <li>
+        <a 
+          href={`/${currentLang}/research`}
+          class={`mx-2 px-3 py-2 rounded-md ${isActive(`/${currentLang}/research`) ? 'border-b-2 border-primary font-bold' : ''}`}
+        >
+          {t('nav.research')}
+        </a>
+      </li>
+      <li>
+        <a 
+          href={`/${currentLang}/projects`}
+          class={`mx-2 px-3 py-2 rounded-md ${isActive(`/${currentLang}/projects`) ? 'border-b-2 border-primary font-bold' : ''}`}
+        >
+          {t('nav.projects')}
+        </a>
+      </li>
+      <li>
+        <a 
+          href={`/${currentLang}/teaching`}
+          class={`mx-2 px-3 py-2 rounded-md ${isActive(`/${currentLang}/teaching`) ? 'border-b-2 border-primary font-bold' : ''}`}
+        >
+          {t('nav.teaching')}
+        </a>
+      </li>
+      <li>
+        <a 
+          href={`/${currentLang}/other`}
+          class={`mx-2 px-3 py-2 rounded-md ${isActive(`/${currentLang}/other`) ? 'border-b-2 border-primary font-bold' : ''}`}
+        >
+          {t('nav.other')}
+        </a>
+      </li>
+      <li>
+        <a 
+          href={`/${currentLang}/contact`}
+          class={`mx-2 px-3 py-2 rounded-md ${isActive(`/${currentLang}/contact`) ? 'border-b-2 border-primary font-bold' : ''}`}
+        >
+          {t('nav.contact')}
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="navbar-end">
+    <LanguageSwitcher />
+  </div>
+</div>

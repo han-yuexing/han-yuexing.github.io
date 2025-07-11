@@ -1,0 +1,41 @@
+---
+interface Props {
+  gridTitle?: string;
+  gridItems: {
+    name: string;
+    description: string;
+    images: string[];
+  }[];
+}
+
+const {gridTitle = "", gridItems} = Astro.props;
+---
+{gridTitle && <h2 class="text-3xl font-bold mb-8">{gridTitle}</h2>}
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {gridItems.map((item, idx) => (
+    <>
+      <div class="p-6 rounded-lg text-base-content bg-base-200 cursor-pointer hover:bg-primary/10 transition research-btn" data-dialog={`research-modal-${idx}`}> 
+        <h3 class="text-xl font-semibold mb-0 text-center">{item.name}</h3>
+      </div>
+      <dialog id={`research-modal-${idx}`} class="modal">
+        <form method="dialog" class="modal-box max-w-2xl">
+          <h3 class="font-bold text-lg mb-4">{item.name}</h3>
+          <div class="prose max-w-none" set:html={item.description}></div>
+          {item.images && item.images.length > 0 && (
+            <div class="flex justify-center items-center gap-4 mt-4 flex-wrap">
+              {item.images.map(img => (
+                <img src={img} alt={item.name} class="max-h-60 rounded shadow" loading="lazy" />
+              ))}
+            </div>
+          )}
+          <div class="modal-action">
+            <button class="btn btn-sm">关闭</button>
+          </div>
+        </form>
+        <form method="dialog" class="modal-backdrop">
+          <button>关闭</button>
+        </form>
+      </dialog>
+    </>
+  ))}
+</div>

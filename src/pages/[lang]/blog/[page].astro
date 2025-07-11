@@ -1,0 +1,167 @@
+---
+import Pagination from '@/components/ui/Pagination.astro'
+import Layout from '@/layouts/Layout.astro'
+import { trimExcerpt } from '@/lib/utils'
+import { template } from '@/settings'
+import { getCollection } from 'astro:content'
+import { getLangFromUrl, useTranslations } from '../../../i18n/utils'
+import { languages } from '../../../i18n/config'
+
+export async function getStaticPaths() {
+    const blogEntries = await getCollection("blog");
+    // 只保留当前语言的markdown
+    const paths = [];
+    Object.keys(languages).forEach(lang => {
+        const langDir = `/${lang}/`;
+        const filteredEntries = blogEntries.filter(post => post.id.includes(langDir));
+        // 按年份分组
+        const postsByYear = {};
+        filteredEntries.forEach(post => {
+            // 从文件ID中提取文件名
+            const fileName = post.id.split('/').pop() || "";
+            // 从文件名中提取年月
+            const yearMonth = fileName.split('-').slice(0, 2).join('-');
+            const year = yearMonth.split('-')[0];
+            
+            if (!postsByYear[year]) postsByYear[year] = [];
+            postsByYear[year].push({
+                title: post.data.title,
+                date: post.data.date,
+                badge: post.data.tags && post.data.tags.length > 0 ? post.data.tags[0] : '',
+                slug: post.id,
+                fileName: fileName
+            });
+        });
+        // 获取所有年份，按降序排列
+        const years = Object.keys(postsByYear).sort((a, b) => b.localeCompare(a));
+        // 为每个语言和每年创建路由
+        years.forEach((year, idx) => {
+            paths.push({
+                params: { 
+                    lang, 
+                    page: String(idx + 1) 
+                },
+                props: { 
+                    // 先按年月排序，如果年月相同则按序号倒序排序
+                    posts: postsByYear[year].sort((a, b) => {
+                        const fileNameA = a.fileName || "";
+                        const fileNameB = b.fileName || "";
+                        
+                        // 提取年月部分
+                        const yearMonthA = fileNameA.split('-').slice(0, 2).join('-');
+                        const yearMonthB = fileNameB.split('-').slice(0, 2).join('-');
+                        
+                        // 如果年月不同，按年月倒序
+                        if (yearMonthA !== yearMonthB) {
+                            return yearMonthB.localeCompare(yearMonthA);
+                        }
+                        
+                        // 年月相同，提取序号部分并按数字大小倒序
+                        const numberA = parseInt(fileNameA.split('-')[2]?.split('.')[0] || "0", 10);
+                        const numberB = parseInt(fileNameB.split('-')[2]?.split('.')[0] || "0", 10);
+                        return numberB - numberA;
+                    }), 
+                    years, 
+                    currentYear: year, 
+                    currentPage: idx + 1 
+                }
+            });
+        });
+    });
+    return paths;
+}
+
+const { posts, years, currentYear, currentPage } = Astro.props;
+const { lang } = Astro.params;
+const currentLang = lang as keyof typeof languages;
+const t = useTranslations(currentLang);
+
+// 构建本地化链接
+const localizedLink = (path: string) => `/${currentLang}${path}`
+
+// 生成 slug 时去掉 /zh/、/en/、/ja/ 等前缀
+const getCleanSlug = (id: string) => {
+  return id.replace(/^\d{4}\/(zh|en|ja)\//, '');
+};
+
+const dateFormatOptions: Intl.DateTimeFormatOptions = {
+    year: 'numeric',
+    month: 'long'
+};
+
+const locales = {
+    'zh': 'zh-CN',
+    'en': 'en-US',
+    'ja': 'ja-JP'
+};
+
+// 按年月分组
+const postsByMonth = posts.reduce((acc, post) => {
+    // 从文件名中提取年月
+    const fileName = post.slug.split('/').pop() || "";
+    const yearMonth = fileName.split('-').slice(0, 2).join('-');
+    
+    if (!acc[yearMonth]) acc[yearMonth] = [];
+    acc[yearMonth].push(post);
+    return acc;
+}, {});
+
+// 确保每个月份内的文章按序号倒序排列
+Object.keys(postsByMonth).forEach(month => {
+    postsByMonth[month].sort((a, b) => {
+        const fileNameA = a.slug.split('/').pop() || "";
+        const fileNameB = b.slug.split('/').pop() || "";
+        
+        // 提取序号部分并按数字大小倒序
+        const numberA = parseInt(fileNameA.split('-')[2]?.split('.')[0] || "0", 10);
+        const numberB = parseInt(fileNameB.split('-')[2]?.split('.')[0] || "0", 10);
+        return numberB - numberA;
+    });
+});
+
+const sortedMonths = Object.keys(postsByMonth).sort((a, b) => b.localeCompare(a));
+---
+
+<Layout title='Blog'>
+    <div>
+        <div class='flex gap-2 mb-6'>
+            {years.map((year, idx) => (
+                <a href={localizedLink(`/blog/${idx + 1}`)} class={`btn btn-xs ${year === currentYear ? 'btn-primary' : 'btn-outline'}`}>{year}</a>
+            ))}
+        </div>
+        <div>
+            {sortedMonths.map(month => (
+                <div class="mb-10" key={month}>
+                    <div class="flex items-center mb-2">
+                        <div class="text-lg font-bold border-l-4 border-primary pl-3">
+                            {month.replace('-', '年') + '月'}
+                        </div>
+                        <div class="flex-1 border-b border-base-300 ml-4"></div>
+                    </div>
+                    <div class='space-y-2'>
+                        {postsByMonth[month].map(post => (
+                            <div class='flex items-center justify-between py-3 px-4 border-b hover:bg-base-200 transition-colors rounded'>
+                                <div class='flex items-center gap-4 flex-1'>
+                                    <h2 class='font-medium'>
+                                        <a href={localizedLink(`/blog/${getCleanSlug(post.slug)}`)} class='hover:text-accent'>
+                                            {post.title}
+                                        </a>
+                                    </h2>
+                                    {post.badge && <div class='badge badge-accent badge-outline'>{post.badge}</div>}
+                                </div>
+                                <div class='flex items-center gap-4'>
+                                    <time datetime={post.date} class='text-sm text-base-content/70'>
+                                        {new Date(post.date).toLocaleDateString(locales[currentLang] || 'en-US', dateFormatOptions)}
+                                    </time>
+                                    <a href={localizedLink(`/blog/${getCleanSlug(post.slug)}`)} class='btn btn-xs btn-ghost'>
+                                        {t('blog.readmore')}
+                                    </a>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</Layout>

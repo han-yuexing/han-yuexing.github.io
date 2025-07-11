@@ -1,0 +1,116 @@
+{
+  "zh": {
+    "colleagues": {
+      "title": "其他老师",
+      "people": ["陈侨川"]
+    },
+    "currentStudents": {
+      "title": "组里同学",
+      "groups": [
+        {
+          "type": "博士",
+          "people": [
+            "2022：胡干",
+            "2020：王璐"
+          ]
+        },
+        {
+          "type": "硕士",
+          "people": [
+            "2024：陈易铭，李杨，张昊轩，曹臻（陈），桑晨（陈），赵寅康（张瑞）",
+            "2023：黄志怡，葛嘉浩，李睿杰，徐天洋（陈），李子铭（张瑞）"
+          ]
+        }
+      ]
+    },
+    "alumni": {
+      "title": "毕业同学",
+      "people": [
+        "2022：阮礼恒，包胜奇，朱龙飞，王慧，赵宸（陈），张一琳（张瑞）",
+        "2021：池洳婷，万冠新，韩思凡（陈），陈尊龙（张瑞）",
+        "2020：李睿祺，刘宇虹，夏锦桦，王迎港（陈），张家旺（张瑞）",
+        "2019：魏惠姗，杨珅，张宏坤，何心",
+        "2018：李小龙",
+        "2017：宋磊磊，黄杨，马柯",
+        "2016：赖传滨，王翱翔，罗杰",
+        "2015：童麟，王谦"
+      ]
+    }
+  },
+  "en": {
+    "colleagues": {
+      "title": "Other Faculty",
+      "people": ["Chen Qiaochuan"]
+    },
+    "currentStudents": {
+      "title": "Team Members",
+      "groups": [
+        {
+          "type": "PhD Students",
+          "people": [
+            "2022: Hu Gan",
+            "2020: Wang Lu"
+          ]
+        },
+        {
+          "type": "Masters Students",
+          "people": [
+            "2024: Chen Yiming, Li Yang, Zhang Haoxuan, Cao Zhen (Chen), Sang Chen (Chen), Zhao Yinkang (Zhang Rui)",
+            "2023: Huang Zhiyi, Ge Jiahao, Li Ruijie, Xu Tianyang (Chen), Li Ziming (Zhang Rui)"
+          ]
+        }
+      ]
+    },
+    "alumni": {
+      "title": "Alumni",
+      "people": [
+        "2022: Ruan Liheng, Bao Shengqi, Zhu Longfei, Wang Hui, Zhao Chen (Chen), Zhang Yilin (Zhang Rui)",
+        "2021: Chi Ruting, Wan Guanxin, Han Sifan (Chen), Chen Zunlong (Zhang Rui)",
+        "2020: Li Ruiqi, Liu Yuhong, Xia Jinhua, Wang Yinggang (Chen), Zhang Jiawang (Zhang Rui)",
+        "2019: Wei Huishan, Yang Shen, Zhang Hongkun, He Xin",
+        "2018: Li Xiaolong",
+        "2017: Song Leilei, Huang Yang, Ma Ke",
+        "2016: Lai Chuanbin, Wang Aoxiang, Luo Jie",
+        "2015: Tong Lin, Wang Qian"
+      ]
+    }
+  },
+  "ja": {
+    "colleagues": {
+      "title": "他の教員",
+      "people": ["陳橋川"]
+    },
+    "currentStudents": {
+      "title": "チームメンバー",
+      "groups": [
+        {
+          "type": "博士課程",
+          "people": [
+            "2022年：胡干",
+            "2020年：王璐"
+          ]
+        },
+        {
+          "type": "修士課程",
+          "people": [
+            "2024年：陈易铭、李杨、张昊轩、曹臻（陈）、桑晨（陈）、赵寅康（张瑞）",
+            "2023年：黄志怡、葛嘉浩、李睿杰、徐天洋（陈）、李子铭（张瑞）"
+          ]
+        }
+      ]
+    },
+    "alumni": {
+      "title": "卒業生",
+      "people": [
+        "2022年：阮礼恒、包胜奇、朱龙飞、王慧、赵宸（陈）、张一琳（张瑞）",
+        "2021年：池洳婷、万冠新、韩思凡（陈）、陈尊龙（张瑞）",
+        "2020年：李睿祺、刘宇虹、夏锦桦、王迎港（陈）、张家旺（张瑞）",
+        "2019年：魏惠姗、杨珅、张宏坤、何心",
+        "2018年：李小龙",
+        "2017年：宋磊磊、黄杨、马柯",
+        "2016年：赖传滨、王翱翔、罗杰",
+        "2015年：童麟、王谦"
+      ]
+    }
+  }
+} 
