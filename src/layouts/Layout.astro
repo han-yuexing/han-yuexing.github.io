@@ -1,0 +1,50 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Head from '../components/Head.astro'
+import TopNavbar from '../components/ui/TopNavbar.astro'
+import Footer from '../components/ui/Footer.astro'
+import { seo } from '../settings'
+import { getLangFromUrl } from '../i18n/utils';
+
+type Props = {
+	title?: string
+	description?: string
+	image?: string
+}
+
+const {
+	title = seo.default_title,
+	description = seo.default_description,
+	image = seo.default_image,
+} = Astro.props
+
+const currentLang = getLangFromUrl(Astro.url);
+---
+
+<!doctype html>
+<html lang={currentLang}>
+	<head>
+		{import.meta.env.PROD && <ClientRouter />}
+		<Head title={title} description={description} image={image} />
+	</head>
+	<body class="bg-base-100 min-h-screen flex flex-col">
+		<header class="sticky top-0 z-50">
+			<TopNavbar />
+		</header>
+		
+		<main class="flex-grow p-4 md:p-8 w-full">
+			<div class="max-w-6xl mx-auto w-full">
+				<slot />
+			</div>
+		</main>
+		
+		<Footer />
+	</body>
+</html>
+
+<style>
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+</style>

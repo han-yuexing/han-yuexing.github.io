@@ -1,0 +1,427 @@
+{
+  "zh": {
+    "invitedTalks": {
+      "title": "邀请报告",
+      "talks": [
+        {
+          "title": "面向材料科学文献的命名实体识别及关系抽取的研究与应用",
+          "venue": "中国材料大会2025，E06材料基因工程分会",
+          "date": "2024年7月5-8日",
+          "location": "中国，广州"
+        },
+        {
+          "title": "Research on machine learning methods for material image mining and material properties",
+          "venue": "8th Asian Materials Data Symposium IAMDS2024 (第八届亚洲材料数据会议)",
+          "date": "2024年11月13-16日",
+          "location": "中国，宁德"
+        },
+        {
+          "title": "面向材料图像挖掘材料性能的机器学习方法研究",
+          "venue": "c",
+          "date": "2024年11月13-17日",
+          "location": "中国，宁德"
+        },
+        {
+          "title": "基于材料图像挖掘材料性能的研究",
+          "venue": "中国材料大会2024，E06材料基因工程分会",
+          "date": "2024年7月9-11日",
+          "location": "中国，广州"
+        },
+        {
+          "title": "（口头报告）面向材料文献和材料图像的挖掘方法研究与应用",
+          "venue": "中国材料大会2023，E06材料基因工程分会",
+          "date": "2023年7月7-10日",
+          "location": "中国，深圳"
+        }
+      ]
+    },
+    "awards": {
+      "title": "获奖情况",
+      "items": [
+        {"name": "2023-2024学年上海大学本科生全程导师书院精品项目，书院导师实践项目（重点）：融合人工智能技术激发学习兴趣的学生培养方法探索，结项优秀", "year": "2024年10月"},
+        {"name": "2024年度中国钢研集团悬赏征算项目三等奖，铁路机车车辆损伤图像自动识别APP，获奖者  韩越兴   参与团队：葛嘉浩，包胜奇", "year": "2024年11月25日"},
+        {"name": "中国计算机学会 CCF杰出会员 编号：CCF-MEM-DM-2024-00222", "year": "2024年10月"},
+        {"name": "上海大学教职工年度考核 优秀", "year": "2024年8月"},
+        {"name": "2023年度上海市计算机学会优秀硕士学位论文提名奖，姓名：李睿祺，单位：上海大学，论文题目：基于非完全标注的复杂纹理图像分割方法研究，指导教师：韩越兴", "year": "2024年3月"},
+        {"name": "2023年中国大学生计算机设计大赛，第16届，把手与药兮--谁寻本草，三等奖，作者：杨若弘 项楠 梁丹丹，指导教师：韩越兴", "year": "2023年7-8月"},
+        {"name": "凡科优秀评审专家称号", "year": "2023年7月16日"},
+        {"name": "2022年犀牛鸟中学科学人才培养计划优胜奖", "year": "2022年11月"},
+        {"name": "上海大学本科优秀毕业设计（论文）指导教师奖   阮礼恒", "year": "2022年7月"},
+        {"name": "2021年度上海大学突出贡献奖", "year": "2022年3月"},
+        {"name": "2021年度上海市教育系统第十三届比翼双飞模范佳侣 （2022年评选）", "year": "2022年1月"}
+      ]
+    },
+    "openSource": {
+      "title": "开源软件",
+      "projects": [
+        {
+          "name": "RCFNet_Conv_Resnet50_MHSA",
+          "name_zh": "使用深度学习预测掺杂Al2O3的四方相YSZ涂层的热导率",
+          "env": "Python",
+          "description": "项目介绍：材料的性能与材料微观结构密切相关，不少期刊/会议论文中也明确结构直接决定性能。利用深度学习方法分析材料微观结构图像，从而建立回归模型预测出材料的性能是一种非常优秀的方法，然而，当下的许多工作中仅仅做到了将在其他视觉任务上表现优异的方法直接迁移到材料图像领域，预测材料性能，如，将在coco，ImageNet表现优异的resnet，alexnet等直接迁移到材料图像上，将最终的分类网络换成输出值为1个类别（性能值）的网络，然后加以训练，用以预测材料性能。 然而，在材料类的论文中，也明确了影响材料性能的不仅仅局限于材料图像的某些具体结构，事实上，全局特征和局部特征一样非常重要，局部特征细致刻画了材料的纹理，晶界密度以及孔隙率等，而全局特征则考虑了不同特征之间的长程依赖，可以发现材料中不同位置之间的相互作用关系，综合考虑更全面的信息，建立更加完整的映射关系。本程序所构建的网络同时考虑了局部网络分支和全局网络分支，分别对材料图像的局部特征和全局特征进行提取，并提出了专门的特征融合模块，对特征进行精细化融合处理，最终准确预测性能。",
+          "images": [
+            {"src": "/images/indexPic/2023/hsf_Paper1.png", "caption": "预测掺杂Al2O3的四方相YSZ涂层的热导率的模型架构"}
+          ],
+          "url": "https://github.com/han-yuexing/RCFNet_Conv_Resnet50_MHSA/tree/main",
+          "reference": "（代码源自我们已经发表的文章。如果您在研究中使用了该软件，请引用参考文献如下：Chen Q, Han S, Song X, et al. Thermal conductivity prediction of Al2O3-doped tetragonal YSZ coatings using deep learning[J]. Journal of the European Ceramic Society, 2024.）"
+        },
+        {
+          "name": "Analysis-of-SEM-image-of-ceramic-surface-based-on-clustering-method",
+          "name_zh": "基于聚类方法的陶瓷表面电子扫描电镜图像分析",
+          "env": "C++、Python",
+          "description": "软件介绍：陶瓷表面纳米结构是异常复杂多变的，根据材料组成成份的细微不同，就会使得材料图像巨大的变化。本研究平台是针对陶瓷(HfB2−B4C)各种区域分割和识别为目的而开发的软件平台，如图1所示。其中，通过找到区域边界，从而可以识别出每个区域，然后再进一步识别出每个区域中的子区域。",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf1.png", "caption": "针对陶瓷(HfB2−B4C)各种区域分割和识别为目的而开发的软件平台"}
+          ],
+          "url": "https://github.com/han-yuexing/Analysis-of-SEM-image-of-ceramic-surface-based-on-clustering-method",
+          "reference": "（代码源自我们已经发表的文章。如果您在研究中使用了该软件，请引用参考文献如下：Han, Y., Lai, C., Wang, B., Hu, T., Hu, D., & Gu, H. (2019). SEGMENTATION AND ANALYSIS METHOD FOR TWO-PHASE CERAMIC (HfB2-B4C) BASED ON THE DETECTION OF VIRTUAL BOUNDARIES. Image Analysis & Stereology.）"
+        },
+        {
+          "name": "Image-Analysis-of-Atomic-Force-Microscope-on-Material-Surface-Based-on-Deep-Learning-Method",
+          "name_zh": "基于深度学习方法的材料表面原子力显微镜图像分析",
+          "env": "C++、Python",
+          "description": "软件介绍：为了对DNA机器人形态进行研究，研究人员利用原子力显微镜拍摄出机器人的AFM图像。由于AFM图像多噪声及被观察的DNA机器人大规模重叠，所以需要对DNA纳米机器人进行分类和识别。AFM图像中的DNA机器人包含三种不同的DNA形态：平行、反平行和交叉。因为它们是由DNA大分子制成的，并且是在液体中拍摄的，因此，识别任务的困难之一就是AFM图像中这些纳米机器人的形状多样且灵活。尽管纳米结构科学和技术在许多领域得到了迅速发展，但由于成本高昂，仍然难以获得足够的纳米物体样本，从而阻碍了材料领域深度学习方法的发展。基于以上情况，设计了一个基于迁移学习和卷积神经网络的DNA机器人识别软件。",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf2.png", "caption": "液体中微纳米物体形状分割的的结果"}
+          ],
+          "url": "https://github.com/han-yuexing/Image-Analysis-of-Atomic-Force-Microscope-on-Material-Surface-Based-on-Deep-Learning-Method",
+          "reference": "（代码源自我们已经发表的文章。如果您在研究中使用了该软件，请引用参考文献如下：Han, Y., Liu, Y., Wang, B. et al. A novel transfer learning for recognition of overlapping nano object. Neural Comput & Applic 34, 5729–5741 (2022).）"
+        },
+        {
+          "name": "Identification-and-search-of-Kikuchi-zone-boundary",
+          "name_zh": "菊池带边界识别与搜索",
+          "env": "matlab",
+          "description": "软件介绍：电子背散射花样能够通过分析反映出晶体的结构和取向等信息，其准确性依赖于对花样位置和花样轴心线的确定。项目研究了一种新的处理菊池带花样的方法，能够快速准确地对图像中的菊池带及其轴线和交点进行标注。首先通过Canny算子进行边缘轮廓提取，在对其结果进一步使用Radon变换直线检测后得到每条菊池带的两条边缘并合并得其中心线。随后使用概率霍夫变换方法检测原始图像边缘线段。在对所得中心线和线段结果使用双向筛选算法进行选取配对后，使用双曲线拟合菊池带边缘。图5和图6展示了菊池带花样的直线与线段检测结果，图7展示了两条菊池带花样的配对结果。菊池带边界的最终检测结果如图8所示。",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf5.png", "caption": "菊池带直线检测结果"},
+            {"src": "/images/indexPic/2024_Project/kf6.png", "caption": "菊池带线段检测结果"},
+            {"src": "/images/indexPic/2024_Project/kf7.png", "caption": "菊池带花样配对检测结果"},
+            {"src": "/images/indexPic/2024_Project/kf8.png", "caption": "菊池带边界最终检测结果"}
+          ],
+          "url": "https://github.com/han-yuexing/Identification-and-search-of-Kikuchi-zone-boundary",
+          "reference": "（代码源自我们已经发表的文章。如果您在研究中使用了该软件，请引用参考文献如下：Han, Y., Li, R., Zeng, Y., & Liu, M. (2021). Automatic detection of Kikuchi bands based on Radon transform and PPHT. Journal of Microscopy, 285, 111 - 95.）"
+        },
+        {
+          "name": "Calculation-and-identification-of-spread-rate-of-special-area-on-coating",
+          "name_zh": "涂层上特殊区域铺展率的计算和识别",
+          "env": "Python",
+          "description": "软件介绍：本软件完成了基于数学形态学的片层轮廓自动提取及铺展形貌参数的计算，用最大类间方差法求取二值分割阈值，运用均值滤波和形态学操作为图片去噪，并保证单个片层的连通性。通过轮廓提取来获得片层边缘信息，最后根据所提取出的轮廓计算片层的实度参数。本软件可以精确识别出片层轮廓，且具有很强的抗噪声干扰能力，有效提升了科研人员的研究效率。",
+          "images": [
+          ],
+          "url": "https://github.com/han-yuexing/Calculation-and-identification-of-spread-rate-of-special-area-on-coating",
+          "reference": "（代码源自我们已经发表的文章。如果您在研究中使用了该软件，请引用参考文献如下：LIU Yuhong, HAN Yuexing, WANG Yuyan, ZENG Yi. Recognition of topographic features of thermal barrier coating based on image processing[J]. Journal of Shanghai University（Natural Science Edition）, 2022, 28(3): 523-533.）"
+        },
+        {
+          "name": "Segmentation-of-material-image-with-virtual-boundary-based-on-depth-learning-VGG-model",
+          "name_zh": "基于深度学习VGG模型对带有虚拟边界的材料图像进行分割",
+          "env": "Python",
+          "description": "软件介绍：新材料的研发是推动材料科学发展的重要动力，而材料基因工程是一门目前材料科学领域的前沿交叉学科，能够缩短新材料的研发周期及降低时间人力成本，对材料图像微观结构分割与识别能够为材料基因工程中的数据库构建提供数据基础。本方法提出一种基于复杂纹理特征融合的材料图像分割方法，选择并改进FCN作为基础网络，实现了对各相纹理相似的材料图像精确分割。网络分为编码和解码阶段，使用VGG16(VGG block)作为骨干网络，在解码阶段，使用级联的特征融合模块融合了分别来自高层和低层的特征图的语义信息；然后将融合的特征图放入多尺度学习模块(Multi-scale block)进一步提取纹理信息；在解码阶段，对于每层恢复的特征图使用注意力机制模块(Attention block)对特征图附加权重，通道注意力机制保留重要的特征图，空间注意力机制保留重要特征图中的关键纹理信息。同时，对于材料图像中数据分布不平衡的问题，本章选择并改进Dice损失，优化分割结果。",
+          "images": [
+          ],
+          "url": "https://github.com/han-yuexing/Segmentation-of-material-image-with-virtual-boundary-based-on-depth-learning-VGG-model",
+          "reference": "详见项目页面。"
+        },
+        {
+          "name": "Crystal-structure-recognition-method-based-on-machine-learning",
+          "name_zh": "基于机器学习的晶体结构识别方法",
+          "env": "Python",
+          "description": "软件介绍：由于原子运动使得晶体结构发生变化，进而导致塑性形变。晶体材料的塑性形变与材料性能具有密切相关，研究材料形变机理对分析材料的性能以及理解形变机制具有极其重要的作用。然而，目前晶体结构识别常常面临样本数据不足的问题，且现有的一些方法并不能识别出所有的晶体结构。针对晶体结构中的小样本问题以及现存方法的不足，本研究提出了一种基于机器学习的晶体结构识别方法。",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf9.png", "caption": "本方法与CNA、A-CNA方法的可视化结果对比"}
+          ],
+          "url": "https://github.com/han-yuexing/Crystal-structure-recognition-method-based-on-machine-learning",
+          "reference": "详见项目页面。"
+        },
+        {
+          "name": "Roughening-Behavior-Analysis-Procedure-for-2205-Duplex-Stainless-Steel",
+          "name_zh": "2205二相不锈钢粗化行为分析",
+          "env": "Python",
+          "description": "软件介绍：在制备材料时，一些析出的沉淀物会影响材料的性能，其中，析出物的尺寸和分布对性能有很大的影响。例如双相不锈钢，具有很好的机械性能和耐腐蚀性，这些优秀的性能归因于形成的铁氧体和奥氏体，但是在制备过程中容易产生一些次生相，如σ相。为了便于分析，可以在制备过程中采集图像进行处理。基于深度学习的良好性能以及它们在材料研究上的成功应用，本程序提供了多个分割网络，以及它们在一些数据集上训练得到的模型，帮助使用者更便捷地用深度学习算法处理材料图像。相间能量是通过奥斯特瓦尔德粗化机制，根据各个时刻沉淀物的半径计算得到。",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf10.png", "caption": "相间能量计算流程图"}
+          ],
+          "url": "https://github.com/han-yuexing/Roughening-Behavior-Analysis-Procedure-for-2205-Duplex-Stainless-Steel",
+          "reference": "（代码源自我们已经发表的文章。如果您在研究中使用了该软件，请引用参考文献如下：Han Y, Chi R, Chen Q, et al. Microstructural evolution and coarsening behavior of the precipitates in 2205 duplex stainless steel aged at 850° C[J]. Journal of Materials Research and Technology, 2023, 26: 2560-2574.）"
+        }
+      ]
+    }
+  },
+  "en": {
+    "invitedTalks": {
+      "title": "Invited Talks",
+      "talks": [
+        {
+          "title": "Research and Application of Named Entity Recognition and Relation Extraction for Materials Science Literature",
+          "venue": "China Materials Conference 2025, E06 Materials Genome Engineering Sub-Forum",
+          "date": "July 5-8, 2024",
+          "location": "Guangzhou, China"
+        },
+        {
+          "title": "Research on machine learning methods for material image mining and material properties",
+          "venue": "8th Asian Materials Data Symposium IAMDS2024",
+          "date": "November 13-16, 2024",
+          "location": "Ningde, China"
+        },
+        {
+          "title": "Research on machine learning methods for material image mining and material properties",
+          "venue": "c",
+          "date": "November 13-17, 2024",
+          "location": "Ningde, China"
+        },
+        {
+          "title": "Research on material properties based on material image mining",
+          "venue": "China Materials Conference 2024, E06 Materials Genome Engineering Sub-Forum",
+          "date": "July 9-11, 2024",
+          "location": "Guangzhou, China"
+        },
+        {
+          "title": "(Oral) Research and Application of Mining Methods for Materials Literature and Images",
+          "venue": "China Materials Conference 2023, E06 Materials Genome Engineering Sub-Forum",
+          "date": "July 7-10, 2023",
+          "location": "Shenzhen, China"
+        }
+      ]
+    },
+    "awards": {
+      "title": "Awards",
+      "items": [
+        {"name": "2023-2024 Shanghai University Full-time Tutor College Premium Project, College Tutor Practice Project (Key): Exploring Student Training Methods to Stimulate Learning Interest with Artificial Intelligence Technology, Outstanding Completion", "year": "October 2024"},
+        {"name": "2024 China Iron and Steel Research Group Reward Algorithm Project Third Prize, Railway Locomotive Vehicle Damage Image Automatic Recognition APP, Winner: Han Yuexing, Participating Team: Ge Jiahao, Bao Shengqi", "year": "November 25, 2024"},
+        {"name": "China Computer Federation CCF Distinguished Member, Number: CCF-MEM-DM-2024-00222", "year": "October 2024"},
+        {"name": "Shanghai University Faculty Annual Assessment, Excellent", "year": "August 2024"},
+        {"name": "2023 Shanghai Computer Society Outstanding Master's Thesis Nomination Award, Name: Li Ruiqi, Institution: Shanghai University, Thesis Title: Research on Complex Texture Image Segmentation Method Based on Incomplete Annotation, Supervisor: Han Yuexing", "year": "March 2024"},
+        {"name": "2023 Chinese College Students Computer Design Competition, 16th, Herbal Medicine Recognition - Finding Herbs, Third Prize, Authors: Yang Ruohong, Xiang Nan, Liang Dandan, Supervisor: Han Yuexing", "year": "July-August 2023"},
+        {"name": "Fankuai Outstanding Review Expert Title", "year": "July 16, 2023"},
+        {"name": "2022 Rhinoceros Bird High School Science Talent Training Program Award", "year": "November 2022"},
+        {"name": "Shanghai University Outstanding Undergraduate Graduation Design (Thesis) Instructor Award, Ruan Liheng", "year": "July 2022"},
+        {"name": "2021 Shanghai University Outstanding Contribution Award", "year": "March 2022"},
+        {"name": "2021 Shanghai Education System 13th Flying Together Model Couple (Selected in 2022)", "year": "January 2022"}
+      ]
+    },
+    "openSource": {
+      "title": "Open Source Software",
+      "projects": [
+        {
+          "name": "RCFNet_Conv_Resnet50_MHSA",
+          "env": "Python",
+          "description": "Project Introduction: Material properties are closely related to material microstructure, with many journal/conference papers explicitly stating that structure directly determines performance. Using deep learning methods to analyze material microstructure images to build regression models that predict material properties is an excellent approach. However, many current works simply transfer methods that perform well in other visual tasks directly to the material image domain to predict material properties, such as directly transferring ResNet, AlexNet, etc., which perform well on COCO and ImageNet, to material images, replacing the final classification network with a network that outputs one category (performance value), and then training it to predict material performance. However, in materials science papers, it's also clear that material performance is not only limited to specific structures in material images. In fact, global features are as important as local features. Local features characterize the material's texture, grain boundary density, and porosity in detail, while global features consider long-range dependencies between different features and can discover interaction relationships between different positions in materials, considering more comprehensive information to establish a more complete mapping relationship. The network built by this program considers both local network branches and global network branches, extracts local features and global features of material images respectively, and proposes a specialized feature fusion module for fine-grained fusion processing of features, ultimately accurately predicting performance.",
+          "images": [
+            {"src": "/images/indexPic/2023/hsf_Paper1.png", "caption": "Architecture of the model for predicting the thermal conductivity of Al2O3-doped tetragonal YSZ coatings"}
+          ],
+          "url": "https://github.com/han-yuexing/RCFNet_Conv_Resnet50_MHSA/tree/main",
+          "reference": "(Code source from our published article. If you use this software in your research, please cite the following reference: Chen Q, Han S, Song X, et al. Thermal conductivity prediction of Al2O3-doped tetragonal YSZ coatings using deep learning[J]. Journal of the European Ceramic Society, 2024.)"
+        },
+        {
+          "name": "Analysis-of-SEM-image-of-ceramic-surface-based-on-clustering-method",
+          "env": "C++, Python",
+          "description": "Software Introduction: The nanostructures on ceramic surfaces are extremely complex and variable. Slight differences in material composition can lead to significant changes in material images. This research platform was developed for segmentation and recognition of various regions in ceramics (HfB2−B4C), as shown in Figure 1. By finding region boundaries, each region can be identified, and then further identification of subregions within each region can be performed.",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf1.png", "caption": "Software platform developed for segmentation and recognition of various regions in ceramics (HfB2−B4C)"}
+          ],
+          "url": "https://github.com/han-yuexing/Analysis-of-SEM-image-of-ceramic-surface-based-on-clustering-method",
+          "reference": "(Code source from our published article. If you use this software in your research, please cite the following reference: Han, Y., Lai, C., Wang, B., Hu, T., Hu, D., & Gu, H. (2019). SEGMENTATION AND ANALYSIS METHOD FOR TWO-PHASE CERAMIC (HfB2-B4C) BASED ON THE DETECTION OF VIRTUAL BOUNDARIES. Image Analysis & Stereology.)"
+        },
+        {
+          "name": "Image-Analysis-of-Atomic-Force-Microscope-on-Material-Surface-Based-on-Deep-Learning-Method",
+          "env": "C++, Python",
+          "description": "Software Introduction: To study the morphology of DNA robots, researchers use atomic force microscopes to capture AFM images of the robots. Due to the high noise in AFM images and the large-scale overlap of the observed DNA robots, classification and recognition of DNA nanorobots are needed. DNA robots in AFM images include three different DNA morphologies: parallel, anti-parallel, and crossed. Because they are made of DNA macromolecules and photographed in liquid, one of the difficulties of the recognition task is the diverse and flexible shapes of these nanorobots in AFM images. Although nanoscience and technology have developed rapidly in many fields, it is still difficult to obtain enough samples of nano-objects due to high costs, which hinders the development of deep learning methods in the field of materials. Based on these situations, a DNA robot recognition software based on transfer learning and convolutional neural networks was designed.",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf2.png", "caption": "Results of shape segmentation of micro-nano objects in liquid"}
+          ],
+          "url": "https://github.com/han-yuexing/Image-Analysis-of-Atomic-Force-Microscope-on-Material-Surface-Based-on-Deep-Learning-Method",
+          "reference": "(Code source from our published article. If you use this software in your research, please cite the following reference: Han, Y., Liu, Y., Wang, B. et al. A novel transfer learning for recognition of overlapping nano object. Neural Comput & Applic 34, 5729–5741 (2022).)"
+        },
+        {
+          "name": "Identification-and-search-of-Kikuchi-zone-boundary",
+          "env": "matlab",
+          "description": "Software Introduction: Electron backscatter patterns can reflect crystal structure and orientation information through analysis, and their accuracy depends on the determination of pattern position and pattern axis lines. The project studied a new method for processing Kikuchi band patterns, which can quickly and accurately label the Kikuchi bands, their axial lines, and intersection points in the image. First, edge contours are extracted using the Canny operator, and then Radon transform line detection is used on the results to obtain the two edges of each Kikuchi band and merge them to get the center line. Subsequently, the probabilistic Hough transform method is used to detect edge line segments in the original image. After using a bidirectional filtering algorithm to select and pair the resulting center lines and line segments, a hyperbola is used to fit the edges of the Kikuchi band. Figures 5 and 6 show the line and line segment detection results of the Kikuchi band pattern, and Figure 7 shows the pairing results of two Kikuchi band patterns. The final detection result of the Kikuchi band boundary is shown in Figure 8.",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf5.png", "caption": "Kikuchi band line detection results"},
+            {"src": "/images/indexPic/2024_Project/kf6.png", "caption": "Kikuchi band segment detection results"},
+            {"src": "/images/indexPic/2024_Project/kf7.png", "caption": "Kikuchi band pattern pairing detection results"},
+            {"src": "/images/indexPic/2024_Project/kf8.png", "caption": "Final detection result of Kikuchi band boundary"}
+          ],
+          "url": "https://github.com/han-yuexing/Identification-and-search-of-Kikuchi-zone-boundary",
+          "reference": "(Code source from our published article. If you use this software in your research, please cite the following reference: Han, Y., Li, R., Zeng, Y., & Liu, M. (2021). Automatic detection of Kikuchi bands based on Radon transform and PPHT. Journal of Microscopy, 285, 111 - 95.)"
+        },
+        {
+          "name": "Calculation-and-identification-of-spread-rate-of-special-area-on-coating",
+          "env": "Python",
+          "description": "Software Introduction: This software accomplishes automatic extraction of lamella contours based on mathematical morphology and calculation of spreading morphology parameters. It uses maximum inter-class variance method to determine binary segmentation threshold, applies mean filtering and morphological operations for image denoising, and ensures connectivity of individual lamellae. Lamella edge information is obtained through contour extraction, and finally, lamella solidity parameters are calculated based on the extracted contours. This software can accurately identify lamella contours and has strong anti-noise interference ability, effectively improving the research efficiency of scientific researchers.",
+          "images": [
+          ],
+          "url": "https://github.com/han-yuexing/Calculation-and-identification-of-spread-rate-of-special-area-on-coating",
+          "reference": "(Code source from our published article. If you use this software in your research, please cite the following reference: LIU Yuhong, HAN Yuexing, WANG Yuyan, ZENG Yi. Recognition of topographic features of thermal barrier coating based on image processing[J]. Journal of Shanghai University（Natural Science Edition）, 2022, 28(3): 523-533.)"
+        },
+        {
+          "name": "Segmentation-of-material-image-with-virtual-boundary-based-on-depth-learning-VGG-model",
+          "env": "Python",
+          "description": "Software Introduction: The development of new materials is an important driving force for the advancement of materials science, and materials genome engineering is a frontier interdisciplinary field in materials science that can shorten the development cycle of new materials and reduce time and human resource costs. Segmentation and recognition of material image microstructures can provide a data foundation for database construction in materials genome engineering. This method proposes a material image segmentation approach based on complex texture feature fusion, selecting and improving FCN as the basic network to achieve precise segmentation of material images with similar textures across phases. The network is divided into encoding and decoding stages, using VGG16 (VGG block) as the backbone network. In the decoding stage, cascaded feature fusion modules are used to merge semantic information from both high-level and low-level feature maps; then the fused feature maps are fed into a multi-scale learning module (Multi-scale block) to further extract texture information. In the decoding stage, attention mechanism modules (Attention block) are applied to each layer of restored feature maps to add weights, where channel attention mechanism preserves important feature maps and spatial attention mechanism preserves key texture information in important feature maps. At the same time, for the problem of unbalanced data distribution in material images, this chapter selects and improves Dice loss to optimize segmentation results.",
+          "images": [
+          ],
+          "url": "https://github.com/han-yuexing/Segmentation-of-material-image-with-virtual-boundary-based-on-depth-learning-VGG-model",
+          "reference": "See project page for details."
+        },
+        {
+          "name": "Crystal-structure-recognition-method-based-on-machine-learning",
+          "env": "Python",
+          "description": "Software Introduction: Due to atomic motion, crystal structures change, leading to plastic deformation. The plastic deformation of crystalline materials is closely related to material properties, and studying material deformation mechanisms is extremely important for analyzing material performance and understanding deformation mechanisms. However, crystal structure recognition often faces the problem of insufficient sample data, and some existing methods cannot identify all crystal structures. In view of the small sample problem in crystal structures and the deficiencies of existing methods, this study proposes a crystal structure recognition method based on machine learning.",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf9.png", "caption": "Comparison of visualization results between this method and CNA, A-CNA methods"}
+          ],
+          "url": "https://github.com/han-yuexing/Crystal-structure-recognition-method-based-on-machine-learning",
+          "reference": "See project page for details."
+        },
+        {
+          "name": "Roughening-Behavior-Analysis-Procedure-for-2205-Duplex-Stainless-Steel",
+          "env": "Python",
+          "description": "Software Introduction: When preparing materials, some precipitated precipitates will affect the performance of the material, and the size and distribution of precipitates have a significant impact on performance. For example, duplex stainless steel has good mechanical properties and corrosion resistance, which are attributed to the formation of ferrite and austenite, but secondary phases such as σ phase are easily produced during the preparation process. For ease of analysis, images can be collected and processed during the preparation process. Based on the good performance of deep learning and its successful applications in materials research, this program provides multiple segmentation networks and models trained on some datasets to help users more conveniently process material images with deep learning algorithms. The interphase energy is calculated according to the Ostwald ripening mechanism, based on the radius of precipitates at each moment.",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf10.png", "caption": "Interphase energy calculation flow chart"}
+          ],
+          "url": "https://github.com/han-yuexing/Roughening-Behavior-Analysis-Procedure-for-2205-Duplex-Stainless-Steel",
+          "reference": "(Code source from our published article. If you use this software in your research, please cite the following reference: Han Y, Chi R, Chen Q, et al. Microstructural evolution and coarsening behavior of the precipitates in 2205 duplex stainless steel aged at 850° C[J]. Journal of Materials Research and Technology, 2023, 26: 2560-2574.)"
+        }
+      ]
+    }
+  },
+  "ja": {
+    "invitedTalks": {
+      "title": "招待講演",
+      "talks": [
+        {
+          "title": "材料科学文献における固有表現認識と関係抽出の研究と応用",
+          "venue": "中国材料会議2025、E06材料ゲノム工学分科会",
+          "date": "2024年7月5-8日",
+          "location": "広州、中国"
+        },
+        {
+          "title": "材料画像マイニングと材料特性のための機械学習手法の研究",
+          "venue": "第8回アジア材料データシンポジウム IAMDS2024",
+          "date": "2024年11月13-16日",
+          "location": "寧徳、中国"
+        },
+        {
+          "title": "材料画像マイニングによる材料特性の研究",
+          "venue": "c",
+          "date": "2024年11月13-17日",
+          "location": "寧徳、中国"
+        },
+        {
+          "title": "材料画像マイニングに基づく材料特性の研究",
+          "venue": "中国材料会議2024、E06材料ゲノム工学分科会",
+          "date": "2024年7月9-11日",
+          "location": "広州、中国"
+        },
+        {
+          "title": "（口頭発表）材料文献と材料画像のマイニング方法の研究と応用",
+          "venue": "中国材料会議2023、E06材料ゲノム工学分科会",
+          "date": "2023年7月7-10日",
+          "location": "深圳、中国"
+        }
+      ]
+    },
+    "awards": {
+      "title": "受賞歴",
+      "items": [
+        {"name": "2023-2024学年上海大学学部生全課程指導教員カレッジプレミアムプロジェクト、カレッジ指導実践プロジェクト（重点）：人工知能技術を融合して学習意欲を高める学生育成方法の探求、優秀完了", "year": "2024年10月"},
+        {"name": "2024年度中国鉄鋼研究グループ懸賞アルゴリズムプロジェクト三等賞、鉄道機関車車両損傷画像自動認識APP、受賞者：韓越興 参加チーム：葛嘉浩、包勝奇", "year": "2024年11月25日"},
+        {"name": "中国計算機学会 CCF優秀会員 番号：CCF-MEM-DM-2024-00222", "year": "2024年10月"},
+        {"name": "上海大学教職員年次評価 優秀", "year": "2024年8月"},
+        {"name": "2023年度上海市計算機学会優秀修士論文ノミネート賞、氏名：李睿祺、所属：上海大学、論文題目：不完全ラベルに基づく複雑テクスチャ画像分割方法の研究、指導教員：韓越興", "year": "2024年3月"},
+        {"name": "2023年中国大学生コンピュータデザインコンテスト、第16回、薬草認識 - 本草を探す、三等賞、著者：楊若紅 項楠 梁丹丹、指導教員：韓越興", "year": "2023年7-8月"},
+        {"name": "凡科優秀レビュー専門家称号", "year": "2023年7月16日"},
+        {"name": "2022年サイ鳥中学科学人材育成計画優勝賞", "year": "2022年11月"},
+        {"name": "上海大学学部優秀卒業設計（論文）指導教員賞 阮礼恒", "year": "2022年7月"},
+        {"name": "2021年度上海大学顕著貢献賞", "year": "2022年3月"},
+        {"name": "2021年度上海市教育システム第13回比翼双飛模範夫妻（2022年選出）", "year": "2022年1月"}
+      ]
+    },
+    "openSource": {
+      "title": "オープンソースソフトウェア",
+      "projects": [
+        {
+          "name": "RCFNet_Conv_Resnet50_MHSA",
+          "env": "Python",
+          "description": "プロジェクト紹介：材料の性能は材料の微細構造と密接に関連しており、多くのジャーナル/会議論文でも構造が性能を直接決定することが明確に示されています。深層学習手法を用いて材料の微細構造画像を分析し、材料性能を予測する回帰モデルを構築することは非常に優れた方法です。しかし、現在の多くの研究では、他の視覚タスクで優れた性能を示す手法を材料画像領域に直接移行して材料性能を予測するだけにとどまっています。例えば、COCO、ImageNetで優れた性能を示すResNet、AlexNetなどを材料画像に直接移行し、最終的な分類ネットワークを1つのカテゴリ（性能値）を出力するネットワークに置き換え、トレーニングして材料性能を予測するといった方法です。しかし、材料科学の論文でも、材料性能に影響を与えるのは材料画像の特定の構造だけに限らないことが明確にされています。実際、グローバル特徴はローカル特徴と同様に非常に重要です。ローカル特徴は材料のテクスチャ、結晶粒界密度、気孔率などを詳細に特徴づけますが、グローバル特徴は異なる特徴間の長距離依存性を考慮し、材料内の異なる位置間の相互作用関係を発見でき、より包括的な情報を考慮してより完全なマッピング関係を確立します。このプログラムで構築されたネットワークは、ローカルネットワーク分岐とグローバルネットワーク分岐の両方を考慮し、材料画像のローカル特徴とグローバル特徴をそれぞれ抽出し、特徴を精密に融合処理するための専門的な特徴融合モジュールを提案しており、最終的に性能を正確に予測します。",
+          "images": [
+            {"src": "/images/indexPic/2023/hsf_Paper1.png", "caption": "Al2O3ドープ四方晶YSZコーティングの熱伝導率予測モデルのアーキテクチャ"}
+          ],
+          "url": "https://github.com/han-yuexing/RCFNet_Conv_Resnet50_MHSA/tree/main",
+          "reference": "（コードは我々の出版論文から得たものです。あなたの研究でこのソフトウェアを使用する場合は、以下の参考文献を引用してください：Chen Q, Han S, Song X, et al. Thermal conductivity prediction of Al2O3-doped tetragonal YSZ coatings using deep learning[J]. Journal of the European Ceramic Society, 2024.）"
+        },
+        {
+          "name": "Analysis-of-SEM-image-of-ceramic-surface-based-on-clustering-method",
+          "env": "C++、Python",
+          "description": "ソフトウェア紹介：セラミック表面のナノ構造は非常に複雑で変化に富んでおり、材料組成のわずかな違いによって、材料画像に大きな変化が生じます。この研究プラットフォームは、セラミック（HfB2−B4C）のさまざまな領域の分割と識別を目的として開発されました（図1参照）。領域の境界を見つけることで各領域を識別し、さらに各領域内のサブ領域を識別することができます。",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf1.png", "caption": "セラミック（HfB2−B4C）のさまざまな領域の分割と識別のために開発されたソフトウェアプラットフォーム"}
+          ],
+          "url": "https://github.com/han-yuexing/Analysis-of-SEM-image-of-ceramic-surface-based-on-clustering-method",
+          "reference": "（コードは我々の出版論文から得たものです。あなたの研究でこのソフトウェアを使用する場合は、以下の参考文献を引用してください：Han, Y., Lai, C., Wang, B., Hu, T., Hu, D., & Gu, H. (2019). SEGMENTATION AND ANALYSIS METHOD FOR TWO-PHASE CERAMIC (HfB2-B4C) BASED ON THE DETECTION OF VIRTUAL BOUNDARIES. Image Analysis & Stereology.）"
+        },
+        {
+          "name": "Image-Analysis-of-Atomic-Force-Microscope-on-Material-Surface-Based-on-Deep-Learning-Method",
+          "env": "C++、Python",
+          "description": "ソフトウェア紹介：DNAロボットの形態研究のため、研究者は原子間力顕微鏡を使用してロボットのAFM画像を撮影しています。AFM画像のノイズが多く、観察されるDNAロボットが大規模に重なっているため、DNAナノロボットの分類と識別が必要です。AFM画像のDNAロボットには、平行、反平行、交差の3つの異なるDNA形態が含まれています。これらはDNA大分子で作られ、液体中で撮影されているため、認識タスクの難しさの一つは、AFM画像中のこれらのナノロボットの形状が多様で柔軟であることです。ナノ構造科学技術は多くの分野で急速に発展していますが、コストが高いため、十分なナノ物体サンプルを得ることは依然として困難であり、これが材料分野における深層学習手法の発展を妨げています。これらの状況に基づき、転移学習と畳み込みニューラルネットワークに基づくDNAロボット認識ソフトウェアが設計されました。",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf2.png", "caption": "液体中のマイクロナノ物体の形状分割の結果"}
+          ],
+          "url": "https://github.com/han-yuexing/Image-Analysis-of-Atomic-Force-Microscope-on-Material-Surface-Based-on-Deep-Learning-Method",
+          "reference": "（コードは我々の出版論文から得たものです。あなたの研究でこのソフトウェアを使用する場合は、以下の参考文献を引用してください：Han, Y., Liu, Y., Wang, B. et al. A novel transfer learning for recognition of overlapping nano object. Neural Comput & Applic 34, 5729–5741 (2022).）"
+        },
+        {
+          "name": "Identification-and-search-of-Kikuchi-zone-boundary",
+          "env": "matlab",
+          "description": "ソフトウェア紹介：電子後方散乱パターンは分析を通じて結晶の構造や方位などの情報を反映でき、その精度はパターン位置とパターン軸線の決定に依存します。本プロジェクトでは、菊池帯パターンを処理する新しい方法を研究し、画像中の菊池帯およびその軸線と交点を迅速かつ正確に標識することができます。まずCannyオペレータで輪郭エッジを抽出し、その結果にさらにRadon変換直線検出を使用して各菊池帯の2つのエッジを取得し、それらを合併して中心線を得ます。その後、確率的ハフ変換法を使用して元の画像のエッジラインセグメントを検出します。得られた中心線とラインセグメントの結果に対して双方向フィルタリングアルゴリズムを使用して選択とペアリングを行った後、双曲線を使用して菊池帯のエッジをフィッティングします。図5と図6は菊池帯パターンのラインとラインセグメント検出結果を示し、図7は2つの菊池帯パターンのペアリング結果を示しています。菊池帯境界の最終検出結果は図8に示されています。",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf5.png", "caption": "菊池帯ライン検出結果"},
+            {"src": "/images/indexPic/2024_Project/kf6.png", "caption": "菊池帯セグメント検出結果"},
+            {"src": "/images/indexPic/2024_Project/kf7.png", "caption": "菊池帯パターンペアリング検出結果"},
+            {"src": "/images/indexPic/2024_Project/kf8.png", "caption": "菊池帯境界の最終検出結果"}
+          ],
+          "url": "https://github.com/han-yuexing/Identification-and-search-of-Kikuchi-zone-boundary",
+          "reference": "（コードは我々の出版論文から得たものです。あなたの研究でこのソフトウェアを使用する場合は、以下の参考文献を引用してください：Han, Y., Li, R., Zeng, Y., & Liu, M. (2021). Automatic detection of Kikuchi bands based on Radon transform and PPHT. Journal of Microscopy, 285, 111 - 95.）"
+        },
+        {
+          "name": "Calculation-and-identification-of-spread-rate-of-special-area-on-coating",
+          "env": "Python",
+          "description": "ソフトウェア紹介：このソフトウェアは、数理形態学に基づくラメラ輪郭の自動抽出および拡散形態パラメータの計算を実現しています。二値分割閾値を求めるために最大クラス間分散法を使用し、平均フィルタリングと形態学的操作を画像のノイズ除去に適用し、個々のラメラの連結性を確保しています。輪郭抽出によってラメラのエッジ情報を取得し、最後に抽出された輪郭に基づいてラメラの充実度パラメータを計算します。このソフトウェアはラメラ輪郭を正確に識別でき、ノイズ干渉に対する強い耐性を持ち、研究者の研究効率を効果的に向上させます。",
+          "images": [
+          ],
+          "url": "https://github.com/han-yuexing/Calculation-and-identification-of-spread-rate-of-special-area-on-coating",
+          "reference": "（コードは我々の出版論文から得たものです。あなたの研究でこのソフトウェアを使用する場合は、以下の参考文献を引用してください：LIU Yuhong, HAN Yuexing, WANG Yuyan, ZENG Yi. Recognition of topographic features of thermal barrier coating based on image processing[J]. Journal of Shanghai University（Natural Science Edition）, 2022, 28(3): 523-533.）"
+        },
+        {
+          "name": "Segmentation-of-material-image-with-virtual-boundary-based-on-depth-learning-VGG-model",
+          "env": "Python",
+          "description": "ソフトウェア紹介：新材料の開発は材料科学の発展を推進する重要な原動力であり、材料ゲノム工学は現在、材料科学分野の最先端の学際的分野で、新材料の研究開発サイクルを短縮し、時間と人的コストを削減できます。材料画像の微細構造の分割と認識は、材料ゲノム工学におけるデータベース構築のためのデータ基盤を提供できます。本手法は複雑なテクスチャ特徴融合に基づく材料画像分割手法を提案し、FCNを基礎ネットワークとして選択・改良し、各相のテクスチャが類似する材料画像の精密分割を実現しています。ネットワークはエンコーディングとデコーディングの段階に分かれ、VGG16（VGGブロック）をバックボーンネットワークとして使用し、デコーディング段階では、カスケード接続された特徴融合モジュールを使用して高層と低層からの特徴マップのセマンティック情報を融合します。次に、融合された特徴マップをマルチスケール学習モジュール（Multi-scale block）に入力し、テクスチャ情報をさらに抽出します。デコーディング段階では、各層の復元された特徴マップに対して注意機構モジュール（Attention block）を使用して特徴マップに重みを付加し、チャネル注意機構は重要な特徴マップを保持し、空間注意機構は重要な特徴マップ内の重要なテクスチャ情報を保持します。また、材料画像におけるデータ分布の不均衡問題に対して、本章ではDice損失を選択・改良し、分割結果を最適化しています。",
+          "images": [
+          ],
+          "url": "https://github.com/han-yuexing/Segmentation-of-material-image-with-virtual-boundary-based-on-depth-learning-VGG-model",
+          "reference": "プロジェクトページを参照してください。"
+        },
+        {
+          "name": "Crystal-structure-recognition-method-based-on-machine-learning",
+          "env": "Python",
+          "description": "ソフトウェア紹介：原子の運動により結晶構造が変化し、それにより塑性変形が生じます。結晶材料の塑性変形と材料性能は密接に関連しており、材料の変形メカニズムの研究は材料性能の分析や変形メカニズムの理解に非常に重要な役割を果たします。しかし、現在の結晶構造認識はしばしばサンプルデータ不足の問題に直面しており、既存の一部の手法ではすべての結晶構造を識別できません。結晶構造における少数サンプル問題と既存手法の不足に対して、本研究では機械学習に基づく結晶構造認識手法を提案しています。",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf9.png", "caption": "本手法とCNA、A-CNA手法の視覚化結果の比較"}
+          ],
+          "url": "https://github.com/han-yuexing/Crystal-structure-recognition-method-based-on-machine-learning",
+          "reference": "プロジェクトページを参照してください。"
+        },
+        {
+          "name": "Roughening-Behavior-Analysis-Procedure-for-2205-Duplex-Stainless-Steel",
+          "env": "Python",
+          "description": "ソフトウェア紹介：材料を調製する際、析出した沈殿物が材料の性能に影響を与えることがあり、沈殿物のサイズと分布が性能に大きな影響を与えます。例えば、二相ステンレス鋼は優れた機械的特性と耐食性を持ち、これらの優れた特性はフェライトとオーステナイトの形成に起因していますが、製造プロセス中にσ相などの二次相が発生しやすくなります。分析を容易にするため、製造プロセス中に画像を収集して処理することができます。深層学習の良好な性能と材料研究におけるその成功的な応用に基づいて、このプログラムは複数の分割ネットワークと一部のデータセットで訓練されたモデルを提供し、ユーザーが深層学習アルゴリズムで材料画像をより便利に処理できるようにしています。相間エネルギーは、オストワルド熟成メカニズムに基づいて、各時点での沈殿物の半径から計算されます。",
+          "images": [
+            {"src": "/images/indexPic/2024_Project/kf10.png", "caption": "相間エネルギー計算のフローチャート"}
+          ],
+          "url": "https://github.com/han-yuexing/Roughening-Behavior-Analysis-Procedure-for-2205-Duplex-Stainless-Steel",
+          "reference": "（コードは我々の出版論文から得たものです。あなたの研究でこのソフトウェアを使用する場合は、以下の参考文献を引用してください：Han Y, Chi R, Chen Q, et al. Microstructural evolution and coarsening behavior of the precipitates in 2205 duplex stainless steel aged at 850° C[J]. Journal of Materials Research and Technology, 2023, 26: 2560-2574.）"
+        }
+      ]
+    }
+  }
+} 

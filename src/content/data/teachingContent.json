@@ -1,0 +1,17 @@
+{
+  "zh": {
+    "title": "教学介绍",
+    "intro": "我曾经教授过的课程包括：高等数学，数学分析，线性代数，计算机日语，算法入门，Windows编程技术，人工智能等课程。进入上海大学之后，授课主要内容如下：",
+    "image": "/images/teach/2020/Lesson.PNG"
+  },
+  "en": {
+    "title": "Teaching",
+    "intro": "Courses I have taught include: Advanced Mathematics, Mathematical Analysis, Linear Algebra, Computer Japanese, Introduction to Algorithms, Windows Programming Technology, Artificial Intelligence, etc. After joining Shanghai University, the main teaching contents are as follows:",
+    "image": "/images/teach/2020/Lesson.PNG"
+  },
+  "ja": {
+    "title": "教育紹介",
+    "intro": "これまで担当した授業には、高等数学、数学解析、線形代数、コンピュータ日本語、アルゴリズム入門、Windowsプログラミング技術、人工知能などがあります。上海大学に着任後、主な授業内容は以下の通りです。",
+    "image": "/images/teach/2020/Lesson.PNG"
+  }
+} 

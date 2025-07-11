@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+import teachingContentData from '../../content/data/teachingContent.json'
+import { languages } from '../../i18n/config'
+
+// 为[lang]动态路由添加getStaticPaths函数
+export function getStaticPaths() {
+  return Object.keys(languages).map(lang => ({
+    params: { lang },
+  }));
+}
+
+// 使用URL参数获取语言
+const { lang } = Astro.params;
+const currentLang = lang as keyof typeof languages;
+const t = useTranslations(currentLang);
+const teachingContent = teachingContentData[currentLang as keyof typeof teachingContentData];
+---
+
+<Layout>
+	<div>
+    <div class="mb-6 text-lg leading-relaxed">
+      {teachingContent.intro}
+    </div>
+    <div class="flex justify-center mb-8">
+      <img src={teachingContent.image} alt="教学安排" class="rounded shadow max-w-full" style="width:754px;max-width:100%;height:auto;" />
+    </div>
+	</div>
+</Layout> 

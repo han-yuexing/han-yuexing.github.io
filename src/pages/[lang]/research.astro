@@ -1,0 +1,275 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Grid from '@/components/ui/Grid.astro'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+import { profile } from '@/settings'
+import researchContentData from '../../content/data/researchContent.json'
+import researchAreas from '../../content/data/researchAreas.json'
+import { languages } from '../../i18n/config'
+
+// 为[lang]动态路由添加getStaticPaths函数
+export function getStaticPaths() {
+  return Object.keys(languages).map(lang => ({
+    params: { lang },
+  }));
+}
+
+// 使用URL参数获取语言
+const { lang } = Astro.params;
+const currentLang = lang as keyof typeof languages;
+const t = useTranslations(currentLang)
+const researchContent = researchContentData[currentLang as keyof typeof researchContentData]
+
+// 获取当前语言的研究领域数据
+const currentResearchAreas = researchAreas[currentLang as keyof typeof researchAreas] || researchAreas['zh'];
+
+// 获取出版物数据
+const publications = researchContent.recentAchievements.publications;
+
+// 按类型分组
+const papersByType = publications.reduce((acc, paper) => {
+    if (!acc[paper.type]) {
+        acc[paper.type] = [];
+    }
+    acc[paper.type].push(paper);
+    return acc;
+}, {});
+
+// 按年份组织论文
+const papersByYear = publications.reduce((acc, paper) => {
+    if (!acc[paper.year]) {
+        acc[paper.year] = [];
+    }
+    acc[paper.year].push(paper);
+    return acc;
+}, {});
+
+// 获取所有年份并降序排序（最新年份在前）
+const years = Object.keys(papersByYear).sort((a, b) => parseInt(b) - parseInt(a));
+---
+
+<Layout>
+	<div>
+    <h1 class="text-xl mb-8 font-semibold">{t('research.areas')}</h1>
+		<!-- Research Areas -->
+		<section>
+			<Grid gridItems={currentResearchAreas} gridTitle="" />
+		</section>
+
+		<!-- Recent Publications -->
+		<section class='py-6'>
+			<h2 class='text-xl mb-6 font-semibold'>{researchContent.recentAchievements.title}</h2>
+            
+            <!-- 按年份显示论文 -->
+            <div class="publications-by-year">
+                {years.map((year, yearIdx) => (
+                    <div class="year-section mb-8">
+                        <div class="flex items-center mb-2">
+                            <div class="text-lg font-bold border-l-4 border-primary pl-3">
+                                {year}
+                            </div>
+                            <div class="flex-1 border-b border-base-300 ml-4"></div>
+                        </div>
+                        <ul class="space-y-3">
+                            {papersByYear[year].map((paper, idx) => {
+                                const citation = paper.citation;
+                                const dialogId = `citation-modal-${year}-${idx}`;
+                                return (
+                                    <li class="py-2 flex flex-wrap items-start group">
+                                        <div class="w-full">
+                                            <div class="flex items-start">
+                                                <div class="flex-grow">
+                                                    <h4 class="ml-2 font-medium text-primary">{paper.title}</h4>
+                                                    <p class="ml-2 text-sm opacity-80 mt-1">{paper.authors}</p>
+                                                    <p class="ml-2 text-sm mt-1">{paper.conference}</p>
+                                                </div>
+                                                <div class="ml-2 flex-shrink-0 flex items-center space-x-2">
+                                                    {paper.link && paper.link !== '#' && (
+                                                        <a href={paper.link} class="text-primary hover:text-accent p-1" target="_blank" rel="noopener noreferrer" title={currentLang === 'zh' ? '链接' : currentLang === 'ja' ? 'リンク' : 'Link'}>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                                            </svg>
+                                                        </a>
+                                                    )}
+                                                    <button
+                                                        type="button"
+                                                        class="text-primary hover:text-accent p-1 citation-btn"
+                                                        data-dialog={dialogId}
+                                                        title={currentLang === 'zh' ? '引用' : currentLang === 'ja' ? '引用' : 'Cite'}
+                                                    >
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        {/* Modal for citation */}
+                                        <dialog id={dialogId} class="modal">
+                                            <form method="dialog" class="modal-box">
+                                                <h3 class="font-bold text-lg mb-4">{currentLang === 'zh' ? '引用信息' : currentLang === 'ja' ? '引用情報' : 'Citation Information'}</h3>
+                                                <pre class="whitespace-pre-wrap break-words text-sm">{citation}</pre>
+                                                <div class="modal-action">
+                                                    <button class="btn btn-sm">{currentLang === 'zh' ? '关闭' : currentLang === 'ja' ? '閉じる' : 'Close'}</button>
+                                                </div>
+                                            </form>
+                                            <form method="dialog" class="modal-backdrop">
+                                                <button>{currentLang === 'zh' ? '关闭' : currentLang === 'ja' ? '閉じる' : 'Close'}</button>
+                                            </form>
+                                        </dialog>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                        
+                        {yearIdx < years.length - 1 && (
+                            <hr class="my-6 border-base-300" />
+                        )}
+                    </div>
+                ))}
+            </div>
+
+            {/* 书籍编写 */}
+            {researchContent.recentAchievements.books && researchContent.recentAchievements.books.length > 0 && (
+              <div class="mb-8">
+                <div class="flex items-center mb-2">
+                  <div class="text-lg font-bold border-l-4 border-primary pl-3">
+                    {currentLang === 'zh' ? '书籍编写' : currentLang === 'ja' ? '書籍執筆' : 'Books'}
+                  </div>
+                  <div class="flex-1 border-b border-base-300 ml-4"></div>
+                </div>
+                <ul class="space-y-3">
+                  {researchContent.recentAchievements.books.map((book, idx) => (
+                    <li class="py-2">
+                      <div class="ml-2 font-medium text-primary">{book.title}</div>
+                      <div class="ml-2 text-sm opacity-80">{book.authors}</div>
+                      <div class="ml-2 text-sm">{book.book} {book.publisher} {book.year}</div>
+                      <div class="ml-2 text-xs">{book.pages} {book.isbn}</div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            
+            {/* 博士论文 */}
+            {researchContent.recentAchievements.phdThesis && researchContent.recentAchievements.phdThesis.length > 0 && (
+              <div class="mb-8">
+                <div class="flex items-center mb-2">
+                  <div class="text-lg font-bold border-l-4 border-primary pl-3">
+                    {currentLang === 'zh' ? '博士论文' : currentLang === 'ja' ? '博士論文' : 'PhD Thesis'}
+                  </div>
+                  <div class="flex-1 border-b border-base-300 ml-4"></div>
+                </div>
+                <ul class="space-y-3">
+                  {researchContent.recentAchievements.phdThesis.map((thesis, idx) => (
+                    <li class="py-2">
+                      <div class="ml-2 font-medium text-primary">{thesis.title}</div>
+                      <div class="ml-2 text-sm opacity-80">{thesis.author}</div>
+                      {thesis.link && <a href={thesis.link} class="ml-2 text-primary hover:underline text-sm" target="_blank">{currentLang === 'zh' ? '[查看全文]' : currentLang === 'ja' ? '[全文を見る]' : '[View Full Text]'}</a>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            
+            {/* 其它文章 */}
+            {researchContent.recentAchievements.otherArticles && researchContent.recentAchievements.otherArticles.length > 0 && (
+              <div class="mb-8">
+                <div class="flex items-center mb-2">
+                  <div class="text-lg font-bold border-l-4 border-primary pl-3">
+                    {currentLang === 'zh' ? '其它文章' : currentLang === 'ja' ? 'その他の記事' : 'Other Articles'}
+                  </div>
+                  <div class="flex-1 border-b border-base-300 ml-4"></div>
+                </div>
+                <ul class="space-y-3">
+                  {researchContent.recentAchievements.otherArticles.map((art, idx) => (
+                    <li class="py-2">
+                      <div class="ml-2 font-medium text-primary">{art.title}</div>
+                      <div class="ml-2 text-sm opacity-80">{art.journal} {art.issue} {art.date}</div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            
+            {/* 专利 */}
+            {researchContent.recentAchievements.patents && researchContent.recentAchievements.patents.length > 0 && (
+              <div class="mb-8">
+                <div class="flex items-center mb-2">
+                  <div class="text-lg font-bold border-l-4 border-primary pl-3">
+                    {currentLang === 'zh' ? '专利' : currentLang === 'ja' ? '特許' : 'Patents'}
+                  </div>
+                  <div class="flex-1 border-b border-base-300 ml-4"></div>
+                </div>
+                <ul class="space-y-3">
+                  {researchContent.recentAchievements.patents.map((pat, idx) => (
+                    <li class="py-2">
+                      <div class="ml-2 font-medium text-primary">{pat.title}</div>
+                      <div class="ml-2 text-sm opacity-80">{pat.inventors}</div>
+                      <div class="ml-2 text-sm">{pat.number} {pat.date}</div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            
+            {/* 软件著作权 */}
+            {researchContent.recentAchievements.softwareCopyrights && researchContent.recentAchievements.softwareCopyrights.length > 0 && (
+              <div class="mb-8">
+                <div class="flex items-center mb-2">
+                  <div class="text-lg font-bold border-l-4 border-primary pl-3">
+                    {currentLang === 'zh' ? '软件著作权' : currentLang === 'ja' ? 'ソフトウェア著作権' : 'Software Copyrights'}
+                  </div>
+                  <div class="flex-1 border-b border-base-300 ml-4"></div>
+                </div>
+                <ul class="space-y-3">
+                  {researchContent.recentAchievements.softwareCopyrights.map((soft, idx) => (
+                    <li class="py-2">
+                      <div class="ml-2 font-medium text-primary">{soft.name}</div>
+                      <div class="ml-2 text-sm opacity-80">{soft.developers}</div>
+                      <div class="ml-2 text-sm">{soft.regNo} {soft.certNo}</div>
+                      {soft.devDate && <div class="ml-2 text-xs">{currentLang === 'zh' ? '开发完成日期' : currentLang === 'ja' ? '開発完了日' : 'Dev. Date'}: {soft.devDate}</div>}
+                      {soft.pubDate && <div class="ml-2 text-xs">{currentLang === 'zh' ? '首次发表日期' : currentLang === 'ja' ? '初公開日' : 'First Pub. Date'}: {soft.pubDate}</div>}
+                      {soft.regDate && <div class="ml-2 text-xs">{currentLang === 'zh' ? '登记日期' : currentLang === 'ja' ? '登録日' : 'Reg. Date'}: {soft.regDate}</div>}
+                      {soft.applicant && <div class="ml-2 text-xs">{currentLang === 'zh' ? '申请人' : currentLang === 'ja' ? '申請者' : 'Applicant'}: {soft.applicant}</div>}
+                      {soft.serialNo && <div class="ml-2 text-xs">{currentLang === 'zh' ? '流水号' : currentLang === 'ja' ? 'シリアル番号' : 'Serial No.'}: {soft.serialNo}</div>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+		</section>
+	</div>
+</Layout>
+
+<script is:inline>
+  // 自执行函数，无需等待DOMContentLoaded事件
+  (function() {
+    function setupEventListeners() {
+      document.querySelectorAll('.citation-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const dialogId = btn.getAttribute('data-dialog');
+          const dialog = document.getElementById(dialogId);
+          if (dialog) dialog.showModal();
+        });
+      });
+      
+      // Add back the research area modals event listener
+      document.querySelectorAll('.research-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const dialogId = btn.getAttribute('data-dialog');
+          const dialog = document.getElementById(dialogId);
+          if (dialog) dialog.showModal();
+        });
+      });
+    }
+
+    // 立即执行一次
+    setupEventListeners();
+    
+    // 监听Astro页面变更事件
+    document.addEventListener('astro:page-load', setupEventListeners);
+    document.addEventListener('DOMContentLoaded', setupEventListeners);
+  })();
+</script>

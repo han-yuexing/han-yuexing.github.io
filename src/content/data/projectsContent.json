@@ -1,0 +1,117 @@
+{
+  "zh": {
+    "title": "参与项目",
+    "ongoingProjects": [
+      {
+        "description": "国家自然基金 面上项目：基于小样本机器学习的Mg-Gd系合金图像-组织-性能的内禀关系研究，批准号：52273228，主持，日期： 2023.01-2026.12"
+      },
+      {
+        "description": "上海大学书院导师实践项目：学生的科学、人文素质及学生之间帮扶 组织结构建立探索，上海大学，主持，日期： 2022.10-2023.07"
+      },
+      {
+        "description": "大学生创新创业训练项目：基于深度学习的人机交互中手势识别算法研究与应用 （申请人：杨若弘等），上海市级，日期： 2022.07-2023.06"
+      },
+      {
+        "description": "联合实验室项目：钢微观组织图像中各相的分割、识别及统计，鞍钢集团北京研究院有限公司，主持，日期：2021.9-2022.8"
+      },
+      {
+        "description": "上海市科学技术委员会面上项目名称：小样本环境下物体自适应识别方法研究，上海市自然科学基金，主持，编号：20ZR1419000，日期：2020.07-2023.06"
+      }
+    ],
+    "completedProjects": [
+      {"description": "大学生联合大作业：基于机器学习的材料数据处理研究，校级 日期：2020.7-2021.6"},
+      {"description": "大学生创新创业训练项目：基于人机交互的非接触式互动沙盘研究，（申请人：黄子昂等），上海市级，日期： 2021.07-2022.06"},
+      {"description": "国家重点研发计划：材料基因工程关键技术与支撑平台(科技部)中'国家新材料数据库平台建设关键技术研究'项目中子课题：'材料大数据技术研究'   编号： 2020YFB0704500，日期：2020.09.01-2022.8.31"},
+      {"description": "国家重点研发计划：材料基因工程专用数据库平台建设与示范应用(科技部)中'陶瓷涂层材料数据自动采集、整合与应用'课题中的子课题'材料复杂显微结构高精度图像处理方法研究'，编号：2018YFB0704400, 2018YFB0704402，日期：2018.07-2022.06"},
+      {"description": "大学生创新创业训练项目：基于手势识别的非接触式人机交互研究 ，（申请人：孙懿祺等），上海市级，日期： 2020.07-2021.06"},
+      {"description": "大学生创新创业训练项目：VR场景下的表情识别，（申请人：李嘉琪等），上海市级，日期： 2020.07-2021.06"},
+      {"description": "大学生创新创业训练项目：学术论文中关键信息的自动提取研究，（申请人：强冠等），上海市级，日期：2020.07-2021.06"},
+      {"description": "大学生联合大作业：材料中的微纳米物体图像处理，日期：2019.07-2020.06"},
+      {"description": "2019上海大学国际及港澳台合作伙伴关系提升计划 2019.07.30-08.30"},
+      {"description": "上海大学研究生拔尖创新人才培养计划：物体表面多形态形貌识别，2019.07-2020.06"},
+      {"description": "指导大学生创新创业训练项目：基于手势识别的虚拟触摸屏人机交互研究（施恬安等）国家级，日期： 2019.07-2020.06"},
+      {"description": "国家重点研发计划：材料基因工程专用数据库平台建设与示范应用(科技部)中'陶瓷涂层材料数据自动采集、整合与应用'课题中的子课题'材料复杂显微结构高精度图像处理方法研究'，编号：2018YFB0704400, 2018YFB0704402，日期：2018.07-2022.06"},
+      {"description": "横向：大数据技术，来源：江阴兴澄特种钢铁有限公司，主持，日期：2018.10"},
+      {"description": "横向：钛合金显微组织大数据分析与建模，来源：中国航空制造技术研究院，排名第二位，日期：2017年12月30日到2018年9月30日"},
+      {"description": "指导大学生创新创业训练项目：基于手势识别的非触摸屏控制研究（熊清悦等），国家级，日期： 2018.07-2019.06"},
+      {"description": "上海市科学技术委员会的浦江人才项目：基于形状空间理论和复杂网络理论的纳米材料图像处理方法的研究, 编号：17PJ1402900, 主持人,日期： 2017.06-2019.05"},
+      {"description": "指导大学生创新创业训练项目：基于手势识别的人机交互研究（陈佩娴等），国家级， 日期： 2017.07-2018.06"},
+      {"description": "国家自然科学基金（青年）：面向流行病空间传播的个体行为反应扩散模型研究，项目编号：61603237，排名第二位，日期：2017.01-2019.12"},
+      {"description": "国家自然科学基金（青年）：面向医疗器械软件产品家族的形式化开发与验证，项目编号：61602293 ，排名第二位，日期：2017.01-2019.12"},
+      {"description": "国家部委纵向：国家重点研发计划'材料基因工程关键技术与支撑平台'重点专项'材料基因工程专用数据库和材料大数据技术'项目中的'材料图像分析和检索'子任务，'材料图像分析和检索技术及基于图像的材料数据多样性问题研究'，项目编号：2016YFB0700502，参与，日期：2016.07.01-2020.06.30"},
+      {"description": "指导大学生创新创业训练项目：多人环境人脸识别系统的研究与开发（唐湖泊等），上海市级，日期：2016.09-2017.06"},
+      {"description": "上海市科委课题：沉浸交互式血管介入治疗机器人及虚拟手术训练系统关键技术研究,项目编号：16111108202，排名第二，日期： 2016.06-2018.06"},
+      {"description": "上海大学大学生联合大作业，项目名称：基于虚拟手术的沉浸交互式血管介入手术训练系统研究，排名第二， 日期： 2016.09-2017.08"},
+      {"description": "上海科委项目名称：三值光学计算机存储器的双空间存储体系之理论和技术，项目编号：15ZR1415400, 日期：2015.01.01-2017.12.31"},
+      {"description": "上海市教委支持优秀青年教师项目：DNA机器人中的图像处理问题，日期：2015.01-2016.12"}
+    ]
+  },
+  "en": {
+    "title": "Projects",
+    "ongoingProjects": [
+      {"description": "Joint Laboratory Project: Segmentation, Recognition, and Statistical Analysis of Phases in Steel Microstructure Images. Ansteel Group Beijing Research Institute Co., Ltd. Principal Investigator. Duration: September 2021 - August 2022."},
+      {"description": "Undergraduate Joint Project: Research on Material Data Processing based on Machine Learning. University-level. Duration: July 2020 - June 2021."},
+      {"description": "Undergraduate Innovation and Entrepreneurship Training Project: Research on Non-contact Interactive Sand Table based on Human-Computer Interaction. (Applicant: Huang Ziang, et al.). Shanghai Municipal Level. Duration: July 2021 - June 2022."},
+      {"description": "National Key Research and Development Program: Key Technologies and Support Platform for Material Genetic Engineering (Ministry of Science and Technology). Sub-project within the project 'Key Technology Research for National New Materials Database Platform Construction': 'Research on Material Big Data Technology'. Project Number: 2020YFB0704500. Duration: September 1, 2020 - August 31, 2022."},
+      {"description": "Shanghai Municipal Science and Technology Commission, General Project: Research on Object Adaptive Recognition Methods under Small Sample Environments. Shanghai Natural Science Foundation. Project Number: 20ZR1419000. Duration: July 2020 - June 2023."},
+      {"description": "National Key Research and Development Program: Construction and Demonstration of Special Database Platform for Material Genetic Engineering (Ministry of Science and Technology). Sub-project within the project 'Automatic Data Acquisition, Integration, and Application of Ceramic Coating Materials':'Research on High-Precision Image Processing Methods for Complex Microstructures of Materials'. Project Numbers: 2018YFB0704400, 2018YFB0704402. Duration: July 2018 - June 2022."}
+    ],
+    "completedProjects": [
+      {"description": "Undergraduate Innovation and Entrepreneurship Training Project: Research on Non-contact Human-Computer Interaction based on Gesture Recognition. (Applicant: Sun Yiqi, et al.). Shanghai Municipal Level. Duration: July 2020 - June 2021."},
+      {"description": "Undergraduate Innovation and Entrepreneurship Training Project: Facial Expression Recognition in VR Environments. (Applicant: Li Jiaqi, et al.). Shanghai Municipal Level. Duration: July 2020 - June 2021."},
+      {"description": "Undergraduate Innovation and Entrepreneurship Training Project: Research on Automatic Extraction of Key Information in Academic Papers. (Applicant: Qiang Guan, et al.). Shanghai Municipal Level. Duration: July 2020 - June 2021."},
+      {"description": "Undergraduate Joint Project: Image Processing of Micro and Nano Objects in Materials. Duration: July 2019 - June 2020."},
+      {"description": "2019 Shanghai University International and Hong Kong-Macao-Taiwan Cooperation Partner Enhancement Program. Duration: July 30, 2019 - August 30, 2019."},
+      {"description": "Shanghai University Graduate Top-notch Innovative Talent Training Program: Recognition of Multiple Morphologies on Object Surfaces. Duration: July 2019 - June 2020."},
+      {"description": "Supervision of Undergraduate Innovation and Entrepreneurship Training Project: Research on Virtual Touchscreen Human-Computer Interaction based on Gesture Recognition. (Supervisor: Shi Tian'an, et al.). National Level. Duration: July 2019 - June 2020."},
+      {"description": "National Key Research and Development Program: Construction and Demonstration of Special Database Platform for Material Genetic Engineering (Ministry of Science and Technology). Sub-project within the project 'Automatic Data Acquisition, Integration, and Application of Ceramic Coating Materials':'Research on High-Precision Image Processing Methods for Complex Microstructures of Materials'. Project Numbers: 2018YFB0704400, 2018YFB0704402. Duration: July 2018 - June 2022."},
+      {"description": "Horizontal Project: Big Data Technology Source: Jiangyin Xingcheng Special Steel Co., Ltd. Date: October 2018"},
+      {"description": "Horizontal Project: Big Data Analysis and Modeling of Titanium Alloy Microstructures Source: China Academy of Aerospace Manufacturing Technology Ranking: Second Duration: December 30, 2017, to September 30, 2018"},
+      {"description": "Supervision of Undergraduate Innovation and Entrepreneurship Training Project: Research on Non-touchscreen Control based on Gesture Recognition. (Supervisor: Xiong Qingyue, et al.). National Level. Duration: July 2018 - June 2019."},
+      {"description": "Shanghai Science and Technology Commission's Pujiang Talent Program: Research on Image Processing Methods for Nanomaterials based on Shape Space Theory and Complex Network Theory. Project Number: 17PJ1402900. Principal Investigator: Duration: June 2017 - May 2019."},
+      {"description": "Supervision of Undergraduate Innovation and Entrepreneurship Training Project: Research on Human-Computer Interaction based on Gesture Recognition. (Supervisor: Chen Peixian, et al.). National Level. Duration: July 2017 - June 2018."},
+      {"description": "National Natural Science Foundation of China (Youth Project): Research on Individual Behavioral Reaction Diffusion Models for Epidemic Spatial Transmission. Project Number: 61603237. Ranking: Second. Duration: January 2017 - December 2019."},
+      {"description": "National Natural Science Foundation of China (Youth Project): Formal Development and Verification of Software Product Families for Medical Devices. Project Number: 61602293. Ranking: Second. Duration: January 2017 - December 2019."},
+      {"description": "Vertical Project funded by a National Ministry: Sub-task 'Material Image Analysis and Retrieval' within the Key Special Project 'Dedicated Database for Material Genetic Engineering and Material Big Data Technology' under the National Key Research and Development Program 'Key Technologies and Support Platform for Material Genetic Engineering'. Research focus: 'Research on Material Image Analysis and Retrieval Techniques and Image-based Material Data Diversity Issues'. Project Number: 2016YFB0700502. Participation: Yes. Duration: July 1, 2016 - June 30, 2020."},
+      {"description": "Supervision of Undergraduate Innovation and Entrepreneurship Training Project: Research and Development of Multi-Person Environment Face Recognition System. (Supervisor: Tang Hupo, et al.). Shanghai Municipal Level. Duration: September 2016 - June 2017."},
+      {"description": "Shanghai Science and Technology Commission Project: Key Technology Research on Immersive Interactive Vascular Interventional Treatment Robot and Virtual Surgical Training System. Project Number: 16111108202. Ranking: Second. Duration: June 2016 - June 2018."},
+      {"description": "Shanghai University Joint Project for Undergraduates: Research on Immersive Interactive Vascular Interventional Surgery Training System based on Virtual Surgery. Project Name: 'Research on Immersive Interactive Vascular Interventional Surgery Training System based on Virtual Surgery'. Ranking: Second. Duration: September 2016 - August 2017."},
+      {"description": "Shanghai Science and Technology Commission Project: Theory and Technology of Dual-Space Storage System for Ternary Optical Computer Memory. Project Number: 15ZR1415400. Duration: January 1, 2015 - December 31, 2017."},
+      {"description": "上海市教育委員会が支援する優秀な若手教師のプロジェクト：DNAロボットにおける画像処理の問題、期間：2015年1月から2016年12月まで"}
+    ]
+  },
+  "ja": {
+    "title": "プロジェクト参加",
+    "ongoingProjects": [
+      {"description": "共同研究プロジェクト：鋼材の微視的組織画像における各相のセグメンテーション、認識、および統計、鞍鋼集団北京研究院有限公司、主導、期間：2021年9月〜2022年8月"},
+      {"description": "大学生連合の共同研究課題：機械学習を用いた材料データ処理に関する研究、学校レベル、期間：2020年7月〜2021年6月"},
+      {"description": "大学生創新創業トレーニングプロジェクト：人機インタラクションに基づく非接触型インタラクティブサンドボックスの研究、応募者：黄子昂他、上海市レベル、期間：2021年7月〜2022年6月"},
+      {"description": "国家重点研発計画：材料遺伝子工学の重要な技術とサポートプラットフォーム（科技部）の中の「国家新材料データベースプラットフォーム構築のための重要な技術研究」プロジェクトのサブテーマ「材料ビッグデータ技術研究」、プロジェクト番号：2020YFB0704500、期間：2020年9月1日〜2022年8月31日"},
+      {"description": "上海市科学技術委員会の面上プロジェクト「小規模サンプル環境下での物体の自己適応認識方法の研究」、上海市自然科学基金、プロジェクト番号：20ZR1419000、期間：2020年7月〜2023年6月"},
+      {"description": "国家重点研発計画：材料遺伝子工学専用データベースプラットフォームの構築とデモンストレーション応用（科技部）の中の「セラミックコーティング材料データの自動収集、統合、および応用」サブテーマの一環として、「材料の複雑な微細構造の高精度画像処理方法の研究」を行うプロジェクト、プロジェクト番号：2018YFB0704400、2018YFB0704402、期間：2018年7月〜2022年6月"}
+    ],
+    "completedProjects": [
+      {"description": "大学生イノベーション・起業トレーニングプロジェクト：ジェスチャー認識を基にした非接触型人間機械インタラクションの研究、申請者：孫懿祺他、上海市レベル、期間：2020年7月〜2021年6月"},
+      {"description": "大学生のイノベーション・起業トレーニングプロジェクト：VRシーンにおける表情認識、申請者：李嘉琪他、上海市レベル、期間：2020年7月〜2021年6月"},
+      {"description": "大学生のイノベーション・起業トレーニングプロジェクト：学術論文からのキーワード情報の自動抽出研究、申請者：強冠他、上海市レベル、期間：2020年7月〜2021年6月"},
+      {"description": "大学生連合の共同作業：材料中の微細およびナノスケール物体の画像処理、期間：2019年7月〜2020年6月"},
+      {"description": "2019年上海大学国際及び香港・澳門・台湾の協力パートナーシップ強化プログラム、期間：2019年7月30日〜8月30日"},
+      {"description": "上海大学大学院の優秀なイノベーション人材育成プログラム：物体表面の多様な形態の認識、期間：2019年7月〜2020年6月"},
+      {"description": "大学生のイノベーション・起業トレーニングプロジェクトの指導：ジェスチャー認識を基にした仮想タッチスクリーンの人間機械インタラクションの研究（施恬安他）、国家レベル、期間：2019年7月〜2020年6月"},
+      {"description": "国家重点研究開発計画：材料ゲノム工学専用データベースプラットフォームの構築とデモンストレーション応用（科技部）の中で、「陶磁性被覆材料データの自動収集、統合、および応用」サブテーマの一環として、「材料の複雑な顕微構造の高精度画像処理方法の研究」を行う子テーマ、プロジェクト番号：2018YFB0704400-2018YFB0704402、期間：2018年7月〜2022年6月"},
+      {"description": "横断：ビッグデータ技術、出典：江陰興澄特殊鋼鉄有限公司、主担当、日付：2018年10月"},
+      {"description": "横断：チタン合金の顕微組織におけるビッグデータ分析とモデリング、出典：中国航空製造技術研究院、2位のランキング、日付：2017年12月30日から2018年9月30日まで"},
+      {"description": "指導大学生創新創業訓練プロジェクト：ジェスチャー認識を基にした非接触スクリーン制御の研究（熊清悦他）、国家レベル、期間：2018年7月〜2019年6月"},
+      {"description": "上海市科学技術委員会の浦江人材プロジェクト：形状空間理論と複雑ネットワーク理論に基づくナノ材料の画像処理方法の研究、番号：17PJ1402900、主担当者、期間：2017年6月〜2019年5月"},
+      {"description": "指導大学生創新創業訓練プロジェクト：ジェスチャー認識を基にした人間と機械のインタラクションの研究（陳佩娴他）、国家レベル、期間：2017年7月〜2018年6月"},
+      {"description": "国家自然科学基金（青年）：流行病の空間的伝播に対する個体の行動反応拡散モデルの研究、プロジェクト番号：61603237、2位のランキング、期間：2017年1月〜2019年12月"},
+      {"description": "国家自然科学基金（青年）：医療機器ソフトウェア製品ファミリーに対する形式的な開発と検証、プロジェクト番号：61602293、2位のランキング、期間：2017年1月〜2019年12月"},
+      {"description": "国家部委縦割り：国家重点研究開発計画「材料ゲノム工学の重要技術と支援プラットフォーム」重点プロジェクト「材料ゲノム工学専用データベースと材料ビッグデータ技術」プロジェクト内の「材料画像解析と検索」のサブタスク、「材料画像解析と検索技術および画像ベースの材料データ多様性問題の研究」、プロジェクト番号：2016YFB0700502、参加、期間：2016年7月1日から2020年6月30日"},
+      {"description": "指導大学生創新創業訓練プロジェクト：マルチユーザー環境の顔認識システムの研究と開発（唐湖泊他）、上海市レベル、期間：2016年9月〜2017年6月"},
+      {"description": "上海市科委課題：没入型インタラクティブな血管介入治療ロボットおよび仮想手術トレーニングシステムの主要技術研究、プロジェクト番号：16111108202、2位のランキング、期間：2016年6月〜2018年6月"},
+      {"description": "上海大学大学生連合大作業、プロジェクト名：バーチャル手術に基づく没入型血管介入手術トレーニングシステムの研究、2位のランキング、期間：2016年9月〜2017年8月"},
+      {"description": "上海科委プロジェクト名称：三値光学コンピュータ記憶装置の二重空間記憶システムに関する理論と技術、プロジェクト番号：15ZR1415400、期間：2015年1月1日〜2017年12月31日"},
+      {"description": "上海市教育委員会が支援する優秀な若手教師のプロジェクト：DNAロボットにおける画像処理の問題、期間：2015年1月から2016年12月まで"}
+    ]
+  }
+} 

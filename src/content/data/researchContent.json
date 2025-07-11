@@ -1,0 +1,1196 @@
+{
+  "zh": {
+    "recentAchievements": {
+      "title": "近期成果",
+      "publications": [
+        {"title": "A projection module based on the shape space theory for small-sample image processing", "authors": "Gan Hu，Yuexing Han*", "conference": "Expert Systems with Applications", "year": "2025", "type": "论文", "link": "https://doi.org/10.1016/j.eswa.2025.128668", "citation": "Gan Hu，Yuexing Han*. A projection module based on the shape space theory for small-sample image processing. Expert Systems with Applications, 293 (2025) 128668，2025. https://doi.org/10.1016/j.eswa.2025.128668"},
+        {"title": "Automatic pipeline for information of curve graphs in papers based on deep learning", "authors": "Yuexing Han, Jinhua Xia, Rui Zhang, Bing Wang, Yi Liu, Deng Pan, Yinggang Wang, Jiawang Zhang, Qiaochuan Chen*", "conference": "International Journal of Machine Learning and Cybernetics", "year": "2025", "type": "论文", "link": "https://doi.org/10.1007/s13042-024-02496-7", "citation": "Yuexing Han, Jinhua Xia, Rui Zhang, Bing Wang, Yi Liu, Deng Pan, Yinggang Wang, Jiawang Zhang, Qiaochuan Chen*. Automatic pipeline for information of curve graphs in papers based on deep learning. International Journal of Machine Learning and Cybernetics, https://doi.org/10.1007/s13042-024-02496-7, 2025."},
+        {"title": "The Prediction of Tensile Strength Performance of Fiber Reinforced Composites Based on a Knowledge Graph Constructed from Materials Literature", "authors": "Qiaochuan Chen, Chen Zhao, Yating Fang, Rui Zhang, Na Song*, Peng Ding, Yuexing Han*", "conference": "POLYMER COMPOSITES", "year": "2024", "type": "论文", "link": "#", "citation": "Qiaochuan Chen, Chen Zhao, Yating Fang, Rui Zhang, Na Song*, Peng Ding, Yuexing Han*. The Prediction of Tensile Strength Performance of Fiber Reinforced Composites Based on a Knowledge Graph Constructed from Materials Literature. POLYMER COMPOSITES. (SCI, accepted)"},
+        {"title": "Coupling dynamics of information and epidemic under multi-source heterogeneous social impacts", "authors": "X. Hong, Y.X. Han, B. Wang*", "conference": "Information Sciences", "year": "2025", "type": "论文", "link": "#", "citation": "X. Hong, Y.X. Han, B. Wang*. Coupling dynamics of information and epidemic under multi-source heterogeneous social impacts. Information Sciences, 714, 122203, 2025."},
+        {"title": "Temporal correlation-based neural relational inference for binary dynamics", "authors": "H.W. Zhang, Y.X. Han, G.H. Tananka, B. Wang*", "conference": "Chaos, Solitons & Fractals", "year": "2025", "type": "论文", "link": "#", "citation": "H.W. Zhang, Y.X. Han, G.H. Tananka, B. Wang*. Temporal correlation-based neural relational inference for binary dynamics. Chaos, Solitons & Fractals. 196, 116350, 2025."},
+        {"title": "Deep Learning-Based Framework for Efficient Design of Multicomponent High Hardness High Entropy Alloys", "authors": "Yuexing Han,* Hui Wang, Pengfei Xu, Qiaochuan Chen, Rui Zhang, and Yi Liu*", "conference": "ACS Applied Materials & Interfaces", "year": "2025", "type": "论文", "link": "https://doi.org/10.1021/acsami.4c23010", "citation": "Yuexing Han,* Hui Wang, Pengfei Xu, Qiaochuan Chen, Rui Zhang, and Yi Liu*. Deep Learning-Based Framework for Efficient Design of Multicomponent High Hardness High Entropy Alloys. ACS Applied Materials & Interfaces, https://doi.org/10.1021/acsami.4c23010, 2025."},
+        {"title": "NFI-SGAT: Node feature initliazation-based streaming graph learning model with graph attenton network for critical node identification in temporal networks", "authors": "M.X. Yan, Y.X. Han, B. Wang*", "conference": "Neurocomputing", "year": "2025", "type": "论文", "link": "#", "citation": "M.X. Yan, Y.X. Han, B. Wang*. NFI-SGAT: Node feature initliazation-based streaming graph learning model with graph attenton network for critical node identification in temporal networks. Neurocomputing 630, 129679, 2025."},
+        {"title": "Combined effects of information dissemination and resource allocation on spatial spreading of the epidemic", "authors": "K.B. Zhang, X. Hong, Y.X. Han, B. Wang*", "conference": "Applied Mathematical Modeling", "year": "2025", "type": "论文", "link": "#", "citation": "K.B. Zhang, X. Hong, Y.X. Han, B. Wang*. Combined effects of information dissemination and resource allocation on spatial spreading of the epidemic. Applied Mathematical Modeling, 137, 115672, 2025."},
+        {"title": "Statistics and Analysis of Lath Martensite Transformation Based on In-Situ Observation and Video Processing", "authors": "Yuexing Han, Liheng Ruan, Jianxun Fu, Bing Wang, Hongbin Wang and Xiangyu Xu*", "conference": "Physics of Metals and Metallography", "year": "2024", "type": "论文", "link": "#", "citation": "Yuexing Han, Liheng Ruan, Jianxun Fu, Bing Wang, Hongbin Wang and Xiangyu Xu*. Statistics and Analysis of Lath Martensite Transformation Based on In-Situ Observation and Video Processing. Physics of Metals and Metallography, 2024, Vol. 125, Suppl. 1, pp. S106–S120."},
+        {"title": "Fast and Accurate Recognition of Perovskite Fluorescent Anti Counterfeiting Labels Based on Lightweight Convolutional Neural Networks", "authors": "Yuexing Han, Shengqi Bao, Bori Shi, Jinbo Wu, Bing Wang, Peng Ding, and Qiaochuan Chen*", "conference": "ACS Applied Materials & Interfaces", "year": "2024", "type": "论文", "link": "#", "citation": "Yuexing Han, Shengqi Bao, Bori Shi, Jinbo Wu, Bing Wang, Peng Ding, and Qiaochuan Chen*. Fast and Accurate Recognition of Perovskite Fluorescent Anti Counterfeiting Labels Based on Lightweight Convolutional Neural Networks. ACS Applied Materials & Interfaces, 2024, 16(31): 41107-41118."},
+        {"title": "Quantitative prediction of Mg-RE-Ni alloy corrosion behavior by machine learning", "authors": "Sanlve Pei, Chaoneng Dai, Xiaohua Yang, Lijun Zhang, Haitao Wang, Shaolin Zhang, Yuexing Han*, Qian Li*, Jingfeng Wang*", "conference": "Corrosion Science", "year": "2024", "type": "论文", "link": "#", "citation": "Sanlve Pei, Chaoneng Dai, Xiaohua Yang, Lijun Zhang, Haitao Wang, Shaolin Zhang, Yuexing Han*, Qian Li*, Jingfeng Wang*. Quantitative prediction of Mg-RE-Ni alloy corrosion behavior by machine learning. Corrosion Science, 237 (2024) 112324."},
+        {"title": "Bacbone-based dynamic graph spatio-temporal network for epidemic forecasting", "authors": "J.K. Mao, Y.X. Han*, G. Tanaka, B.Wang*", "conference": "Knowledge-Based Systems", "year": "2024", "type": "论文", "link": "https://arxiv.org/pdf/2312.00485.pdf", "citation": "J.K. Mao, Y.X. Han*, G. Tanaka, B.Wang*. Bacbone-based dynamic graph spatio-temporal network for epidemic forecasting. Knowledge-Based Systems, 296, 111952, 2024. arXiv:2312.00485."},
+        {"title": "MPSTAN: Metapopulation-Based Spatio–Temporal Attention Network for Epidemic Forecasting", "authors": "J.K. Mao, Y.X. Han*, G. Tanaka, B.Wang*", "conference": "Entropy", "year": "2024", "type": "论文", "link": "https://doi.org/10.3390/e26040278", "citation": "J.K. Mao, Y.X. Han*, G. Tanaka, B.Wang*. MPSTAN: Metapopulation-Based Spatio–Temporal Attention Network for Epidemic Forecasting. Entropy, 2024, 26, 278. https://doi.org/10.3390/e26040278."},
+        {"title": "Revealing the structure-property relationships of copper alloys with FAGC", "authors": "Yuexing Han*, Guanxin Wan, Bing Wang*, Yi Liu*", "conference": "arXiv", "year": "2024", "type": "论文", "link": "https://arxiv.org/pdf/2404.09515.pdf", "citation": "Yuexing Han*, Guanxin Wan, Bing Wang*, Yi Liu*, Revealing the structure-property relationships of copper alloys with FAGC. arXiv:2404.09515, 2024."},
+        {"title": "Thermal conductivity prediction of Al2O3 -doped tetragonal YSZ coatings using deep learning", "authors": "Qiaochuan Chen, Sifan Han, Xuemei Song, Yi Zeng*, Yuexing Han*", "conference": "Journal of the European Ceramic Society", "year": "2024", "type": "论文", "link": "https://doi.org/10.1016/j.jeurceramsoc.2024.04.057", "citation": "Qiaochuan Chen, Sifan Han, Xuemei Song, Yi Zeng*, Yuexing Han*. Thermal conductivity prediction of Al2O3-doped tetragonal YSZ coatings using deep learning. Journal of the European Ceramic Society, DOI:10.1016/j.jeurceramsoc.2024.04.057, 2024."},
+        {"title": "基于机器学习的含 LPSO 相镁合金腐蚀", "authors": "裴三略，王海涛，韩越兴，李 谦，王敬丰*", "conference": "中国有色金属学报", "year": "2024", "type": "论文", "link": "https://doi.org/10.11817/j.ysxb.1004.0609.2023-44562", "citation": "裴三略，王海涛，韩越兴，李谦，王敬丰*. 基于机器学习的含 LPSO 相镁合金腐蚀. 中国有色金属学报, 2024, 34(6): 1964-1981. DOI：10.11817/j.ysxb.1004.0609.2023-44562"},
+        {"title": "Prediction of ultimate tensile strength of Al-Si alloys based on multimodal fusion learning", "authors": "Longfei Zhu, Qun Luo, Qiaochuan Chen, Yu Zhang, Lijun Zhang, Bin Hu, Yuexing Han*, Qian Li*", "conference": "MGE Advances", "year": "2024", "type": "论文", "link": "https://doi.org/10.1002/mgea.26", "citation": "Longfei Zhu, Qun Luo, Qiaochuan Chen, Yu Zhang, Lijun Zhang, Bin Hu, Yuexing Han*, Qian Li*. Prediction of ultimate tensile strength of Al-Si alloys based on multimodal fusion learning. MGE Advances. 2024; 2(1):e26. DOI: 10.1002/mgea. https://doi.org/10.1002/mgea.26"},
+        {"title": "Few-shot Image Generation via Information Transfer from the Built Geodesic Surface", "authors": "Yuexing Han*, Liheng Ruan, Bing Wang", "conference": "arXiv", "year": "2024", "type": "论文", "link": "https://arxiv.org/pdf/2401.01749.pdf", "citation": "Yuexing Han*, Liheng Ruan, Bing Wang, Few-shot Image Generation via Information Transfer from the Built Geodesic Surface. arXiv:2401.01749, 2024."},
+        {"title": "FAGC:Feature Augmentation on Geodesic Curve in the Pre-Shape Space", "authors": "Yuexing Han*, Guanxin Wan, Bing Wang*", "conference": "arXiv", "year": "2023", "type": "论文", "link": "https://arxiv.org/pdf/2312.03325.pdf", "citation": "Yuexing Han*, Guanxin Wan, Bing Wang*, FAGC:Feature Augmentation on Geodesic Curve in the Pre-Shape Space. arXiv:2312.03325, 2023."},
+        {"title": "A Pseudo-labeling Based Weakly Supervised Segmentation Method For Few-Shot Texture Images", "authors": "Yuexing Han, Ruiqi Li, Bing Wang, Qiaochuan Chen*", "conference": "Expert Systems With Applications", "year": "2024", "type": "论文", "link": "#", "citation": "Yuexing Han, Ruiqi Li, Bing Wang, Qiaochuan Chen*. A Pseudo-labeling Based Weakly Supervised Segmentation Method For Few-Shot Texture Images. Expert Systems With Applications, 238(2024), 122110, 2024."},
+        {"title": "基于复杂纹理特征融合的材料图像分割方法", "authors": "韩越兴，杨珅，陈侨川，王冰", "conference": "计算机工程与设计", "year": "2024", "type": "论文", "link": "#", "citation": "韩越兴，杨珅，陈侨川，王冰。基于复杂纹理特征融合的材料图像分割方法，计算机工程与设计，Vol.45, No.1, pp. 220-227, 2024."},
+        {"title": "A literature-mining method of integrating text and table extraction for materials science publications", "authors": "Rui Zhang, Jiawang Zhang, Qiaochuan Chen, Bing Wang, Yi Liu, Quan Qian, Deng Pan, Jinhua Xia, Yinggang Wang, Yuexing Han*", "conference": "Computational materials science", "year": "2023", "type": "论文", "link": "https://doi.org/10.1016/j.commatsci.2023.112441", "citation": "Rui Zhang, Jiawang Zhang, Qiaochuan Chen, Bing Wang, Yi Liu, Quan Qian, Deng Pan, Jinhua Xia, Yinggang Wang, Yuexing Han*. A literature-mining method of integrating text and table extraction for materials science publications. Computational materials science, 230(2023) 112441, 2023. doi: 10.1016/j.commatsci.2023.112441"},
+        {"title": "Microstructural evolution and coarsening behavior of the precipitates in 2205 duplex stainless steel aged at 850℃", "authors": "Yuexing Han*, Ruting Chi, Qiaochuan Chen, Bing Wang, Wei Liu, Yanlin He*", "conference": "Journal of Materials Research and Technology", "year": "2023", "type": "论文", "link": "https://doi.org/10.1016/j.jmrt.2023.08.034", "citation": "Yuexing Han*, Ruting Chi, Qiaochuan Chen, Bing Wang, Wei Liu, Yanlin He*. Microstructural evolution and coarsening behavior of the precipitates in 2205 duplex stainless steel aged at 850℃. Journal of Materials Research and Technology, 26:2560-2574, 2023. doi: 10.1016/j.jmrt.2023.08.034"},
+        {"title": "Classification of Sulfides in High-Sulfur Steel and Establishment of Automatic Sulfide Classification Method", "authors": "Ping Shen,* Kang Xu, Xing Wu, Cheng Guo, Ruting Chi, Yuexing Han, and Jianxun Fu*", "conference": "Steel Research international", "year": "2023", "type": "论文", "link": "https://doi.org/10.1002/srin.202300187", "citation": "Ping Shen,* Kang Xu, Xing Wu, Cheng Guo, Ruting Chi, Yuexing Han, and Jianxun Fu*. Classification of Sulfides in High-Sulfur Steel and Establishment of Automatic Sulfide Classification Method. Steel Research international, 2300187. https://doi.org/10.1002/srin.202300187, 2023."},
+        {"title": "Impacts of self-initiated behavioral responses and pandemic fatigue on the epidemic spread in time-varying multiplex networks", "authors": "X. Hong, Y.X. Han*, B. Wang*", "conference": "Chaos, Solitons &Fractals", "year": "2023", "type": "论文", "link": "#", "citation": "X. Hong, Y.X. Han*, B. Wang*. Impacts of self-initiated behavioral responses and pandemic fatigue on the epidemic spread in time-varying multiplex networks. Chaos, Solitons & Fractals, 173(2023), 113696, 2023."},
+        {"title": "Integrated extensive detection, contact tracing and dynamic social distancing interventions to prevent future epidemic waves", "authors": "X. Hong, Y.X. Han*, B. Wang*", "conference": "IEEE Transactions on Systems, Man, and Cybernetics: Systems", "year": "2023", "type": "论文", "link": "https://doi.org/10.1109/TSMC.2023.3283091", "citation": "X. Hong, Y.X. Han*, B. Wang*. Integrated extensive detection, contact tracing and dynamic social distancing interventions to prevent future epidemic waves. IEEE Transactions on Systems, Man, and Cybernetics: Systems, vol. 53, no. 10, pp. 6281-6292, Oct. 2023, doi: 10.1109/TSMC.2023.3283091, 2023."},
+        {"title": "Data augmentation in material images using the improved HP-VAE-GAN", "authors": "Yuexing Han, Yuhong Liu, Qiaochuan Chen*", "conference": "Computational Materials Science", "year": "2023", "type": "论文", "link": "https://doi.org/10.1016/j.commatsci.2023.112250", "citation": "Yuexing Han, Yuhong Liu, Qiaochuan Chen*. Data augmentation in material images using the improved HP-VAE-GAN. Computational Materials Science 226, 112250, 2023. https://www.sciencedirect.com/science/article/pii/S0927025623002446, doi:https://doi.org/10.1016/j.commatsci.2023.112250."},
+        {"title": "Optimal discrete resource allocation on metapopulation networks for suppressing spatial spread of epidemics", "authors": "K.B. Zhang, X., Hong, Y.X. Han*, B. Wang*", "conference": "Chaos, Solitons,& Factals", "year": "2023", "type": "论文", "link": "#", "citation": "K.B. Zhang, X., Hong, Y.X. Han*, B. Wang*. Optimal discrete resource allocation on metapopulation networks for suppressing spatial spread of epidemics. Chaos, Solitons, & Factals. 169, 113293, 2023."},
+        {"title": "A two-phase feature selection method for identifying influential spreaders of disease epidemic on complex networks", "authors": "X.Y. Wang,Y.X. Han*,B. Wang*", "conference": "Entropy", "year": "2023", "type": "论文", "link": "#", "citation": "X.Y. Wang, Y.X. Han*, B. Wang*. A two-phase feature selection method for identifying influential spreaders of disease epidemic on complex networks. Entropy, 25, 1068, 2023."},
+        {"title": "Material structure segmentation method based on graph attention", "authors": "Qiaochuan Chen, Huishan Wei, Bing Wang, Liheng Ruan and Yuexing Han*", "conference": "Materials Today Communications", "year": "2023", "type": "论文", "link": "#", "citation": "Qiaochuan Chen, Huishan Wei, Bing Wang, Liheng Ruan and Yuexing Han*. Material structure segmentation method based on graph attention. Materials Today Communications, 2023: 105941."},
+        {"title": "Impacts of detection and contact tracing on the epidemicspread in time-varying networks", "authors": "X. Hong, Y.X.Han, B. Wang*", "conference": "Applied Mathematics Computation", "year": "2023", "type": "论文", "link": "#", "citation": "X. Hong, Y.X.Han, B. Wang*. Impacts of detection and contact tracing on the epidemicspread in time-varying networks. Applied Mathematics Computation, 439, 127601, 2023."},
+        {"title": "Layer fusion for online mutual knowledge distillation", "authors": "Gan Hu*, Yanli Ji, Xingzhu Liang, Yuexing Han", "conference": "Multimedia Systems", "year": "2023", "type": "论文", "link": "#", "citation": "Gan Hu*, Yanli Ji, Xingzhu Liang, Yuexing Han. Layer fusion for online mutual knowledge distillation. Multimedia Systems, 2023(29): 787-796."}
+      ],
+      "books": [
+        {
+          "title": "Object Recognition with a Limited Database by Using Shape Space Theory.",
+          "authors": "Yuexing Han, Bing Wang, Hideki Koike and Masanori Idesawa",
+          "book": "Image Processing: Concepts, Methodologies, Tools, and Applications (3 Volumes)",
+          "publisher": "Information Resources Management Association (IRMA, USA)",
+          "year": "2013",
+          "pages": "Chapater 11, pp. 181-200",
+          "isbn": "ISBN13: 9781466639942"
+        },
+        {
+          "title": "Object Recognition with a Limited Database by Using the Shape Space Theory.",
+          "authors": "Yuexing Han, Bing Wang, Hideki Koike and Masanori Idesawa",
+          "book": "Cross-Disciplinary Applications of Artificial Intelligence and Pattern Recognition: Advancing Technologies",
+          "publisher": "IGI Global",
+          "year": "2011",
+          "pages": "Chapter 8, pp. 128-147"
+        }
+      ],
+      "phdThesis": [
+        {
+          "title": "A Study on Recognition of Objects with Multiple Configurations by Using Limited Data Sets.",
+          "author": "Yuexing Han",
+          "link": "http://ir.lib.uec.ac.jp/infolib/user_contents/9000000589/9000000589.pdf"
+        }
+      ],
+      "otherArticles": [
+        {
+          "title": "我的留学生活",
+          "journal": "神州学人",
+          "issue": "2012年第7期",
+          "date": "2012.7.9"
+        }
+      ],
+      "patents": [
+        {"title": "一种基于形状空间理论的图像生成方法", "inventors": "韩越兴，阮礼恒，王冰", "number": "2023117418451", "date": "2023年12月18日"},
+        {"title": "一种数据特征增强方法、装置、电子设备及介质", "inventors": "韩越兴，万冠新，王冰", "number": "2023111837377", "date": "2023年09月14日"},
+        {"title": "基于少量样本划线标注的弱监督神经网络的图像分割方法", "inventors": "韩越兴,李睿祺,钱权,王冰", "number": "202310157735.4", "date": "2023年02月23日"},
+        {"title": "一种基于深度学习的钢铁微观组织结构识别方法及装置", "inventors": "任姿颖,张宇,王璐,韩越兴,周天鹏,宋宝宇,耿志宇,宋君,曹忠华", "number": "CN202211507567.9", "date": "2022年11月29日"},
+        {"title": "一种基于计算机视觉和深度学习的材料图像分割识别方法", "inventors": "任姿颖,韩越兴,王璐,宋宝宇,耿志宇,周天鹏,张宇,宋君", "number": "CN202210684129.3", "date": "2022年06月17日"},
+        {"title": "DP钢微观组织图像分割方法、装置和电子设备", "inventors": "任姿颖,王璐,张宇,韩越兴,耿志宇,宋宝宇,周天鹏,曹忠华,王静静,薛晗,成霄翔", "number": "CN202210151321.6", "date": "2022年02月16日"},
+        {"title": "基于多维特征融合的图注意力的材料图像分割方法", "inventors": "韩越兴 魏惠姗 王冰 陈侨川 钱权", "number": "202210318948.6", "date": "2022年03月29日"},
+        {"title": "一种基于图像处理的文献曲线分离与坐标信息提取方法", "inventors": "韩越兴 陈侨川 王迎港 张瑞 潘登 夏锦桦 张家旺", "number": "202111490372.3", "date": "2021年12月08日"},
+        {"title": "基于双路注意力编解码网络的三维图像分割方法", "inventors": "韩越兴 李小龙 钱权 王冰", "number": "202110863600.0", "date": "2021年07月29日"},
+        {"title": "一种基于二分图流行病传播干预方法", "inventors": "王冰，杨立珍，韩越兴，李卫民", "number": "202110827481.3", "date": "2021年07月22日"},
+        {"title": "一种基于多模态学习的材料性能预测方法及系统", "inventors": "钱权、曾毅、韩越兴、张瑞", "number": "202110807296.8", "date": "2021年07月16日", "grantDate": "2022年08月02日"},
+        {"title": "一种基于隐私保护的材料性能预测方法及系统", "inventors": "钱权、方昊堃、张瑞、韩越兴", "number": "202110807209.9", "date": "2021年07月16日"},
+        {"title": "基于机器学习的交互式图像分割方法", "inventors": "韩越兴 杨珅 王冰", "number": "202110186749.X", "date": "2021年02月10日"},
+        {"title": "基于图像处理的文献表格内容识别与信息提取方法", "inventors": "韩越兴 张家旺 张瑞 陈侨川 钱权 夏锦桦 王迎港", "number": "ZL202110185627.9", "date": "2021年02月10日", "grantDate": "2022年08月09日"},
+        {"title": "不可复制防伪标签的薄膜图案数据库建立及分类识别方法", "inventors": "韩越兴 张宏坤 巫金波 王冰 钱权", "number": "202011559042.0", "date": "2020年12月25日"},
+        {"title": "热障涂层裂纹的几何信息提取方法", "inventors": "韩越兴 刘宇虹 王冰 钱权", "number": "202011429047.1", "date": "2020年12月7日"},
+        {"title": "基于检测直线和线段的菊池花样几何信息提取方法", "inventors": "韩越兴 李睿祺 王冰", "number": "202010297634.3"},
+        {"title": "基于复杂网络理论的图像分割方法", "inventors": "韩越兴 宋磊磊 王冰", "number": "202010083808.6"},
+        {"title": "机器学习和深度学习训练用的物体多角度图像采集装置", "inventors": "韩越兴 杨李刚 王冰", "number": "201810104230.0", "grantDate": "2020年06月22日"},
+        {"title": "基于手势控制非触摸屏的人机交互系统及方法", "inventors": "韩越兴 王冰", "number": "201710414437.3", "grantDate": "2020年06月10日"},
+        {"title": "基于手各个部位在三维空间位置变化的手功能评价装置及方法", "inventors": "韩越兴", "number": "ZL201710383667.8", "grantDate": "2020年02月07日"},
+        {"title": "提高原子力显微镜图像质量的方法", "inventors": "韩越兴 王冰", "number": "ZL201610093121.4", "grantDate": "2019/06/04"},
+        {"title": "监视系统中自动记录动态物体的方法", "inventors": "韩越兴 王冰", "number": "201610093110.6"},
+        {"title": "基于图像处理技术的手功能评价方法", "inventors": "韩越兴", "number": "ZL201610165832.8", "grantDate": "2018/10/23"}
+      ],
+      "softwareCopyrights": [
+        {"name": "涂层材料低温热导率预测软件 V1.0", "regNo": "2023SR1428447", "certNo": "软著登字第12015620号", "devDate": "2023年08月01日", "pubDate": "2023年08月09日", "regDate": "2023年11月14日", "applicant": "上海大学", "developers": "陈侨川 韩思凡 韩越兴"},
+        {"name": "基于深度学习的防伪标签识别平台 V1.0", "regNo": "2023SR1430101", "certNo": "软著登字第12017274号", "devDate": "2023年06月30日", "pubDate": "2023年07月30日", "regDate": "2023年11月14日", "applicant": "上海大学", "developers": "韩越兴 包胜奇 王冰"},
+        {"name": "融合深度学习方法和形状空间理论的小样本图像生成平台软件 V1.0", "regNo": "2023SR1425482", "certNo": "软著登字第12012655号", "devDate": "2023年06月30日", "pubDate": "2023年07月30日", "regDate": "2023年11月14日", "applicant": "上海大学", "developers": "韩越兴 阮礼恒 王冰"},
+        {"name": "基于形状空间理论和机器学习方法的材料性能预测平台 V1.0", "regNo": "2023SR1427901", "certNo": "软著登字第12015074号", "devDate": "2023年06月02日", "pubDate": "2023年07月01日", "regDate": "2023年11月14日", "applicant": "上海大学", "developers": "韩越兴 万冠新 王冰"},
+        {"name": "固溶态Mg-Gd合金屈服强度计算软件 V1.0", "regNo": "2023SR1424850", "certNo": "软著登字第12012023号", "devDate": "2023年05月20日", "pubDate": "2023年05月21日", "regDate": "2023年11月14日", "applicant": "上海大学", "developers": "韩越兴 王璐 王冰"},
+        {"name": "结果图坐标提取程序V1.0", "regNo": "2022SR1472537", "devDate": "2022.08.18", "regDate": "2022.08.23", "applicant": "上海大学", "developers": "韩越兴 陈尊龙 张瑞"},
+        {"name": "智慧党建微信小程序平台V1.0", "regNo": "2022SR472538", "certNo": "软著登字第11818720号", "devDate": "2022.07.13", "regDate": "2022.11.04", "applicant": "上海大学", "developers": "韩越兴 万冠新 王冰"},
+        {"name": "基于web的掌上招聘系统软件", "regNo": "2022SR1472536", "certNo": "软著登字第10426735号", "devDate": "2022.07.19", "regDate": "2022.11.04", "applicant": "上海大学", "developers": "陈侨川 韩思凡 韩越兴"},
+        {"name": "PDF科学文献图表公式检测软件V1.0", "regNo": "2022SR1446824", "certNo": "软著登字第10401023号", "devDate": "2022.05.10", "pubDate": "2022.07.05", "regDate": "2022.11.01", "applicant": "上海大学", "developers": "张瑞 张家旺 韩越兴"},
+        {"name": "相间能量计算平台V1.0", "regNo": "2022SR1402923", "certNo": "软著登字第10357122号", "devDate": "2022.06.13", "pubDate": "2022.07.13", "regDate": "2022.10.14", "applicant": "上海大学", "developers": "韩越兴 池洳婷 王冰"},
+        {"name": "AFM图像中DNA机器人的分割软件V1.0", "regNo": "2022SR1365017", "certNo": "软著登字第10319216号", "devDate": "2021.09.10", "pubDate": "2021.10.05", "regDate": "2022.09.21", "applicant": "上海大学", "developers": "韩越兴 刘宇虹 王冰"},
+        {"name": "AFM图像中DNA机器人的识别软件V1.0", "regNo": "2022SR1365016", "certNo": "软著登字第10319218号", "devDate": "2021.06.10", "pubDate": "2021.10.30", "regDate": "2022.09.21", "applicant": "上海大学", "developers": "韩越兴 刘宇虹 王冰"},
+        {"name": "曲线坐标图像信息提取软件V1.0", "regNo": "2022SR1365016", "certNo": "软著登字第10319215号", "devDate": "2022.06.24", "regDate": "2022.09.21", "applicant": "上海大学", "developers": "陈侨川 王迎港 韩越兴"},
+        {"name": "文献中曲线图的信息提取软件V1.0", "regNo": "2022SR1365018", "devDate": "2022.05.4", "pubDate": "2022.07.4", "regDate": "2022.09.21", "applicant": "上海大学", "developers": "韩越兴 夏锦桦 王冰"},
+        {"name": "相图信息自动化识别软件V1.0", "regNo": "2022SR1384561", "devDate": "2022.05.23", "pubDate": "2022.06.21", "regDate": "2022.09.29", "applicant": "上海大学", "developers": "韩越兴 王绍航 王冰"},
+        {"name": "复杂纹理的材料结构图像分割软件V1.0", "regNo": "2022SR0859786", "devDate": "2021.10.07", "pubDate": "2021.10.11", "regDate": "2022.06.28", "applicant": "上海大学", "developers": "韩越兴 魏惠姗 王冰"},
+        {"name": "基于深度学习的材料图像分割软件V1.0", "regNo": "2021SR1803889", "devDate": "2021.06.01", "pubDate": "2021.08.02", "regDate": "2021.11.19", "applicant": "上海大学", "developers": "韩越兴 杨珅 陈侨川 王冰"},
+        {"name": "AFM图像除噪软件V1.0", "regNo": "2021SR1803955", "devDate": "2020.10.07", "pubDate": "2021.10.08", "regDate": "2021.11.19", "applicant": "上海大学", "developers": "韩越兴 刘宇虹 王冰"},
+        {"name": "不可复制防伪标签的薄膜图案数据库建立及分类识别软件V1.0", "regNo": "2021SR1264142", "devDate": "2020.10.25", "regDate": "2021.08.25", "applicant": "上海大学", "developers": "韩越兴 张宏坤 王冰"},
+        {"name": "基于双路径网络的肝脏与肿瘤CT图像自动化分割软件V1.0", "regNo": "2021SR1229122", "devDate": "2021.6.21", "regDate": "2021.08.19", "applicant": "上海大学", "developers": "韩越兴 李小龙 王冰"},
+        {"name": "文献中图表信息的提取软件V1.0", "regNo": "2021SR1218880", "devDate": "2021.05.01", "regDate": "2021.08.17", "applicant": "上海大学", "developers": "韩越兴 夏锦桦 王冰"},
+        {"name": "表格文字识别与复原软件V1.0", "regNo": "2021SR0492854", "regDate": "2021.04.02", "applicant": "上海大学", "developers": "韩越兴 张家旺 张瑞"},
+        {"name": "热障涂层裂纹的几何信息提取软件V1.0", "regNo": "2021SR0492853", "regDate": "2021.04.02", "applicant": "上海大学", "developers": "韩越兴 刘宇虹 王冰"},
+        {"name": "基于随机游走的时序网络免疫分析软件V1.0", "regNo": "2021SR0221874", "regDate": "2021.02.08", "applicant": "上海大学", "developers": "王冰 韩越兴"},
+        {"name": "基于路径分布的网路自动化比较分析软件V1.0", "regNo": "2021SR0087832", "regDate": "2021.01.15", "applicant": "上海大学", "developers": "王冰 韩越兴"},
+        {"name": "基于机器学习的图像分割软件V2.0", "regNo": "2020SR0686106", "regDate": "2020.6.29", "applicant": "上海大学", "developers": "韩越兴 杨珅 王冰"},
+        {"name": "基于机器视觉的热障涂层中单个片层的识别和计算软件V1.0", "regNo": "2020SR0681944", "regDate": "2020.6.28", "applicant": "上海大学", "developers": "韩越兴 刘宇虹"},
+        {"name": "上海大学菊池花样自动识别检测软件V1.0", "regNo": "2020SR0441105", "regDate": "2020.4", "applicant": "上海大学", "developers": "韩越兴 李睿祺"},
+        {"name": "基于机器学习的图像分割软件V1.0", "regNo": "2019SR0944666", "serialNo": "2019R11L1110807", "regDate": "2019", "applicant": "上海大学", "developers": "韩越兴"},
+        {"name": "基于聚类方法的图像分割软件V1.0", "regNo": "2019SR0944676", "serialNo": "2019R11L1110111", "regDate": "2019", "applicant": "上海大学", "developers": "韩越兴"}
+      ]
+    }
+  },
+  "en": {
+    "recentAchievements": {
+      "title": "Recent Achievements",
+      "publications": [
+        {"title": "A projection module based on the shape space theory for small-sample image processing", "authors": "Gan Hu, Yuexing Han*", "conference": "Expert Systems with Applications", "year": "2025", "type": "Paper", "link": "https://doi.org/10.1016/j.eswa.2025.128668", "citation": "Gan Hu, Yuexing Han*. A projection module based on the shape space theory for small-sample image processing. Expert Systems with Applications, 293 (2025) 128668, 2025. https://doi.org/10.1016/j.eswa.2025.128668"},
+        {"title": "Automatic pipeline for information of curve graphs in papers based on deep learning", "authors": "Yuexing Han, Jinhua Xia, Rui Zhang, Bing Wang, Yi Liu, Deng Pan, Yinggang Wang, Jiawang Zhang, Qiaochuan Chen*", "conference": "International Journal of Machine Learning and Cybernetics", "year": "2025", "type": "Paper", "link": "https://doi.org/10.1007/s13042-024-02496-7", "citation": "Yuexing Han, Jinhua Xia, Rui Zhang, Bing Wang, Yi Liu, Deng Pan, Yinggang Wang, Jiawang Zhang, Qiaochuan Chen*. Automatic pipeline for information of curve graphs in papers based on deep learning. International Journal of Machine Learning and Cybernetics, https://doi.org/10.1007/s13042-024-02496-7, 2025."},
+        {"title": "The Prediction of Tensile Strength Performance of Fiber Reinforced Composites Based on a Knowledge Graph Constructed from Materials Literature", "authors": "Qiaochuan Chen, Chen Zhao, Yating Fang, Rui Zhang, Na Song*, Peng Ding, Yuexing Han*", "conference": "POLYMER COMPOSITES", "year": "2024", "type": "Paper", "link": "#", "citation": "Qiaochuan Chen, Chen Zhao, Yating Fang, Rui Zhang, Na Song*, Peng Ding, Yuexing Han*. The Prediction of Tensile Strength Performance of Fiber Reinforced Composites Based on a Knowledge Graph Constructed from Materials Literature. POLYMER COMPOSITES. (SCI, accepted)"},
+        {"title": "Coupling dynamics of information and epidemic under multi-source heterogeneous social impacts", "authors": "X. Hong, Y.X. Han, B. Wang*", "conference": "Information Sciences", "year": "2025", "type": "Paper", "link": "#", "citation": "X. Hong, Y.X. Han, B. Wang*. Coupling dynamics of information and epidemic under multi-source heterogeneous social impacts. Information Sciences, 714, 122203, 2025."},
+        {"title": "Temporal correlation-based neural relational inference for binary dynamics", "authors": "H.W. Zhang, Y.X. Han, G.H. Tananka, B. Wang*", "conference": "Chaos, Solitons & Fractals", "year": "2025", "type": "Paper", "link": "#", "citation": "H.W. Zhang, Y.X. Han, G.H. Tananka, B. Wang*. Temporal correlation-based neural relational inference for binary dynamics. Chaos, Solitons & Fractals. 196, 116350, 2025."},
+        {"title": "Deep Learning-Based Framework for Efficient Design of Multicomponent High Hardness High Entropy Alloys", "authors": "Yuexing Han,* Hui Wang, Pengfei Xu, Qiaochuan Chen, Rui Zhang, and Yi Liu*", "conference": "ACS Applied Materials & Interfaces", "year": "2025", "type": "Paper", "link": "https://doi.org/10.1021/acsami.4c23010", "citation": "Yuexing Han,* Hui Wang, Pengfei Xu, Qiaochuan Chen, Rui Zhang, and Yi Liu*. Deep Learning-Based Framework for Efficient Design of Multicomponent High Hardness High Entropy Alloys. ACS Applied Materials & Interfaces, https://doi.org/10.1021/acsami.4c23010, 2025."},
+        {"title": "NFI-SGAT: Node feature initliazation-based streaming graph learning model with graph attenton network for critical node identification in temporal networks", "authors": "M.X. Yan, Y.X. Han, B. Wang*", "conference": "Neurocomputing", "year": "2025", "type": "Paper", "link": "#", "citation": "M.X. Yan, Y.X. Han, B. Wang*. NFI-SGAT: Node feature initliazation-based streaming graph learning model with graph attenton network for critical node identification in temporal networks. Neurocomputing 630, 129679, 2025."},
+        {"title": "Combined effects of information dissemination and resource allocation on spatial spreading of the epidemic", "authors": "K.B. Zhang, X. Hong, Y.X. Han, B. Wang*", "conference": "Applied Mathematical Modeling", "year": "2025", "type": "Paper", "link": "#", "citation": "K.B. Zhang, X. Hong, Y.X. Han, B. Wang*. Combined effects of information dissemination and resource allocation on spatial spreading of the epidemic. Applied Mathematical Modeling, 137, 115672, 2025."},
+        {"title": "Statistics and Analysis of Lath Martensite Transformation Based on In-Situ Observation and Video Processing", "authors": "Yuexing Han, Liheng Ruan, Jianxun Fu, Bing Wang, Hongbin Wang and Xiangyu Xu*", "conference": "Physics of Metals and Metallography", "year": "2024", "type": "Paper", "link": "#", "citation": "Yuexing Han, Liheng Ruan, Jianxun Fu, Bing Wang, Hongbin Wang and Xiangyu Xu*. Statistics and Analysis of Lath Martensite Transformation Based on In-Situ Observation and Video Processing. Physics of Metals and Metallography, 2024, Vol. 125, Suppl. 1, pp. S106–S120."},
+        {"title": "Fast and Accurate Recognition of Perovskite Fluorescent Anti Counterfeiting Labels Based on Lightweight Convolutional Neural Networks", "authors": "Yuexing Han, Shengqi Bao, Bori Shi, Jinbo Wu, Bing Wang, Peng Ding, and Qiaochuan Chen*", "conference": "ACS Applied Materials & Interfaces", "year": "2024", "type": "Paper", "link": "#", "citation": "Yuexing Han, Shengqi Bao, Bori Shi, Jinbo Wu, Bing Wang, Peng Ding, and Qiaochuan Chen*. Fast and Accurate Recognition of Perovskite Fluorescent Anti Counterfeiting Labels Based on Lightweight Convolutional Neural Networks. ACS Applied Materials & Interfaces, 2024, 16(31): 41107-41118."},
+        {"title": "Quantitative prediction of Mg-RE-Ni alloy corrosion behavior by machine learning", "authors": "Sanlve Pei, Chaoneng Dai, Xiaohua Yang, Lijun Zhang, Haitao Wang, Shaolin Zhang, Yuexing Han*, Qian Li*, Jingfeng Wang*", "conference": "Corrosion Science", "year": "2024", "type": "Paper", "link": "#", "citation": "Sanlve Pei, Chaoneng Dai, Xiaohua Yang, Lijun Zhang, Haitao Wang, Shaolin Zhang, Yuexing Han*, Qian Li*, Jingfeng Wang*. Quantitative prediction of Mg-RE-Ni alloy corrosion behavior by machine learning. Corrosion Science, 237 (2024) 112324."},
+        {"title": "Bacbone-based dynamic graph spatio-temporal network for epidemic forecasting", "authors": "J.K. Mao, Y.X. Han*, G. Tanaka, B.Wang*", "conference": "Knowledge-Based Systems", "year": "2024", "type": "Paper", "link": "https://arxiv.org/pdf/2312.00485.pdf", "citation": "J.K. Mao, Y.X. Han*, G. Tanaka, B.Wang*. Bacbone-based dynamic graph spatio-temporal network for epidemic forecasting. Knowledge-Based Systems, 296, 111952, 2024. arXiv:2312.00485."},
+        {"title": "MPSTAN: Metapopulation-Based Spatio–Temporal Attention Network for Epidemic Forecasting", "authors": "J.K. Mao, Y.X. Han*, G. Tanaka, B.Wang*", "conference": "Entropy", "year": "2024", "type": "Paper", "link": "https://doi.org/10.3390/e26040278", "citation": "J.K. Mao, Y.X. Han*, G. Tanaka, B.Wang*. MPSTAN: Metapopulation-Based Spatio–Temporal Attention Network for Epidemic Forecasting. Entropy, 2024, 26, 278. https://doi.org/10.3390/e26040278."},
+        {"title": "Revealing the structure-property relationships of copper alloys with FAGC", "authors": "Yuexing Han*, Guanxin Wan, Bing Wang*, Yi Liu*", "conference": "arXiv", "year": "2024", "type": "Paper", "link": "https://arxiv.org/pdf/2404.09515.pdf", "citation": "Yuexing Han*, Guanxin Wan, Bing Wang*, Yi Liu*, Revealing the structure-property relationships of copper alloys with FAGC. arXiv:2404.09515, 2024."},
+        {"title": "Thermal conductivity prediction of Al2O3 -doped tetragonal YSZ coatings using deep learning", "authors": "Qiaochuan Chen, Sifan Han, Xuemei Song, Yi Zeng*, Yuexing Han*", "conference": "Journal of the European Ceramic Society", "year": "2024", "type": "Paper", "link": "https://doi.org/10.1016/j.jeurceramsoc.2024.04.057", "citation": "Qiaochuan Chen, Sifan Han, Xuemei Song, Yi Zeng*, Yuexing Han*. Thermal conductivity prediction of Al2O3-doped tetragonal YSZ coatings using deep learning. Journal of the European Ceramic Society, DOI:10.1016/j.jeurceramsoc.2024.04.057, 2024."},
+        {"title": "Corrosion of Mg alloys containing LPSO phase based on machine learning", "authors": "Sanlve Pei, Haitao Wang, Yuexing Han, Qian Li, Jingfeng Wang*", "conference": "The Chinese Journal of Nonferrous Metals", "year": "2024", "type": "Paper", "link": "https://doi.org/10.11817/j.ysxb.1004.0609.2023-44562", "citation": "Sanlve Pei, Haitao Wang, Yuexing Han, Qian Li, Jingfeng Wang*. Corrosion of Mg alloys containing LPSO phase based on machine learning. The Chinese Journal of Nonferrous Metals, 2024, 34(6): 1964-1981. DOI:10.11817/j.ysxb.1004.0609.2023-44562"},
+        {"title": "Prediction of ultimate tensile strength of Al-Si alloys based on multimodal fusion learning", "authors": "Longfei Zhu, Qun Luo, Qiaochuan Chen, Yu Zhang, Lijun Zhang, Bin Hu, Yuexing Han*, Qian Li*", "conference": "MGE Advances", "year": "2024", "type": "Paper", "link": "https://doi.org/10.1002/mgea.26", "citation": "Longfei Zhu, Qun Luo, Qiaochuan Chen, Yu Zhang, Lijun Zhang, Bin Hu, Yuexing Han*, Qian Li*. Prediction of ultimate tensile strength of Al-Si alloys based on multimodal fusion learning. MGE Advances. 2024; 2(1):e26. DOI: 10.1002/mgea. https://doi.org/10.1002/mgea.26"},
+        {"title": "Few-shot Image Generation via Information Transfer from the Built Geodesic Surface", "authors": "Yuexing Han*, Liheng Ruan, Bing Wang", "conference": "arXiv", "year": "2024", "type": "Paper", "link": "https://arxiv.org/pdf/2401.01749.pdf", "citation": "Yuexing Han*, Liheng Ruan, Bing Wang, Few-shot Image Generation via Information Transfer from the Built Geodesic Surface. arXiv:2401.01749, 2024."},
+        {"title": "FAGC:Feature Augmentation on Geodesic Curve in the Pre-Shape Space", "authors": "Yuexing Han*, Guanxin Wan, Bing Wang*", "conference": "arXiv", "year": "2023", "type": "Paper", "link": "https://arxiv.org/pdf/2312.03325.pdf", "citation": "Yuexing Han*, Guanxin Wan, Bing Wang*, FAGC:Feature Augmentation on Geodesic Curve in the Pre-Shape Space. arXiv:2312.03325, 2023."},
+        {"title": "A Pseudo-labeling Based Weakly Supervised Segmentation Method For Few-Shot Texture Images", "authors": "Yuexing Han, Ruiqi Li, Bing Wang, Qiaochuan Chen*", "conference": "Expert Systems With Applications", "year": "2024", "type": "Paper", "link": "#", "citation": "Yuexing Han, Ruiqi Li, Bing Wang, Qiaochuan Chen*. A Pseudo-labeling Based Weakly Supervised Segmentation Method For Few-Shot Texture Images. Expert Systems With Applications, 238(2024), 122110, 2024."},
+        {"title": "Material image segmentation method based on complex texture feature fusion", "authors": "Yuexing Han, Shen Yang, Qiaochuan Chen, Bing Wang", "conference": "Computer Engineering and Design", "year": "2024", "type": "Paper", "link": "#", "citation": "Yuexing Han, Shen Yang, Qiaochuan Chen, Bing Wang. Material image segmentation method based on complex texture feature fusion. Computer Engineering and Design, Vol.45, No.1, pp. 220-227, 2024."},
+        {"title": "A literature-mining method of integrating text and table extraction for materials science publications", "authors": "Rui Zhang, Jiawang Zhang, Qiaochuan Chen, Bing Wang, Yi Liu, Quan Qian, Deng Pan, Jinhua Xia, Yinggang Wang, Yuexing Han*", "conference": "Computational materials science", "year": "2023", "type": "Paper", "link": "https://doi.org/10.1016/j.commatsci.2023.112441", "citation": "Rui Zhang, Jiawang Zhang, Qiaochuan Chen, Bing Wang, Yi Liu, Quan Qian, Deng Pan, Jinhua Xia, Yinggang Wang, Yuexing Han*. A literature-mining method of integrating text and table extraction for materials science publications. Computational materials science, 230(2023) 112441, 2023. doi: 10.1016/j.commatsci.2023.112441"},
+        {"title": "Microstructural evolution and coarsening behavior of the precipitates in 2205 duplex stainless steel aged at 850℃", "authors": "Yuexing Han*, Ruting Chi, Qiaochuan Chen, Bing Wang, Wei Liu, Yanlin He*", "conference": "Journal of Materials Research and Technology", "year": "2023", "type": "Paper", "link": "https://doi.org/10.1016/j.jmrt.2023.08.034", "citation": "Yuexing Han*, Ruting Chi, Qiaochuan Chen, Bing Wang, Wei Liu, Yanlin He*. Microstructural evolution and coarsening behavior of the precipitates in 2205 duplex stainless steel aged at 850℃. Journal of Materials Research and Technology, 26:2560-2574, 2023. doi: 10.1016/j.jmrt.2023.08.034"},
+        {"title": "Classification of Sulfides in High-Sulfur Steel and Establishment of Automatic Sulfide Classification Method", "authors": "Ping Shen*, Kang Xu, Xing Wu, Cheng Guo, Ruting Chi, Yuexing Han, and Jianxun Fu*", "conference": "Steel Research international", "year": "2023", "type": "Paper", "link": "https://doi.org/10.1002/srin.202300187", "citation": "Ping Shen*, Kang Xu, Xing Wu, Cheng Guo, Ruting Chi, Yuexing Han, and Jianxun Fu*. Classification of Sulfides in High-Sulfur Steel and Establishment of Automatic Sulfide Classification Method. Steel Research international, 2300187. https://doi.org/10.1002/srin.202300187, 2023."},
+        {"title": "Impacts of self-initiated behavioral responses and pandemic fatigue on the epidemic spread in time-varying multiplex networks", "authors": "X. Hong, Y.X. Han*, B. Wang*", "conference": "Chaos, Solitons & Fractals", "year": "2023", "type": "Paper", "link": "#", "citation": "X. Hong, Y.X. Han*, B. Wang*. Impacts of self-initiated behavioral responses and pandemic fatigue on the epidemic spread in time-varying multiplex networks. Chaos, Solitons & Fractals, 173(2023), 113696, 2023."},
+        {"title": "Integrated extensive detection, contact tracing and dynamic social distancing interventions to prevent future epidemic waves", "authors": "X. Hong, Y.X. Han*, B. Wang*", "conference": "IEEE Transactions on Systems, Man, and Cybernetics: Systems", "year": "2023", "type": "Paper", "link": "https://doi.org/10.1109/TSMC.2023.3283091", "citation": "X. Hong, Y.X. Han*, B. Wang*. Integrated extensive detection, contact tracing and dynamic social distancing interventions to prevent future epidemic waves. IEEE Transactions on Systems, Man, and Cybernetics: Systems, vol. 53, no. 10, pp. 6281-6292, Oct. 2023, doi: 10.1109/TSMC.2023.3283091, 2023."},
+        {"title": "Data augmentation in material images using the improved HP-VAE-GAN", "authors": "Yuexing Han, Yuhong Liu, Qiaochuan Chen*", "conference": "Computational Materials Science", "year": "2023", "type": "Paper", "link": "https://doi.org/10.1016/j.commatsci.2023.112250", "citation": "Yuexing Han, Yuhong Liu, Qiaochuan Chen*. Data augmentation in material images using the improved HP-VAE-GAN. Computational Materials Science 226, 112250, 2023. https://www.sciencedirect.com/science/article/pii/S0927025623002446, doi:https://doi.org/10.1016/j.commatsci.2023.112250."},
+        {"title": "Optimal discrete resource allocation on metapopulation networks for suppressing spatial spread of epidemics", "authors": "K.B. Zhang, X., Hong, Y.X. Han*, B. Wang*", "conference": "Chaos, Solitons, & Factals", "year": "2023", "type": "Paper", "link": "#", "citation": "K.B. Zhang, X., Hong, Y.X. Han*, B. Wang*. Optimal discrete resource allocation on metapopulation networks for suppressing spatial spread of epidemics. Chaos, Solitons, & Factals. 169, 113293, 2023."},
+        {"title": "A two-phase feature selection method for identifying influential spreaders of disease epidemic on complex networks", "authors": "X.Y. Wang,Y.X. Han*,B. Wang*", "conference": "Entropy", "year": "2023", "type": "Paper", "link": "#", "citation": "X.Y. Wang, Y.X. Han*, B. Wang*. A two-phase feature selection method for identifying influential spreaders of disease epidemic on complex networks. Entropy, 25, 1068, 2023."},
+        {"title": "Material structure segmentation method based on graph attention", "authors": "Qiaochuan Chen, Huishan Wei, Bing Wang, Liheng Ruan and Yuexing Han*", "conference": "Materials Today Communications", "year": "2023", "type": "Paper", "link": "#", "citation": "Qiaochuan Chen, Huishan Wei, Bing Wang, Liheng Ruan and Yuexing Han*. Material structure segmentation method based on graph attention. Materials Today Communications, 2023: 105941."},
+        {"title": "Impacts of detection and contact tracing on the epidemicspread in time-varying networks", "authors": "X. Hong, Y.X.Han, B. Wang*", "conference": "Applied Mathematics Computation", "year": "2023", "type": "Paper", "link": "#", "citation": "X. Hong, Y.X.Han, B. Wang*. Impacts of detection and contact tracing on the epidemicspread in time-varying networks. Applied Mathematics Computation, 439, 127601, 2023."},
+        {"title": "Layer fusion for online mutual knowledge distillation", "authors": "Gan Hu*, Yanli Ji, Xingzhu Liang, Yuexing Han", "conference": "Multimedia Systems", "year": "2023", "type": "Paper", "link": "#", "citation": "Gan Hu*, Yanli Ji, Xingzhu Liang, Yuexing Han. Layer fusion for online mutual knowledge distillation. Multimedia Systems, 2023(29): 787-796."}
+      ],
+      "books": [
+        {
+          "title": "Object Recognition with a Limited Database by Using Shape Space Theory.",
+          "authors": "Yuexing Han, Bing Wang, Hideki Koike and Masanori Idesawa",
+          "book": "Image Processing: Concepts, Methodologies, Tools, and Applications (3 Volumes)",
+          "publisher": "Information Resources Management Association (IRMA, USA)",
+          "year": "2013",
+          "pages": "Chapter 11, pp. 181-200",
+          "isbn": "ISBN13: 9781466639942"
+        },
+        {
+          "title": "Object Recognition with a Limited Database by Using the Shape Space Theory.",
+          "authors": "Yuexing Han, Bing Wang, Hideki Koike and Masanori Idesawa",
+          "book": "Cross-Disciplinary Applications of Artificial Intelligence and Pattern Recognition: Advancing Technologies",
+          "publisher": "IGI Global",
+          "year": "2011",
+          "pages": "Chapter 8, pp. 128-147"
+        }
+      ],
+      "phdThesis": [
+        {
+          "title": "A Study on Recognition of Objects with Multiple Configurations by Using Limited Data Sets.",
+          "author": "Yuexing Han",
+          "link": "http://ir.lib.uec.ac.jp/infolib/user_contents/9000000589/9000000589.pdf"
+        }
+      ],
+      "otherArticles": [
+        {
+          "title": "My Study Abroad Life",
+          "journal": "People's China",
+          "issue": "2012, Issue 7",
+          "date": "2012.7.9"
+        }
+      ],
+      "patents": [
+        {"title": "An image generation method based on shape space theory", "inventors": "Yuexing Han, Liheng Ruan, Bing Wang", "number": "2023117418451", "date": "2023-12-18"},
+        {"title": "A data feature enhancement method, device, electronic equipment and medium", "inventors": "Yuexing Han, Guanxin Wan, Bing Wang", "number": "2023111837377", "date": "2023-09-14"},
+        {"title": "A weakly supervised neural network image segmentation method based on few-shot line annotation", "inventors": "Yuexing Han, Ruiqi Li, Quan Qian, Bing Wang", "number": "202310157735.4", "date": "2023-02-23"},
+        {"title": "A method and device for identifying steel microstructure based on deep learning", "inventors": "Ziying Ren, Yu Zhang, Lu Wang, Yuexing Han, Tianpeng Zhou, Baoyu Song, Zhiyu Geng, Jun Song, Zhonghua Cao", "number": "CN202211507567.9", "date": "2022-11-29"},
+        {"title": "A material image segmentation and recognition method based on computer vision and deep learning", "inventors": "Ziying Ren, Yuexing Han, Lu Wang, Baoyu Song, Zhiyu Geng, Tianpeng Zhou, Yu Zhang, Jun Song", "number": "CN202210684129.3", "date": "2022-06-17"},
+        {"title": "DP steel microstructure image segmentation method, device and electronic equipment", "inventors": "Ziying Ren, Lu Wang, Yu Zhang, Yuexing Han, Zhiyu Geng, Baoyu Song, Tianpeng Zhou, Zhonghua Cao, Jingjing Wang, Han Xue, Xiaoxiang Cheng", "number": "CN202210151321.6", "date": "2022-02-16"},
+        {"title": "Material image segmentation method based on multi-dimensional feature fusion and graph attention", "inventors": "Yuexing Han, Huishan Wei, Bing Wang, Qiaochuan Chen, Quan Qian", "number": "202210318948.6", "date": "2022-03-29"},
+        {"title": "A method for separating literature curves and extracting coordinate information based on image processing", "inventors": "Yuexing Han, Qiaochuan Chen, Yinggang Wang, Rui Zhang, Deng Pan, Jinhua Xia, Jiawang Zhang", "number": "202111490372.3", "date": "2021-12-08"},
+        {"title": "A three-dimensional image segmentation method based on dual attention encoder-decoder network", "inventors": "Yuexing Han, Xiaolong Li, Quan Qian, Bing Wang", "number": "202110863600.0", "date": "2021-07-29"},
+        {"title": "A bipartite graph epidemic intervention method", "inventors": "Bing Wang, Lizhen Yang, Yuexing Han, Weimin Li", "number": "202110827481.3", "date": "2021-07-22"},
+        {"title": "A material property prediction method and system based on multimodal learning", "inventors": "Quan Qian, Yi Zeng, Yuexing Han, Rui Zhang", "number": "202110807296.8", "date": "2021-07-16", "grantDate": "2022-08-02"},
+        {"title": "A material property prediction method and system based on privacy protection", "inventors": "Quan Qian, Haokun Fang, Rui Zhang, Yuexing Han", "number": "202110807209.9", "date": "2021-07-16"},
+        {"title": "Interactive image segmentation method based on machine learning", "inventors": "Yuexing Han, Shen Yang, Bing Wang", "number": "202110186749.X", "date": "2021-02-10"},
+        {"title": "A method for recognizing and extracting information from tables in literature based on image processing", "inventors": "Yuexing Han, Jiawang Zhang, Rui Zhang, Qiaochuan Chen, Quan Qian, Jinhua Xia, Yinggang Wang", "number": "ZL202110185627.9", "date": "2021-02-10", "grantDate": "2022-08-09"},
+        {"title": "A method for establishing a thin film pattern database and classification and recognition of non-replicable anti-counterfeiting labels", "inventors": "Yuexing Han, Hongkun Zhang, Jinbo Wu, Bing Wang, Quan Qian", "number": "202011559042.0", "date": "2020-12-25"},
+        {"title": "A method for extracting geometric information of thermal barrier coating cracks", "inventors": "Yuexing Han, Yuhong Liu, Bing Wang, Quan Qian", "number": "202011429047.1", "date": "2020-12-07"},
+        {"title": "A method for extracting geometric information of Kikuchi patterns based on detected lines and segments", "inventors": "Yuexing Han, Ruiqi Li, Bing Wang", "number": "202010297634.3"},
+        {"title": "Image segmentation method based on complex network theory", "inventors": "Yuexing Han, Leilei Song, Bing Wang", "number": "202010083808.6"},
+        {"title": "Multi-angle image acquisition device for training machine learning and deep learning", "inventors": "Yuexing Han, Yang Ligang, Bing Wang", "number": "201810104230.0", "grantDate": "2020-06-22"},
+        {"title": "Human-computer interaction system and method based on gesture control of non-touch screen", "inventors": "Yuexing Han, Bing Wang", "number": "201710414437.3", "grantDate": "2020-06-10"},
+        {"title": "Hand function evaluation device and method based on position changes of each part of the hand in three-dimensional space", "inventors": "Yuexing Han", "number": "ZL201710383667.8", "grantDate": "2020-02-07"},
+        {"title": "A method for improving the quality of atomic force microscope images", "inventors": "Yuexing Han, Bing Wang", "number": "ZL201610093121.4", "grantDate": "2019/06/04"},
+        {"title": "A method for automatically recording dynamic objects in monitoring systems", "inventors": "Yuexing Han, Bing Wang", "number": "201610093110.6"},
+        {"title": "Hand function evaluation method based on image processing technology", "inventors": "Yuexing Han", "number": "ZL201610165832.8", "grantDate": "2018/10/23"}
+      ],
+      "softwareCopyrights": [
+        {
+          "name": "Coating Material Low Temperature Thermal Conductivity Prediction Software V1.0",
+          "regNo": "2023SR1428447",
+          "certNo": "Soft Copyright No. 12015620",
+          "devDate": "2023-08-01",
+          "pubDate": "2023-08-09",
+          "regDate": "2023-11-14",
+          "applicant": "Shanghai University",
+          "developers": "Qiaochuan Chen, Sifan Han, Yuexing Han"
+        },
+        {
+          "name": "Anti-counterfeiting Label Recognition Platform Based on Deep Learning V1.0",
+          "regNo": "2023SR1430101",
+          "certNo": "Soft Copyright No. 12017274",
+          "devDate": "2023-06-30",
+          "pubDate": "2023-07-30",
+          "regDate": "2023-11-14",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Shengqi Bao, Bing Wang"
+        },
+        {
+          "name": "Small-sample Image Generation Platform Software Integrating Deep Learning Methods and Shape Space Theory V1.0",
+          "regNo": "2023SR1425482",
+          "certNo": "Soft Copyright No. 12012655",
+          "devDate": "2023-06-30",
+          "pubDate": "2023-07-30",
+          "regDate": "2023-11-14",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Liheng Ruan, Bing Wang"
+        },
+        {
+          "name": "Material Property Prediction Platform Based on Shape Space Theory and Machine Learning Methods V1.0",
+          "regNo": "2023SR1427901",
+          "certNo": "Soft Copyright No. 12015074",
+          "devDate": "2023-06-02",
+          "pubDate": "2023-07-01",
+          "regDate": "2023-11-14",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Guanxin Wan, Bing Wang"
+        },
+        {
+          "name": "Solid Solution Mg-Gd Alloy Yield Strength Calculation Software V1.0",
+          "regNo": "2023SR1424850",
+          "certNo": "Soft Copyright No. 12012023",
+          "devDate": "2023-05-20",
+          "pubDate": "2023-05-21",
+          "regDate": "2023-11-14",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Lu Wang, Bing Wang"
+        },
+        {
+          "name": "Result Graph Coordinate Extraction Program V1.0",
+          "regNo": "2022SR1472537",
+          "devDate": "2022-08-18",
+          "regDate": "2022-08-23",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Zunlong Chen, Rui Zhang"
+        },
+        {
+          "name": "Smart Party Building WeChat Mini Program Platform V1.0",
+          "regNo": "2022SR472538",
+          "certNo": "Soft Copyright No. 11818720",
+          "devDate": "2022-07-13",
+          "regDate": "2022-11-04",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Guanxin Wan, Bing Wang"
+        },
+        {
+          "name": "Web-based Mobile Recruitment System Software",
+          "regNo": "2022SR1472536",
+          "certNo": "Soft Copyright No. 10426735",
+          "devDate": "2022-07-19",
+          "regDate": "2022-11-04",
+          "applicant": "Shanghai University",
+          "developers": "Qiaochuan Chen, Sifan Han, Yuexing Han"
+        },
+        {
+          "name": "PDF Scientific Literature Chart and Formula Detection Software V1.0",
+          "regNo": "2022SR1446824",
+          "certNo": "Soft Copyright No. 10401023",
+          "devDate": "2022-05-10",
+          "pubDate": "2022-07-05",
+          "regDate": "2022-11-01",
+          "applicant": "Shanghai University",
+          "developers": "Rui Zhang, Jiawang Zhang, Yuexing Han"
+        },
+        {
+          "name": "Interphase Energy Calculation Platform V1.0",
+          "regNo": "2022SR1402923",
+          "certNo": "Soft Copyright No. 10357122",
+          "devDate": "2022-06-13",
+          "pubDate": "2022-07-13",
+          "regDate": "2022-10-14",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Ruting Chi, Bing Wang"
+        },
+        {
+          "name": "AFM Image DNA Robot Segmentation Software V1.0",
+          "regNo": "2022SR1365017",
+          "certNo": "Soft Copyright No. 10319216",
+          "devDate": "2021-09-10",
+          "pubDate": "2021-10-05",
+          "regDate": "2022-09-21",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Yuhong Liu, Bing Wang"
+        },
+        {
+          "name": "AFM Image DNA Robot Recognition Software V1.0",
+          "regNo": "2022SR1365016",
+          "certNo": "Soft Copyright No. 10319218",
+          "devDate": "2021-06-10",
+          "pubDate": "2021-10-30",
+          "regDate": "2022-09-21",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Yuhong Liu, Bing Wang"
+        },
+        {
+          "name": "Curve Coordinate Image Information Extraction Software V1.0",
+          "regNo": "2022SR1365016",
+          "certNo": "Soft Copyright No. 10319215",
+          "devDate": "2022-06-24",
+          "regDate": "2022-09-21",
+          "applicant": "Shanghai University",
+          "developers": "Qiaochuan Chen, Yinggang Wang, Yuexing Han"
+        },
+        {
+          "name": "Information Extraction Software for Curve Graphs in Literature V1.0",
+          "regNo": "2022SR1365018",
+          "devDate": "2022-05-04",
+          "pubDate": "2022-07-04",
+          "regDate": "2022-09-21",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Jinhua Xia, Bing Wang"
+        },
+        {
+          "name": "Automatic Phase Diagram Information Recognition Software V1.0",
+          "regNo": "2022SR1384561",
+          "devDate": "2022-05-23",
+          "pubDate": "2022-06-21",
+          "regDate": "2022-09-29",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Shaohang Wang, Bing Wang"
+        },
+        {
+          "name": "Material Structure Image Segmentation Software for Complex Textures V1.0",
+          "regNo": "2022SR0859786",
+          "devDate": "2021-10-07",
+          "pubDate": "2021-10-11",
+          "regDate": "2022-06-28",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Huishan Wei, Bing Wang"
+        },
+        {
+          "name": "Material Image Segmentation Software Based on Deep Learning V1.0",
+          "regNo": "2021SR1803889",
+          "devDate": "2021-06-01",
+          "pubDate": "2021-08-02",
+          "regDate": "2021-11-19",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Shen Yang, Qiaochuan Chen, Bing Wang"
+        },
+        {
+          "name": "AFM Image Denoising Software V1.0",
+          "regNo": "2021SR1803955",
+          "devDate": "2020-10-07",
+          "pubDate": "2021-10-08",
+          "regDate": "2021-11-19",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Yuhong Liu, Bing Wang"
+        },
+        {
+          "name": "Non-replicable Anti-counterfeiting Label Thin Film Pattern Database Establishment and Classification Recognition Software V1.0",
+          "regNo": "2021SR1264142",
+          "devDate": "2020-10-25",
+          "regDate": "2021-08-25",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Hongkun Zhang, Bing Wang"
+        },
+        {
+          "name": "Automatic Segmentation Software for Liver and Tumor CT Images Based on Dual-path Network V1.0",
+          "regNo": "2021SR1229122",
+          "devDate": "2021-06-21",
+          "regDate": "2021-08-19",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Xiaolong Li, Bing Wang"
+        },
+        {
+          "name": "Information Extraction Software for Charts in Literature V1.0",
+          "regNo": "2021SR1218880",
+          "devDate": "2021-05-01",
+          "regDate": "2021-08-17",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Jinhua Xia, Bing Wang"
+        },
+        {
+          "name": "Table Text Recognition and Restoration Software V1.0",
+          "regNo": "2021SR0492854",
+          "regDate": "2021-04-02",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Jiawang Zhang, Rui Zhang"
+        },
+        {
+          "name": "Geometric Information Extraction Software for Thermal Barrier Coating Cracks V1.0",
+          "regNo": "2021SR0492853",
+          "regDate": "2021-04-02",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Yuhong Liu, Bing Wang"
+        },
+        {
+          "name": "Immunity Analysis Software for Temporal Networks Based on Random Walk V1.0",
+          "regNo": "2021SR0221874",
+          "regDate": "2021-02-08",
+          "applicant": "Shanghai University",
+          "developers": "Bing Wang, Yuexing Han"
+        },
+        {
+          "name": "Automatic Comparative Analysis Software for Networks Based on Path Distribution V1.0",
+          "regNo": "2021SR0087832",
+          "regDate": "2021-01-15",
+          "applicant": "Shanghai University",
+          "developers": "Bing Wang, Yuexing Han"
+        },
+        {
+          "name": "Image Segmentation Software Based on Machine Learning V2.0",
+          "regNo": "2020SR0686106",
+          "regDate": "2020-06-29",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Shen Yang, Bing Wang"
+        },
+        {
+          "name": "Single Lamella Recognition and Calculation Software in Thermal Barrier Coatings Based on Machine Vision V1.0",
+          "regNo": "2020SR0681944",
+          "regDate": "2020-06-28",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Yuhong Liu"
+        },
+        {
+          "name": "Shanghai University Kikuchi Pattern Automatic Recognition and Detection Software V1.0",
+          "regNo": "2020SR0441105",
+          "regDate": "2020-04",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han, Ruiqi Li"
+        },
+        {
+          "name": "Image Segmentation Software Based on Machine Learning V1.0",
+          "regNo": "2019SR0944666",
+          "serialNo": "2019R11L1110807",
+          "regDate": "2019",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han"
+        },
+        {
+          "name": "Image Segmentation Software Based on Clustering Method V1.0",
+          "regNo": "2019SR0944676",
+          "serialNo": "2019R11L1110111",
+          "regDate": "2019",
+          "applicant": "Shanghai University",
+          "developers": "Yuexing Han"
+        }
+      ]
+    }
+  },
+  "ja": {
+    "recentAchievements": {
+      "title": "最近の成果",
+      "publications": [
+        {
+          "title": "小サンプル画像処理のための形状空間理論に基づく投影モジュール",
+          "authors": "胡干, 韓越興*",
+          "conference": "Expert Systems with Applications",
+          "year": "2025",
+          "type": "論文",
+          "link": "https://doi.org/10.1016/j.eswa.2025.128668"
+        },
+        {
+          "title": "深層学習に基づく論文中曲線グラフ情報自動抽出パイプライン",
+          "authors": "韓越興, 夏錦桦, 張瑞, 王冰, 劉毅, 潘登, 王迎港, 張家旺, 陳侨川*",
+          "conference": "International Journal of Machine Learning and Cybernetics",
+          "year": "2025",
+          "type": "論文",
+          "link": "https://doi.org/10.1007/s13042-024-02496-7"
+        },
+        {
+          "title": "材料文献から構築した知識グラフに基づく繊維強化複合材料の引張強度性能予測",
+          "authors": "陳侨川, 趙晨, 方雅婷, 張瑞, 宋娜*, 丁鵬, 韓越興*",
+          "conference": "POLYMER COMPOSITES",
+          "year": "2024",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "マルチソース異種社会的影響下における情報と疫病の結合ダイナミクス",
+          "authors": "洪旭, 韓越興, 王冰*",
+          "conference": "Information Sciences",
+          "year": "2025",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "バイナリダイナミクスのための時間相関に基づくニューラル関係推論",
+          "authors": "張宏偉, 韓越興, 田中剛弘, 王冰*",
+          "conference": "Chaos, Solitons & Fractals",
+          "year": "2025",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "多成分高硬度高エントロピー合金の効率的設計のための深層学習フレームワーク",
+          "authors": "韓越興*, 王輝, 徐鵬飛, 陳侨川, 張瑞, 劉毅*",
+          "conference": "ACS Applied Materials & Interfaces",
+          "year": "2025",
+          "type": "論文",
+          "link": "https://doi.org/10.1021/acsami.4c23010"
+        },
+        {
+          "title": "NFI-SGAT: 重要ノード同定のためのノード特徴初期化型ストリーミンググラフ学習モデル",
+          "authors": "閻夢霞, 韓越興, 王冰*",
+          "conference": "Neurocomputing",
+          "year": "2025",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "情報伝播と資源配分の複合効果が疫病の空間拡散に与える影響",
+          "authors": "張可斌, 洪旭, 韓越興, 王冰*",
+          "conference": "Applied Mathematical Modeling",
+          "year": "2025",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "その場観察とビデオ処理に基づくラースマルテンサイト変態の統計と解析",
+          "authors": "韓越興, 阮礼恒, 傅建勲, 王冰, 王紅斌, 徐翔宇*",
+          "conference": "Physics of Metals and Metallography",
+          "year": "2024",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "軽量畳み込みニューラルネットワークに基づくペロブスカイト蛍光偽造防止ラベルの高速・高精度認識",
+          "authors": "韓越興, 包勝奇, 史博日, 巫金波, 王冰, 丁鵬, 陳侨川*",
+          "conference": "ACS Applied Materials & Interfaces",
+          "year": "2024",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "機械学習によるMg-RE-Ni合金の腐食挙動の定量的予測",
+          "authors": "裴三略, 戴超能, 楊小華, 張立軍, 王海涛, 張少林, 韓越興*, 李謙*, 王敬峰*",
+          "conference": "Corrosion Science",
+          "year": "2024",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "バックボーンベース動的グラフ時空間ネットワークによる疫病予測",
+          "authors": "毛俊凱, 韓越興*, 田中剛弘, 王冰*",
+          "conference": "Knowledge-Based Systems",
+          "year": "2024",
+          "type": "論文",
+          "link": "https://arxiv.org/pdf/2312.00485.pdf"
+        },
+        {
+          "title": "MPSTAN: 疫病予測のためのメタポピュレーションベース時空間アテンションネットワーク",
+          "authors": "毛俊凱, 韓越興*, 田中剛弘, 王冰*",
+          "conference": "Entropy",
+          "year": "2024",
+          "type": "論文",
+          "link": "https://doi.org/10.3390/e26040278"
+        },
+        {
+          "title": "FAGCによる銅合金の構造-特性関係の解明",
+          "authors": "韓越興*, 万冠新, 王冰*, 劉毅*",
+          "conference": "arXiv",
+          "year": "2024",
+          "type": "論文",
+          "link": "https://arxiv.org/pdf/2404.09515.pdf"
+        },
+        {
+          "title": "深層学習によるAl2O3添加正方晶YSZコーティングの熱伝導率予測",
+          "authors": "陳侨川, 韓思凡, 宋雪梅, 曾毅*, 韓越興*",
+          "conference": "Journal of the European Ceramic Society",
+          "year": "2024",
+          "type": "論文",
+          "link": "https://doi.org/10.1016/j.jeurceramsoc.2024.04.057"
+        },
+        {
+          "title": "機械学習に基づくLPSO相含有Mg合金の腐食",
+          "authors": "裴三略, 王海涛, 韓越興, 李謙, 王敬峰*",
+          "conference": "中国有色金属学报",
+          "year": "2024",
+          "type": "論文",
+          "link": "https://doi.org/10.11817/j.ysxb.1004.0609.2023-44562"
+        },
+        {
+          "title": "マルチモーダル融合学習に基づくAl-Si合金の極限引張強度予測",
+          "authors": "朱龍飛, 羅群, 陳侨川, 張宇, 張立軍, 胡斌, 韓越興*, 李謙*",
+          "conference": "MGE Advances",
+          "year": "2024",
+          "type": "論文",
+          "link": "https://doi.org/10.1002/mgea.26"
+        },
+        {
+          "title": "構築済み測地面からの情報伝達による少数ショット画像生成",
+          "authors": "韓越興*, 阮礼恒, 王冰",
+          "conference": "arXiv",
+          "year": "2024",
+          "type": "論文",
+          "link": "https://arxiv.org/pdf/2401.01749.pdf"
+        },
+        {
+          "title": "FAGC: プレシェイプ空間における測地曲線上の特徴拡張",
+          "authors": "韓越興*, 万冠新, 王冰*",
+          "conference": "arXiv",
+          "year": "2023",
+          "type": "論文",
+          "link": "https://arxiv.org/pdf/2312.03325.pdf"
+        },
+        {
+          "title": "少数ショットテクスチャ画像のための擬似ラベル弱教師ありセグメンテーション法",
+          "authors": "韓越興, 李睿祺, 王冰, 陳侨川*",
+          "conference": "Expert Systems With Applications",
+          "year": "2024",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "複雑テクスチャ特徴融合に基づく材料画像分割法",
+          "authors": "韓越興, 楊珅, 陳侨川, 王冰",
+          "conference": "計算機工程与設計",
+          "year": "2024",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "材料科学文献のテキスト・表抽出統合型マイニング手法",
+          "authors": "張瑞, 張家旺, 陳侨川, 王冰, 劉毅, 銭権, 潘登, 夏錦桦, 王迎港, 韓越興*",
+          "conference": "Computational materials science",
+          "year": "2023",
+          "type": "論文",
+          "link": "https://doi.org/10.1016/j.commatsci.2023.112441"
+        },
+        {
+          "title": "2205二相ステンレス鋼の850℃時効における析出物の微細構造進化と粗大化挙動",
+          "authors": "韓越興*, 池洳婷, 陳侨川, 王冰, 劉偉, 何彦林*",
+          "conference": "Journal of Materials Research and Technology",
+          "year": "2023",
+          "type": "論文",
+          "link": "https://doi.org/10.1016/j.jmrt.2023.08.034"
+        },
+        {
+          "title": "高硫黄鋼中硫化物の分類と自動分類法の確立",
+          "authors": "沈平*, 徐康, 呉星, 郭成, 池洳婷, 韓越興, 傅建勲*",
+          "conference": "Steel Research international",
+          "year": "2023",
+          "type": "論文",
+          "link": "https://doi.org/10.1002/srin.202300187"
+        },
+        {
+          "title": "自己発動行動反応とパンデミック疲労が時変多重ネットワークにおける疫病拡散に与える影響",
+          "authors": "洪旭, 韓越興*, 王冰*",
+          "conference": "Chaos, Solitons & Fractals",
+          "year": "2023",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "広範な検出・接触追跡・動的社会的距離介入の統合による将来の疫病波の防止",
+          "authors": "洪旭, 韓越興*, 王冰*",
+          "conference": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+          "year": "2023",
+          "type": "論文",
+          "link": "https://doi.org/10.1109/TSMC.2023.3283091"
+        },
+        {
+          "title": "改良型HP-VAE-GANによる材料画像のデータ拡張",
+          "authors": "韓越興, 劉宇虹, 陳侨川*",
+          "conference": "Computational Materials Science",
+          "year": "2023",
+          "type": "論文",
+          "link": "https://doi.org/10.1016/j.commatsci.2023.112250"
+        },
+        {
+          "title": "メタポピュレーションネットワーク上の空間拡散抑制のための最適離散資源配分",
+          "authors": "張可斌, 洪旭, 韓越興*, 王冰*",
+          "conference": "Chaos, Solitons, & Factals",
+          "year": "2023",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "複雑ネットワーク上の疫病拡散影響者同定のための2段階特徴選択法",
+          "authors": "王新宇, 韓越興*, 王冰*",
+          "conference": "Entropy",
+          "year": "2023",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "グラフアテンションに基づく材料構造セグメンテーション法",
+          "authors": "陳侨川, 魏惠姗, 王冰, 阮礼恒, 韓越興*",
+          "conference": "Materials Today Communications",
+          "year": "2023",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "時変ネットワークにおける検出・接触追跡が疫病拡散に与える影響",
+          "authors": "洪旭, 韓越興, 王冰*",
+          "conference": "Applied Mathematics Computation",
+          "year": "2023",
+          "type": "論文",
+          "link": "#"
+        },
+        {
+          "title": "オンライン相互知識蒸留のための層融合",
+          "authors": "胡干*, 季燕麗, 梁興柱, 韓越興",
+          "conference": "Multimedia Systems",
+          "year": "2023",
+          "type": "論文",
+          "link": "#"
+        }
+      ],
+      "books": [
+        {
+          "title": "形状空間理論を用いた限定データベースによる物体認識",
+          "authors": "韓越興, Bing Wang, Hideki Koike, Masanori Idesawa",
+          "book": "Image Processing: Concepts, Methodologies, Tools, and Applications (3 Volumes)",
+          "publisher": "Information Resources Management Association (IRMA, USA)",
+          "year": "2013",
+          "pages": "第11章, pp. 181-200",
+          "isbn": "ISBN13: 9781466639942"
+        },
+        {
+          "title": "形状空間理論を用いた限定データベースによる物体認識",
+          "authors": "韓越興, Bing Wang, Hideki Koike, Masanori Idesawa",
+          "book": "Cross-Disciplinary Applications of Artificial Intelligence and Pattern Recognition: Advancing Technologies",
+          "publisher": "IGI Global",
+          "year": "2011",
+          "pages": "第8章, pp. 128-147"
+        }
+      ],
+      "phdThesis": [
+        {
+          "title": "限られたデータセットを用いた多構成物体認識に関する研究",
+          "author": "韓越興",
+          "link": "http://ir.lib.uec.ac.jp/infolib/user_contents/9000000589/9000000589.pdf"
+        }
+      ],
+      "otherArticles": [
+        {
+          "title": "私の留学生活",
+          "journal": "神州学人",
+          "issue": "2012年第7号",
+          "date": "2012.7.9"
+        }
+      ],
+      "patents": [
+        {
+          "title": "形状空間理論に基づく画像生成方法",
+          "inventors": "韓越興, 阮礼恒, 王冰",
+          "number": "2023117418451",
+          "date": "2023年12月18日"
+        },
+        {
+          "title": "データ特徴強化方法、装置、電子機器及び媒体",
+          "inventors": "韓越興, 万冠新, 王冰",
+          "number": "2023111837377",
+          "date": "2023年09月14日"
+        },
+        {
+          "title": "少数サンプル線注釈に基づく弱監督ニューラルネットワーク画像分割方法",
+          "inventors": "韓越興, 李睿祺, 錢権, 王冰",
+          "number": "202310157735.4",
+          "date": "2023年02月23日"
+        },
+        {
+          "title": "深層学習に基づく鋼鉄微細組織構造識別方法及び装置",
+          "inventors": "任姿颖, 張宇, 王璐, 韓越興, 周天鵬, 宋宝宇, 耿志宇, 宋君, 曹忠華",
+          "number": "CN202211507567.9",
+          "date": "2022年11月29日"
+        },
+        {
+          "title": "コンピュータビジョンと深層学習に基づく材料画像分割認識方法",
+          "inventors": "任姿颖, 韓越興, 王璐, 宋宝宇, 耿志宇, 周天鵬, 張宇, 宋君",
+          "number": "CN202210684129.3",
+          "date": "2022年06月17日"
+        },
+        {
+          "title": "DP鋼微細組織画像分割方法、装置及び電子機器",
+          "inventors": "任姿颖, 王璐, 張宇, 韓越興, 耿志宇, 宋宝宇, 周天鵬, 曹忠華, 王静静, 薛晗, 成霄翔",
+          "number": "CN202210151321.6",
+          "date": "2022年02月16日"
+        },
+        {
+          "title": "多次元特徴融合とグラフアテンションに基づく材料画像分割方法",
+          "inventors": "韓越興, 魏惠姗, 王冰, 陳侨川, 銭権",
+          "number": "202210318948.6",
+          "date": "2022年03月29日"
+        },
+        {
+          "title": "画像処理に基づく文献曲線分離と座標情報抽出方法",
+          "inventors": "韓越興, 陳侨川, 王迎港, 張瑞, 潘登, 夏錦桦, 張家旺",
+          "number": "202111490372.3",
+          "date": "2021年12月08日"
+        },
+        {
+          "title": "二重注意エンコーダデコーダネットワークに基づく三次元画像分割方法",
+          "inventors": "韓越興, 李小龍, 銭権, 王冰",
+          "number": "202110863600.0",
+          "date": "2021年07月29日"
+        },
+        {
+          "title": "二部グラフ流行病介入方法",
+          "inventors": "王冰, 楊立珍, 韓越興, 李衛民",
+          "number": "202110827481.3",
+          "date": "2021年07月22日"
+        },
+        {
+          "title": "マルチモーダル学習に基づく材料性能予測方法及びシステム",
+          "inventors": "銭権, 曾毅, 韓越興, 張瑞",
+          "number": "202110807296.8",
+          "date": "2021年07月16日",
+          "grantDate": "2022年08月02日"
+        },
+        {
+          "title": "プライバシー保護に基づく材料性能予測方法及びシステム",
+          "inventors": "銭権, 方昊堃, 張瑞, 韓越興",
+          "number": "202110807209.9",
+          "date": "2021年07月16日"
+        },
+        {
+          "title": "機械学習に基づくインタラクティブ画像分割方法",
+          "inventors": "韓越興, 楊珅, 王冰",
+          "number": "202110186749.X",
+          "date": "2021年02月10日"
+        },
+        {
+          "title": "画像処理に基づく文献表内容認識と情報抽出方法",
+          "inventors": "韓越興, 張家旺, 張瑞, 陳侨川, 銭権, 夏錦桦, 王迎港",
+          "number": "ZL202110185627.9",
+          "date": "2021年02月10日",
+          "grantDate": "2022年08月09日"
+        },
+        {
+          "title": "非複製防偽ラベル薄膜パターンデータベース構築及び分類認識方法",
+          "inventors": "韓越興, 張宏坤, 巫金波, 王冰, 銭権",
+          "number": "202011559042.0",
+          "date": "2020年12月25日"
+        },
+        {
+          "title": "熱障コーティング亀裂の幾何情報抽出方法",
+          "inventors": "韓越興, 劉宇虹, 王冰, 銭権",
+          "number": "202011429047.1",
+          "date": "2020年12月7日"
+        },
+        {
+          "title": "検出直線と線分に基づく菊池パターン幾何情報抽出方法",
+          "inventors": "韓越興, 李睿祺, 王冰",
+          "number": "202010297634.3"
+        },
+        {
+          "title": "複雑ネットワーク理論に基づく画像分割方法",
+          "inventors": "韓越興, 宋磊磊, 王冰",
+          "number": "202010083808.6"
+        },
+        {
+          "title": "機械学習・深層学習訓練用多角度画像取得装置",
+          "inventors": "韓越興, 楊李剛, 王冰",
+          "number": "201810104230.0",
+          "grantDate": "2020年06月22日"
+        },
+        {
+          "title": "非接触スクリーンのジェスチャー制御に基づくヒューマンマシンインタラクションシステム及び方法",
+          "inventors": "韓越興, 王冰",
+          "number": "201710414437.3",
+          "grantDate": "2020年06月10日"
+        },
+        {
+          "title": "三次元空間における手各部位の位置変化に基づく手機能評価装置及び方法",
+          "inventors": "韓越興",
+          "number": "ZL201710383667.8",
+          "grantDate": "2020年02月07日"
+        },
+        {
+          "title": "原子間力顕微鏡画像品質向上方法",
+          "inventors": "韓越興, 王冰",
+          "number": "ZL201610093121.4",
+          "grantDate": "2019/06/04"
+        },
+        {
+          "title": "監視システムにおける動的物体自動記録方法",
+          "inventors": "韓越興, 王冰",
+          "number": "201610093110.6"
+        },
+        {
+          "title": "画像処理技術に基づく手機能評価方法",
+          "inventors": "韓越興",
+          "number": "ZL201610165832.8",
+          "grantDate": "2018/10/23"
+        }
+      ],
+      "softwareCopyrights": [
+        {
+          "name": "コーティング材料低温熱伝導率予測ソフトウェア V1.0",
+          "regNo": "2023SR1428447",
+          "certNo": "ソフト著作権番号 12015620",
+          "devDate": "2023-08-01",
+          "pubDate": "2023-08-09",
+          "regDate": "2023-11-14",
+          "applicant": "上海大学",
+          "developers": "陳侨川, 韓思凡, 韓越興"
+        },
+        {
+          "name": "深層学習に基づく偽造防止ラベル認識プラットフォーム V1.0",
+          "regNo": "2023SR1430101",
+          "certNo": "ソフト著作権番号 12017274",
+          "devDate": "2023-06-30",
+          "pubDate": "2023-07-30",
+          "regDate": "2023-11-14",
+          "applicant": "上海大学",
+          "developers": "韓越興, 包勝奇, 王冰"
+        },
+        {
+          "name": "深層学習手法と形状空間理論を統合した小サンプル画像生成プラットフォームソフトウェア V1.0",
+          "regNo": "2023SR1425482",
+          "certNo": "ソフト著作権番号 12012655",
+          "devDate": "2023-06-30",
+          "pubDate": "2023-07-30",
+          "regDate": "2023-11-14",
+          "applicant": "上海大学",
+          "developers": "韓越興, 阮礼恒, 王冰"
+        },
+        {
+          "name": "形状空間理論と機械学習手法に基づく材料特性予測プラットフォーム V1.0",
+          "regNo": "2023SR1427901",
+          "certNo": "ソフト著作権番号 12015074",
+          "devDate": "2023-06-02",
+          "pubDate": "2023-07-01",
+          "regDate": "2023-11-14",
+          "applicant": "上海大学",
+          "developers": "韓越興, 万冠新, 王冰"
+        },
+        {
+          "name": "固溶体Mg-Gd合金降伏強度計算ソフトウェア V1.0",
+          "regNo": "2023SR1424850",
+          "certNo": "ソフト著作権番号 12012023",
+          "devDate": "2023-05-20",
+          "pubDate": "2023-05-21",
+          "regDate": "2023-11-14",
+          "applicant": "上海大学",
+          "developers": "韓越興, 王璐, 王冰"
+        },
+        {
+          "name": "結果グラフ座標抽出プログラム V1.0",
+          "regNo": "2022SR1472537",
+          "devDate": "2022-08-18",
+          "regDate": "2022-08-23",
+          "applicant": "上海大学",
+          "developers": "韓越興, 陳尊龍, 張瑞"
+        },
+        {
+          "name": "スマート党建微信ミニプログラムプラットフォーム V1.0",
+          "regNo": "2022SR472538",
+          "certNo": "ソフト著作権番号 11818720",
+          "devDate": "2022-07-13",
+          "regDate": "2022-11-04",
+          "applicant": "上海大学",
+          "developers": "韓越興, 万冠新, 王冰"
+        },
+        {
+          "name": "Webベースのモバイル採用システムソフトウェア",
+          "regNo": "2022SR1472536",
+          "certNo": "ソフト著作権番号 10426735",
+          "devDate": "2022-07-19",
+          "regDate": "2022-11-04",
+          "applicant": "上海大学",
+          "developers": "陳侨川, 韓思凡, 韓越興"
+        },
+        {
+          "name": "PDF科学文献図表式検出ソフトウェア V1.0",
+          "regNo": "2022SR1446824",
+          "certNo": "ソフト著作権番号 10401023",
+          "devDate": "2022-05-10",
+          "pubDate": "2022-07-05",
+          "regDate": "2022-11-01",
+          "applicant": "上海大学",
+          "developers": "張瑞, 張家旺, 韓越興"
+        },
+        {
+          "name": "相間エネルギー計算プラットフォーム V1.0",
+          "regNo": "2022SR1402923",
+          "certNo": "ソフト著作権番号 10357122",
+          "devDate": "2022-06-13",
+          "pubDate": "2022-07-13",
+          "regDate": "2022-10-14",
+          "applicant": "上海大学",
+          "developers": "韓越興, 池洳婷, 王冰"
+        },
+        {
+          "name": "AFM画像DNAロボット分割ソフトウェア V1.0",
+          "regNo": "2022SR1365017",
+          "certNo": "ソフト著作権番号 10319216",
+          "devDate": "2021-09-10",
+          "pubDate": "2021-10-05",
+          "regDate": "2022-09-21",
+          "applicant": "上海大学",
+          "developers": "韓越興, 劉宇虹, 王冰"
+        },
+        {
+          "name": "AFM画像DNAロボット認識ソフトウェア V1.0",
+          "regNo": "2022SR1365016",
+          "certNo": "ソフト著作権番号 10319218",
+          "devDate": "2021-06-10",
+          "pubDate": "2021-10-30",
+          "regDate": "2022-09-21",
+          "applicant": "上海大学",
+          "developers": "韓越興, 劉宇虹, 王冰"
+        },
+        {
+          "name": "曲線座標画像情報抽出ソフトウェア V1.0",
+          "regNo": "2022SR1365016",
+          "certNo": "ソフト著作権番号 10319215",
+          "devDate": "2022-06-24",
+          "regDate": "2022-09-21",
+          "applicant": "上海大学",
+          "developers": "陳侨川, 王迎港, 韓越興"
+        },
+        {
+          "name": "文献中曲線グラフ情報抽出ソフトウェア V1.0",
+          "regNo": "2022SR1365018",
+          "devDate": "2022-05-04",
+          "pubDate": "2022-07-04",
+          "regDate": "2022-09-21",
+          "applicant": "上海大学",
+          "developers": "韓越興, 夏錦桦, 王冰"
+        },
+        {
+          "name": "相図情報自動認識ソフトウェア V1.0",
+          "regNo": "2022SR1384561",
+          "devDate": "2022-05-23",
+          "pubDate": "2022-06-21",
+          "regDate": "2022-09-29",
+          "applicant": "上海大学",
+          "developers": "韓越興, 王紹航, 王冰"
+        },
+        {
+          "name": "複雑テクスチャ材料構造画像分割ソフトウェア V1.0",
+          "regNo": "2022SR0859786",
+          "devDate": "2021-10-07",
+          "pubDate": "2021-10-11",
+          "regDate": "2022-06-28",
+          "applicant": "上海大学",
+          "developers": "韓越興, 魏惠姗, 王冰"
+        },
+        {
+          "name": "深層学習に基づく材料画像分割ソフトウェア V1.0",
+          "regNo": "2021SR1803889",
+          "devDate": "2021-06-01",
+          "pubDate": "2021-08-02",
+          "regDate": "2021-11-19",
+          "applicant": "上海大学",
+          "developers": "韓越興, 楊珅, 陳侨川, 王冰"
+        },
+        {
+          "name": "AFM画像ノイズ除去ソフトウェア V1.0",
+          "regNo": "2021SR1803955",
+          "devDate": "2020-10-07",
+          "pubDate": "2021-10-08",
+          "regDate": "2021-11-19",
+          "applicant": "上海大学",
+          "developers": "韓越興, 劉宇虹, 王冰"
+        },
+        {
+          "name": "非複製防偽ラベル薄膜パターンデータベース構築および分類認識ソフトウェア V1.0",
+          "regNo": "2021SR1264142",
+          "devDate": "2020-10-25",
+          "regDate": "2021-08-25",
+          "applicant": "上海大学",
+          "developers": "韓越興, 張宏坤, 王冰"
+        },
+        {
+          "name": "デュアルパスネットワークに基づく肝臓および腫瘍CT画像自動分割ソフトウェア V1.0",
+          "regNo": "2021SR1229122",
+          "devDate": "2021-06-21",
+          "regDate": "2021-08-19",
+          "applicant": "上海大学",
+          "developers": "韓越興, 李小龍, 王冰"
+        },
+        {
+          "name": "文献中図表情報抽出ソフトウェア V1.0",
+          "regNo": "2021SR1218880",
+          "devDate": "2021-05-01",
+          "regDate": "2021-08-17",
+          "applicant": "上海大学",
+          "developers": "韓越興, 夏錦桦, 王冰"
+        },
+        {
+          "name": "表テキスト認識・復元ソフトウェア V1.0",
+          "regNo": "2021SR0492854",
+          "regDate": "2021-04-02",
+          "applicant": "上海大学",
+          "developers": "韓越興, 張家旺, 張瑞"
+        },
+        {
+          "name": "熱障コーティング亀裂幾何情報抽出ソフトウェア V1.0",
+          "regNo": "2021SR0492853",
+          "regDate": "2021-04-02",
+          "applicant": "上海大学",
+          "developers": "韓越興, 劉宇虹, 王冰"
+        },
+        {
+          "name": "ランダムウォークに基づく時系列ネットワーク免疫解析ソフトウェア V1.0",
+          "regNo": "2021SR0221874",
+          "regDate": "2021-02-08",
+          "applicant": "上海大学",
+          "developers": "王冰, 韓越興"
+        },
+        {
+          "name": "パス分布に基づくネットワーク自動比較解析ソフトウェア V1.0",
+          "regNo": "2021SR0087832",
+          "regDate": "2021-01-15",
+          "applicant": "上海大学",
+          "developers": "王冰, 韓越興"
+        },
+        {
+          "name": "機械学習に基づく画像分割ソフトウェア V2.0",
+          "regNo": "2020SR0686106",
+          "regDate": "2020-06-29",
+          "applicant": "上海大学",
+          "developers": "韓越興, 楊珅, 王冰"
+        },
+        {
+          "name": "機械ビジョンに基づく熱障コーティング中単一ラメラ認識・計算ソフトウェア V1.0",
+          "regNo": "2020SR0681944",
+          "regDate": "2020-06-28",
+          "applicant": "上海大学",
+          "developers": "韓越興, 劉宇虹"
+        },
+        {
+          "name": "上海大学菊池パターン自動認識検出ソフトウェア V1.0",
+          "regNo": "2020SR0441105",
+          "regDate": "2020-04",
+          "applicant": "上海大学",
+          "developers": "韓越興, 李睿祺"
+        },
+        {
+          "name": "機械学習に基づく画像分割ソフトウェア V1.0",
+          "regNo": "2019SR0944666",
+          "serialNo": "2019R11L1110807",
+          "regDate": "2019",
+          "applicant": "上海大学",
+          "developers": "韓越興"
+        },
+        {
+          "name": "クラスタリング手法に基づく画像分割ソフトウェア V1.0",
+          "regNo": "2019SR0944676",
+          "serialNo": "2019R11L1110111",
+          "regDate": "2019",
+          "applicant": "上海大学",
+          "developers": "韓越興"
+        }
+      ]
+    }
+  }
+} 
