@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+import projectsContentData from '../../content/data/projectsContent.json'
+import { languages } from '../../i18n/config'
+
+// 为[lang]动态路由添加getStaticPaths函数
+export function getStaticPaths() {
+  return Object.keys(languages).map(lang => ({
+    params: { lang },
+  }));
+}
+
+// 使用URL参数获取语言
+const { lang } = Astro.params;
+const currentLang = lang as keyof typeof languages;
+const t = useTranslations(currentLang)
+const projectsContent = projectsContentData[currentLang as keyof typeof projectsContentData]
+---
+
+<Layout>
+	<div>
+    <div class="mb-8">
+      <h2 class="text-xl mb-4 font-semibold">{t('projects.ongoing') ?? '正在执行项目'}</h2>
+      <div class="space-y-4">
+        {projectsContent.ongoingProjects.map(project => (
+          <div class="py-3 border-b border-base-300 last:border-0">
+            <p class="text-base leading-relaxed">{project.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div>
+      <h2 class="text-xl mb-4 font-semibold">{t('projects.completed') ?? '完成项目'}</h2>
+      <div class="space-y-4">
+        {projectsContent.completedProjects.map(project => (
+          <div class="py-3 border-b border-base-300 last:border-0">
+            <p class="text-base leading-relaxed">{project.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+	</div>
+</Layout> 

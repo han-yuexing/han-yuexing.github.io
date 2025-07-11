@@ -1,0 +1,43 @@
+---
+import { languages } from '../../i18n/config';
+import { getLangFromUrl } from '../../i18n/utils';
+
+const currentUrl = Astro.url;
+const currentLang = getLangFromUrl(currentUrl);
+const pathname = currentUrl.pathname;
+
+// 生成语言切换链接
+function generateLanguageLink(targetLang: string) {
+  // 获取当前路径（移除语言部分）
+  const pathParts = pathname.split('/').filter(Boolean);
+  
+  // 如果第一部分是语言代码，则移除
+  if (pathParts.length > 0 && pathParts[0] in languages) {
+    pathParts.shift();
+  }
+  
+  // 构建新的路径
+  return `/${targetLang}${pathParts.length > 0 ? '/' + pathParts.join('/') : ''}`;
+}
+---
+
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="btn btn-ghost">
+    <span>{languages[currentLang]}</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+    </svg>
+  </div>
+  <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box">
+    {Object.entries(languages).map(([lang, label]) => (
+      <li>
+        <a 
+          href={generateLanguageLink(lang)}
+          class={currentLang === lang ? 'active font-bold' : ''}
+        >
+          {label}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div> 

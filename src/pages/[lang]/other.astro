@@ -1,0 +1,150 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+import BetterIcon from '../../components/ui/BetterIcon.astro'
+import otherContentData from '../../content/data/otherContent.json'
+import { languages } from '../../i18n/config'
+
+// 为[lang]动态路由添加getStaticPaths函数
+export function getStaticPaths() {
+  return Object.keys(languages).map(lang => ({
+    params: { lang },
+  }));
+}
+
+// 使用URL参数获取语言
+const { lang } = Astro.params;
+const currentLang = lang as keyof typeof languages;
+const t = useTranslations(currentLang)
+const otherContent = otherContentData[currentLang as keyof typeof otherContentData]
+---
+
+<Layout>
+  <div class="mx-auto">
+    <!-- Invited Talks Section -->
+    <section class="mb-10">
+      <div class="mb-4 flex items-center gap-2">
+        <BetterIcon>
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+        </BetterIcon>
+        <h2 class="text-xl font-semibold">{otherContent.invitedTalks.title}</h2>
+      </div>
+      <div class="space-y-4">
+        {otherContent.invitedTalks.talks.map(talk => (
+          <div class="py-3 border-b border-base-300 last:border-0">
+            <h4 class="ml-2 text-primary">{talk.title}</h4>
+            <p class="ml-2 mt-2">
+              {talk.venue}, {talk.date}
+              <br />
+              {talk.location}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="mb-10">
+      <div class="mb-4 flex items-center gap-2">
+        <BetterIcon>
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
+        </BetterIcon>
+        <h2 class="text-xl font-semibold">{otherContent.awards.title}</h2>
+      </div>
+      <div class="space-y-4">
+        {otherContent.awards.items.map(award => (
+          <div class="ml-2 py-3 border-b border-base-300 last:border-0">
+            <p>
+              <span class="font-medium font-medium text-primary">{award.name}</span>
+              <span class="ml-2 opacity-80">({award.year})</span>
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Open Source Section -->
+    <section class="mb-10">
+      <div class="mb-4 flex items-center gap-2">
+        <BetterIcon>
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          </svg>
+        </BetterIcon>
+        <h2 class="text-xl font-semibold ">{otherContent.openSource.title}</h2>
+      </div>
+      <div class="space-y-4">
+        {otherContent.openSource.projects.map((project, idx) => {
+          const dialogId = `project-modal-${idx}`;
+          return (
+            <div class="py-3 border-b border-base-300 last:border-0 relative" key={idx}>
+              <button
+                type="button"
+                class="absolute top-2 right-2 hover:text-primary project-btn"
+                data-dialog={dialogId}
+                title={currentLang === 'zh' ? '详细信息' : currentLang === 'ja' ? '詳細' : 'Details'}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 3a7 7 0 100 14A7 7 0 0010 3zM9 8a1 1 0 112 0v3a1 1 0 11-2 0V8zm1 7a1.25 1.25 0 110-2.5A1.25 1.25 0 0110 15z" /></svg>
+              </button>
+              <h4 class="ml-2 font-medium text-primary">{currentLang === 'zh' && project.name_zh ? project.name_zh : project.name}</h4>
+              <div class="ml-2 mb-1 text-sm opacity-80">{project.env && ((currentLang === 'zh' ? '环境：' : currentLang === 'ja' ? '環境：' : 'Environment: ') + project.env)}</div>
+              <p class="ml-2 mt-1 whitespace-pre-line">{project.description}</p>
+              <a href={project.url} target="_blank" class="ml-2 link link-accent mt-2 inline-block break-all" style="word-break:break-all;overflow-wrap:break-word;">{project.url}</a>
+              <dialog id={dialogId} class="modal">
+                <form method="dialog" class="modal-box">
+                  <h3 class="font-bold text-lg mb-4">{currentLang === 'zh' && project.name_zh ? project.name_zh : project.name}</h3>
+                  {project.env && <div class="mb-2 text-sm opacity-80">{currentLang === 'zh' ? '环境：' : currentLang === 'ja' ? '環境：' : 'Environment: '}{project.env}</div>}
+                  <div class="mb-2 whitespace-pre-line">{project.description}</div>
+                  {project.images && project.images.length > 0 && (
+                    <div class="mb-2">
+                      {project.images.map((img, i) => (
+                        <div key={i} class="mb-2">
+                          <img src={img.src} class="max-w-full h-auto rounded mx-auto" alt={img.caption || project.name} />
+                          {img.caption && <div class="caption text-center text-xs mt-1">{img.caption}</div>}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  <a href={project.url} target="_blank" class="link link-accent break-all" style="word-break:break-all;overflow-wrap:break-word;">{project.url}</a>
+                  {project.reference && <div class="mt-2 text-xs opacity-70 whitespace-pre-line">{project.reference}</div>}
+                  <div class="modal-action">
+                    <button class="btn btn-sm">{currentLang === 'zh' ? '关闭' : currentLang === 'ja' ? '閉じる' : 'Close'}</button>
+                  </div>
+                </form>
+                <form method="dialog" class="modal-backdrop">
+                  <button>{currentLang === 'zh' ? '关闭' : currentLang === 'ja' ? '閉じる' : 'Close'}</button>
+                </form>
+              </dialog>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<script is:inline>
+// 自执行函数，无需等待DOMContentLoaded事件
+(function() {
+  function setupEventListeners() {
+    document.querySelectorAll('.project-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const dialogId = btn.getAttribute('data-dialog');
+        const dialog = document.getElementById(dialogId);
+        if (dialog) dialog.showModal();
+      });
+    });
+  }
+
+  // 立即执行一次
+  setupEventListeners();
+  
+  // 监听Astro页面变更事件
+  document.addEventListener('astro:page-load', setupEventListeners);
+  document.addEventListener('DOMContentLoaded', setupEventListeners);
+})();
+</script> 

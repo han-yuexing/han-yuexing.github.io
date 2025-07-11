@@ -1,0 +1,209 @@
+{
+  "zh": {
+    "contactInfo": {
+      "title": "联系方式",
+      "address": "上海市宝山区上大路99号 200444"
+    },
+    "aboutMe": {
+      "title": "自我介绍",
+      "content": "韩越兴，教授，上海浦江人才（A类），博士生导师，硕士生导师，现就职于上海大学计算机工程与科学学院，日本东京工业大学特别研究员（2013-2020），ACM会员，中国计算机学会会员，上海计算机学会会员。"
+    },
+    "education": {
+      "title": "学习简历",
+      "content": "2011.03 日本国立电气通信大学 情报系统研究科 情报媒体系统学专攻 博士学位"
+    },
+    "researchDirections": {
+      "title": "研究方向",
+      "areas": [
+        "机器学习",
+        "深度学习",
+        "材料图像处理", 
+        "材料文本挖掘",
+        "机器人视觉",
+        "数据分析",
+        "人工智能"
+      ]
+    },
+    "interests": {
+      "title": "兴趣爱好",
+      "content": "旅游，书籍，电影"
+    },
+    "workExperience": {
+      "title": "工作简历",
+      "positions": [
+        {
+          "period": "2014年-现在",
+          "title": "上海大学计算机工程与科学学院 教授"
+        },
+        {
+          "period": "2013.04-2020.03",
+          "title": "东京工业大学特别研究员",
+          "description": "研究方向： DNA机器人，分子机器人的相关研究"
+        },
+        {
+          "period": "2011.08-2013.03",
+          "title": "日本独立行政法人产业技术综合研究所特别研究员/协力研究员",
+          "description": "研究方向： 机器人视觉/计算机视觉，计算机图形图像处理，机器人控制模块开发"
+        },
+        {
+          "period": "2010.01-2011.06",
+          "title": "国际技术开发株式会社（KGK）",
+          "description": "研究工作内容： 1. 利用高速照相机，识别出不合格的产品，电子图板上的不合格连线等的图像处理研究; 2. 并行计算机之间控制方法的研究"
+        },
+        {
+          "period": "2007.11-2011.03（博士期间教育工作）",
+          "title": "日本国立电气通信大学 教学助理、研究助理",
+          "description": "工作内容：辅导学生研究和帮助教授教学"
+        },
+        {
+          "period": "2005.06-2007.09",
+          "title": "日本的软件会社 软件工程师",
+          "description": "工作内容：1. 指纹识别的系统的开发；2. 日本卫星通讯系统的更新和开发；3. 某日本银行大型管理系统的开发； 4. 汽车外形设计和加工软件的算法研究和开发"
+        },
+        {
+          "period": "2003.12-2005.05",
+          "title": "CAXA 公司软件工程师（图形，CAD，CAM） 中国北京市",
+          "description": "工作内容：1. CAD/CAM 中的曲线/曲面造型研究，优化加工轨迹的研究；2. CAXA 制造工程师系列软件研究和开发"
+        }
+      ]
+    }
+  },
+  "en": {
+    "contactInfo": {
+      "title": "Contact Information",
+      "address": "No. 99, Shangda Road, Baoshan District, Shanghai, 200444, Shanghai University."
+    },
+    "aboutMe": {
+      "title": "About Me",
+      "content": "Han Yuexing, Professor, Shanghai Pujiang Talent (Class A), Doctoral Supervisor, Master's Supervisor, currently working at the School of Computer Engineering and Science, Shanghai University, Special Researcher at Tokyo Institute of Technology (2013-2020), ACM Member, Member of China Computer Society, Member of Shanghai Computer Society."
+    },
+    "education": {
+      "title": "Education",
+      "content": "2011.03 Doctor's Degree in Information Media System, Department of Information Systems, National University of Electro-Communications, Japan"
+    },
+    "researchDirections": {
+      "title": "Research Interests",
+      "areas": [
+        "Machine Learning",
+        "Deep Learning",
+        "Materials Image Processing", 
+        "Materials Text Mining",
+        "Robot Vision",
+        "Data Analysis",
+        "Artificial Intelligence"
+      ]
+    },
+    "interests": {
+      "title": "Interests",
+      "content": "Travel, Books, Movies"
+    },
+    "workExperience": {
+      "title": "Work Experience",
+      "positions": [
+        {
+          "period": "2014-Present",
+          "title": "Professor, School of Computer Engineering and Science, Shanghai University"
+        },
+        {
+          "period": "2013.04-2020.03",
+          "title": "Special Researcher, Tokyo Institute of Technology",
+          "description": "Research Focus: DNA Robotics, Molecular Robotics"
+        },
+        {
+          "period": "2011.08-2013.03",
+          "title": "Special Researcher/Cooperating Researcher, National Institute of Advanced Industrial Science and Technology (AIST), Japan",
+          "description": "Research Focus: Robot Vision/Computer Vision, Computer Graphics and Image Processing, Robot Control Module Development"
+        },
+        {
+          "period": "2010.01-2011.06",
+          "title": "International Technology Development Co., Ltd. (KGK)",
+          "description": "Research Work: 1. Image processing research for defective product identification using high-speed cameras; 2. Research on control methods between parallel computers"
+        },
+        {
+          "period": "2007.11-2011.03 (During Doctoral Studies)",
+          "title": "Teaching Assistant, Research Assistant, National University of Electro-Communications, Japan",
+          "description": "Work Content: Guiding student research and assisting professors with teaching"
+        },
+        {
+          "period": "2005.06-2007.09",
+          "title": "Software Engineer, Japanese Software Company",
+          "description": "Work Content: 1. Development of fingerprint recognition systems; 2. Update and development of Japanese satellite communication systems; 3. Development of a major Japanese bank management system; 4. Research and development of algorithms for automobile exterior design and processing software"
+        },
+        {
+          "period": "2003.12-2005.05",
+          "title": "Software Engineer (Graphics, CAD, CAM), CAXA Company, Beijing, China",
+          "description": "Work Content: 1. Research on curve/surface modeling in CAD/CAM, optimization of processing paths; 2. Research and development of CAXA Engineer series software"
+        }
+      ]
+    }
+  },
+  "ja": {
+    "contactInfo": {
+      "title": "連絡先",
+      "address": "200444 中国上海市宝山区上大路99号"
+    },
+    "aboutMe": {
+      "title": "自己紹介",
+      "content": "韓越興、教授、上海浦江人材（Aクラス）、博士課程指導教官、修士課程指導教官、現在上海大学コンピュータ工学・科学学院に勤務、東京工業大学特別研究員（2013-2020）、ACM会員、中国コンピュータ学会会員、上海コンピュータ学会会員。"
+    },
+    "education": {
+      "title": "学歴",
+      "content": "2011.03 日本国立電気通信大学 情報システム研究科 情報メディアシステム学専攻 博士号"
+    },
+    "researchDirections": {
+      "title": "研究領域",
+      "areas": [
+        "機械学習",
+        "深層学習",
+        "材料画像処理", 
+        "材料テキストマイニング",
+        "ロボットビジョン",
+        "データ分析",
+        "人工知能"
+      ]
+    },
+    "interests": {
+      "title": "趣味",
+      "content": "旅行、読書、映画"
+    },
+    "workExperience": {
+      "title": "職歴",
+      "positions": [
+        {
+          "period": "2014年-現在",
+          "title": "上海大学コンピュータ工学・科学学院 教授"
+        },
+        {
+          "period": "2013.04-2020.03",
+          "title": "東京工業大学特別研究員",
+          "description": "研究分野：DNAロボット、分子ロボットの関連研究"
+        },
+        {
+          "period": "2011.08-2013.03",
+          "title": "日本独立行政法人産業技術総合研究所特別研究員/協力研究員",
+          "description": "研究分野：ロボットビジョン/コンピュータビジョン、コンピュータグラフィックス画像処理、ロボット制御モジュール開発"
+        },
+        {
+          "period": "2010.01-2011.06",
+          "title": "国際技術開発株式会社（KGK）",
+          "description": "研究内容：1. 高速カメラを利用した不良品の識別、電子回路基板上の不良配線などの画像処理研究; 2. 並列コンピュータ間の制御方法の研究"
+        },
+        {
+          "period": "2007.11-2011.03（博士課程期間中の教育業務）",
+          "title": "日本国立電気通信大学 教育助手、研究助手",
+          "description": "業務内容：学生研究の指導と教授の教育活動の補助"
+        },
+        {
+          "period": "2005.06-2007.09",
+          "title": "日本のソフトウェア会社 ソフトウェアエンジニア",
+          "description": "業務内容：1. 指紋認識システムの開発；2. 日本の衛星通信システムの更新と開発；3. 日本の銀行大規模管理システムの開発； 4. 自動車外観設計と加工ソフトウェアのアルゴリズム研究と開発"
+        },
+        {
+          "period": "2003.12-2005.05",
+          "title": "CAXA 社ソフトウェアエンジニア（グラフィックス、CAD、CAM）中国北京市",
+          "description": "業務内容：1. CAD/CAMにおける曲線/曲面モデリング研究、加工経路の最適化研究；2. CAXA製造エンジニアシリーズソフトウェアの研究開発"
+        }
+      ]
+    }
+  }
+} 

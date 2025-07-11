@@ -1,0 +1,98 @@
+{
+  "zh": [
+  {
+    "name": "机器学习与深度学习",
+    "description": "<p>机器学习和深度学习，是使用算法来解析数据、从中学习，然后对真实世界中的事件做出决策和预测。与传统的为解决特定任务、硬编码的软件程序不同，他们是用大量的数据来\"训练\"，通过各种算法从数据中学习如何完成任务。</p><p>深度学习是机器学习的一部分，都是实现人工智能的方法。我们团队在实际解决具体问题的同时，研究和发展机器学习和深度学习，为人工智能发展提供我们的力量。</p>",
+    "images": ["/images/research/2020/deeplearning.png"]
+  },
+  {
+    "name": "材料图像处理",
+    "description": "<p>在计算机科学、材料学、材料物理等多学科交叉会聚背景下，基于人工智能的材料研究已经成为世界各国的科技战略重点和核心科技发展领域之一。2012年，国家启动《材料科学系统工程发展战略研究—中国版材料基因组计划》重大项目，为发展材料相关的理论、应用研究，抢占未来智能社会发展先机都具有重要战略意义。但目前我们对材料的结构、形貌特征以及材料性能三者之间的关系知之甚少，合成方法大多基于合成宏观材料上的改进，存在一定局限性。</p><p>微纳米材料的小尺寸效应、表面效应、量子效应等物理特性，导致了其图像纹理复杂，形态多变，图像处理异常困难。目前观察和分析材料图像的方法主要还是人工方式，这造成了大量的人力、时间的浪费。随着机器学习、深度学习方法的发展，对材料图像高速有效地自动分析成为了可能。</p><p>本研究组在进行机器学习和深度学习研究的基础上，提出了多种材料的图像处理方法，实现相应的软件模型，为材料基因组计划发展提供了数据支持，实现计算机对材料形貌特征的自动识别与分类，能有效地节约材料数据分析的时间和人力投入，加速科研成果的产出，促进材料科学的发展。材料图像特征信息的自动分析的研究和产品化将对我国材料学的发展和相关的人工智能技术的提高都具有深远意义。</p>",
+    "images": ["/images/research/2020/materialimage.png"]
+  },
+  {
+    "name": "材料文本挖掘",
+    "description": "<p>材料文本挖掘是利用自然语言处理与机器学习技术，从海量材料科学文献、专利、报告等非结构化文本中自动提取有价值的信息。通过构建材料知识图谱、自动化文献综述、关系抽取等手段，极大提升了材料研发的信息获取效率，加速了新材料的发现与性能预测。我们团队致力于开发高效的文本挖掘算法和系统，助力材料科学数据的智能化管理与深度利用。</p>",
+    "images": []
+  },
+  {
+    "name": "机器人视觉",
+    "description": "<p>机器人通过对观测到的物体识别，进行物体挑选和物体分类工作。传统的视觉方法是利用SIFT算法对图像进行匹配，进而实现物体的识别，缺点是速度慢，机器人的行动非常迟缓。我利用一维扫描码（Barcode）和二维扫描码（QRcode）来确定物体和机器人的位置关系（包括角度和坐标），从而帮助机器人迅速完成物体匹配工作和实现相应动作。</p><p>此外，我也利用红外线和红外线观测仪器，把特别标签粘贴到特定位置，机器人就能确定自己的位置。这些研究都是在RT-Middleware框架下进行的研究。RT-Middleware能够把一个机器人按照模块进行分别控制。这样，研究者能把机器人的各个部分分成独立的模块，通过开发和发展这些独立的模块，来实现机器人的功能的升级和开发。</p>",
+    "images": ["/images/research/2020/Screen shot 2012-10-18 at 20.37.21.png", "/images/research/2020/BarCodeReader_Screenshot2.JPG"]
+  },
+  {
+    "name": "人机交互",
+    "description": "<p>人机交互是信息产业迅速发展的今天所面临的重大课题，手势控制自然、便利的特点，契合人机交互优化的方向和所要达到的目的，是传统的依赖于鼠标键盘等外设的交互方式所不具备的。针对某些应用，触摸屏的出现虽然优化了用户体验，但由于其高昂的造价，通常只能用于小型移动设备和个人电脑，手势控制模拟触摸屏效果，屏幕控制范围大，是提升大屏操作体验的重要手段。然而，手势本身的多样性，加之周围环境不稳定因素带来的干扰，决定了手势判断的复杂性。如何对复杂背景下的动态手势进行实时的跟踪、捕捉和识别，保证交互过程的流畅性，是基于手势识别的人机交互所要研究的问题。</p>",
+    "images": ["/images/research/2020/HCI1.png", "/images/research/2020/HCI2.png"]
+  },
+  {
+    "name": "物体识别",
+    "description": "<p>图像处理(image processing)是用计算机对图像进行分析，以达到所需结果的技术。它是计算机视觉和机器人视觉的研究基础。物体识别是图像处理中最重要的研究之一。传统的物体识别算法，主要利用图像库中的数据来匹配现实中的物体图像，来判断此物体的种类，识别出此物体。很多物体包含多种形态，比如说，剪刀随着开张的角度不同，所表现的形状也不同；此外，从不同的角度观察，得到的物体形状也不同。我们把包含不同形态的物体的识别称为RMCO（the recognition of multiple configurations of objects）。一般的方法，采集同一个物体的多个数据来实现RMCO，这样不得不浪费很多时间，并使数据库变得非常庞大。我通过The shape space 理论,只需要很少的数据就能预测被观察物体的可能的形状，从而实现利用小数据就能识别多形态的物体。</p><p>传统的物体识别算法，包括SIFT和SURF，尽管可以在极短的时间里完成物体识别，但在机器人应用中，仍然是制约机器人快速行动的一个重要因素之一。我利用图像中三个不变的因素，即，特征点周围的像素信息，特征点的角度信息，以及两个图像之间的特征点群保持相对位置不变的信息来匹配这两幅图像，速度相对于SIFT可以提高10倍左右，并保持匹配点群之间几乎没有错误的匹配点。</p>",
+    "images": ["/images/research/2020/z7.jpg"]
+  }
+  ],
+  "en": [
+    {
+      "name": "Machine Learning and Deep Learning",
+      "description": "<p>Machine learning and deep learning use algorithms to parse data, learn from it, and make decisions or predictions about real-world events. Unlike traditional software programs with hard-coded instructions for specific tasks, these methods are \"trained\" using large amounts of data, learning how to complete tasks through various algorithms.</p><p>Deep learning is a subset of machine learning, and both are methods for implementing artificial intelligence. Our team researches and develops machine learning and deep learning while solving practical problems, contributing to the advancement of artificial intelligence.</p>",
+      "images": ["/images/research/2020/deeplearning.png"]
+    },
+    {
+      "name": "Materials Image Processing",
+      "description": "<p>In the interdisciplinary context of computer science, materials science, and materials physics, AI-based materials research has become a strategic priority and core technology development area worldwide. In 2012, China launched the \"Materials Science System Engineering Development Strategy Research—China's Materials Genome Initiative\" project, which has significant strategic importance for developing materials-related theories and applications to gain advantages in future intelligent society development. However, we currently know little about the relationships between material structure, morphological characteristics, and material properties, and synthesis methods are mostly based on improvements to macroscopic materials, which has certain limitations.</p><p>The small size effect, surface effect, and quantum effect of nanomaterials lead to complex image textures, variable morphologies, and extremely difficult image processing. Currently, the main method for observing and analyzing material images is still manual, resulting in substantial waste of human resources and time. With the development of machine learning and deep learning methods, high-speed and effective automatic analysis of material images has become possible.</p><p>Based on machine learning and deep learning research, our research group has proposed various image processing methods for materials and implemented corresponding software models. These provide data support for the Materials Genome Initiative, enabling computers to automatically recognize and classify material morphological features, effectively saving time and human resources in material data analysis, accelerating research output, and promoting the development of materials science. Research and productization of automatic analysis of material image feature information will have far-reaching significance for the development of materials science and the improvement of related artificial intelligence technologies in China.</p>",
+      "images": ["/images/research/2020/materialimage.png"]
+    },
+    {
+      "name": "Materials Text Mining",
+      "description": "<p>Materials text mining utilizes natural language processing and machine learning techniques to automatically extract valuable information from vast amounts of unstructured text in materials science literature, patents, and reports. By constructing materials knowledge graphs, automating literature reviews, and extracting relationships, it greatly improves the efficiency of information acquisition in materials development and accelerates the discovery of new materials and performance prediction. Our team is dedicated to developing efficient text mining algorithms and systems to enable intelligent management and in-depth utilization of materials science data.</p>",
+      "images": []
+    },
+    {
+      "name": "Robot Vision",
+      "description": "<p>Robots identify, select, and classify objects through observation. Traditional vision methods use the SIFT algorithm for image matching to achieve object recognition, but this approach is slow, making robot actions very sluggish. I use one-dimensional barcodes and two-dimensional QR codes to determine the positional relationship (including angle and coordinates) between objects and robots, helping robots quickly complete object matching work and implement corresponding actions.</p><p>Additionally, I also use infrared technology and infrared observation instruments, attaching special tags to specific locations so robots can determine their position. These studies are conducted within the RT-Middleware framework. RT-Middleware can control a robot by modules, allowing researchers to separate robot parts into independent modules and develop these independent modules to upgrade and develop robot functionality.</p>",
+      "images": ["/images/research/2020/Screen shot 2012-10-18 at 20.37.21.png", "/images/research/2020/BarCodeReader_Screenshot2.JPG"]
+    },
+    {
+      "name": "Human-Computer Interaction",
+      "description": "<p>Human-computer interaction is a major topic in today's rapidly developing information industry. Gesture control's natural and convenient characteristics align with the direction and goals of human-computer interaction optimization, offering advantages that traditional interaction methods relying on mice and keyboards lack. For certain applications, while touchscreens have improved user experience, their high cost typically limits them to small mobile devices and personal computers. Gesture control simulates touchscreen effects with a larger screen control range, serving as an important means to enhance large-screen operation experience. However, the diversity of gestures themselves, coupled with interference from unstable environmental factors, determines the complexity of gesture judgment. How to track, capture, and recognize dynamic gestures in complex backgrounds in real-time, ensuring the smoothness of the interaction process, is the research question for gesture recognition-based human-computer interaction.</p>",
+      "images": ["/images/research/2020/HCI1.png", "/images/research/2020/HCI2.png"]
+    },
+    {
+      "name": "Object Recognition",
+      "description": "<p>Image processing is a technique that uses computers to analyze images to achieve desired results. It is the foundation for computer vision and robot vision research. Object recognition is one of the most important areas of image processing research. Traditional object recognition algorithms mainly use data from image libraries to match real-world object images, determining the type of object and recognizing it. Many objects have multiple forms; for example, scissors display different shapes depending on the angle of opening. Additionally, observing from different angles results in different object shapes. We refer to the recognition of objects with different forms as RMCO (the recognition of multiple configurations of objects). The general method involves collecting multiple data points of the same object to implement RMCO, which wastes a lot of time and makes the database very large. Through shape space theory, I can predict possible shapes of observed objects with very little data, achieving recognition of multi-form objects with minimal data.</p><p>Traditional object recognition algorithms, including SIFT and SURF, can complete object recognition in a very short time, but in robot applications, they remain an important factor limiting rapid robot action. I use three invariant factors in images: pixel information around feature points, angle information of feature points, and the information that feature point groups between two images maintain relative positions unchanged to match these two images. This approach can improve speed by about 10 times compared to SIFT while maintaining almost no incorrect matching points between matching point groups.</p>",
+      "images": ["/images/research/2020/z7.jpg"]
+    }
+  ],
+  "ja": [
+    {
+      "name": "機械学習と深層学習",
+      "description": "<p>機械学習と深層学習は、アルゴリズムを使用してデータを解析し、そこから学習し、実世界のイベントに対して決定や予測を行う技術です。特定のタスクのためにハードコーディングされた従来のソフトウェアプログラムとは異なり、これらは大量のデータを使用して「トレーニング」され、様々なアルゴリズムを通じてデータからタスクの完了方法を学習します。</p><p>深層学習は機械学習の一部であり、どちらも人工知能を実現する方法です。私たちのチームは、具体的な問題を解決しながら機械学習と深層学習の研究開発を行い、人工知能の発展に貢献しています。</p>",
+      "images": ["/images/research/2020/deeplearning.png"]
+    },
+    {
+      "name": "材料画像処理",
+      "description": "<p>コンピュータサイエンス、材料科学、材料物理学などの学際的な背景の下、AIベースの材料研究は世界各国の科学技術戦略の重点分野及び中核技術開発分野の一つとなっています。2012年、中国は「材料科学システム工学発展戦略研究—中国版材料ゲノムイニシアチブ」重大プロジェクトを開始し、材料関連の理論・応用研究を発展させ、将来のインテリジェント社会発展の機会を先取りするための重要な戦略的意義を持っています。しかし、現在、私たちは材料の構造、形態特性、材料特性の三者間の関係についてほとんど知らず、合成方法のほとんどはマクロ材料の合成に基づく改良であり、一定の限界があります。</p><p>ナノ材料の小サイズ効果、表面効果、量子効果などの物理的特性により、その画像テクスチャは複雑で形態が多様であり、画像処理は非常に困難です。現在、材料画像の観察と分析の方法は主に手作業であり、これは大量の人的資源と時間の浪費をもたらしています。機械学習・深層学習手法の発展に伴い、材料画像の高速かつ効果的な自動分析が可能になりました。</p><p>当研究グループは、機械学習と深層学習の研究に基づいて、様々な材料の画像処理方法を提案し、対応するソフトウェアモデルを実装しました。これらは材料ゲノムイニシアチブのデータサポートを提供し、コンピュータによる材料形態特徴の自動認識と分類を実現し、材料データ分析の時間と人的資源を効果的に節約し、研究成果の産出を加速し、材料科学の発展を促進します。材料画像特徴情報の自動分析の研究と製品化は、中国の材料学の発展と関連する人工知能技術の向上に深遠な意義を持ちます。</p>",
+      "images": ["/images/research/2020/materialimage.png"]
+    },
+    {
+      "name": "材料テキストマイニング",
+      "description": "<p>材料テキストマイニングは、自然言語処理と機械学習技術を活用して、膨大な量の材料科学文献、特許、レポートなどの非構造化テキストから自動的に価値ある情報を抽出する技術です。材料知識グラフの構築、文献レビューの自動化、関係抽出などの手段により、材料開発における情報取得の効率を大幅に向上させ、新材料の発見と性能予測を加速しています。私たちのチームは、効率的なテキストマイニングアルゴリズムとシステムの開発に専念し、材料科学データのインテリジェントな管理と深い活用を支援しています。</p>",
+      "images": []
+    },
+    {
+      "name": "ロボットビジョン",
+      "description": "<p>ロボットは観察を通じて物体を識別し、選択し、分類します。従来のビジョン方法はSIFTアルゴリズムを使用して画像マッチングを行い、物体認識を実現しますが、この方法は遅く、ロボットの動作が非常に緩慢になります。私は一次元バーコードと二次元QRコードを使用して、物体とロボットの位置関係（角度と座標を含む）を決定し、ロボットが物体マッチング作業を迅速に完了し、対応する動作を実装するのを支援しています。</p><p>さらに、赤外線技術と赤外線観測機器を使用し、特殊なタグを特定の場所に取り付けて、ロボットが自分の位置を特定できるようにしています。これらの研究はRT-Middlewareフレームワーク内で行われています。RT-Middlewareはロボットをモジュールごとに制御でき、研究者はロボットの部品を独立したモジュールに分離し、これらの独立したモジュールを開発してロボットの機能をアップグレードおよび開発することができます。</p>",
+      "images": ["/images/research/2020/Screen shot 2012-10-18 at 20.37.21.png", "/images/research/2020/BarCodeReader_Screenshot2.JPG"]
+    },
+    {
+      "name": "ヒューマンコンピュータインタラクション",
+      "description": "<p>ヒューマンコンピュータインタラクションは、今日の急速に発展する情報産業における主要なトピックです。ジェスチャーコントロールの自然で便利な特性は、ヒューマンコンピュータインタラクション最適化の方向性と目標に合致し、マウスやキーボードに依存する従来のインタラクション方法にはない利点を提供します。特定のアプリケーションでは、タッチスクリーンがユーザーエクスペリエンスを向上させていますが、その高コストにより通常は小型モバイルデバイスやパソコンに限定されています。ジェスチャーコントロールはより大きな画面制御範囲でタッチスクリーン効果をシミュレートし、大画面操作体験を向上させる重要な手段となっています。しかし、ジェスチャー自体の多様性と、不安定な環境要因からの干渉が組み合わさって、ジェスチャー判断の複雑さを決定づけています。複雑な背景でリアルタイムに動的ジェスチャーを追跡、キャプチャ、認識し、インタラクションプロセスの滑らかさを確保する方法は、ジェスチャー認識ベースのヒューマンコンピュータインタラクションの研究課題です。</p>",
+      "images": ["/images/research/2020/HCI1.png", "/images/research/2020/HCI2.png"]
+    },
+    {
+      "name": "物体認識",
+      "description": "<p>画像処理は、コンピュータを使用して画像を分析し、望ましい結果を達成するための技術です。これはコンピュータビジョンとロボットビジョン研究の基礎です。物体認識は画像処理研究の最も重要な分野の一つです。従来の物体認識アルゴリズムは、主に画像ライブラリからのデータを使用して実世界の物体画像とマッチングし、物体の種類を判断して認識します。多くの物体は複数の形態を持っています。例えば、はさみは開く角度によって異なる形状を表示します。さらに、異なる角度から観察すると、異なる物体形状になります。私たちは異なる形態を持つ物体の認識をRMCO（objects with multiple configurationsの認識）と呼んでいます。一般的な方法では、RMCOを実装するために同じ物体の複数のデータポイントを収集しますが、これは多くの時間を浪費し、データベースを非常に大きくします。形状空間理論を通じて、私は非常に少ないデータで観察された物体の可能な形状を予測でき、最小限のデータで多形態物体の認識を実現しています。</p><p>SIFTやSURFを含む従来の物体認識アルゴリズムは、非常に短時間で物体認識を完了できますが、ロボットアプリケーションでは、ロボットの迅速な動作を制限する重要な要因の一つです。私は画像内の3つの不変要素を使用しています：特徴点周囲の画素情報、特徴点の角度情報、および2つの画像間の特徴点群が相対位置を維持するという情報です。このアプローチにより、SIFTと比較して速度を約10倍向上させつつ、マッチング点群間にほとんど不正確なマッチング点がないことを維持できます。</p>",
+      "images": ["/images/research/2020/z7.jpg"]
+    }
+  ]
+} 

@@ -1,0 +1,90 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import {template} from '@/settings'
+import {getCollection, render} from 'astro:content'
+import { languages } from '../../../i18n/config'
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blog");
+  const paths = [];
+  Object.keys(languages).forEach(lang => {
+    const langDir = `/${lang}/`;
+    const filteredEntries = blogEntries.filter(post => post.id.includes(langDir));
+    filteredEntries.forEach(post => {
+      // 只取文件名部分作为slug
+      const fileName = post.id.split('/').pop();
+      paths.push({
+        params: { lang, slug: fileName },
+        props: { post }
+      });
+    });
+  });
+  return paths;
+}
+
+const {post} = Astro.props;
+const { title, date, tags} = post.data; 
+const { Content } = await render(post);
+const { lang } = Astro.params;
+const currentLang = lang as keyof typeof languages;
+
+const locales = {
+    'zh': 'zh-CN',
+    'en': 'en-US',
+    'ja': 'ja-JP'
+};
+---
+
+<Layout title={title}>
+	<div class='mx-auto px-4 max-w-3xl'>
+		<article
+			class='prose prose-lg prose-headings:text-base-content prose-p:text-base-content/80 w-full'
+		>
+			<!-- Header section -->
+			<div class='mb-8 border-b pb-8'>
+				<h1 class='text-xl mb-4 text-base-content'>{title}</h1>
+				<div class='text-base flex flex-wrap items-center gap-4 text-base-content/70'>
+					<!-- Date -->
+					<time datetime={date} class='flex items-center'>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							class='h-4 w-4 mr-2'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke='currentColor'
+						>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='2'
+								d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'
+							></path>
+						</svg>
+						{
+							new Date(date).toLocaleDateString(locales[currentLang] || 'en-US', {
+								year: 'numeric',
+								month: 'long'
+							})
+						}
+					</time>
+
+					<!-- Tags -->
+					{
+						tags && (
+							<div class='flex flex-wrap gap-2'>
+								{tags.map(tag => (
+									<span class='badge badge-accent badge-outline'>{tag}</span>
+								))}
+							</div>
+						)
+					}
+				</div>
+			</div>
+
+			<!-- Post content -->
+			<div>
+				<Content />
+			</div>
+		</article>
+	</div>
+</Layout>

@@ -1,0 +1,23 @@
+{
+  "zh": {
+    "title": "联系地图",
+    "address": "地址：中国上海市宝山区南陈路333号，上海大学计算机工程与科学学院419.",
+    "transportation": "交通：地铁7号线南陈路站，公共汽车767号南陈路上大路站或者南陈路四号桥站.",
+    "website": "网页：https://han-yuexing.github.io",
+    "mapTitle": "地图位置"
+  },
+  "en": {
+    "title": "Contact Map",
+    "address": "Address: No. 333 Nanchen Road, Baoshan District, Shanghai, School of Computer Engineering and Science, Shanghai University, Room 419.",
+    "transportation": "Transportation: Metro Line 7 Nanchen Road Station, Bus Route 767 Nanchen Road-Shangda Road Station or Nanchen Road-Fourth Bridge Station.",
+    "website": "Website: https://han-yuexing.github.io",
+    "mapTitle": "Map Location"
+  },
+  "ja": {
+    "title": "連絡先マップ",
+    "address": "住所：中国上海市宝山区南陳路333号、上海大学コンピュータ工学・科学学院419号室。",
+    "transportation": "交通：地下鉄7号線南陳路駅、公共バス767号南陳路上大路駅または南陳路四号橋駅。",
+    "website": "ウェブサイト：https://han-yuexing.github.io",
+    "mapTitle": "地図位置"
+  }
+} 

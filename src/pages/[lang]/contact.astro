@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+import contactContentData from '../../content/data/contactContent.json'
+import { languages } from '../../i18n/config'
+
+// 为[lang]动态路由添加getStaticPaths函数
+export function getStaticPaths() {
+  return Object.keys(languages).map(lang => ({
+    params: { lang },
+  }));
+}
+
+// 使用URL参数获取语言
+const { lang } = Astro.params;
+const currentLang = lang as keyof typeof languages;
+const t = useTranslations(currentLang)
+const contactContent = contactContentData[currentLang as keyof typeof contactContentData]
+---
+
+<Layout>
+  <div>
+    <!-- Contact Information -->
+    <section class='py-6 border-b'>
+      <h2 class="text-xl mb-4">
+        {currentLang === 'zh' ? '联系方式' : currentLang === 'ja' ? '連絡先' : 'Contact Information'}
+      </h2>
+      <div class="prose max-w-none">
+        <p class="mt-2">{contactContent.address}</p>
+        <p class="mt-2">{contactContent.transportation}</p>
+        <p class="mt-2">
+          {contactContent.website.split('：')[0]}：
+          <a href={contactContent.website.split('：')[1]} target="_blank" class="link link-accent">
+            {contactContent.website.split('：')[1]}
+          </a>
+        </p>
+      </div>
+    </section>
+    
+    <!-- Map -->
+    <section class='py-6'>
+      <h2 class='text-xl mb-6'>{contactContent.mapTitle}</h2>
+      <div class="aspect-[4/3] w-full">
+        <!-- 使用静态地图图片 -->
+        <img 
+          src="/images/map/2020/map.png" 
+          alt="上海大学地图位置" 
+          class="w-full h-full object-contain"
+        />
+      </div>
+    </section>
+  </div>
+</Layout> 
