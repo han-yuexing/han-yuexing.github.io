@@ -45,7 +45,7 @@ export const carousel = {
 	autoPlay: true,
 	interval: 3000, // 3秒自动切换
 	showDots: true,
-	showArrows: true
+	showArrows: false
 }
 
 export const analytics = {
