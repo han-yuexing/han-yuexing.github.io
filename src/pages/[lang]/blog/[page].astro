@@ -1,9 +1,10 @@
 ---
 import Pagination from '@/components/ui/Pagination.astro'
 import Layout from '@/layouts/Layout.astro'
+import Carousel from '@/components/ui/Carousel.astro'
 import { trimExcerpt } from '@/lib/utils'
 import { template } from '@/settings'
-import { getCollection } from 'astro:content'
+import { getCollection, render } from 'astro:content'
 import { getLangFromUrl, useTranslations } from '../../../i18n/utils'
 import { languages } from '../../../i18n/config'
 
@@ -11,12 +12,22 @@ export async function getStaticPaths() {
     const blogEntries = await getCollection("blog");
     // 只保留当前语言的markdown
     const paths = [];
-    Object.keys(languages).forEach(lang => {
+    
+    for (const lang of Object.keys(languages)) {
         const langDir = `/${lang}/`;
         const filteredEntries = blogEntries.filter(post => post.id.includes(langDir));
         // 按年份分组
         const postsByYear = {};
-        filteredEntries.forEach(post => {
+        
+        // 获取渲染后的内容
+        const postsWithRenderedContent = await Promise.all(
+            filteredEntries.map(async (post) => {
+                const { Content } = await render(post);
+                return { post, Content };
+            })
+        );
+        
+        postsWithRenderedContent.forEach(({ post, Content }) => {
             // 从文件ID中提取文件名
             const fileName = post.id.split('/').pop() || "";
             // 从文件名中提取年月
@@ -29,7 +40,8 @@ export async function getStaticPaths() {
                 date: post.data.date,
                 badge: post.data.tags && post.data.tags.length > 0 ? post.data.tags[0] : '',
                 slug: post.id,
-                fileName: fileName
+                fileName: fileName,
+                Content: Content // 添加渲染后的组件
             });
         });
         // 获取所有年份，按降序排列
@@ -37,11 +49,11 @@ export async function getStaticPaths() {
         // 为每个语言和每年创建路由
         years.forEach((year, idx) => {
             paths.push({
-                params: { 
-                    lang, 
-                    page: String(idx + 1) 
+                params: {
+                    lang,
+                    page: String(idx + 1)
                 },
-                props: { 
+                props: {
                     // 先按年月排序，如果年月相同则按序号倒序排序
                     posts: postsByYear[year].sort((a, b) => {
                         const fileNameA = a.fileName || "";
@@ -60,14 +72,14 @@ export async function getStaticPaths() {
                         const numberA = parseInt(fileNameA.split('-')[2]?.split('.')[0] || "0", 10);
                         const numberB = parseInt(fileNameB.split('-')[2]?.split('.')[0] || "0", 10);
                         return numberB - numberA;
-                    }), 
-                    years, 
-                    currentYear: year, 
-                    currentPage: idx + 1 
+                    }),
+                    years,
+                    currentYear: year,
+                    currentPage: idx + 1
                 }
             });
         });
-    });
+    }
     return paths;
 }
 
@@ -122,8 +134,11 @@ Object.keys(postsByMonth).forEach(month => {
 const sortedMonths = Object.keys(postsByMonth).sort((a, b) => b.localeCompare(a));
 ---
 
-<Layout title='Blog'>
+<Layout>
     <div>
+        <!-- 滚动图组件 -->
+        <Carousel class="mb-8" />
+        
         <div class='flex gap-2 mb-6'>
             {years.map((year, idx) => (
                 <a href={localizedLink(`/blog/${idx + 1}`)} class={`btn btn-xs ${year === currentYear ? 'btn-primary' : 'btn-outline'}`}>{year}</a>
@@ -138,24 +153,29 @@ const sortedMonths = Object.keys(postsByMonth).sort((a, b) => b.localeCompare(a)
                         </div>
                         <div class="flex-1 border-b border-base-300 ml-4"></div>
                     </div>
-                    <div class='space-y-2'>
+                    <div class='grid gap-4'>
                         {postsByMonth[month].map(post => (
-                            <div class='flex items-center justify-between py-3 px-4 border-b hover:bg-base-200 transition-colors rounded'>
-                                <div class='flex items-center gap-4 flex-1'>
-                                    <h2 class='font-medium'>
-                                        <a href={localizedLink(`/blog/${getCleanSlug(post.slug)}`)} class='hover:text-accent'>
-                                            {post.title}
+                            <div class='card bg-base-100 shadow-md hover:shadow-lg transition-shadow'>
+                                <div class='card-body p-6'>
+                                    <div class='flex items-start justify-between mb-4'>
+                                        <h2 class='card-title text-lg'>
+                                            <a href={localizedLink(`/blog/${getCleanSlug(post.slug)}`)} class='hover:text-accent'>
+                                                {post.title}
+                                            </a>
+                                        </h2>
+                                        {post.badge && <div class='badge badge-accent badge-outline'>{post.badge}</div>}
+                                    </div>
+                                    <div class='prose prose-sm max-w-none mb-4'>
+                                        <post.Content />
+                                    </div>
+                                    <div class='flex items-center justify-between'>
+                                        <time datetime={post.date} class='text-sm text-base-content/70'>
+                                            {new Date(post.date).toLocaleDateString(locales[currentLang] || 'en-US', dateFormatOptions)}
+                                        </time>
+                                        <a href={localizedLink(`/blog/${getCleanSlug(post.slug)}`)} class='btn btn-sm btn-primary'>
+                                            {t('blog.readmore')}
                                         </a>
-                                    </h2>
-                                    {post.badge && <div class='badge badge-accent badge-outline'>{post.badge}</div>}
-                                </div>
-                                <div class='flex items-center gap-4'>
-                                    <time datetime={post.date} class='text-sm text-base-content/70'>
-                                        {new Date(post.date).toLocaleDateString(locales[currentLang] || 'en-US', dateFormatOptions)}
-                                    </time>
-                                    <a href={localizedLink(`/blog/${getCleanSlug(post.slug)}`)} class='btn btn-xs btn-ghost'>
-                                        {t('blog.readmore')}
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         ))}
