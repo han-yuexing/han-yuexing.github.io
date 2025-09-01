@@ -1,11 +1,12 @@
 ---
-import { profile } from '../../settings'
+import { profile, siteInfo } from '../../settings'
 import { getLangFromUrl } from '../../i18n/utils'
+import CounterAPI from './CounterAPI.astro'
 
 const { fullName } = profile
 const currentLang = getLangFromUrl(Astro.url)
 
-const buildTime = import.meta.env.BUILD_TIME || ''
+const buildTime = import.meta.env.BUILD_TIME || siteInfo.lastUpdated
 
 const copyright = {
   zh: `最后更新时间：${buildTime}`,
@@ -15,9 +16,10 @@ const copyright = {
 ---
 
 <footer class='footer footer-center bg-base-100 text-base-content px-4 py-6 border-t'>
-	<aside>
+	<aside class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
 		<p>
 			{copyright[currentLang as keyof typeof copyright] || copyright.en}
 		</p>
+		<CounterAPI />
 	</aside>
 </footer>

@@ -36,6 +36,30 @@ export const template = {
     base: '' // Repository name starting with /
 }
 
+export const carousel = {
+	images: [
+		'/images/carousel/slide1.jfif',
+		'/images/carousel/slide2.jfif',
+		'/images/carousel/slide3.jfif'
+	],
+	autoPlay: true,
+	interval: 3000, // 3秒自动切换
+	showDots: true,
+	showArrows: true
+}
+
+export const analytics = {
+	counterapi: {
+		enabled: true,
+		workspace: 'hansBlog',
+		counter: 'visitorCounter'
+	}
+}
+
+export const siteInfo = {
+	lastUpdated: '2025-09-01'
+}
+
 export const seo = {
 	default_title: '韩越兴 - 个人网站',
 	default_description: '韩越兴教授的个人学术网站，包含研究介绍、教学信息和联系方式',

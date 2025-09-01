@@ -1,0 +1,181 @@
+---
+import { carousel } from '@/settings'
+
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<div class={`carousel-container ${className}`}>
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="carousel-track">
+      {carousel.images.map((image, index) => (
+        <div class="carousel-slide">
+          <img src={image} alt={`Slide ${index + 1}`} class="carousel-image" />
+        </div>
+      ))}
+    </div>
+    
+    {carousel.showArrows && (
+      <>
+        <button class="carousel-btn carousel-btn-prev" id="prevBtn">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <button class="carousel-btn carousel-btn-next" id="nextBtn">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </>
+    )}
+  </div>
+  
+  {carousel.showDots && (
+    <div class="carousel-dots" id="carousel-dots">
+      {carousel.images.map((_, index) => (
+        <button class={`carousel-dot ${index === 0 ? 'active' : ''}`} data-slide={index}></button>
+      ))}
+    </div>
+  )}
+</div>
+
+<style>
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+  }
+  
+  .carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .carousel-btn-prev {
+    left: 1rem;
+  }
+  
+  .carousel-btn-next {
+    right: 1rem;
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .carousel-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-dot.active,
+  .carousel-dot:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+</style>
+
+<script>
+  const track = document.getElementById('carousel-track');
+  const dots = document.querySelectorAll('.carousel-dot');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  
+  let currentSlide = 0;
+  const totalSlides = dots.length;
+  
+  function updateCarousel() {
+    if (track) {
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+    
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentSlide);
+    });
+  }
+  
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+  }
+  
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+  
+  // 事件监听器
+  if (nextBtn) {
+    nextBtn.addEventListener('click', nextSlide);
+  }
+  
+  if (prevBtn) {
+    prevBtn.addEventListener('click', prevSlide);
+  }
+  
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentSlide = index;
+      updateCarousel();
+    });
+  });
+  
+  // 自动播放
+  if (true) { // carousel.autoPlay from settings
+    setInterval(nextSlide, 3000); // carousel.interval from settings
+  }
+</script>
