@@ -3,6 +3,7 @@ import { ClientRouter } from 'astro:transitions';
 import Head from '../components/Head.astro'
 import TopNavbar from '../components/ui/TopNavbar.astro'
 import Footer from '../components/ui/Footer.astro'
+import FloatingWidget from '../components/ui/FloatingWidget.astro'
 import { seo } from '../settings'
 import { getLangFromUrl } from '../i18n/utils';
 
@@ -27,18 +28,25 @@ const currentLang = getLangFromUrl(Astro.url);
 		{import.meta.env.PROD && <ClientRouter />}
 		<Head title={title} description={description} image={image} />
 	</head>
-	<body class="bg-base-100 min-h-screen flex flex-col">
+	<body class="min-h-screen flex flex-col relative">
+		<!-- 背景装饰 -->
+		<div class="fixed inset-0 -z-10 overflow-hidden">
+			<!-- 渐变背景 -->
+			<div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
+		</div>
+
 		<header class="sticky top-0 z-50">
 			<TopNavbar />
 		</header>
 		
-		<main class="flex-grow p-4 md:p-8 w-full">
+		<main class="flex-grow p-4 md:p-8 w-full relative z-10">
 			<div class="max-w-6xl mx-auto w-full">
 				<slot />
 			</div>
 		</main>
 		
 		<Footer />
+		<FloatingWidget />
 	</body>
 </html>
 
@@ -46,5 +54,32 @@ const currentLang = getLangFromUrl(Astro.url);
 	html, body {
 		margin: 0;
 		padding: 0;
+	}
+
+	/* 网格背景图案 */
+	.bg-grid-pattern {
+		background-image: 
+			linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+		background-size: 20px 20px;
+	}
+
+	/* 深色模式适配 */
+	@media (prefers-color-scheme: dark) {
+		.bg-grid-pattern {
+			background-image: 
+				linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+				linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+		}
+	}
+
+	/* 动画优化 */
+	@keyframes float {
+		0%, 100% { transform: translateY(0px); }
+		50% { transform: translateY(-10px); }
+	}
+
+	.animate-float {
+		animation: float 6s ease-in-out infinite;
 	}
 </style>
