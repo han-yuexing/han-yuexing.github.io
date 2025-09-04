@@ -1,25 +1,23 @@
 ---
-import { profile, siteInfo } from '../../settings'
+// 简化的Footer组件，只保留基本的版权信息
+import { profile } from '../../settings'
 import { getLangFromUrl } from '../../i18n/utils'
-import CounterAPI from './CounterAPI.astro'
 
 const { fullName } = profile
 const currentLang = getLangFromUrl(Astro.url)
-
-const buildTime = import.meta.env.BUILD_TIME || siteInfo.lastUpdated
+const currentYear = new Date().getFullYear()
 
 const copyright = {
-  zh: `最后更新时间：${buildTime}`,
-  en: `Last updated: ${buildTime}`,
-  ja: `最終更新：${buildTime}`
+  zh: `© ${currentYear} ${fullName}课题组 🎓`,
+  en: `© ${currentYear} ${fullName}课题组 🎓`,
+  ja: `© ${currentYear} ${fullName}课题组 🎓`
 }
 ---
 
-<footer class='footer footer-center bg-base-100 text-base-content px-4 py-6 border-t'>
-	<aside class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
-		<p>
+<footer class='footer footer-center bg-base-100 text-base-content px-4 py-4 border-t'>
+	<aside class="text-center">
+		<p class="text-sm text-base-content/70">
 			{copyright[currentLang as keyof typeof copyright] || copyright.en}
 		</p>
-		<CounterAPI />
 	</aside>
 </footer>
