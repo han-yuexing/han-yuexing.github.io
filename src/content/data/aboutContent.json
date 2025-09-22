@@ -6,7 +6,7 @@
     },
     "aboutMe": {
       "title": "自我介绍",
-      "content": "韩越兴，教授，上海浦江人才（A类），博士生导师，硕士生导师，现就职于上海大学计算机工程与科学学院，日本东京工业大学特别研究员（2013-2020），ACM会员，中国计算机学会会员，上海计算机学会会员。"
+      "content": "韩越兴，上海大学计算机工程与科学学院教授，上海市浦江人才，博士生导师，硕士生导师，同时担任上海第二工业大学外聘硕士生导师。曾任日本东京工业大学特别研究员（2013-2020），现为中国计算机学会杰出会员（41526D）和中国材料研究学会会员（E490914632M）。研究领域涵盖图像处理、机器学习、形状空间理论及材料数据分析等。"
     },
     "education": {
       "title": "学习简历",
@@ -15,13 +15,11 @@
     "researchDirections": {
       "title": "研究方向",
       "areas": [
+        "图像处理",
+        "文本挖掘",
         "机器学习",
         "深度学习",
-        "材料图像处理", 
-        "材料文本挖掘",
-        "机器人视觉",
-        "数据分析",
-        "人工智能"
+        "形状空间理论"
       ]
     },
     "interests": {
@@ -75,7 +73,7 @@
     },
     "aboutMe": {
       "title": "About Me",
-      "content": "Han Yuexing, Professor, Shanghai Pujiang Talent (Class A), Doctoral Supervisor, Master's Supervisor, currently working at the School of Computer Engineering and Science, Shanghai University, Special Researcher at Tokyo Institute of Technology (2013-2020), ACM Member, Member of China Computer Society, Member of Shanghai Computer Society."
+      "content": "Han Yuexing, Professor at the School of Computer Engineering and Science, Shanghai University; Shanghai Pujiang Talent; Doctoral Supervisor; Master's Supervisor; concurrently serves as an External Master's Supervisor at Shanghai Polytechnic University. Formerly a Special Researcher at Tokyo Institute of Technology, Japan (2013-2020), he is currently an Outstanding Member of the China Computer Federation (41526D) and a Member of the Chinese Materials Research Society (E490914632M). Research includes image processing, machine learning, shape space theory, and materials data analysis."
     },
     "education": {
       "title": "Education",
@@ -84,13 +82,11 @@
     "researchDirections": {
       "title": "Research Interests",
       "areas": [
+        "Image Processing",
+        "Text Mining",
         "Machine Learning",
         "Deep Learning",
-        "Materials Image Processing", 
-        "Materials Text Mining",
-        "Robot Vision",
-        "Data Analysis",
-        "Artificial Intelligence"
+        "Shape Space Theory"
       ]
     },
     "interests": {
@@ -144,7 +140,7 @@
     },
     "aboutMe": {
       "title": "自己紹介",
-      "content": "韓越興、教授、上海浦江人材（Aクラス）、博士課程指導教官、修士課程指導教官、現在上海大学コンピュータ工学・科学学院に勤務、東京工業大学特別研究員（2013-2020）、ACM会員、中国コンピュータ学会会員、上海コンピュータ学会会員。"
+      "content": "韓越興、上海大学コンピュータ工学・科学学院教授、上海市浦江人材、博士課程指導者、修士課程指導者、同時に上海第二工業大学の外部招聘修士課程指導者を務めている。日本東京工業大学特別研究員（2013-2020）を経て、現在は中国コンピュータ学会傑出会員（41526 D）と中国材料研究学会会員（E 490914632 M）である。研究分野は画像処理、機械学習、形状空間理論及び材料データ分析などをカバーする。"
     },
     "education": {
       "title": "学歴",
@@ -153,13 +149,11 @@
     "researchDirections": {
       "title": "研究領域",
       "areas": [
+        "画像処理",
+        "テキストマイニング",
         "機械学習",
         "深層学習",
-        "材料画像処理", 
-        "材料テキストマイニング",
-        "ロボットビジョン",
-        "データ分析",
-        "人工知能"
+        "形状空間理論"
       ]
     },
     "interests": {
