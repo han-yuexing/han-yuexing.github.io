@@ -155,8 +155,8 @@ const sortedMonths = Object.keys(postsByMonth).sort((a, b) => b.localeCompare(a)
                     </div>
                     <div class='grid gap-4'>
                         {postsByMonth[month].map(post => (
-                            <div class='card bg-base-100 shadow-md hover:shadow-lg transition-shadow'>
-                                <div class='card-body p-6'>
+                            <div class='card bg-base-100 shadow-md hover:shadow-lg transition-shadow overflow-hidden'>
+                                <div class='card-body p-6 overflow-hidden'>
                                     <div class='flex items-start justify-between mb-4'>
                                         <h2 class='card-title text-lg'>
                                             <a href={localizedLink(`/blog/${getCleanSlug(post.slug)}`)} class='hover:text-accent'>
@@ -165,7 +165,7 @@ const sortedMonths = Object.keys(postsByMonth).sort((a, b) => b.localeCompare(a)
                                         </h2>
                                         {post.badge && <div class='badge badge-accent badge-outline'>{post.badge}</div>}
                                     </div>
-                                    <div class='prose prose-sm max-w-none mb-4'>
+                                    <div class='prose prose-sm max-w-none mb-4 overflow-hidden break-words [&_img]:max-w-full [&_img]:h-auto [&_img]:object-contain [&_a]:break-words [&_a]:break-all [&_pre]:overflow-x-auto [&_table]:block [&_table]:overflow-x-auto'>
                                         <post.Content />
                                     </div>
                                     <div class='flex items-center justify-between'>

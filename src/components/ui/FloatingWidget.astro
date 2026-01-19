@@ -35,6 +35,9 @@ const visitText = {
       </svg>
       <span class="text-xs widget-text">{visitText[currentLang as keyof typeof visitText] || visitText.en}:</span>
       <span class="text-xs font-medium widget-text" id="counter-display">加载中...</span>
+      <svg class="w-4 h-4 ml-auto back-to-top-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+      </svg>
     </div>
   </div>
 </div>
@@ -54,6 +57,7 @@ const visitText = {
     transition: all 0.3s ease;
     max-width: 280px;
     transform: translateX(0);
+    cursor: pointer;
   }
 
   .floating-widget.scrolling {
@@ -103,6 +107,16 @@ const visitText = {
   #counter-display {
     font-weight: 500;
     color: var(--color-primary, #0066cc);
+  }
+
+  .back-to-top-icon {
+    flex-shrink: 0;
+    color: var(--color-primary, #0066cc);
+    transition: transform 0.3s ease;
+  }
+
+  .floating-widget:hover .back-to-top-icon {
+    transform: translateY(-2px);
   }
 
   /* 深色模式适配 */
@@ -235,6 +249,14 @@ const visitText = {
     isHovering = false;
   }
 
+  // 点击卡片回到顶部
+  function handleWidgetClick() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
   // 页面加载时更新计数器
   document.addEventListener('DOMContentLoaded', () => {
     updateCounter();
@@ -244,6 +266,7 @@ const visitText = {
     if (widget) {
       widget.addEventListener('mouseenter', handleMouseEnter);
       widget.addEventListener('mouseleave', handleMouseLeave);
+      widget.addEventListener('click', handleWidgetClick);
     }
   });
   
@@ -256,6 +279,7 @@ const visitText = {
     if (widget) {
       widget.addEventListener('mouseenter', handleMouseEnter);
       widget.addEventListener('mouseleave', handleMouseLeave);
+      widget.addEventListener('click', handleWidgetClick);
     }
   });
 </script>
