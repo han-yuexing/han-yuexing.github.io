@@ -52,13 +52,13 @@ This is the content of the new blog post. Write your article here using Markdown
 
 ## 测试/Test
 
-项目依赖于 Node 环境进行运行，测试时需要首先下载 Node.js，可使用以下命令进行本地页面测试：
+项目依赖于 Node 环境进行运行，测试时需要首先下载 Node.js，并安装包管理器 pnpm。可使用以下命令进行本地页面测试：
 
-1. 使用终端，定位到页面目录下，输入`npm install`安装依赖；
-2. 输入`npm run dev`启动测试服务器；
+1. 使用终端，定位到页面目录下，输入`pnpm install`安装依赖；
+2. 输入`pnpm dev`启动测试服务器；
 3. 打开浏览器，输入`http://localhost:4321/`，即可进行测试。
 
-部署前，可以使用命令`npm run build`本地测试打包流程。
+部署前，可以使用命令`pnpm build`本地测试打包流程。
 
 ## 页面部署/Deployment
 
