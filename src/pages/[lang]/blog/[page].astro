@@ -139,9 +139,9 @@ const sortedMonths = Object.keys(postsByMonth).sort((a, b) => b.localeCompare(a)
         <!-- 滚动图组件 -->
         <Carousel class="mb-8" />
         
-        <div class='flex gap-2 mb-6'>
+        <div class='flex gap-2 mb-6 overflow-x-auto whitespace-nowrap pb-2'>
             {years.map((year, idx) => (
-                <a href={localizedLink(`/blog/${idx + 1}`)} class={`btn btn-xs ${year === currentYear ? 'btn-primary' : 'btn-outline'}`}>{year}</a>
+                <a href={localizedLink(`/blog/${idx + 1}`)} class={`btn btn-xs shrink-0 ${year === currentYear ? 'btn-primary' : 'btn-outline'}`}>{year}</a>
             ))}
         </div>
         <div>
