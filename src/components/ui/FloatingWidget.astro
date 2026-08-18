@@ -187,15 +187,17 @@ const visitText = {
     }
     
     try {
-      const response = await fetch(`https://api.counterapi.dev/v1/${analytics.counterapi.workspace}/${analytics.counterapi.counter}/up`, {
-        method: 'GET'
+      const response = await fetch(`https://api.counterapi.dev/v2/${analytics.counterapi.workspace}/${analytics.counterapi.counter}/up`, {
+        method: 'GET',
+        cache: 'no-store'
       });
       
       if (response.ok) {
-        const data = await response.json();
-        if (data.count !== undefined) {
-          counterDisplay.textContent = data.count.toString();
-          setCachedData(data.count);
+        const res = await response.json();
+        const data = res.data;
+        if (data.up_count !== undefined) {
+          counterDisplay.textContent = data.up_count.toString();
+          setCachedData(data.up_count);
         }
       } else {
         console.error('Counter API request failed:', response.status);
