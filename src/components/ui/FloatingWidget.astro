@@ -1,42 +1,83 @@
 ---
-import { profile, siteInfo, analytics } from '../../settings'
-import { getLangFromUrl } from '../../i18n/utils'
+import { profile, siteInfo, analytics } from "../../settings";
+import { getLangFromUrl } from "../../i18n/utils";
 
-const { fullName } = profile
-const currentLang = getLangFromUrl(Astro.url)
+const { fullName } = profile;
+const currentLang = getLangFromUrl(Astro.url);
 
-const buildTime = import.meta.env.BUILD_TIME || siteInfo.lastUpdated
+const buildTime = import.meta.env.BUILD_TIME || siteInfo.lastUpdated;
 
 const copyright = {
   zh: `最后更新时间：${buildTime}`,
   en: `Last updated: ${buildTime}`,
-  ja: `最終更新：${buildTime}`
-}
+  ja: `最終更新：${buildTime}`,
+};
 
 const visitText = {
-  zh: '访问量',
-  en: 'Visits',
-  ja: 'アクセス数'
-}
+  zh: "访问量",
+  en: "Visits",
+  ja: "アクセス数",
+};
 ---
 
 <div class="floating-widget" id="floating-widget">
   <div class="floating-widget-content">
     <div class="floating-widget-item">
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+      <svg
+        class="w-4 h-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+        ></path>
       </svg>
-      <span class="text-xs widget-text">{copyright[currentLang as keyof typeof copyright] || copyright.en}</span>
+      <span class="text-xs widget-text">
+        {copyright[currentLang as keyof typeof copyright] || copyright.en}
+      </span>
     </div>
     <div class="floating-widget-item">
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+      <svg
+        class="w-4 h-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+        ></path>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+        ></path>
       </svg>
-      <span class="text-xs widget-text">{visitText[currentLang as keyof typeof visitText] || visitText.en}:</span>
-      <span class="text-xs font-medium widget-text" id="counter-display">加载中...</span>
-      <svg class="w-4 h-4 ml-auto back-to-top-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+      <span class="text-xs widget-text">
+        {visitText[currentLang as keyof typeof visitText] || visitText.en}:
+      </span>
+      <span class="text-xs font-medium widget-text" id="counter-display">
+        加载中...
+      </span>
+      <svg
+        class="w-4 h-4 ml-auto back-to-top-icon"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        ></path>
       </svg>
     </div>
   </div>
@@ -125,11 +166,11 @@ const visitText = {
       background: rgba(30, 30, 30, 0.95);
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
-    
+
     .floating-widget-item {
       color: #ccc;
     }
-    
+
     .floating-widget-item svg {
       color: #aaa;
     }
@@ -143,7 +184,7 @@ const visitText = {
       padding: 10px 12px;
       max-width: 240px;
     }
-    
+
     .floating-widget-item {
       font-size: 11px;
     }
@@ -151,7 +192,7 @@ const visitText = {
 </style>
 
 <script define:vars={{ analytics }}>
-  const CACHE_KEY = 'counterapi_cache';
+  const CACHE_KEY = "counterapi_cache";
   const CACHE_DURATION = 5 * 60 * 1000; // 5分钟缓存
 
   function getCachedData() {
@@ -168,15 +209,15 @@ const visitText = {
   function setCachedData(count) {
     const data = {
       count: count,
-      timestamp: Date.now()
+      timestamp: Date.now(),
     };
     localStorage.setItem(CACHE_KEY, JSON.stringify(data));
   }
 
   async function updateCounter() {
     if (!analytics.counterapi.enabled) return;
-    
-    const counterDisplay = document.getElementById('counter-display');
+
+    const counterDisplay = document.getElementById("counter-display");
     if (!counterDisplay) return;
 
     // 首先尝试使用缓存数据
@@ -185,13 +226,16 @@ const visitText = {
       counterDisplay.textContent = cachedCount.toString();
       return;
     }
-    
+
     try {
-      const response = await fetch(`https://api.counterapi.dev/v2/${analytics.counterapi.workspace}/${analytics.counterapi.counter}/up`, {
-        method: 'GET',
-        cache: 'no-store'
-      });
-      
+      const response = await fetch(
+        `https://api.counterapi.dev/v2/${analytics.counterapi.workspace}/${analytics.counterapi.counter}/up`,
+        {
+          method: "GET",
+          cache: "no-store",
+        },
+      );
+
       if (response.ok) {
         const res = await response.json();
         const data = res.data;
@@ -200,12 +244,12 @@ const visitText = {
           setCachedData(data.up_count);
         }
       } else {
-        console.error('Counter API request failed:', response.status);
-        counterDisplay.textContent = '--';
+        console.error("Counter API request failed:", response.status);
+        counterDisplay.textContent = "--";
       }
     } catch (error) {
-      console.error('Counter API error:', error);
-      counterDisplay.textContent = '--';
+      console.error("Counter API error:", error);
+      counterDisplay.textContent = "--";
     }
   }
 
@@ -215,7 +259,7 @@ const visitText = {
   let isHovering = false;
 
   function handleScroll() {
-    const widget = document.getElementById('floating-widget');
+    const widget = document.getElementById("floating-widget");
     if (!widget) return;
 
     // 如果鼠标悬停在浮窗上，不执行收起
@@ -224,7 +268,7 @@ const visitText = {
     // 添加滚动状态
     if (!isScrolling) {
       isScrolling = true;
-      widget.classList.add('scrolling');
+      widget.classList.add("scrolling");
     }
 
     // 清除之前的定时器
@@ -235,15 +279,15 @@ const visitText = {
     // 设置新的定时器，停止滚动后恢复
     scrollTimer = setTimeout(() => {
       isScrolling = false;
-      widget.classList.remove('scrolling');
+      widget.classList.remove("scrolling");
     }, 1000);
   }
 
   function handleMouseEnter() {
     isHovering = true;
-    const widget = document.getElementById('floating-widget');
+    const widget = document.getElementById("floating-widget");
     if (widget) {
-      widget.classList.remove('scrolling');
+      widget.classList.remove("scrolling");
     }
   }
 
@@ -255,33 +299,33 @@ const visitText = {
   function handleWidgetClick() {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   }
 
   // 页面加载时更新计数器
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener("DOMContentLoaded", () => {
     updateCounter();
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    
-    const widget = document.getElementById('floating-widget');
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    const widget = document.getElementById("floating-widget");
     if (widget) {
-      widget.addEventListener('mouseenter', handleMouseEnter);
-      widget.addEventListener('mouseleave', handleMouseLeave);
-      widget.addEventListener('click', handleWidgetClick);
+      widget.addEventListener("mouseenter", handleMouseEnter);
+      widget.addEventListener("mouseleave", handleMouseLeave);
+      widget.addEventListener("click", handleWidgetClick);
     }
   });
-  
+
   // Astro 页面切换时也更新计数器（处理水合问题）
-  document.addEventListener('astro:page-load', () => {
+  document.addEventListener("astro:page-load", () => {
     updateCounter();
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    
-    const widget = document.getElementById('floating-widget');
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    const widget = document.getElementById("floating-widget");
     if (widget) {
-      widget.addEventListener('mouseenter', handleMouseEnter);
-      widget.addEventListener('mouseleave', handleMouseLeave);
-      widget.addEventListener('click', handleWidgetClick);
+      widget.addEventListener("mouseenter", handleMouseEnter);
+      widget.addEventListener("mouseleave", handleMouseLeave);
+      widget.addEventListener("click", handleWidgetClick);
     }
   });
 </script>
