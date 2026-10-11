@@ -1,23 +1,23 @@
 ---
 // 简化的Footer组件，只保留基本的版权信息
-import { profile } from '../../settings'
-import { getLangFromUrl } from '../../i18n/utils'
+import { profile } from "../../settings";
+import { getLangFromUrl } from "../../i18n/utils";
 
-const { fullName } = profile
-const currentLang = getLangFromUrl(Astro.url)
-const currentYear = new Date().getFullYear()
+const { fullName } = profile;
+const currentLang = getLangFromUrl(Astro.url);
+const currentYear = new Date().getFullYear();
 
 const copyright = {
   zh: `© ${currentYear} ${fullName}课题组 🎓`,
   en: `© ${currentYear} ${fullName}课题组 🎓`,
-  ja: `© ${currentYear} ${fullName}课题组 🎓`
-}
+  ja: `© ${currentYear} ${fullName}课题组 🎓`,
+};
 ---
 
-<footer class='footer footer-center bg-base-100 text-base-content px-4 py-4 border-t'>
-	<aside class="text-center">
-		<p class="text-sm text-base-content/70">
-			{copyright[currentLang as keyof typeof copyright] || copyright.en}
-		</p>
-	</aside>
+<footer class="footer footer-center bg-base-100 text-base-content px-4 py-4 border-t">
+  <aside class="text-center">
+    <p class="text-sm text-base-content/70">
+      {copyright[currentLang as keyof typeof copyright] || copyright.en}
+    </p>
+  </aside>
 </footer>

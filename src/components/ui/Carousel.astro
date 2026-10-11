@@ -1,11 +1,11 @@
 ---
-import { carousel } from '@/settings'
+import { carousel } from "@/settings";
 
 interface Props {
   class?: string;
 }
 
-const { class: className = '' } = Astro.props;
+const { class: className = "" } = Astro.props;
 ---
 
 <div class={`carousel-container ${className}`}>
@@ -17,27 +17,50 @@ const { class: className = '' } = Astro.props;
         </div>
       ))}
     </div>
-    
+
     {carousel.showArrows && (
       <>
         <button class="carousel-btn carousel-btn-prev" id="prevBtn">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            ></path>
           </svg>
         </button>
         <button class="carousel-btn carousel-btn-next" id="nextBtn">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
           </svg>
         </button>
       </>
     )}
   </div>
-  
+
   {carousel.showDots && (
     <div class="carousel-dots" id="carousel-dots">
       {carousel.images.map((_, index) => (
-        <button class={`carousel-dot ${index === 0 ? 'active' : ''}`} data-slide={index}></button>
+        <button
+          class={`carousel-dot ${index === 0 ? "active" : ""}`}
+          data-slide={index}
+        ></button>
       ))}
     </div>
   )}
@@ -49,7 +72,7 @@ const { class: className = '' } = Astro.props;
     width: 100%;
     margin-bottom: 2rem;
   }
-  
+
   .carousel-wrapper {
     position: relative;
     width: 100%;
@@ -58,24 +81,24 @@ const { class: className = '' } = Astro.props;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
-  
+
   .carousel-track {
     display: flex;
     transition: transform 0.5s ease;
     height: 100%;
   }
-  
+
   .carousel-slide {
     min-width: 100%;
     height: 100%;
   }
-  
+
   .carousel-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
+
   .carousel-btn {
     position: absolute;
     top: 50%;
@@ -93,26 +116,26 @@ const { class: className = '' } = Astro.props;
     transition: background-color 0.3s ease;
     z-index: 10;
   }
-  
+
   .carousel-btn:hover {
     background: rgba(0, 0, 0, 0.7);
   }
-  
+
   .carousel-btn-prev {
     left: 1rem;
   }
-  
+
   .carousel-btn-next {
     right: 1rem;
   }
-  
+
   .carousel-dots {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
     margin-top: 1rem;
   }
-  
+
   .carousel-dot {
     width: 0.75rem;
     height: 0.75rem;
@@ -122,60 +145,86 @@ const { class: className = '' } = Astro.props;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+
   .carousel-dot.active,
   .carousel-dot:hover {
     background: rgba(0, 0, 0, 0.7);
   }
+
+  @media (prefers-color-scheme: dark) {
+    .carousel-dot {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .carousel-dot.active,
+    .carousel-dot:hover {
+      background: rgba(255, 255, 255, 0.7);
+    }
+  }
 </style>
 
 <script>
-  const track = document.getElementById('carousel-track');
-  const dots = document.querySelectorAll('.carousel-dot');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  
   let currentSlide = 0;
-  const totalSlides = dots.length;
-  
+  let interval: ReturnType<typeof setInterval> | undefined;
+
   function updateCarousel() {
-    if (track) {
-      track.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-    
+    const track = document.querySelector("#carousel-track");
+    const dots = document.querySelectorAll(".carousel-dot");
+    if (!track || dots.length === 0) return;
+
+    currentSlide = currentSlide % dots.length;
+    track.setAttribute(
+      "style",
+      `transform: translateX(-${currentSlide * 100}%);`,
+    );
     dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === currentSlide);
+      dot.classList.toggle("active", index === currentSlide);
     });
   }
-  
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
+
+  function startCarousel() {
+    stopCarousel();
+    currentSlide = 0;
     updateCarousel();
+    if (document.querySelector(".carousel-container")) {
+      restartInterval();
+    }
   }
-  
-  function prevSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    updateCarousel();
-  }
-  
-  // 事件监听器
-  if (nextBtn) {
-    nextBtn.addEventListener('click', nextSlide);
-  }
-  
-  if (prevBtn) {
-    prevBtn.addEventListener('click', prevSlide);
-  }
-  
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      currentSlide = index;
+
+  function restartInterval() {
+    stopCarousel();
+    interval = setInterval(() => {
+      currentSlide++;
       updateCarousel();
-    });
-  });
-  
-  // 自动播放
-  if (true) { // carousel.autoPlay from settings
-    setInterval(nextSlide, 3000); // carousel.interval from settings
+    }, 3000);
   }
+
+  function stopCarousel() {
+    if (interval) clearInterval(interval);
+    interval = undefined;
+  }
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+
+    const button = target.closest(".carousel-dot, .carousel-btn");
+    if (!button) return;
+
+    const dots = document.querySelectorAll(".carousel-dot");
+    if (dots.length === 0) return;
+
+    if (button.classList.contains("carousel-dot")) {
+      currentSlide = Number(button.getAttribute("data-slide"));
+      restartInterval();
+    } else {
+      currentSlide += button.classList.contains("carousel-btn-prev") ? -1 : 1;
+      currentSlide = (currentSlide + dots.length) % dots.length;
+    }
+    updateCarousel();
+  });
+
+  document.addEventListener("astro:before-swap", stopCarousel);
+  document.addEventListener("astro:page-load", startCarousel);
+  startCarousel();
 </script>
