@@ -28,18 +28,24 @@ export interface Publication {
   abstract?: string;
 }
 
-export function isExperience(element: Experience | Education): element is Experience {
-  return 'title' in element && 'company' in element;
+export function isExperience(
+  element: Experience | Education,
+): element is Experience {
+  return "title" in element && "company" in element;
 }
 
-export function isEducation(element: Education | Experience): element is Education {
-  return 'school' in element && 'degree' in element;
+export function isEducation(
+  element: Education | Experience,
+): element is Education {
+  return "school" in element && "degree" in element;
 }
 
 export function isSkill(element: Skill | Publication): element is Skill {
-  return 'description' in element;
+  return "description" in element;
 }
 
-export function isPublication(element: Skill | Publication): element is Publication {
-  return 'authors' in element;
+export function isPublication(
+  element: Skill | Publication,
+): element is Publication {
+  return "authors" in element;
 }
