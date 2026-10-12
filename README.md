@@ -58,7 +58,7 @@ This is the content of the new blog post. Write your article here using Markdown
 2. 输入`pnpm dev`启动测试服务器；
 3. 打开浏览器，输入`http://localhost:4321/`，即可进行测试。
 
-部署前，请先使用命令`pnpm lint`检查修改文件的语法，使用命令`pnpm lint --fix`格式化文件，再使用命令`pnpm build`本地测试打包流程。
+部署前，请先使用命令`pnpm lint`检查修改文件的语法，使用命令`pnpm lint:fix`格式化文件，再使用命令`pnpm build`本地测试打包流程。
 
 ## 页面部署/Deployment
 
