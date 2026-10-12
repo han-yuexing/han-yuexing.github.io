@@ -126,7 +126,7 @@
           "conference": "Knowledge-Based Systems",
           "year": "2024",
           "type": "论文",
-          "link": "",
+          "link": "https://arxiv.org/pdf/2312.00485.pdf",
           "citation": "J.K. Mao, Y.X. Han*, G. Tanaka, B.Wang*. Bacbone-based dynamic graph spatio-temporal network for epidemic forecasting. Knowledge-Based Systems, 296, 111952, 2024. arXiv:2312.00485. 中科院1区，Q1"
         },
         {
@@ -1477,6 +1477,24 @@
       "title": "Recent Achievements",
       "publications": [
         {
+          "title": "Few-shot Image Generation via Information Transfer from the Built Geodesic Surface",
+          "authors": "Yuexing Han*, Liheng Ruan, Bing Wang",
+          "conference": "Pattern Recognition",
+          "year": "2025",
+          "type": "Paper",
+          "link": "https://doi.org/10.1016/j.patcog.2025.112293",
+          "citation": "Yuexing Han*, Liheng Ruan, Bing Wang. Few-shot Image Generation via Information Transfer from the Built Geodesic Surface. Pattern Recognition, doi: https://doi.org/10.1016/j.patcog.2025.112293, 2025. CAS Q1, JCR Q1."
+        },
+        {
+          "title": "Geodesic feature augmentation for zero-shot text-guided diffusion style transfer",
+          "authors": "Yuexing Han*, Liheng Ruan, Bing Wang",
+          "conference": "The Visual Computer",
+          "year": "2025",
+          "type": "Paper",
+          "link": "https://doi.org/10.1007/s00371-025-04104-3",
+          "citation": "Yuexing Han* ,Liheng Ruan, Bing Wang. Geodesic feature augmentation for zero-shot text-guided diffusion style transfer. The Visual Computer, https://doi.org/10.1007/s00371-025-04104-3, 2025.  CAS Q3, JCR Q2."
+        },
+        {
           "title": "A projection module based on the shape space theory for small-sample image processing",
           "authors": "Gan Hu, Yuexing Han*",
           "conference": "Expert Systems with Applications",
@@ -1497,10 +1515,10 @@
         {
           "title": "The Prediction of Tensile Strength Performance of Fiber Reinforced Composites Based on a Knowledge Graph Constructed from Materials Literature",
           "authors": "Qiaochuan Chen, Chen Zhao, Yating Fang, Rui Zhang, Na Song*, Peng Ding, Yuexing Han*",
-          "conference": "POLYMER COMPOSITES",
-          "year": "2024",
+          "conference": "Polymer Composites",
+          "year": "2025",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "Qiaochuan Chen, Chen Zhao, Yating Fang, Rui Zhang, Na Song*, Peng Ding, Yuexing Han*. The Prediction of Tensile Strength Performance of Fiber Reinforced Composites Based on a Knowledge Graph Constructed from Materials Literature. POLYMER COMPOSITES. (SCI, accepted)"
         },
         {
@@ -1509,7 +1527,7 @@
           "conference": "Information Sciences",
           "year": "2025",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "X. Hong, Y.X. Han, B. Wang*. Coupling dynamics of information and epidemic under multi-source heterogeneous social impacts. Information Sciences, 714, 122203, 2025."
         },
         {
@@ -1518,7 +1536,7 @@
           "conference": "Chaos, Solitons & Fractals",
           "year": "2025",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "H.W. Zhang, Y.X. Han, G.H. Tananka, B. Wang*. Temporal correlation-based neural relational inference for binary dynamics. Chaos, Solitons & Fractals. 196, 116350, 2025."
         },
         {
@@ -1536,7 +1554,7 @@
           "conference": "Neurocomputing",
           "year": "2025",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "M.X. Yan, Y.X. Han, B. Wang*. NFI-SGAT: Node feature initliazation-based streaming graph learning model with graph attenton network for critical node identification in temporal networks. Neurocomputing 630, 129679, 2025."
         },
         {
@@ -1545,7 +1563,7 @@
           "conference": "Applied Mathematical Modeling",
           "year": "2025",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "K.B. Zhang, X. Hong, Y.X. Han, B. Wang*. Combined effects of information dissemination and resource allocation on spatial spreading of the epidemic. Applied Mathematical Modeling, 137, 115672, 2025."
         },
         {
@@ -1554,7 +1572,7 @@
           "conference": "Physics of Metals and Metallography",
           "year": "2024",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "Yuexing Han, Liheng Ruan, Jianxun Fu, Bing Wang, Hongbin Wang and Xiangyu Xu*. Statistics and Analysis of Lath Martensite Transformation Based on In-Situ Observation and Video Processing. Physics of Metals and Metallography, 2024, Vol. 125, Suppl. 1, pp. S106–S120."
         },
         {
@@ -1563,7 +1581,7 @@
           "conference": "ACS Applied Materials & Interfaces",
           "year": "2024",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "Yuexing Han, Shengqi Bao, Bori Shi, Jinbo Wu, Bing Wang, Peng Ding, and Qiaochuan Chen*. Fast and Accurate Recognition of Perovskite Fluorescent Anti Counterfeiting Labels Based on Lightweight Convolutional Neural Networks. ACS Applied Materials & Interfaces, 2024, 16(31): 41107-41118."
         },
         {
@@ -1572,7 +1590,7 @@
           "conference": "Corrosion Science",
           "year": "2024",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "Sanlve Pei, Chaoneng Dai, Xiaohua Yang, Lijun Zhang, Haitao Wang, Shaolin Zhang, Yuexing Han*, Qian Li*, Jingfeng Wang*. Quantitative prediction of Mg-RE-Ni alloy corrosion behavior by machine learning. Corrosion Science, 237 (2024) 112324."
         },
         {
@@ -1599,11 +1617,11 @@
           "conference": "arXiv",
           "year": "2024",
           "type": "Paper",
-          "link": "https://arxiv.org/pdf/2404.09515.pdf",
+          "link": "https://arxiv.org/abs/2404.09515",
           "citation": "Yuexing Han*, Guanxin Wan, Bing Wang*, Yi Liu*, Revealing the structure-property relationships of copper alloys with FAGC. arXiv:2404.09515, 2024."
         },
         {
-          "title": "Thermal conductivity prediction of Al2O3 -doped tetragonal YSZ coatings using deep learning",
+          "title": "Thermal conductivity prediction of Al2O3-doped tetragonal YSZ coatings using deep learning",
           "authors": "Qiaochuan Chen, Sifan Han, Xuemei Song, Yi Zeng*, Yuexing Han*",
           "conference": "Journal of the European Ceramic Society",
           "year": "2024",
@@ -1612,13 +1630,13 @@
           "citation": "Qiaochuan Chen, Sifan Han, Xuemei Song, Yi Zeng*, Yuexing Han*. Thermal conductivity prediction of Al2O3-doped tetragonal YSZ coatings using deep learning. Journal of the European Ceramic Society, DOI:10.1016/j.jeurceramsoc.2024.04.057, 2024."
         },
         {
-          "title": "Corrosion of Mg alloys containing LPSO phase based on machine learning",
+          "title": "Corrosion of Mg Alloys Containing LPSO Phase Based on Machine Learning",
           "authors": "Sanlve Pei, Haitao Wang, Yuexing Han, Qian Li, Jingfeng Wang*",
           "conference": "The Chinese Journal of Nonferrous Metals",
           "year": "2024",
           "type": "Paper",
           "link": "https://doi.org/10.11817/j.ysxb.1004.0609.2023-44562",
-          "citation": "Sanlve Pei, Haitao Wang, Yuexing Han, Qian Li, Jingfeng Wang*. Corrosion of Mg alloys containing LPSO phase based on machine learning. The Chinese Journal of Nonferrous Metals, 2024, 34(6): 1964-1981. DOI:10.11817/j.ysxb.1004.0609.2023-44562"
+          "citation": "Sanlve Pei, Haitao Wang, Yuexing Han, Qian Li, Jingfeng Wang*. Corrosion of Mg Alloys Containing LPSO Phase Based on Machine Learning. The Chinese Journal of Nonferrous Metals, 34(6): 1964-1981, 2024. DOI: 10.11817/j.ysxb.1004.0609.2023-44562"
         },
         {
           "title": "Prediction of ultimate tensile strength of Al-Si alloys based on multimodal fusion learning",
@@ -1635,16 +1653,16 @@
           "conference": "arXiv",
           "year": "2024",
           "type": "Paper",
-          "link": "https://arxiv.org/pdf/2401.01749.pdf",
+          "link": "https://arxiv.org/abs/2401.01749",
           "citation": "Yuexing Han*, Liheng Ruan, Bing Wang, Few-shot Image Generation via Information Transfer from the Built Geodesic Surface. arXiv:2401.01749, 2024."
         },
         {
-          "title": "FAGC:Feature Augmentation on Geodesic Curve in the Pre-Shape Space",
+          "title": "FAGC: Feature Augmentation on Geodesic Curve in the Pre-Shape Space",
           "authors": "Yuexing Han*, Guanxin Wan, Bing Wang*",
           "conference": "arXiv",
           "year": "2023",
           "type": "Paper",
-          "link": "https://arxiv.org/pdf/2312.03325.pdf",
+          "link": "https://arxiv.org/abs/2312.03325",
           "citation": "Yuexing Han*, Guanxin Wan, Bing Wang*, FAGC:Feature Augmentation on Geodesic Curve in the Pre-Shape Space. arXiv:2312.03325, 2023."
         },
         {
@@ -1653,22 +1671,22 @@
           "conference": "Expert Systems With Applications",
           "year": "2024",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "Yuexing Han, Ruiqi Li, Bing Wang, Qiaochuan Chen*. A Pseudo-labeling Based Weakly Supervised Segmentation Method For Few-Shot Texture Images. Expert Systems With Applications, 238(2024), 122110, 2024."
         },
         {
-          "title": "Material image segmentation method based on complex texture feature fusion",
+          "title": "Material Image Segmentation Method Based on Complex Texture Feature Fusion",
           "authors": "Yuexing Han, Shen Yang, Qiaochuan Chen, Bing Wang",
           "conference": "Computer Engineering and Design",
           "year": "2024",
           "type": "Paper",
-          "link": "#",
-          "citation": "Yuexing Han, Shen Yang, Qiaochuan Chen, Bing Wang. Material image segmentation method based on complex texture feature fusion. Computer Engineering and Design, Vol.45, No.1, pp. 220-227, 2024."
+          "link": "",
+          "citation": "Yuexing Han, Shen Yang, Qiaochuan Chen, Bing Wang. Material Image Segmentation Method Based on Complex Texture Feature Fusion, Computer Engineering and Design, Vol.45, No.1, pp. 220-227, 2024. "
         },
         {
           "title": "A literature-mining method of integrating text and table extraction for materials science publications",
           "authors": "Rui Zhang, Jiawang Zhang, Qiaochuan Chen, Bing Wang, Yi Liu, Quan Qian, Deng Pan, Jinhua Xia, Yinggang Wang, Yuexing Han*",
-          "conference": "Computational materials science",
+          "conference": "Computational Materials Science",
           "year": "2023",
           "type": "Paper",
           "link": "https://doi.org/10.1016/j.commatsci.2023.112441",
@@ -1685,8 +1703,8 @@
         },
         {
           "title": "Classification of Sulfides in High-Sulfur Steel and Establishment of Automatic Sulfide Classification Method",
-          "authors": "Ping Shen*, Kang Xu, Xing Wu, Cheng Guo, Ruting Chi, Yuexing Han, and Jianxun Fu*",
-          "conference": "Steel Research international",
+          "authors": "Ping Shen*, Kang Xu, Xing Wu, Cheng Guo, Ruting Chi, Yuexing Han, Jianxun Fu*",
+          "conference": "Steel Research International",
           "year": "2023",
           "type": "Paper",
           "link": "https://doi.org/10.1002/srin.202300187",
@@ -1698,7 +1716,7 @@
           "conference": "Chaos, Solitons & Fractals",
           "year": "2023",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "X. Hong, Y.X. Han*, B. Wang*. Impacts of self-initiated behavioral responses and pandemic fatigue on the epidemic spread in time-varying multiplex networks. Chaos, Solitons & Fractals, 173(2023), 113696, 2023."
         },
         {
@@ -1721,38 +1739,38 @@
         },
         {
           "title": "Optimal discrete resource allocation on metapopulation networks for suppressing spatial spread of epidemics",
-          "authors": "K.B. Zhang, X., Hong, Y.X. Han*, B. Wang*",
-          "conference": "Chaos, Solitons, & Factals",
+          "authors": "K.B. Zhang, X. Hong, Y.X. Han*, B. Wang*",
+          "conference": "Chaos, Solitons & Fractals",
           "year": "2023",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "K.B. Zhang, X., Hong, Y.X. Han*, B. Wang*. Optimal discrete resource allocation on metapopulation networks for suppressing spatial spread of epidemics. Chaos, Solitons, & Factals. 169, 113293, 2023."
         },
         {
           "title": "A two-phase feature selection method for identifying influential spreaders of disease epidemic on complex networks",
-          "authors": "X.Y. Wang,Y.X. Han*,B. Wang*",
+          "authors": "X.Y. Wang, Y.X. Han*, B. Wang*",
           "conference": "Entropy",
           "year": "2023",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "X.Y. Wang, Y.X. Han*, B. Wang*. A two-phase feature selection method for identifying influential spreaders of disease epidemic on complex networks. Entropy, 25, 1068, 2023."
         },
         {
           "title": "Material structure segmentation method based on graph attention",
-          "authors": "Qiaochuan Chen, Huishan Wei, Bing Wang, Liheng Ruan and Yuexing Han*",
+          "authors": "Qiaochuan Chen, Huishan Wei, Bing Wang, Liheng Ruan, Yuexing Han*",
           "conference": "Materials Today Communications",
           "year": "2023",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "Qiaochuan Chen, Huishan Wei, Bing Wang, Liheng Ruan and Yuexing Han*. Material structure segmentation method based on graph attention. Materials Today Communications, 2023: 105941."
         },
         {
-          "title": "Impacts of detection and contact tracing on the epidemicspread in time-varying networks",
-          "authors": "X. Hong, Y.X.Han, B. Wang*",
-          "conference": "Applied Mathematics Computation",
+          "title": "Impacts of detection and contact tracing on the epidemic spread in time-varying networks",
+          "authors": "X. Hong, Y.X. Han, B. Wang*",
+          "conference": "Applied Mathematics and Computation",
           "year": "2023",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "X. Hong, Y.X.Han, B. Wang*. Impacts of detection and contact tracing on the epidemicspread in time-varying networks. Applied Mathematics Computation, 439, 127601, 2023."
         },
         {
@@ -1761,8 +1779,728 @@
           "conference": "Multimedia Systems",
           "year": "2023",
           "type": "Paper",
-          "link": "#",
+          "link": "",
           "citation": "Gan Hu*, Yanli Ji, Xingzhu Liang, Yuexing Han. Layer fusion for online mutual knowledge distillation. Multimedia Systems, 2023(29): 787-796."
+        },
+        {
+          "title": "CA-STD: Scene text detection in arbitrary shape based on conditional attention",
+          "authors": "Xing Wu*, Yangyang Qi, Jun Song, Junfeng Yao, Yanzhong Wang, Yang Liu, Yuexing Han, Quan Qian",
+          "conference": "Information",
+          "year": "2022",
+          "type": "Paper",
+          "link": "",
+          "citation": "Xing Wu*, Yangyang Qi, Jun Song, Junfeng Yao, Yanzhong Wang, Yang Liu, Yuexing Han, Quan Qian. CA-STD: Scene text detection in arbitrary shape based on conditional attention. Information, Vol. 12, 565, 2022. (CAS Q3, Q2,  IF:6.9)"
+        },
+        {
+          "title": "Co-evolution dynamics of epidemic and information under dynamical multi-source information and behavioral responses",
+          "authors": "X. Hong, Y.X. Han*, G. Tananka, B. Wang*",
+          "conference": "Knowledge-Based Systems",
+          "year": "2022",
+          "type": "Paper",
+          "link": "",
+          "citation": "X. Hong, Y.X. Han*, G. Tananka, B. Wang*. Co-evolution dynamics of epidemic and information under dynamical multi-source information and behavioral responses. Knowledge-Based Systems, 252, 109413, 2022.(CAS Q1top, IF:8.139)"
+        },
+        {
+          "title": "Center environment feature models for materials image segmentation based on machine learning",
+          "authors": "Yuexing Han*, Ruiqi Li, Shen Yang, Qiaochuan Chen, Bing Wang, Yi Liu",
+          "conference": "Scientific Reports",
+          "year": "2022",
+          "type": "Paper",
+          "link": "https://doi.org/10.1038/s41598-022-16824-w",
+          "citation": "Yuexing Han*, Ruiqi Li, Shen Yang, QiaoChuan Chen, Bing Wang, Yi Liu. Center environment feature models for materials image segmentation based on machine learning. Scientific Reports, 12, 12960, 2022. https://doi.org/10.1038/s41598-022-16824-w, published 28 July 2022. JCR: Q2, CAS Q3,  IF:4.996"
+        },
+        {
+          "title": "Intervention of resource allocation strategies on spatial spread of epidemic",
+          "authors": "K.B. Zhang, Y.X. Han*, B. Wang*",
+          "conference": "Physical Review E",
+          "year": "2022",
+          "type": "Paper",
+          "link": "",
+          "citation": "K.B. Zhang, Y.X. Han*, B. Wang*. Intervention of resource allocation strategies on spatial spread of epidemic, Phys. Rev. E, 105, 064308, 2022. CAS Q2"
+        },
+        {
+          "title": "Intervention strategies for epidemic spread on bipartite metapopulation networks",
+          "authors": "B. Wang, L.Z. Yang, Y.X. Han*",
+          "conference": "Physical Review E",
+          "year": "2022",
+          "type": "Paper",
+          "link": "",
+          "citation": "B. Wang, L.Z. Yang, Y.X. Han*. Intervention strategies for epidemic spread on bipartite metapopulation networks, Phys. Rev. E, 105, 064305, 2022.CAS Q2"
+        },
+        {
+          "title": "Phase transition in the majority-vote model on time-varying networks",
+          "authors": "B. Wang, X. Ding, Y.X. Han*",
+          "conference": "Physical Review E",
+          "year": "2022",
+          "type": "Paper",
+          "link": "",
+          "citation": "B. Wang, X. Ding, Y.X. Han*. Phase transition in the majority-vote model on time-varying networks,  Phys. Rev. E, 105, 014310, 2022.CAS Q2"
+        },
+        {
+          "title": "A Classification Method for EEG Motor Imagery Signals based on Parallel Convolutional Neural Network",
+          "authors": "Yuexing Han*, Bing Wang, Jie Luo, Long Li, Xiaolong Li",
+          "conference": "Biomedical Signal Processing and Control",
+          "year": "2022",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han*, Bing Wang, Jie Luo, Long Li, Xiaolong Li. A Classification Method for EEG Motor Imagery Signals based on Parallel Convolutional Neural Network. Biomedical Signal Processing and Control, 71, 103190, 2022. CAS Q2, IF:5.076 Q2"
+        },
+        {
+          "title": "Dynamical immunization based on random-walk in time-varying networks",
+          "authors": "B. Wang*, H.J. Zeng, Y.X. Han*",
+          "conference": "Chaos, Solitons & Fractals",
+          "year": "2022",
+          "type": "Paper",
+          "link": "",
+          "citation": "B. Wang*, H.J. Zeng, and Y.X. Han*. Dynamical immunization based on random-walk in time-varying networks. Chaos, Solitons & Fractals, 155, 111755, 2022.10. CAS Q1 Top, IF:9.922"
+        },
+        {
+          "title": "Factor Analysis and Regression Prediction Model of Swimmers’ Performance Structure Based on Mixed Genetic Neural Network",
+          "authors": "Rui Yuan*, Yuexing Han",
+          "conference": "Computational Intelligence and Neuroscience",
+          "year": "2022",
+          "type": "Paper",
+          "link": "https://doi.org/10.1155/2022/2052975",
+          "citation": "Rui Yuan*, Yuexing Han. Factor Analysis and Regression Prediction Model of Swimmers’ Performance Structure Based on Mixed Genetic Neural Network. Computational Intelligence and Neuroscience, Vol. 2022, Article ID 2052975, 2022. ISSN:1687-5265, Q2/CAS Q2(Mathematics and Computational Biology), IF:3.633"
+        },
+        {
+          "title": "Facial expression recognition in facial occlusion scenarios: A path selection multi-network",
+          "authors": "Liheng Ruan, Yuexing Han*, Jiarui Sun, Qiaochuan Chen, Jiaqi Li",
+          "conference": "Displays",
+          "year": "2022",
+          "type": "Paper",
+          "link": "https://doi.org/10.1016/j.displa.2022.102245",
+          "citation": "Liheng Ruan, Yuexing Han*, Jiarui Sun, Qiaochuan Chen, Jiaqi Li. Facial expression recognition in facial occlusion scenarios: A path selection multi-network. Displays, vol. 74, 102245, 2022. ISSN: 0141-9382, CAS Q2"
+        },
+        {
+          "title": "Graph-UNet for Material Image Segmentation",
+          "authors": "Huishan Wei, Yuexing Han*, Bing Wang, Qiaochuan Chen",
+          "conference": "Application Research of Computers",
+          "year": "2022",
+          "type": "Paper",
+          "link": "",
+          "citation": "Huishan Wei, Yuexing Han*, Bing Wang, Qiaochuan Chen. Graph-UNet for Material Image Segmentation. Application Research of Computers, Vol. 10, 39, 3196-3200, 2022"
+        },
+        {
+          "title": "A Method for Recognizing Thermal Barrier Coating Morphological Features Based on Digital Image Processing Technology",
+          "authors": "Yuhong Liu, Yuexing Han*, Yuyan Wang, Yi Zeng",
+          "conference": "Journal of Shanghai University",
+          "year": "2022",
+          "type": "Paper",
+          "link": "10.12066/j.issn.1007-2861.2371",
+          "citation": "Yuhong Liu, Yuexing Han*, Yuyan Wang, Yi Zeng. A Method for Recognizing Thermal Barrier Coating Morphological Features Based on Digital Image Processing Technology. Journal of Shanghai University, Vol. 28, Issue 3, 523-533, 2022, doi: 10.12066/j.issn.1007-2861.2371"
+        },
+        {
+          "title": "Anti-Counterfeiting Label Detection Algorithm Based on a Lightweight Network",
+          "authors": "Hongkun Zhang, Yuexing Han*, Qiaochuan Chen, Jinbo Wu",
+          "conference": "Journal of Shanghai University",
+          "year": "2022",
+          "type": "Paper",
+          "link": "10.12066/j.issn.1007-2861.2373",
+          "citation": "Hongkun Zhang, Yuexing Han*, Qiaochuan Chen, Jinbo Wu. Anti-Counterfeiting Label Detection Algorithm Based on a Lightweight Network. Journal of Shanghai University, Vol. 28, Issue 3, 534-544, 2022, doi: 10.12066/j.issn.1007-2861.2373"
+        },
+        {
+          "title": "Recognition and segmentation of complex texture images based on superpixel algorithm and deep learning",
+          "authors": "Yuexing Han, Shen Yang, Qiaochuan Chen*",
+          "conference": "Computational Materials Science",
+          "year": "2022",
+          "type": "Paper",
+          "link": "https://doi.org/10.1016/j.commatsci.2022.111398",
+          "citation": "Yuexing Han, Shen Yang, Qiaochuan Chen*. Recognition and segmentation of complex texture images based on superpixel algorithm and deep learning. Computational Materials Science, Vol. 209, 111398, 2022. CAS Q3, Q2: 3.300"
+        },
+        {
+          "title": "A novel transfer learning for recognition of overlapping nano object",
+          "authors": "Yuexing Han*, Yuhong Liu, Bing Wang, Qiaochuan Chen, Leilei Song, Lin Tong, Chuanbin Lai, Akihiko Konagaya",
+          "conference": "Neural Computing and Applications",
+          "year": "2022",
+          "type": "Paper",
+          "link": "https://doi.org/10.1007/s00521-021-06731-y",
+          "citation": "Yuexing Han*, Yuhong Liu, Bing Wang, Qiaochuan Chen, Leilei Song, Lin Tong, Chuanbin Lai, Akihiko Konagaya. A novel transfer learning for recognition of overlapping nano object. Neural Computing and Applications (NCAA), 34(7): 5729-5741, 2022. CAS Q2, Q1: 5.606"
+        },
+        {
+          "title": "Automatic detection of Kikuchi bands based on Radon transform and PPHT",
+          "authors": "Yuexing Han*, Ruiqi Li, Yi Zeng, Mengyang Liu",
+          "conference": "Journal of Microscopy",
+          "year": "2021",
+          "type": "Paper",
+          "link": "https://doi.org/10.1111/jmi.13079",
+          "citation": "Yuexing Han*, Ruiqi Li, Yi Zeng, Mengyang Liu. Automatic detection of Kikuchi bands based on Radon transform and PPHT. Journal of Microscopy, Vol. 285, Issue 2, pp. 95-111, 2021. CAS Q3"
+        },
+        {
+          "title": "Impacts of information propagation on epidemic spread over different migration routes",
+          "authors": "B. Wang*, M. Gou, Y.X. Han*",
+          "conference": "Nonlinear Dynamics",
+          "year": "2021",
+          "type": "Paper",
+          "link": "",
+          "citation": "B. Wang*, M. Gou, Y.X. Han*. Impacts of information propagation on epidemic spread over different migration routes. Nonlinear Dynamics, 105(4), 3835-3847, 2021. CAS Q1 Top, IF:5.741"
+        },
+        {
+          "title": "Impacts of individual behavior changes on epidemic spreading in time-varying networks",
+          "authors": "B. Wang, Z.Y. Xie, Y.X. Han*",
+          "conference": "Phys. Rev. E",
+          "year": "2021",
+          "type": "Paper",
+          "link": "",
+          "citation": "B. Wang, Z.Y. Xie, Y.X. Han*. Impacts of individual behavior changes on epidemic spreading in time-varying networks. Phys. Rev. E, 104, 044307, 2021. CAS Q2"
+        },
+        {
+          "title": "Accelerating the Discovery of Cu−Sn−S Thermoelectric Compounds via High-Throughput Synthesis, Characterization, and Machine Learning-Assisted Image Analysis",
+          "authors": "Ye Sheng, Tingting Deng, Pengfei Qiu, Xun Shi, Jinyang Xi*, Yuexing Han*, Jiong Yang*",
+          "conference": "Chemistry of Materials",
+          "year": "2021",
+          "type": "Paper",
+          "link": "https://doi.org/10.1021/acs.chemmater.1c01856",
+          "citation": "Ye Sheng, Tingting Deng, Pengfei Qiu, Xun Shi, Jinyang Xi*, Yuexing Han* and Jiong Yang*. Accelerating the Discovery of Cu−Sn−S Thermoelectric Compounds via High-Throughput Synthesis, Characterization, and Machine Learning-Assisted Image Analysis. Chemistry of Materials, 33, 6918-6924, 2021. IF:9.872, CAS Q1 Top"
+        },
+        {
+          "title": "Unclonable Micro-Texture with Clonable Micro-Shape towards Rapid, Convenient, and Low-Cost Fluorescent Anti-Counterfeiting Labels",
+          "authors": "Yuhong Lin, Hongkun Zhang, Jingyun Feng, Bori Shi, Mengying Zhang, Yuexing Han*, Weijia Wen, Tongyi Zhang, Yabing Qi, Jinbo Wu*",
+          "conference": "Small",
+          "year": "2021",
+          "type": "Paper",
+          "link": "10.1002/smll.202100244",
+          "citation": "Yuhong Lin, Hongkun Zhang, Jingyun Feng, Bori Shi, Mengying Zhang, Yuexing Han*, Weijia Wen, Tongyi Zhang, Yabing Qi, and Jinbo Wu*. Unclonable Micro-Texture with Clonable Micro-Shape towards Rapid, Convenient, and Low-Cost Fluorescent Anti-Counterfeiting Labels. Small, 17(30), 2100244, 2021. IF:13.281, CAS Q1 Top"
+        },
+        {
+          "title": "Boundary Loss-Based 2.5D Fully Convolutional Neural Networks Approach for Segmentation: A Case Study of the Liver and Tumor on Computed Tomography",
+          "authors": "Yuexing Han, Xiaolong Li, Bing Wang, Lu Wang",
+          "conference": "Algorithms",
+          "year": "2021",
+          "type": "Paper",
+          "link": "https://doi.org/10.3390/a14050144",
+          "citation": "Yuexing Han, Xiaolong Li, Bing Wang and Lu Wang. Boundary Loss-Based 2.5D Fully Convolutional Neural Networks Approach for Segmentation: A Case Study of the Liver and Tumor on Computed Tomography. Algorithms, 14(5), 144, 2021"
+        },
+        {
+          "title": "Modeling of suppression and mitigation interventions in the COVID-19 epidemics",
+          "authors": "Yuexing Han, Zeyang Xie, Yike Guo, Bing Wang",
+          "conference": "BMC Public Health",
+          "year": "2021",
+          "type": "Paper",
+          "link": "https://doi.org/10.1186/s12889-021-10663-6",
+          "citation": "Yuexing Han, Zeyang Xie, Yike Guo, Bing Wang. Modeling of suppression and mitigation interventions in the COVID-19 epidemics. BMC Public Health, 2021. IF:3.295, CAS Q3"
+        },
+        {
+          "title": "Effect of Spraying Power on the Morphology of YSZ Splat and Micro-Structure of Thermal Barrier Coating",
+          "authors": "Yuyan Wang, Yuexing Han, Chucheng Lin, Wei Zheng, Caifen Jiang, Aijia Wei, Yuhong Liu, Yi Zeng*, Ying Shi*",
+          "conference": "Ceramics International",
+          "year": "2021",
+          "type": "Paper",
+          "link": "10.1016/j.ceramint.2021.03.238",
+          "citation": "Yuyan Wang, Yuexing Han, Chucheng Lin, Wei Zheng, Caifen Jiang, Aijia Wei, Yuhong Liu, Yi Zeng*, and Ying Shi*. Effect of Spraying Power on the Morphology of YSZ Splat and Micro-Structure of Thermal Barrier Coating. Ceramics International, 47(13), 18956–18963, 2021. IF:4.527, CAS Q1 Top"
+        },
+        {
+          "title": "Image Anomaly Detection Using Normal Data Only by Latent Space Resampling",
+          "authors": "Lu Wang, Dongkai Zhang, Jiahao Guo, Yuexing Han*",
+          "conference": "Applied Sciences",
+          "year": "2020",
+          "type": "Paper",
+          "link": "https://doi.org/10.3390/app10238660",
+          "citation": "Lu Wang, Dongkai Zhang, Jiahao Guo, Yuexing Han*. Image Anomaly Detection Using Normal Data Only by Latent Space Resampling. Applied Sciences, 10(23), 8660, 2020. CAS Q3, IF:2.679"
+        },
+        {
+          "title": "Network structure-based interventions on spatial spread of epidemics in metapopulation networks",
+          "authors": "Bing Wang*, Ming Gou, Yike Guo, G.H. Tanaka, Yuexing Han",
+          "conference": "Phys. Rev. E",
+          "year": "2020",
+          "type": "Paper",
+          "link": "",
+          "citation": "Bing Wang*, Ming Gou, Yike Guo, G.H. Tanaka, Yuexing Han. Network structure-based interventions on spatial spread of epidemics in metapopulation networks. Phys. Rev. E, 102, 062306, 2020. CAS Q2, IF:2.529"
+        },
+        {
+          "title": "Random walks in time-varying networks with memory",
+          "authors": "Bing Wang, Hongjuan Zeng, Yuexing Han*",
+          "conference": "Phys. Rev. E",
+          "year": "2020",
+          "type": "Paper",
+          "link": "",
+          "citation": "Bing Wang, Hongjuan Zeng, and Yuexing Han*. Random walks in time-varying networks with memory. Phys. Rev. E, 102, 062309, 2020. CAS Q2, IF:2.529"
+        },
+        {
+          "title": "A path-based distribution measure for network comparison",
+          "authors": "Bing Wang*, Zhiwen Sun, Yuexing Han*",
+          "conference": "Entropy",
+          "year": "2020",
+          "type": "Paper",
+          "link": "",
+          "citation": "Bing Wang*, Zhiwen Sun, and Yuexing Han*. A path-based distribution measure for network comparison. Entropy, 22, 1287, 2020. CAS Q3, IF:2.524"
+        },
+        {
+          "title": "Research on a Patient Hand Evaluation Algorithm Based on Leap Motion",
+          "authors": "Cunguang Yu, Yuexing Han, Xiaofan Zhang, Haohuan Ouyang",
+          "conference": "Computer & Digital Engineering",
+          "year": "2022",
+          "type": "Paper",
+          "link": "",
+          "citation": "Cunguang Yu, Yuexing Han, Xiaofan Zhang, Haohuan Ouyang. Research on a Patient Hand Evaluation Algorithm Based on Leap Motion. Computer & Digital Engineering, Issue 10, 2022(005):050, 2022. Chinese Core Journal of Science and Technology"
+        },
+        {
+          "title": "In-situ observation of grain refinement dynamics of hypoeutectic Al-Si alloy inoculated by Al-Ti-Nb-B alloy",
+          "authors": "Jin Xu, Yang Li, Ke Ma, Yanan Fu, Enyu Guo, Zongning Chen, Qinfen Gu, Yuexing Han, Tongmin Wang, Qian Li*",
+          "conference": "Scripta Materialia",
+          "year": "2020",
+          "type": "Paper",
+          "link": "",
+          "citation": "Jin Xu, Yang Li, Ke Ma, Yanan Fu, Enyu Guo, Zongning Chen, Qinfen Gu, Yuexing Han, Tongmin Wang, Qian Li*. In-situ observation of grain refinement dynamics of hypoeutectic Al-Si alloy inoculated by Al-Ti-Nb-B alloy. Scripta Materialia, 187, 142-147, 2020. CAS Q1"
+        },
+        {
+          "title": "A novel mobile robot navigation method based on hand-drawn paths",
+          "authors": "Xuyan Hou, Wei Li, Yuexing Han*, Aoxiang Wang, Yihui Yang, Lilan Liu, Yingzhong Tian",
+          "conference": "IEEE Sensors Journal",
+          "year": "2020",
+          "type": "Paper",
+          "link": "https://doi.org/10.1109/JSEN.2020.2997055",
+          "citation": "Xuyan Hou, Wei Li, Yuexing Han*, Aoxiang Wang, Yihui Yang, Lilan Liu, Yingzhong Tian. A novel mobile robot navigation method based on hand-drawn paths. IEEE Sensors Journal, Vol. 20 (19), 11660-11673, 2020. CAS Q2, IF:3.301"
+        },
+        {
+          "title": "AtomicNet: a novel approach to identify the crystal structure of each simulated atom",
+          "authors": "Yuexing Han, Leilei Song, Bing Wang, Sheng Sun, Quan Qian, Qian Wang",
+          "conference": "Modelling and Simulation in Materials Science and Engineering",
+          "year": "2020",
+          "type": "Paper",
+          "link": "https://doi.org/10.1088/1361-651X/ab6da7",
+          "citation": "Yuexing Han, Leilei Song, Bing Wang, Sheng Sun, Quan Qian, Qian Wang. AtomicNet: a novel approach to identify the crystal structure of each simulated atom. Modelling and Simulation in Materials Science and Engineering, 28, 035005, 2020. CAS Q3, IF:2.248"
+        },
+        {
+          "title": "Impacts of multitype interactions on epidemic spreading in temporal networks",
+          "authors": "Ningning Dong, Yuexing Han, Qing Li, Bing Wang*",
+          "conference": "International Journal of Modern Physics C",
+          "year": "2020",
+          "type": "Paper",
+          "link": "https://doi.org/10.1142/S0129183120500205",
+          "citation": "Ningning Dong, Yuexing Han, Qing Li, Bing Wang*. Impacts of multitype interactions on epidemic spreading in temporal networks. International Journal of Modern Physics C, Vol. 31, No. 1, 2050020, 2020. CAS Q4"
+        },
+        {
+          "title": "Research on Binocular Distance Measurement Technology Based on Geometric Constraints",
+          "authors": "Long Li, Aoxiang Wang, Yuexing Han, Yingzhong Tian*",
+          "conference": "Metrology and Measurement Technology",
+          "year": "2019",
+          "type": "Paper",
+          "link": "",
+          "citation": "Long Li, Aoxiang Wang, Yuexing Han, Yingzhong Tian*. Research on Binocular Distance Measurement Technology Based on Geometric Constraints. Metrology and Measurement Technology, 46(7):8-11, 2019."
+        },
+        {
+          "title": "Research on Interactive Control of Mobile Robots Based on a Sketch Interface",
+          "authors": "Long Li, Aoxiang Wang, Yuexing Han, Yingzhong Tian*",
+          "conference": "",
+          "year": "2019",
+          "type": "Paper",
+          "link": "",
+          "citation": "Long Li, Aoxiang Wang, Yuexing Han, Yingzhong Tian*. Research on Interactive Control of Mobile Robots Based on a Sketch Interface. 2019."
+        },
+        {
+          "title": "Segmenting Images with Complex Textures by Using Hybrid Algorithm",
+          "authors": "Yuexing Han*, Chuanbin Lai, Bing Wang, Hui Gu",
+          "conference": "Journal of Electronic Imaging",
+          "year": "2019",
+          "type": "Paper",
+          "link": "https://github.com/han-yuexing/SegmentingImageWithHybrid_software.git",
+          "citation": "Yuexing Han*, Chuanbin Lai, Bing Wang, Hui Gu. Segmenting Images with Complex Textures by Using Hybrid Algorithm. Journal of Electronic Imaging, 28(1):13-30, 2019. CAS Q4, IF:0.945 <br>Software: https://github.com/han-yuexing/SegmentingImageWithHybrid_software.git <br>Code: https://github.com/han-yuexing/SegmentingImageWithHybrid_code.git"
+        },
+        {
+          "title": "Segmentation and Analysis Method for Two-Phase Ceramic (HfB2-B4C) Based on the Detection of Virtual Boundaries",
+          "authors": "Yuexing Han, Chuanbin Lai, Bing Wang*, Tianyi Hu, Dongli Hu, Hui Gu",
+          "conference": "Image Analysis & Stereology",
+          "year": "2019",
+          "type": "Paper",
+          "link": "https://github.com/han-yuexing/SegmentationForCeramic-HFB2-B4C_software.git",
+          "citation": "Yuexing Han, Chuanbin Lai, Bing Wang*, Tianyi Hu, Dongli Hu, Hui Gu. Segmentation and Analysis Method for Two-Phase Ceramic (HfB2-B4C) Based on the Detection of Virtual Boundaries. Image Analysis & Stereology, 38(1):95-105, 2019. CAS Q3, IF:1.424 <br>Software: https://github.com/han-yuexing/SegmentationForCeramic-HFB2-B4C_software.git <br>Code: https://github.com/han-yuexing/SegmentationForCeramic-HFB2-B4C_code.git"
+        },
+        {
+          "title": "Material Image Segmentation with the Machine Learning Method and Complex Network Method",
+          "authors": "Chuanbin Lai, Leilei Song, Yuexing Han*, Qian Li, Hui Gu, Bing Wang, Quan Qian, Wei Chen",
+          "conference": "MRS Advances",
+          "year": "2019",
+          "type": "Paper",
+          "link": "https://doi.org/10.1557/adv.2019.7",
+          "citation": "Chuanbin Lai, Leilei Song, Yuexing Han*, Qian Li, Hui Gu, Bing Wang, Quan Qian, Wei Chen. Material Image Segmentation with the Machine Learning Method and Complex Network Method. MRS Advances, Vol. 4, Issue 19, 1119-1124, 2019. ESCI"
+        },
+        {
+          "title": "Joint effect of individual’s memory and attractiveness in temporal network on spreading dynamics",
+          "authors": "M. Yang, Bing Wang*, Y.X. Han",
+          "conference": "International Journal of Modern Physics C",
+          "year": "2019",
+          "type": "Paper",
+          "link": "",
+          "citation": "M. Yang, B. Wang*, Y.X. Han. Joint effect of individual’s memory and attractiveness in temporal network on spreading dynamics. International Journal of Modern Physics C, 30(1), 1950011, 2019. CAS Q4"
+        },
+        {
+          "title": "Random walk on the activity-driven model with mutual selection",
+          "authors": "M. Yang, Bing Wang*, Y.X. Han",
+          "conference": "Europhysics Letters",
+          "year": "2018",
+          "type": "Paper",
+          "link": "",
+          "citation": "M. Yang, B. Wang*, Y.X. Han. Random walk on the activity-driven model with mutual selection. Europhysics Letters, 124-48004, 1-7, 2018. CAS Q3"
+        },
+        {
+          "title": "Virtual Boundary Detection Method Based on Deep Learning",
+          "authors": "Chuanbin Lai, Yuexing Han*, Hui Gu, Bing Wang",
+          "conference": "Journal of Computer Applications",
+          "year": "2018",
+          "type": "Paper",
+          "link": "",
+          "citation": "Chuanbin Lai, Yuexing Han*, Hui Gu, Bing Wang. Virtual Boundary Detection Method Based on Deep Learning. Journal of Computer Applications, 38(11):3211-3215, 2018. Chinese Core Journal"
+        },
+        {
+          "title": "Segmentation and Recognition of DNA Robots in AFM Images",
+          "authors": "Lin Tong, Yuexing Han*, Akihiko Konagaya",
+          "conference": "Computer Engineering and Applications",
+          "year": "2019",
+          "type": "Paper",
+          "link": "",
+          "citation": "Lin Tong, Yuexing Han*, Akihiko Konagaya. Segmentation and Recognition of DNA Robots in AFM Images. Computer Engineering and Applications, 55(11):192-198, 2019. Chinese Core Journal"
+        },
+        {
+          "title": "Segmenting overlapping nanoobjects in atomic force microscopy image",
+          "authors": "Qian Wang, Yuexing Han*, Qing Li, Bing Wang, Akihiko Konagaya",
+          "conference": "Journal of Nanophotonics",
+          "year": "2018",
+          "type": "Paper",
+          "link": "https://doi.org/10.1117/1.JNP.12.016003",
+          "citation": "Qian Wang, Yuexing Han*, Qing Li, Bing Wang, Akihiko Konagaya. Segmenting overlapping nanoobjects in atomic force microscopy image. Journal of Nanophotonics, 12(1):016003, 2018. CAS Q4, IF:1.562"
+        },
+        {
+          "title": "Interplay between epidemic spread and information propagation on metapopulation networks",
+          "authors": "Bing Wang*, Y.X. Han, G. Tananka",
+          "conference": "Journal of Theoretical Biology",
+          "year": "2017",
+          "type": "Paper",
+          "link": "",
+          "citation": "Bing Wang*, Y.X. Han, G. Tananka. Interplay between epidemic spread and information propagation on metapopulation networks. Journal of Theoretical Biology, 420:18-25, 2017. IF:2.049"
+        },
+        {
+          "title": "Automatic Recognition of DNA Pliers in Atomic Force Microscopy Images",
+          "authors": "Yuexing Han*, Akito Hara, Akinori Kuzuya, Ryosuke Watanabe, Yuichi Ohya, Akihiko Konagaya",
+          "conference": "New Generation Computing",
+          "year": "2015",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han*, Akito Hara, Akinori Kuzuya, Ryosuke Watanabe, Yuichi Ohya, Akihiko Konagaya. Automatic Recognition of DNA Pliers in Atomic Force Microscopy Images. New Generation Computing, 33:253-270, 2015. SCI:0.821"
+        },
+        {
+          "title": "SRT Division Algorithm and Implementation Technology for Ternary Optical Computers",
+          "authors": "Yi Jin, Qun Xu, Yunfu Shen, Weimin Li, Yuexing Han",
+          "conference": "Scientia Sinica Informationis",
+          "year": "2016",
+          "type": "Paper",
+          "link": "https://doi.org/10.1360/N112014-00391",
+          "citation": "Yi Jin, Qun Xu, Yunfu Shen, Weimin Li, Yuexing Han. SRT Division Algorithm and Implementation Technology for Ternary Optical Computers. Scientia Sinica Informationis, 539-550, 2016."
+        },
+        {
+          "title": "Structure and Theory of the Dual-Space Memory for Ternary Optical Computers",
+          "authors": "Shan Ouyang, Junjie Peng, Yi Jin, Qun Xu, Yunfu Shen, Xuemin Liu, Yuexing Han, Weimin Li",
+          "conference": "Scientia Sinica Informationis",
+          "year": "2016",
+          "type": "Paper",
+          "link": "https://doi.org/10.1360/N112015-00036",
+          "citation": "Shan Ouyang, Junjie Peng, Yi Jin, Qun Xu, Yunfu Shen, Xuemin Liu, Yuexing Han, Weimin Li. Structure and Theory of the Dual-Space Memory for Ternary Optical Computers. Scientia Sinica Informationis, 46(6):743-762, 2016."
+        },
+        {
+          "title": "Application Characteristics of the Structural-Quantity Computer: Ternary Optical Computer",
+          "authors": "Yi Jin, Qun Xu, Shan Ouyang, Yuexing Han, Weimin Li",
+          "conference": "Scientia Sinica Informationis",
+          "year": "2016",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yi Jin, Qun Xu, Shan Ouyang, Yuexing Han, Weimin Li. Application Characteristics of the Structural-Quantity Computer: Ternary Optical Computer. Scientia Sinica Informationis, 46(3):311-324, 20163 March"
+        },
+        {
+          "title": "Recognizing Objects with Multiple Configurations",
+          "authors": "Yuexing Han*, Hideki Koike, Masanori Idesawa",
+          "conference": "Pattern Analysis and Applications",
+          "year": "2014",
+          "type": "Paper",
+          "link": "https://doi.org/10.1007/s10044-012-0277-7",
+          "citation": "Yuexing Han*, Hideki Koike, and Masanori Idesawa. Recognizing Objects with Multiple Configurations. Pattern Analysis and Applications, Vol. 17, Issue 1, pp. 195-209, 2014. SCI:1.627"
+        },
+        {
+          "title": "Recognize Objects with Three Kinds of Information in Landmarks",
+          "authors": "Yuexing Han*",
+          "conference": "Pattern Recognition",
+          "year": "2013",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han*. Recognize Objects with Three Kinds of Information in Landmarks. Pattern Recognition, Vol.46, pp.2860-2873, 2013. SCI:3.725, EI"
+        },
+        {
+          "title": "Control surface's boundary and combine surfaces based on the Loop's subdivision",
+          "authors": "Yuexing Han*, Xiuping Liu",
+          "conference": "Journal of Hefei University of Technology (Natural Science)",
+          "year": "2012",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han*, Xiuping Liu. Control surface's boundary and combine surfaces based on the Loop's subdivision. Journal of Hefei University of Technology (Natural Science), pp.1719-1724, 2012"
+        },
+        {
+          "title": "Recognition of Multiple Configurations of Objects with Limited Data",
+          "authors": "Yuexing Han*, Bing Wang, Masanori Idesawa, Hiroyuki Shimai",
+          "conference": "Pattern Recognition",
+          "year": "2010",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han*, Bing Wang, Masanori Idesawa, and Hiroyuki Shimai. Recognition of Multiple Configurations of Objects with Limited Data. Pattern Recognition, Vol.43(3), pp.1467-1475, 2010. SCI:3.725, EI"
+        },
+        {
+          "title": "Multiple phase transitions in the culture dissemination",
+          "authors": "Bing Wang, Yuexing Han, L. Chen, K. Aihara",
+          "conference": "Complex Sciences, LNICST",
+          "year": "2009",
+          "type": "Paper",
+          "link": "",
+          "citation": "B. Wang, Yuexing Han, L. Chen, and K. Aihara. Multiple phase transitions in the culture dissemination. Complex Sciences, Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering (LNICST), Vol. 4, pp.286-290, 2009. EI"
+        },
+        {
+          "title": "Limited ability driven phase transitions in the coevolution process in Axelrod’s model",
+          "authors": "Bing Wang, Yuexing Han, Luonan Chen, Kazuyuki Aihara",
+          "conference": "Phys. Letter. A",
+          "year": "2009",
+          "type": "Paper",
+          "link": "",
+          "citation": "Bing Wang, Yuexing Han, Luonan Chen, and Kazuyuki Aihara. Limited ability driven phase transitions in the coevolution process in Axelrod’s model. Phys. Letter. A, 373, pp.1519-1523, 2009. SCI:1.863, EI"
+        },
+        {
+          "title": "A Method of Extracting Landmarks on Contour using Bezier Curves Fitting for Shapes Recognition",
+          "authors": "Yuexing Han*, Masanori Idesawa",
+          "conference": "Sensing and Perception",
+          "year": "2009",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han* and Masanori Idesawa. A Method of Extracting Landmarks on Contour using Bezier Curves Fitting for Shapes Recognition. Sensing and Perception, 16, pp.11-16, 2009"
+        },
+        {
+          "title": "Shape matching and object recognition",
+          "authors": "Yuexing Han*, Masanori Idesawa",
+          "conference": "Sensing and Perception",
+          "year": "2008",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han* and Masanori Idesawa. Shape matching and object recognition. Sensing and Perception, 15, pp.129-138, 2008"
+        },
+        {
+          "title": "Boundary combination algorithm of Loop's subdivision models",
+          "authors": "Yuexing Han, Xiuping Liu, Xiquan Shi",
+          "conference": "Journal of Dalian University of Technology",
+          "year": "2004",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han, Xiuping Liu, and Xiquan Shi. Boundary combination algorithm of Loop's subdivision models. Journal of Dalian University of Technology, Vol.44 No.01, pp.12-16, 2004. EI"
+        },
+        {
+          "title": "ACAM: An Adaptive Context-aware Attention Module for Nested Named Entity Recognition",
+          "authors": "Rui Zhang, Chenfan Ling, Qiaochuan Chen, Yuexing Han*",
+          "conference": "2025 6th International Conference on Computer Information and Big Data Applications (CIBDA 2025)",
+          "year": "2025",
+          "type": "Paper",
+          "link": "",
+          "citation": "Rui Zhang, Chenfan Ling, Qiaochuan Chen, Yuexing Han*. ACAM: An Adaptive Context-aware Attention Module for Nested Named Entity Recognition. 2025 6th International Conference on Computer Information and Big Data Applications (CIBDA 2025), 2025. EI conference, accepted"
+        },
+        {
+          "title": "Improving Relation Extraction with Contrastive Learning-based Named Entity Recognition",
+          "authors": "Rui Zhang, Chenfan Ling, Yuexing Han*, Qiaochuan Chen",
+          "conference": "2025 6th International Conference on Computer Engineering and Application (ICCEA 2025)",
+          "year": "2025",
+          "type": "Paper",
+          "link": "",
+          "citation": "Rui Zhang, Chenfan Ling, Yuexing Han*, Qiaochuan Chen. Improving Relation Extraction with Contrastive Learning-based Named Entity Recognition. 2025 6th International Conference on Computer Engineering and Application (ICCEA 2025), 2025. EI conference, accepted"
+        },
+        {
+          "title": "A Method Based on Heterogeneous Graph and Contrastive Learning in Named Entity Recognition",
+          "authors": "Rui Zhang, Yilin Zhang, Qiaochuan Chen, Yuexing Han*",
+          "conference": "2025 8th International Conference on Advanced Algorithms and Control Engineering",
+          "year": "2025",
+          "type": "Paper",
+          "link": "",
+          "citation": "Rui Zhang, Yilin Zhang, Qiaochuan Chen, Yuexing Han*. A Method Based on Heterogeneous Graph and Contrastive Learning in Named Entity Recognition. 2025 8th International Conference on Advanced Algorithms and Control Engineering. EI conference"
+        },
+        {
+          "title": "Mechanical Property Prediction of Materials via a Literature Mining Approach",
+          "authors": "Rui Zhang, Yilin Zhang, Qiaochuan Chen, Yuexing Han*",
+          "conference": "2025 IEEE 6th International Seminar on Artificial Intelligence, Networking and Information Technology",
+          "year": "2025",
+          "type": "Paper",
+          "link": "",
+          "citation": "Rui Zhang, Yilin Zhang, Qiaochuan Chen, Yuexing Han*. Mechanical Property Prediction of Materials via a Literature Mining Approach. 2025 IEEE 6th International Seminar on Artificial Intelligence, Networking and Information Technology. EI conference"
+        },
+        {
+          "title": "HSFE-Net: A Hybrid Semantic Encoder with Tri-Stage Feature Enhancement for Joint Entity and Relation Extraction",
+          "authors": "Qiaochuan Chen, Chen Zhao, Rui Zhang, Yuexing Han*",
+          "conference": "2025 6th International Conference on Computer Information and Big Data Applications (CIBDA 2025)",
+          "year": "2025",
+          "type": "Paper",
+          "link": "",
+          "citation": "Qiaochuan Chen, Chen Zhao, Rui Zhang, Yuexing Han*. HSFE-Net: A Hybrid Semantic Encoder with Tri-Stage Feature Enhancement for Joint Entity and Relation Extraction. 2025 6th International Conference on Computer Information and Big Data Applications (CIBDA 2025), 2025. EI conference, accepted"
+        },
+        {
+          "title": "Feature Augmentation via Dirichlet Mixup for Text-guided Diffusion Image Style Transfer",
+          "authors": "Yuexing Han*, Liheng Ruan, Bing Wang",
+          "conference": "2025 6th International Conference on Computer Information and Big Data Applications (CIBDA 2025)",
+          "year": "2025",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han*, Liheng Ruan, Bing Wang. Feature Augmentation via Dirichlet Mixup for Text-guided Diffusion Image Style Transfer. 2025 6th International Conference on Computer Information and Big Data Applications (CIBDA 2025), EIindexedconference"
+        },
+        {
+          "title": "Conductivity and hardness prediction of Cu-Cr-Zr via feature augmentation on Geodesic curve",
+          "authors": "Yuexing Han, Guanxin Wan, Yi Liu, Bing Wang",
+          "conference": "2024 5th International Seminar on Artificial Intelligence, Networking and Information Technology (AINIT)",
+          "year": "2024",
+          "type": "Paper",
+          "link": "https://doi.org/10.1109/AINIT61980.2024.10581478",
+          "citation": "Yuexing Han, Guanxin Wan, Yi Liu, Bing Wang. Conductivity and hardness prediction of Cu-Cr-Zr via feature augmentation on Geodesic curve. 2024 5th International Seminar on Artificial Intelligence, Networking and Information Technology (AINIT), Nanjing, China, 2024, pp.1937-1941. EIindexedconference"
+        },
+        {
+          "title": "Optimizing Material Property Prediction Precision via Global-Local Dual-Path Feature Extraction in a Deep Learning Framework",
+          "authors": "Qiaochuan Chen, Sifan Han, Yuexing Han*",
+          "conference": "2024 4th Asia-Pacific Conference on Communications Technology and Computer Science",
+          "year": "2024",
+          "type": "Paper",
+          "link": "",
+          "citation": "Qiaochuan Chen, Sifan Han, Yuexing Han*. Optimizing Material Property Prediction Precision via Global-Local Dual-Path Feature Extraction in a Deep Learning Framework. 2024 4th Asia-Pacific Conference on Communications Technology and Computer Science. EIindexedconference"
+        },
+        {
+          "title": "Cross-modal Deep Learning for Predicting Material Performance: Example of Thermal Conductivity in Thermal Barrier Coatings",
+          "authors": "Qiaochuan Chen, Sifan Han, Yuexing Han*",
+          "conference": "2024 3rd International Conference on Electronic Information Engineering and Data Processing",
+          "year": "2024",
+          "type": "Paper",
+          "link": "",
+          "citation": "Qiaochuan Chen, Sifan Han, Yuexing Han*. Cross-modal Deep Learning for Predicting Material Performance: Example of Thermal Conductivity in Thermal Barrier Coatings. 2024 3rd International Conference on Electronic Information Engineering and Data Processing. EIindexedconference"
+        },
+        {
+          "title": "A Literature Mining Method Based on Curve Graph Information in Literature",
+          "authors": "Yuexing Han, Jinhua Xia, Bing Wang, Rui Zhang, Qiaochuan Chen*",
+          "conference": "2023 8th International Conference on Information Systems Engineering (ICISE)",
+          "year": "2023",
+          "type": "Paper",
+          "link": "https://doi.org/10.1109/ICISE60366.2023.00067",
+          "citation": "Yuexing Han, Jinhua Xia, Bing Wang, Rui Zhang, Qiaochuan Chen*. A Literature Mining Method Based on Curve Graph Information in Literature. 2023 8th International Conference on Information Systems Engineering (ICISE), Dalian, China, 2023, pp.290-297. EI"
+        },
+        {
+          "title": "Lightweight and Crisp Curves Extract Network",
+          "authors": "Qiaochuan Chen, Yinggang Wang, Rui Zhang, Yuexing Han*",
+          "conference": "2023 8th International Conference on Information Systems Engineering (ICISE)",
+          "year": "2023",
+          "type": "Paper",
+          "link": "https://doi.org/10.1109/ICISE60366.2023.00131",
+          "citation": "Qiaochuan Chen, Yinggang Wang, Rui Zhang, Yuexing Han*. Lightweight and Crisp Curves Extract Network. 2023 8th International Conference on Information Systems Engineering (ICISE), Dalian, China, 2023, pp.594-599. EI"
+        },
+        {
+          "title": "Material Property Prediction by Integrating Literature-mining and Crossed Feature Selection",
+          "authors": "Rui Zhang, Jiawang Zhang, Yuexing Han*, Qiaochuan Chen",
+          "conference": "2023 8th International Conference on Information Systems Engineering (ICISE)",
+          "year": "2023",
+          "type": "Paper",
+          "link": "https://doi.org/10.1109/ICISE60366.2023.00065",
+          "citation": "Rui Zhang, Jiawang Zhang, Yuexing Han*, Qiaochuan Chen. Material Property Prediction by Integrating Literature-mining and Crossed Feature Selection. 2023 8th International Conference on Information Systems Engineering (ICISE), Dalian, China, 2023, pp.1-8. EI"
+        },
+        {
+          "title": "Material Image Segmentation with the Machine Learning Method and Complex Network Method",
+          "authors": "Chuanbin Lai, Leilei Song, Yuexing Han*, Qian Li, Hui Gu, Bing Wang, Quan Qian, Wei Chen",
+          "conference": "2018 Materials Research Society (MRS) Conference",
+          "year": "2018",
+          "type": "Paper",
+          "link": "",
+          "citation": "Chuanbin Lai, Leilei Song, Yuexing Han*, Qian Li, Hui Gu, Bing Wang, Quan Qian, and Wei Chen. Material Image Segmentation with the Machine Learning Method and Complex Network Method. 2018 Materials Research Society (MRS), Nov. 25-30, 2018"
+        },
+        {
+          "title": "On local analyticities of some types of ceramic material images defined by Cauchy-type integrals and analytic method of edge detection",
+          "authors": "Guangtai Ding*, Qi Liu, Huiran Zhang, Yuexing Han",
+          "conference": "The 5th Asian Materials Data Symposium",
+          "year": "2016",
+          "type": "Paper",
+          "link": "",
+          "citation": "Guangtai Ding*, Qi Liu, Huiran Zhang, Yuexing Han. On local analyticities of some types of ceramic material images defined by Cauchy-type integrals and analytic method of edge detection. The 5th Asian Materials Data Symposium, Hanoi, Vietnam, 264-273, 2016"
+        },
+        {
+          "title": "Tracking Single-Microtubules with the Lengths and the Hausdorff Distances of Their Corresponding B-Spline Curves",
+          "authors": "Yuexing Han, Inoue Daisuke, Akira Kakugo, Akihiko Konagaya",
+          "conference": "IEEE International Conference on Image Processing Theory, Tool and Applications (IPTA‘14)",
+          "year": "2014",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han, Inoue Daisuke, Akira Kakugo, and Akihiko Konagaya. Tracking Single-Microtubules with the Lengths and the Hausdorff Distances of Their Corresponding B-Spline Curves. IEEE International Conference on Image Processing Theory, Tool and Applications (IPTA‘14), pp.235-241, Oct.14-17, 2014. EI"
+        },
+        {
+          "title": "Automated Microtubule Path Tracking on Gliding Assay Using Hidden Markov Model",
+          "authors": "Bulibuli Mathemuti, Yuexing Han, Daisuke Inoue, Akira Kakugo, Akihiko Konagaya",
+          "conference": "International Conference on Bioinformatics (InCoB)",
+          "year": "2014",
+          "type": "Paper",
+          "link": "",
+          "citation": "Bulibuli Mathemuti, Yuexing Han, Daisuke Inoue, Akira Kakugo and Akihiko Konagaya. Automated Microtubule Path Tracking on Gliding Assay Using Hidden Markov Model. International Conference on Bioinformatics (InCoB), 31th July-2nd August, 2014. EI"
+        },
+        {
+          "title": "Automatic Recognition of DNA Nanostructures in Atomic Force Microscopy (AFM) Image: First Experience on DNA pliers",
+          "authors": "Yuexing Han, Akito Hara, Akinori Kuzuya, Ryosuke Watanabe, Yuichi Ohya, Akihiko Konagaya",
+          "conference": "International Conference on Applied and Theoretical Information Systems Research",
+          "year": "2013",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han, Akito Hara, Akinori Kuzuya, Ryosuke Watanabe, Yuichi Ohya, and Akihiko Konagaya. Automatic Recognition of DNA Nanostructures in Atomic Force Microscopy (AFM) Image: First Experience on DNA pliers. International Conference on Applied and Theoretical Information Systems Research, Taipei, Taiwan, November 22-24, 2013"
+        },
+        {
+          "title": "Towards an Automatic Recognition of DNA Nanostructures on AFM Images",
+          "authors": "Yuexing Han, Hara Akito, Akinori Kuzuya, Ryosuke Watanabe, Yuichi Ohya, Akihiko Konagaya",
+          "conference": "情報計算化学生物学会(CBI) 2013年大会",
+          "year": "2013",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han, Hara Akito, Akinori Kuzuya, Ryosuke Watanabe, Yuichi Ohya, Akihiko Konagaya. Towards an Automatic Recognition of DNA Nanostructures on AFM Images. CBI 2013 Conference, 2013.10.2831"
+        },
+        {
+          "title": "Shape Animation and Shape Matching",
+          "authors": "Yuexing Han, Masanori Idesawa",
+          "conference": "The Vision Society of Japan",
+          "year": "2008",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han and Masanori Idesawa. Shape Animation and Shape Matching. The Vision Society of Japan, 2008/8/4-8/5"
+        },
+        {
+          "title": "Acquisition of Object Pose from Barcode for Robot Manipulation",
+          "authors": "Yuexing Han, Yasushi Sumi, Yoshio Matsumoto, Noriaki Ando",
+          "conference": "Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR 2012)",
+          "year": "2012",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han, Yasushi Sumi, Yoshio Matsumoto, and Noriaki Ando. Acquisition of Object Pose from Barcode for Robot Manipulation. Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR 2012), Tsukuba, Japan, 5-8 Nov. 2012, pp.299-310. EI"
+        },
+        {
+          "title": "Obtain Object Pose from Barcode and QRcode",
+          "authors": "Yuexing Han, Yasushi Sumi, Yoshio Matsumoto, Noriaki Ando",
+          "conference": "日本ロボット学会第30回記念学術講演会のInternational Session",
+          "year": "2012",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han, Yasushi Sumi, Yoshio Matsumoto and Noriaki Ando. Obtain Object Pose from Barcode and QRcode. International Session of the 30th Anniversary Academic Lecture of the Robotics Society of Japan, 2012.9.179.20"
+        },
+        {
+          "title": "Recognition of Objects in Various Situations from Two Dimensional Images",
+          "authors": "Yuexing Han, Hideki Koike, Bing Wang, Masanori Idesawa",
+          "conference": "IEEE International Conference on Image Processing Theory, Tool and Applications (IPTA‘10)",
+          "year": "2010",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han, Hideki Koike, Bing Wang, and Masanori Idesawa. Recognition of Objects in Various Situations from Two Dimensional Images. IEEE International Conference on Image Processing Theory, Tool and Applications (IPTA‘10), pp.405-410, Jul.7-10, 2010. EI"
+        },
+        {
+          "title": "Multiple phase transitions in the culture dissemination",
+          "authors": "Bing Wang, Yuexing Han, Luonan Chen, Kazuyuki Aihara",
+          "conference": "Complex’09, Shanghai, China",
+          "year": "2009",
+          "type": "Paper",
+          "link": "",
+          "citation": "Bing Wang, Yuexing Han, Luonan Chen, and Kazuyuki Aihara. Multiple phase transitions in the culture dissemination. Complex’09, Shanghai, China. Feb.23-25, 2009. EI"
+        },
+        {
+          "title": "The Shortest Path in Shape Space for Shape Matching",
+          "authors": "Yuexing Han, Masanori Idesawa, Hiroyuki Shimai",
+          "conference": "The 11th International Conference on Humans and Computers (HC'2008)",
+          "year": "2008",
+          "type": "Paper",
+          "link": "",
+          "citation": "Yuexing Han, Masanori Idesawa, and Hiroyuki Shimai. The Shortest Path in Shape Space for Shape Matching. The 11th International Conference on Humans and Computers (HC'2008), pp.71-76, 2008"
         }
       ],
       "books": [
@@ -2334,7 +3072,7 @@
           "conference": "Knowledge-Based Systems",
           "year": "2024",
           "type": "论文",
-          "link": "",
+          "link": "https://arxiv.org/pdf/2312.00485.pdf",
           "citation": "J.K. Mao, Y.X. Han*, G. Tanaka, B.Wang*. Bacbone-based dynamic graph spatio-temporal network for epidemic forecasting. Knowledge-Based Systems, 296, 111952, 2024. arXiv:2312.00485. 中科院1区，Q1"
         },
         {
