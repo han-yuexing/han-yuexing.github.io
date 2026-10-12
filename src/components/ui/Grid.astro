@@ -22,7 +22,10 @@ const { gridTitle = "", gridItems } = Astro.props;
         <h3 class="text-xl font-semibold mb-0 text-center">{item.name}</h3>
       </div>
       <dialog id={`research-modal-${idx}`} class="modal">
-        <form method="dialog" class="modal-box max-w-2xl">
+        <form
+          method="dialog"
+          class="modal-box max-w-2xl max-h-[calc(100dvh-3rem)] overflow-y-auto"
+        >
           <h3 class="font-bold text-lg mb-4">{item.name}</h3>
           <div class="prose max-w-none" set:html={item.description} />
           {item.images && item.images.length > 0 && (
