@@ -1,0 +1,181 @@
+<script>
+  import PhotoSwipe from "photoswipe";
+
+  const selector = "main img";
+  const stateKey = "__imageLightboxState";
+  const globalState = window as typeof window & {
+    [stateKey]?: {
+      viewer?: PhotoSwipe;
+      host?: HTMLDialogElement;
+      previousOverflow?: string;
+      request: number;
+      initialized: boolean;
+    };
+  };
+  const state = (globalState[stateKey] ??= {
+    request: 0,
+    initialized: false,
+  });
+
+  function isPreviewable(image: HTMLImageElement) {
+    return !image.closest(
+      'a, button, [role="button"]:not(img), [data-no-lightbox]',
+    );
+  }
+
+  function enhanceImages() {
+    document.querySelectorAll<HTMLImageElement>(selector).forEach((image) => {
+      if (!isPreviewable(image)) return;
+      image.dataset.lightbox = "true";
+      image.tabIndex = 0;
+      image.setAttribute("role", "button");
+      image.setAttribute("aria-haspopup", "dialog");
+    });
+  }
+
+  async function openImage(image: HTMLImageElement) {
+    if (state.viewer) return;
+    const currentRequest = ++state.request;
+    try {
+      await image.decode();
+    } catch {
+      return;
+    }
+    if (
+      currentRequest !== state.request ||
+      !image.isConnected ||
+      !image.naturalWidth ||
+      !image.naturalHeight
+    )
+      return;
+
+    const lang = document.documentElement.lang;
+    const labels = lang.startsWith("zh")
+      ? {
+          closeTitle: "关闭",
+          zoomTitle: "放大 / 缩小",
+          errorMsg: "图片加载失败",
+        }
+      : lang.startsWith("ja")
+        ? {
+            closeTitle: "閉じる",
+            zoomTitle: "拡大 / 縮小",
+            errorMsg: "画像を読み込めません",
+          }
+        : {
+            closeTitle: "Close",
+            zoomTitle: "Zoom in / out",
+            errorMsg: "The image could not be loaded",
+          };
+
+    // A modal host keeps PhotoSwipe above existing research/project dialogs.
+    const host = document.createElement("dialog");
+    host.className = "image-lightbox-host";
+    host.setAttribute("aria-label", image.alt || labels.zoomTitle);
+    document.body.append(host);
+    state.host = host;
+    state.previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    document.dispatchEvent(new Event("lightbox:open"));
+    try {
+      host.showModal();
+    } catch {
+      host.remove();
+      state.host = undefined;
+      document.body.style.overflow = state.previousOverflow;
+      return;
+    }
+
+    const instance = new PhotoSwipe({
+      ...labels,
+      appendToEl: host,
+      dataSource: [
+        {
+          src: image.currentSrc || image.src,
+          width: image.naturalWidth,
+          height: image.naturalHeight,
+          alt: image.alt,
+          msrc: image.currentSrc || image.src,
+          thumbCropped: getComputedStyle(image).objectFit === "cover",
+        },
+      ],
+      index: 0,
+      wheelToZoom: true,
+      closeOnVerticalDrag: true,
+      pinchToClose: true,
+      showHideAnimationType: "zoom",
+      showAnimationDuration: 300,
+      hideAnimationDuration: 300,
+      maxWidthToAnimate: 10000,
+      secondaryZoomLevel: (level) => Math.max(1, level.initial * 2),
+      maxZoomLevel: (level) => Math.max(4, level.initial * 4),
+      returnFocus: false,
+      counter: false,
+      arrowPrev: false,
+      arrowNext: false,
+    });
+    state.viewer = instance;
+    instance.addFilter("thumbEl", () => image);
+    host.addEventListener("cancel", (event) => {
+      event.preventDefault();
+      instance.close();
+    });
+    instance.on("destroy", () => {
+      host.close();
+      host.remove();
+      document.body.style.overflow = state.previousOverflow ?? "";
+      state.host = undefined;
+      state.viewer = undefined;
+      if (image.isConnected) image.focus({ preventScroll: true });
+      document.dispatchEvent(new Event("lightbox:close"));
+    });
+    instance.init();
+  }
+
+  if (!state.initialized) {
+    state.initialized = true;
+    document.addEventListener("click", (event) => {
+      const image = event.target;
+      if (!(image instanceof HTMLImageElement) || !image.matches(selector))
+        return;
+      if (
+        !isPreviewable(image) ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.shiftKey ||
+        event.altKey
+      )
+        return;
+      event.preventDefault();
+      void openImage(image);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      const image = event.target;
+      if (
+        !(image instanceof HTMLImageElement) ||
+        image.dataset.lightbox !== "true"
+      )
+        return;
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      void openImage(image);
+    });
+
+    document.addEventListener("astro:before-swap", () => {
+      state.request++;
+      const viewer = state.viewer;
+      if (viewer) {
+        viewer.options.hideAnimationDuration = 0;
+        viewer.close();
+      } else {
+        if (state.host?.open) state.host.close();
+        state.host?.remove();
+        state.host = undefined;
+        document.body.style.overflow = state.previousOverflow ?? "";
+      }
+    });
+    document.addEventListener("astro:page-load", enhanceImages);
+  }
+  enhanceImages();
+</script>

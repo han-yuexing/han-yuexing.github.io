@@ -225,6 +225,10 @@ const { class: className = "" } = Astro.props;
   });
 
   document.addEventListener("astro:before-swap", stopCarousel);
+  document.addEventListener("lightbox:open", stopCarousel);
+  document.addEventListener("lightbox:close", () => {
+    if (document.querySelector(".carousel-container")) restartInterval();
+  });
   document.addEventListener("astro:page-load", startCarousel);
   startCarousel();
 </script>

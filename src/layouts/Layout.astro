@@ -1,10 +1,12 @@
 ---
 import "../styles/global.css";
+import "photoswipe/style.css";
 import { ClientRouter } from "astro:transitions";
 import Head from "../components/Head.astro";
 import TopNavbar from "../components/ui/TopNavbar.astro";
 import Footer from "../components/ui/Footer.astro";
 import FloatingWidget from "../components/ui/FloatingWidget.astro";
+import ImageLightbox from "../components/ui/ImageLightbox.astro";
 import { seo } from "../settings";
 import { getLangFromUrl } from "../i18n/utils";
 
@@ -48,6 +50,7 @@ const currentLang = getLangFromUrl(Astro.url);
 
     <Footer />
     <FloatingWidget />
+    <ImageLightbox />
   </body>
 </html>
 
